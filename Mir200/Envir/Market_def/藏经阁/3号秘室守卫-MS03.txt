@@ -1,0 +1,206 @@
+
+()
+%100
+[@main]
+#IF
+#ACT
+SET [750] 0
+SET [751] 0
+SET [752] 1
+#SAY
+这是3号秘室，我需要1个<古籍残片(小)>。　\
+在完成我的要求之后，你可以掷骰子前进。　\
+10个古籍残片(小)可以解读成一个古籍残片(中)，　\
+5个古籍残片(中)可以拼接成1个古籍残片(大)。　\
+<解读古籍残片(小)/@解读小>                <拼接古籍残片(中)/@拼接中>  　\
+　\
+<开始掷骰子/@掷骰子>  　\
+　\
+<离开藏经阁/@回书店>
+
+[@解读小]
+#IF
+CHECKITEM 古籍残片(小) 10
+#ACT
+TAKE 古籍残片(小) 10
+give 古籍残片(中) 1
+#SAY
+解读成功
+#ELSESAY
+10个古籍残片(小)可以解读成一个古籍残片(中),\
+如果你已经带来了，就交给我\
+
+
+[@拼接中]
+#IF
+CHECKITEM 古籍残片(中) 5
+#ACT
+TAKE 古籍残片(中) 5
+give 古籍残片(大) 1
+#SAY
+解读成功
+#ELSESAY
+5个古籍残片(中)可以解读成一个古籍残片(大),\
+如果你已经带来了，就交给我\
+
+[@回书店]
+#IF
+#ACT
+map 0161
+
+[@掷骰子]
+#IF
+CHECKITEM 古籍残片(小) 1
+#ACT
+TAKE 古籍残片(小) 1
+mov p9 1 
+movr d0 6 
+inc d0 1 
+playdice 1 @cube 
+#SAY
+正在投骰子
+#ELSESAY
+你好象没有足够的古籍残片(小)啊\
+<退出/@Exit>
+#ELSEACT
+mov p9 9 
+
+[@cube]
+#IF
+#SAY
+你投出的骰子的点数为:<$STR(D0)>\
+你可以前进 <$STR(D0)> 个房间\  \
+
+<移动/@next_cube>\
+
+[@next_cube]
+#IF
+equal d0 1 
+#ACT
+goto @posi1 
+break
+#IF
+equal d0 2 
+#ACT
+goto @posi2
+break
+#IF
+equal d0 3 
+#ACT
+goto @posi3
+break
+#IF
+equal d0 4 
+#ACT
+goto @posi4
+break
+#IF
+equal d0 5
+#ACT
+goto @posi5
+break
+#IF
+equal d0 6 
+#ACT
+goto @posi6
+break
+[@Posi1]
+#IF
+#ACT
+batchDelay 1 
+addbatch MS04 
+SENDMSG 7 你投出的骰子的点数为:<$STR(D0)>
+SENDMSG 7 你可以前进<$STR(D0)>个房间
+batchmove
+Param1 MS04
+Param2 9
+Param3 9
+MonGen 秘室守护兽 1 
+break
+ 
+[@Posi2]
+#IF
+#ACT
+batchDelay 1 
+addbatch MS04
+addbatch MS05
+SENDMSG 7 你投出的骰子的点数为:<$STR(D0)>
+SENDMSG 7 你可以前进<$STR(D0)>个房间
+batchmove
+Param1 MS05
+Param2 9
+Param3 9
+MonGen 秘室守护兽 1 
+break
+
+[@Posi3]
+#IF
+#ACT
+batchDelay 1
+addbatch MS04
+addbatch MS05
+addbatch MS06
+SENDMSG 7 你投出的骰子的点数为:<$STR(D0)>
+SENDMSG 7 你可以前进<$STR(D0)>个房间
+batchmove
+Param1 MS06
+Param2 9
+Param3 9
+MonGen 秘室守护兽 1 
+break
+
+[@Posi4]
+#IF
+#ACT
+batchDelay 1
+addbatch MS04
+addbatch MS05
+addbatch MS06
+addbatch MS07
+SENDMSG 7 你投出的骰子的点数为:<$STR(D0)>
+SENDMSG 7 你可以前进<$STR(D0)>个房间
+batchmove
+Param1 MS07
+Param2 9
+Param3 9
+MonGen 秘室守护兽 1 
+break
+
+[@Posi5]
+#IF
+#ACT
+batchDelay 1
+addbatch MS04
+addbatch MS05
+addbatch MS06
+addbatch MS07
+addbatch MS08
+SENDMSG 7 你投出的骰子的点数为:<$STR(D0)>
+SENDMSG 7 你可以前进<$STR(D0)>个房间
+batchmove
+Param1 MS08
+Param2 9
+Param3 9
+MonGen 秘室守护兽 1 
+break
+
+[@Posi6]
+#IF
+#ACT
+batchDelay 1 
+addbatch MS04
+addbatch MS05
+addbatch MS06
+addbatch MS07
+addbatch MS08
+addbatch MS09
+SENDMSG 7 你投出的骰子的点数为:<$STR(D0)>
+SENDMSG 7 你可以前进<$STR(D0)>个房间
+batchmove
+Param1 MS09
+Param2 9
+Param3 9
+MonGen 秘室守护兽 1 
+break 
+
+

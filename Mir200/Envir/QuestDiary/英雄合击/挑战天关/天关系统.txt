@@ -1,0 +1,2274 @@
+[@勇闯天关]
+{
+能来到这里，说明你果然智勇双全。\
+先看看我这里的宝物，只要打败所有怪物，宝物就归你了。\
+如果想到下一关，你可以使用1张灵符再过一次天关通道；\
+如果不想使用灵符，那就靠实力打过去吧。\
+天关有无数重，能过多少关就看你的勇气和毅力了。\ \
+<看看这里的宝物/@lookmon>        <挑战成功，领取宝物/@GatGift>\ \
+<返回土城/@hueitu>
+
+[@lookmon]
+#if
+equal M0 0
+equal M1 0
+#act
+goto @baowu
+goto @guai
+goto @kanbao
+#ELSEACT
+goto @kanbao
+
+[@baowu]
+#IF
+random 90
+#act
+mov M0 90
+break
+#IF
+random 89
+#act
+mov M0 89
+break
+#IF
+random 88
+#act
+mov M0 88
+break
+#IF
+random 87
+#act
+mov M0 87
+break
+#IF
+random 86
+#act
+mov M0 86
+break
+#IF
+random 85
+#act
+mov M0 85
+break
+#IF
+random 84
+#act
+mov M0 84
+break
+#IF
+random 83
+#act
+mov M0 83
+break
+#IF
+random 82
+#act
+mov M0 82
+break
+#IF
+random 81
+#act
+mov M0 81
+break
+#IF
+random 80
+#act
+mov M0 80
+break
+#IF
+random 79
+#act
+mov M0 79
+break
+#IF
+random 78
+#act
+mov M0 78
+break
+#IF
+random 77
+#act
+mov M0 77
+break
+#IF
+random 76
+#act
+mov M0 76
+break
+#IF
+random 75
+#act
+mov M0 75
+break
+#IF
+random 74
+#act
+mov M0 74
+break
+#IF
+random 73
+#act
+mov M0 73
+break
+#IF
+random 72
+#act
+mov M0 72
+break
+#IF
+random 71
+#act
+mov M0 71
+break
+#IF
+random 70
+#act
+mov M0 70
+break
+#If
+random 69
+#act
+mov M0 69
+break
+#IF
+random 68
+#act
+mov M0 68
+break
+#IF
+random 67
+#act
+mov M0 67
+break
+#IF
+random 66
+#act
+mov M0 66
+break
+#IF
+random 65
+#act
+mov M0 65
+break
+#IF
+random 64
+#act
+mov M0 64
+break
+#IF
+random 63
+#act
+mov M0 63
+break
+#IF
+random 62
+#act
+mov M0 62
+break
+#IF
+random 61
+#act
+mov M0 61
+break
+#IF
+random 60
+#act
+mov M0 60
+break
+#IF
+random 59
+#act
+mov M0 59
+break
+#IF
+random 58
+#act
+mov M0 58
+break
+#IF
+random 57
+#act
+mov M0 57
+break
+#IF
+random 56
+#act
+mov M0 56
+break
+#IF
+random 55
+#act
+mov M0 55
+break
+#IF
+random 54
+#act
+mov M0 54
+break
+#IF
+random 53
+#act
+mov M0 53
+break
+#IF
+random 52
+#act
+mov M0 52
+break
+#IF
+random 51
+#act
+mov M0 51
+break
+#IF
+random 50
+#act
+mov M0 50
+break
+#IF
+random 49
+#act
+mov M0 49
+break
+#IF
+random 48
+#act
+mov M0 48
+break
+#IF
+random 47
+#act
+mov M0 47
+break
+#IF
+random 46
+#act
+mov M0 46
+break
+#if
+random 45
+#act
+mov M0 45
+break
+#IF
+random 44
+#act
+mov M0 44
+break
+#If
+random 43
+#act
+mov M0 43
+break
+#IF
+random 42
+#act
+mov M0 42
+break
+#IF
+random 41
+#act
+mov M0 41
+break
+#IF
+random 40
+#act
+mov M0 40
+break
+#IF
+random 39
+#act
+mov M0 39
+break
+#IF
+random 38
+#act
+mov M0 38
+break
+#IF
+random 37
+#act
+mov M0 37
+break
+#IF
+random 36
+#act
+mov M0 36
+break
+#IF
+random 35
+#act
+mov M0 35
+break
+#IF
+random 34
+#act
+mov M0 34
+break
+#IF
+random 33
+#act
+mov M0 33
+break
+#IF
+random 32
+#act
+mov M0 32
+break
+#IF
+random 31
+#act
+mov M0 31
+break
+#IF
+random 30
+#act
+mov M0 30
+break
+#IF
+random 29
+#act
+mov M0 29
+break
+#IF
+random 28
+#act
+mov M0 28
+break
+#IF
+random 27
+#act
+mov M0 27
+break
+#IF
+random 26
+#act
+mov M0 26
+break
+#IF
+random 25
+#act
+mov M0 25
+break
+#IF
+random 24
+#act
+mov M0 24
+break
+#IF
+random 23
+#act
+mov M0 23
+break
+#IF
+random 22
+#act
+mov M0 22
+break
+#IF
+random 21
+#act
+mov M0 21
+break
+#IF
+random 20
+#ACT
+mov M0 20
+break
+#IF
+random 19
+#act
+mov M0 19
+break
+#IF
+random 18
+#act
+mov M0 18
+break
+#IF
+random 17
+#act
+mov M0 17
+break
+#IF
+random 16
+#act
+mov M0 16
+break
+#IF
+random 15
+#act
+mov M0 15
+break
+#IF
+random 14
+#act
+mov M0 14
+break
+#IF
+random 13
+#act
+mov M0 13
+break
+#IF
+random 12
+#act
+mov M0 12
+break
+#IF
+random 11
+#act
+mov M0 11
+break
+#IF
+random 10
+#act
+mov M0 10
+break
+#IF
+random 9
+#act
+mov M0 9
+break
+#IF
+random 8
+#act
+mov M0 8
+break
+#IF
+random 7
+#act
+mov M0 7
+break
+#IF
+random 6
+#act
+mov M0 6
+break
+#IF
+random 5
+#act
+mov M0 5
+break
+#IF
+random 4
+#act
+mov M0 4
+break
+#IF
+random 3
+#act
+mov M0 3
+break
+#IF
+random 2
+#act
+mov M0 2
+break
+#IF
+random 1
+#act
+mov M0 1
+break
+
+[@guai]
+#IF
+random 20
+#act
+mov M1 20
+break
+#IF
+random 19
+#act
+mov M1 19
+break
+#IF
+random 18
+#act
+mov M1 18
+break
+#IF
+random 17
+#act
+mov M1 17
+break
+#IF
+random 16
+#act
+mov M1 16
+break
+#IF
+random 15
+#act
+mov M1 15
+break
+#IF
+random 14
+#act
+mov M1 14
+break
+#IF
+random 13
+#act
+mov M1 13
+break
+#IF
+random 12
+#act
+mov M1 12
+break
+#IF
+random 11
+#act
+mov M1 11
+break
+#IF
+random 10
+#act
+mov M1 10
+break
+#IF
+random 9
+#act
+mov M1 9
+break
+#IF
+random 8
+#act
+mov M1 8
+break
+#IF
+random 7
+#act
+mov M1 7
+break
+#IF
+random 6
+#act
+mov M1 6
+break
+#IF
+random 5
+#act
+mov M1 5
+break
+#IF
+random 4
+#act
+mov M1 4
+break
+#IF
+random 3
+#act
+mov M1 3
+break
+#IF
+random 2
+#act
+mov M1 2
+break
+#IF
+#act
+mov M1 1
+break
+
+[@kanbao]
+#if
+equal M0 1
+#act
+#say
+这次你能获得怪物给你带来的：[烈焰魔靴:1]\
+#if
+equal M0 2
+#act
+#say
+这次你能获得怪物给你带来的：[雷霆战靴:1]\
+#if
+equal M0 3
+#act
+#say
+这次你能获得怪物给你带来的：[雷霆腰带:1]\
+#if
+equal M0 4
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:60000]\
+#if
+equal M0 5
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:70000]\
+#if
+equal M0 6
+#act
+#say
+这次你能获得怪物给你带来的：[圣战手镯:1]\
+#if
+equal M0 7
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:80000]\
+
+#if
+equal M0 8
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:90000]\
+
+#if
+equal M0 9
+#act
+#say
+这次你能获得怪物给你带来的：[法神手镯:1]\
+
+#if
+equal M0 10
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:100000]\
+
+#if
+equal M0 11
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:60000]\
+
+#if
+equal M0 12
+#act
+#say
+这次你能获得怪物给你带来的：[天尊手镯:1]\
+
+#if
+equal M0 13
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:70000]\
+
+#if
+equal M0 14
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:80000]\
+
+#if
+equal M0 15
+#act
+#say
+这次你能获得怪物给你带来的：[天魔神甲:1]\
+
+#if
+equal M0 16
+#act
+#say
+这次你能获得怪物给你带来的：[骑士手镯:1]\
+
+#if
+equal M0 17
+#act
+#say
+这次你能获得怪物给你带来的：[力量戒指:1]\
+
+#if
+equal M0 18
+#act
+#say
+这次你能获得怪物给你带来的：[天尊手镯:1]\
+
+#if
+equal M0 19
+#act
+#say
+这次你能获得怪物给你带来的：[天尊戒指:1]\
+
+#if
+equal M0 20
+#act
+#say
+这次你能获得怪物给你带来的：[魔族指令书:1]\
+
+#if
+equal M0 21
+#act
+#say
+这次你能获得怪物给你带来的：[圣战宝甲:1]\
+
+#if
+equal M0 22
+#act
+#say
+这次你能获得怪物给你带来的：[天尊道袍:1]\
+
+#if
+equal M0 23
+#act
+#say
+这次你能获得怪物给你带来的：[天师长袍:1]\
+
+#if
+equal M0 24
+#act
+#say
+这次你能获得怪物给你带来的：[灭天火:1]\
+
+#if
+equal M0 25
+#act
+#say
+这次你能获得怪物给你带来的：[狮子吼:1]\
+
+#if
+equal M0 26
+#act
+#say
+这次你能获得怪物给你带来的：[寒冰掌:1]\
+
+#if
+equal M0 27
+#act
+#say
+这次你能获得怪物给你带来的：[气功波:1]\
+
+#if
+equal M0 28
+#act
+#say
+这次你能获得怪物给你带来的：[光芒腰带:1]\
+
+#if
+equal M0 29
+#act
+#say
+这次你能获得怪物给你带来的：[圣战项链:1]\
+
+#if
+equal M0 30
+#act
+#say
+这次你能获得怪物给你带来的：[法神戒指:1]\
+
+#if
+equal M0 31
+#act
+#say
+这次你能获得怪物给你带来的：[无极真气:1]\
+
+#if
+equal M0 32
+#act
+#say
+这次你能获得怪物给你带来的：[白金积分:1]\
+
+#if
+equal M0 33
+#act
+#say
+这次你能获得怪物给你带来的：[金刚石:10]\
+
+#if
+equal M0 34
+#act
+#say
+这次你能获得怪物给你带来的：[祈福凭证:1]\
+
+#if
+equal M0 35
+#act
+#say
+这次你能获得怪物给你带来的：[烈焰腰带:1]\
+
+#if
+equal M0 36
+#act
+#say
+这次你能获得怪物给你带来的：[天尊项链:1]\
+
+#if
+equal M0 37
+#act
+#say
+这次你能获得怪物给你带来的：[法神项链:1]\
+
+#if
+equal M0 38
+#act
+#say
+这次你能获得怪物给你带来的：[乾坤袋:1]\
+
+#if
+equal M0 39
+#act
+#say
+这次你能获得怪物给你带来的：[荣誉勋章33号:1]\
+
+#if
+equal M0 40
+#act
+#say
+这次你能获得怪物给你带来的：[荣誉勋章34号:1]\
+
+#if
+equal M0 41
+#act
+#say
+这次你能获得怪物给你带来的：[荣誉勋章35号:1]\
+
+#if
+equal M0 42
+#act
+#say
+这次你能获得怪物给你带来的：[裁决之杖:1]\
+
+#if
+equal M0 43
+#act
+#say
+这次你能获得怪物给你带来的：[骨玉权杖:1]\
+
+#if
+equal M0 44
+#act
+#say
+这次你能获得怪物给你带来的：[龙纹剑:1]\
+
+#if
+equal M0 45
+#act
+#say
+这次你能获得怪物给你带来的：[天魔神甲:1]\
+
+#if
+equal M0 46
+#act
+#say
+这次你能获得怪物给你带来的：[圣战宝甲:1]\
+
+#if
+equal M0 47
+#act
+#say
+这次你能获得怪物给你带来的：[法神披风:1]\
+
+#if
+equal M0 48
+#act
+#say
+这次你能获得怪物给你带来的：[霓裳羽衣:1]\
+
+#if
+equal M0 49
+#act
+#say
+这次你能获得怪物给你带来的：[天尊道袍:1]\
+
+#if
+equal M0 50
+#act
+#say
+这次你能获得怪物给你带来的：[天师长袍:1]\
+
+#if
+equal M0 51
+#act
+#say
+这次你能获得怪物给你带来的：[圣战头盔:1]\
+
+#if
+equal M0 52
+#act
+#say
+这次你能获得怪物给你带来的：[阎罗手套:1]\
+
+#if
+equal M0 53
+#act
+#say
+这次你能获得怪物给你带来的：[圣战手镯:1]\
+
+#if
+equal M0 54
+#act
+#say
+这次你能获得怪物给你带来的：[天尊头盔:1]\
+
+#if
+equal M0 55
+#act
+#say
+这次你能获得怪物给你带来的：[热血令:1]\
+
+#if
+equal M0 56
+#act
+#say
+这次你能获得怪物给你带来的：[天尊手镯:1]\
+
+#if
+equal M0 57
+#act
+#say
+这次你能获得怪物给你带来的：[法神头盔:1]\
+
+#if
+equal M0 58
+#act
+#say
+这次你能获得怪物给你带来的：[天尊戒指:1]\
+
+#if
+equal M0 59
+#act
+#say
+这次你能获得怪物给你带来的：[法神手镯:1]\
+
+#if
+equal M0 60
+#act
+#say
+这次你能获得怪物给你带来的：[力量戒指:1]\
+
+#if
+equal M0 61
+#act
+#say
+这次你能获得怪物给你带来的：[紫碧螺:1]\
+
+#if
+equal M0 62
+#act
+#say
+这次你能获得怪物给你带来的：[泰坦戒指:1]\
+
+#if
+equal M0 63
+#act
+#say
+这次你能获得怪物给你带来的：[三眼手镯:1]\
+
+#if
+equal M0 64
+#act
+#say
+这次你能获得怪物给你带来的：[骑士手镯:1]\
+
+#if
+equal M0 65
+#act
+#say
+这次你能获得怪物给你带来的：[龙之手镯:1]\
+
+#if
+equal M0 66
+#act
+#say
+这次你能获得怪物给你带来的：[绿色项链:1]\
+
+#if
+equal M0 67
+#act
+#say
+这次你能获得怪物给你带来的：[恶魔铃铛:1]\
+
+#if
+equal M0 68
+#act
+#say
+这次你能获得怪物给你带来的：[灵魂项链:1]\
+
+#if
+equal M0 69
+#act
+#say
+这次你能获得怪物给你带来的：[黑铁头盔(封印):1]\
+
+#if
+equal M0 70
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:10000]\
+
+#if
+equal M0 71
+#act
+#say
+这次你能获得怪物给你带来的：[祝福糕:1]\
+
+#if
+equal M0 72
+#act
+#say
+这次你能获得怪物给你带来的：[金刚石:3]\
+
+#if
+equal M0 73
+#act
+#say
+这次你能获得怪物给你带来的：[金条:1]\
+
+#if
+equal M0 74
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:90000]\
+
+#if
+equal M0 75
+#act
+#say
+这次你能获得怪物给你带来的：[金砖:1]\
+
+#if
+equal M0 76
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:20000]\
+
+#if
+equal M0 77
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:30000]\
+
+#if
+equal M0 78
+#act
+#say
+这次你能获得怪物给你带来的：[祝福油:1]\
+
+#if
+equal M0 79
+#act
+#say
+这次你能获得怪物给你带来的：[经验值:100000]\
+
+#if
+equal M0 80
+#act
+#say
+这次你能获得怪物给你带来的：[唤魔项链(封印):1]\
+
+#if
+equal M0 81
+#act
+#say
+这次你能获得怪物给你带来的：[唤魔手镯(封印):1]\
+
+#if
+equal M0 82
+#act
+#say
+这次你能获得怪物给你带来的：[唤魔戒指(封印):1]\
+
+#if
+equal M0 83
+#act
+#say
+这次你能获得怪物给你带来的：[雷泽项链(封印):1]\
+
+#if
+equal M0 84
+#act
+#say
+这次你能获得怪物给你带来的：[雷泽手镯(封印):1]\
+
+#if
+equal M0 85
+#act
+#say
+这次你能获得怪物给你带来的：[雷泽戒指(封印):1]\
+
+#if
+equal M0 86
+#act
+#say
+这次你能获得怪物给你带来的：[启源项链(封印):1]\
+
+#if
+equal M0 87
+#act
+#say
+这次你能获得怪物给你带来的：[启源手镯(封印):1]\
+
+#if
+equal M0 88
+#act
+#say
+这次你能获得怪物给你带来的：[启源戒指(封印):1]\
+
+#if
+equal M0 89
+#act
+#say
+这次你能获得怪物给你带来的：[声望值:3]\
+
+#if
+equal M0 90
+#act
+#say
+这次你能获得怪物给你带来的：[声望值:1]\
+
+#if
+equal M1 1
+#act
+#say
+当然你必须消灭里面所有的：牛魔法师:5/牛魔将军:5\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 2
+#act
+#say
+当然你必须消灭里面所有的：魔龙血蛙:3/魔龙刺蛙:1\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+
+#if
+equal M1 3
+#act
+#say
+当然你必须消灭里面所有的：祖玛卫士:2/祖玛弓箭手:5\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 4
+#act
+#say
+当然你必须消灭里面所有的：魔龙射手:3\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 5
+#act
+#say
+当然你必须消灭里面所有的：电僵王:2\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 6
+#act
+#say
+当然你必须消灭里面所有的：魔龙破甲兵:1/魔龙邪眼:3\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 7
+#act
+#say
+当然你必须消灭里面所有的：魔龙巨蛾:1\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 8
+#act
+#say
+当然你必须消灭里面所有的：魔龙战将:1\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 9
+#act
+#say
+当然你必须消灭里面所有的：恶灵尸王:3/恶灵僵尸:5\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 10
+#act
+#say
+当然你必须消灭里面所有的：天狼蜘蛛:5/暴牙蜘蛛:4\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 11
+#act
+#say
+当然你必须消灭里面所有的：黑锷蜘蛛:2/花吻蜘蛛:3\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 12
+#act
+#say
+当然你必须消灭里面所有的：祖玛雕像:5/楔蛾:5\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 13
+#act
+#say
+当然你必须消灭里面所有的：尸王:5\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 14
+#act
+#say
+当然你必须消灭里面所有的：楔蛾:5/白野猪:1\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 15
+#act
+#say
+当然你必须消灭里面所有的：骷髅锤兵:3/骷髅长枪兵:5\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 16
+#act
+#say
+当然你必须消灭里面所有的：沃玛卫士:1/火焰沃玛:5\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 17
+#act
+#say
+当然你必须消灭里面所有的：邪恶钳虫:1/钳虫:5\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 18
+#act
+#say
+当然你必须消灭里面所有的：邪恶毒蛇:1/蝎蛇:5\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>    
+
+#if
+equal M1 19
+#act
+#say
+当然你必须消灭里面所有的：骷髅刀斧手:2/跳跳蜂:2\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+#if
+equal M1 20
+#act
+#say
+当然你必须消灭里面所有的：骷髅精灵:1/骷髅战将:10\
+如果您觉得本关难度过于太高，或都是对所获得的宝藏不太满意，\
+当然你如能给我一张灵符，我就直接送您去下一天关。\ \
+<接受挑战/@tiaozhan>         <使用灵符进入下一关/@jinrutong>
+
+[@hueitu]
+#ACT
+mapmove 3 330 330
+
+[@tiaozhan]
+#if
+check [122] 1
+#act
+break
+#SAY
+你已经接受挑战过了，所以你不能再进行挑战了。
+
+#if
+check [122] 0
+#act
+set [122] 1
+
+#if
+equal M1 1
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 牛魔将军 5 3
+MonGen 牛魔法师 5 3
+break
+close
+#if
+equal M1 2
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 魔龙血蛙 3 3
+MonGen 魔龙刺蛙 1 3
+break
+close
+#if
+equal M1 3
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 祖玛弓箭手 5 3
+MonGen 祖玛卫士 2 10
+break
+close
+#if
+equal M1 4
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 魔龙射手 3 3
+break
+close
+#if
+equal M1 5
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 电僵王8 2 10
+break
+close
+#if
+equal M1 6
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 魔龙邪眼 3 3
+MonGen 魔龙破甲兵 1 3
+break
+close
+#if
+equal M1 7
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 魔龙巨蛾 1 3
+break
+close
+#if
+equal M1 8
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 魔龙战将 1 3
+break
+close
+#if
+equal M1 9
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 恶灵僵尸 5 3
+MonGen 恶灵尸王 3 3
+break
+close
+#if
+equal M1 10
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 天狼蜘蛛 5 3
+MonGen 暴牙蜘蛛 4 10
+break
+close
+#if
+equal M1 11
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 花吻蜘蛛 3 3
+MonGen 黑锷蜘蛛 2 10
+break
+close
+#iF
+equal M1 12
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 祖玛雕像 5 3
+MonGen 楔蛾 5 3
+break
+close
+#if
+equal M1 13
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 尸王  5 3
+break
+close
+#if
+equal M1 14
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 白野猪 1 3
+MonGen 楔蛾 5 3
+break
+close
+#if
+equal M1 15
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 骷髅锤兵 3 3
+MonGen 骷髅长枪兵 5 3
+break
+close
+#if
+equal M1 16
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 沃玛卫士 1 3
+MonGen 火焰沃玛 5 3
+break
+close
+#if
+equal M1 17
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 邪恶钳虫 1 3
+MonGen 钳虫 5 3
+break
+close
+#if
+equal M1 18
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 邪恶毒蛇 1 3
+MonGen 蝎蛇 5 3
+break
+close
+#if
+equal M1 19
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 骷髅刀斧手 2 3
+MonGen 跳跳蜂 2 3
+break
+close
+#if
+equal M1 20
+#act
+Param1 <$MAP>
+Param2 21
+Param3 26
+MonGen 骷髅精灵8 1 3
+MonGen 骷髅战将 10 10
+break
+close
+[@GatGift]
+只有消灭完房间里的所有怪物，才算是挑战成功。\
+在领取宝物前，请您确认您包裹里有足够的空际那放置宝藏。\ \
+<准备好了，领取宝物/@getprize>\
+
+[@getprize]
+#if
+check [121] 1
+#act
+SENDMSG 6 你已经领取过宝藏了。
+break
+close
+
+#if
+check [122] 0
+#act
+SENDMSG 6 你还没有挑战此关怪物，请将此关怪物清理后再来领取。
+break
+close
+
+#if
+CheckRangeMonCount <$MAP> 21 26 10 > 0
+#act
+break
+#SAY
+这里的怪物还没有清理完，清理完后再来领取宝藏吧
+
+#if
+equal M0 1
+#act
+give 烈焰魔靴 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[烈焰魔靴:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[烈焰魔靴:1]\
+
+#if
+equal M0 2
+#act
+give 雷霆战靴 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[雷霆战靴:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[雷霆战靴:1]\
+
+#if
+equal M0 3
+#act
+give 雷霆腰带 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[雷霆腰带:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[雷霆腰带:1]\
+
+#if
+equal M0 4
+#act
+CHANGEEXP + 60000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:60000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:60000]\
+
+#if
+equal M0 5
+#act
+CHANGEEXP + 70000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:70000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:70000]\
+
+
+#if
+equal M0 6
+#act
+give 圣战手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[圣战手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[圣战手镯:1]\
+
+#if
+equal M0 7
+#act
+CHANGEEXP + 80000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:80000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:80000]\
+
+#if
+equal M0 8
+#act
+CHANGEEXP + 90000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:90000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:90000]\
+
+#if
+equal M0 9
+#act
+give 法神手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[法神手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[法神手镯:1]\
+
+#if
+equal M0 10
+#act
+CHANGEEXP + 100000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:100000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:100000]\
+
+#if
+equal M0 11
+#act
+CHANGEEXP + 60000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:60000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:60000]\
+
+#if
+equal M0 12
+#act
+give 天尊手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天尊手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天尊手镯:1]\
+
+#if
+equal M0 13
+#act
+CHANGEEXP + 70000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:70000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:70000]\
+
+#if
+equal M0 14
+#act
+CHANGEEXP + 80000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:80000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:80000]\
+
+#if
+equal M0 15
+#act
+give 天魔神甲 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天魔神甲:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天魔神甲:1]\
+
+#if
+equal M0 16
+#act
+give 骑士手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[骑士手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[骑士手镯:1]\
+
+#if
+equal M0 17
+#act
+give 力量戒指 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[力量戒指:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[力量戒指:1]\
+
+#if
+equal M0 18
+#act
+give 天尊手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天尊手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天尊手镯:1]\
+
+#if
+equal M0 19
+#act
+give 天尊戒指 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天尊戒指:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天尊戒指:1]\
+
+#if
+equal M0 20
+#act
+give 魔族指令书 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[魔族指令书:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[魔族指令书:1]\
+
+#if
+equal M0 21
+#act
+give 圣战宝甲 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[圣战宝甲:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[圣战宝甲:1]\
+
+#if
+equal M0 22
+#act
+give 天尊道袍 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天尊道袍:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天尊道袍:1]\
+
+#if
+equal M0 23
+#act
+give 天师长袍 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天师长袍:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天师长袍:1]\
+
+#if
+equal M0 24
+#act
+give 灭天火 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[灭天火:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[灭天火:1]\
+
+#if
+equal M0 25
+#act
+give 狮子吼 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[狮子吼:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[狮子吼:1]\
+
+#if
+equal M0 26
+#act
+give 寒冰掌 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[寒冰掌:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[寒冰掌:1]\
+
+#if
+equal M0 27
+#act
+give 气功波 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[气功波:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[气功波:1]\
+
+#if
+equal M0 28
+#act
+give 光芒腰带 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[光芒腰带:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[光芒腰带:1]\
+
+#if
+equal M0 29
+#act
+give 圣战项链 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[圣战项链:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[圣战项链:1]\
+
+#if
+equal M0 30
+#act
+give 法神戒指 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[法神戒指:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[法神戒指:1]\
+
+#if
+equal M0 31
+#act
+give 无极真气 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[无极真气:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[无极真气:1]\
+
+#if
+equal M0 32
+#act
+GIVE 白金积分 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[白金积分:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[白金积分:1]\
+
+#if
+equal M0 33
+#act
+GAMEDIAMOND + 10
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[金刚石:10],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[金刚石:10]\
+
+#if
+equal M0 34
+#act
+give 祈福凭证 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[祈福凭证:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[祈福凭证:1]\
+
+#if
+equal M0 35
+#act
+give 烈焰腰带 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[烈焰腰带:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[烈焰腰带:1]\
+
+#if
+equal M0 36
+#act
+give 天尊项链 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天尊项链:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天尊项链:1]\
+
+#if
+equal M0 37
+#act
+give 法神项链 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[法神项链:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[法神项链:1]\
+
+#if
+equal M0 38
+#act
+give 乾坤袋 1
+SENDMSG 0 [活动公告]:%s在闯天关活动中获得了：[乾坤袋:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[乾坤袋:1]\
+
+#if
+equal M0 39
+#act
+give 荣誉勋章33号 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[荣誉勋章33号:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[荣誉勋章33号:1]\
+
+#if
+equal M0 40
+#act
+give 荣誉勋章34号 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[荣誉勋章34号:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[荣誉勋章34号:1]\
+
+#if
+equal M0 41
+#act
+give 荣誉勋章35号 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[荣誉勋章35号:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[荣誉勋章35号:1]\
+
+#if
+equal M0 42
+#act
+give 裁决之杖 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[裁决之杖:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[裁决之杖:1]\
+
+#if
+equal M0 43
+#act
+give 骨玉权杖 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[骨玉权杖:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[骨玉权杖:1]\
+
+#if
+equal M0 44
+#act
+give 龙纹剑 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[龙纹剑:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[龙纹剑:1]\
+
+#if
+equal M0 45
+#act
+give 天魔神甲 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天魔神甲:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天魔神甲:1]\
+
+#if
+equal M0 46
+#act
+give 圣战宝甲 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[圣战宝甲:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[圣战宝甲:1]\
+
+#if
+equal M0 47
+#act
+give 法神披风 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[法神披风:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[法神披风:1]\
+
+#if
+equal M0 48
+#act
+give 霓裳羽衣 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[霓裳羽衣:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[霓裳羽衣:1]\
+
+#if
+equal M0 49
+#act
+give 天尊道袍 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天尊道袍:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天尊道袍:1]\
+
+#if
+equal M0 50
+#act
+give 天师长袍 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天师长袍:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天师长袍:1]\
+
+#if
+equal M0 51
+#act
+give 圣战头盔 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[圣战头盔:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[圣战头盔:1]\
+
+#if
+equal M0 52
+#act
+give 阎罗手套 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[阎罗手套:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[阎罗手套:1]\
+
+#if
+equal M0 53
+#act
+give 圣战手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[圣战手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[圣战手镯:1]\
+
+#if
+equal M0 54
+#act
+give 天尊头盔 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天尊头盔:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天尊头盔:1]\
+
+#if
+equal M0 55
+#act
+give 热血令 1
+SENDMSG 0 [活动公告]:%s在闯天关活动中获得了：[热血令:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[热血令:1]\
+
+#if
+equal M0 56
+#act
+give 天尊手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天尊手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天尊手镯:1]\
+
+#if
+equal M0 57
+#act
+give 法神头盔 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[法神头盔:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[法神头盔:1]\
+
+#if
+equal M0 58
+#act
+give 天尊戒指 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[天尊戒指:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[天尊戒指:1]\
+
+#if
+equal M0 59
+#act
+give 法神手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[法神手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[法神手镯:1]\
+
+#if
+equal M0 60
+#act
+give 力量戒指 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[力量戒指:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[力量戒指:1]\
+
+#if
+equal M0 61
+#act
+give 紫碧螺 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[紫碧螺:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[紫碧螺:1]\
+
+#if
+equal M0 62
+#act
+give 泰坦戒指 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[泰坦戒指:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[泰坦戒指:1]\
+
+#if
+equal M0 63
+#act
+give 三眼手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[三眼手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[三眼手镯:1]\
+
+#if
+equal M0 64
+#act
+give 骑士手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[骑士手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[骑士手镯:1]\
+
+#if
+equal M0 65
+#act
+give 龙之手镯 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[龙之手镯:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[龙之手镯:1]\
+
+#if
+equal M0 66
+#act
+give 绿色项链 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[绿色项链:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[绿色项链:1]\
+
+#if
+equal M0 67
+#act
+give 恶魔铃铛 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[恶魔铃铛:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[恶魔铃铛:1]\
+
+#if
+equal M0 68
+#act
+give 灵魂项链 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[灵魂项链:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[灵魂项链:1]\
+
+#if
+equal M0 69
+#act
+give 黑铁头盔(封印) 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[黑铁头盔(封印):1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[黑铁头盔(封印):1]\
+
+#if
+equal M0 70
+#act
+CHANGEEXP + 10000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:10000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:10000]\
+
+#if
+equal M0 71
+#act
+give 祝福糕 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[祝福糕:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[祝福糕:1]\
+
+#if
+equal M0 72
+#act
+GAMEDIAMOND + 3
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[金刚石:3],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[金刚石:3]\
+
+#if
+equal M0 73
+#act
+give 金条 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[金条:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[金条:1]\
+
+#if
+equal M0 74
+#act
+CHANGEEXP + 90000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:90000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:90000]\
+
+#if
+equal M0 75
+#act
+give 金砖 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[金砖:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[金砖:1]\
+
+#if
+equal M0 76
+#act
+CHANGEEXP + 20000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:20000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:20000]\
+
+#if
+equal M0 77
+#act
+CHANGEEXP + 30000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:30000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:30000]\
+
+#if
+equal M0 78
+#act
+give 祝福油 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[祝福油:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[祝福油:1]\
+
+#if
+equal M0 79
+#act
+CHANGEEXP + 100000 1 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[经验值:100000],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[经验值:100000]\
+
+#if
+equal M0 80
+#act
+give 唤魔项链(封印) 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[唤魔项链(封印):1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[唤魔项链(封印):1]\
+
+#if
+equal M0 81
+#act
+give 唤魔手镯(封印) 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[唤魔手镯(封印):1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[唤魔手镯(封印):1]\
+
+#if
+equal M0 82
+#act
+give 唤魔戒指(封印) 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[唤魔手镯(封印):1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[唤魔手镯(封印):1]\
+
+#if
+equal M0 83
+#act
+give 雷泽项链(封印) 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[雷泽项链(封印):1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[雷泽项链(封印):1]\
+
+#if
+equal M0 84
+#act
+give 雷泽手镯(封印) 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[雷泽手镯(封印):1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[雷泽手镯(封印):1]\
+
+#if
+equal M0 85
+#act
+give 雷泽戒指(封印) 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[雷泽戒指(封印):1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[雷泽戒指(封印):1]\
+
+#if
+equal M0 86
+#act
+give 启源项链(封印) 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[启源项链(封印):1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[启源项链(封印):1]\
+
+#if
+equal M0 87
+#act
+give 启源手镯(封印) 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[启源手镯(封印):1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[启源手镯(封印):1]\
+
+#if
+equal M0 88
+#act
+give 启源戒指(封印) 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[启源戒指(封印)],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[启源戒指(封印):1]\
+
+#if
+equal M0 89
+#act
+CREDITPOINT + 3
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[声望值:3],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[声望值:3]\
+
+#if
+equal M0 90
+#act
+CREDITPOINT + 1
+SENDMSG 0 [活动公告]：%s在闯天关活动中获得了：[声望值:1],如果你也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可。
+#say
+经过您的奋斗，您终于获得了[声望值:1]\
+
+#if
+check [121] 0
+#act
+set [121] 1
+#say
+可能有更好的宝藏在下一关等着您哦，\
+您给我一张灵符，我可以直接带您进入下一关，您是否愿意？\ \
+<不，我要回天庭/@hueitu>          <是的，进入下一关/@jinrutong>
+
+[@jinrutong]
+#IF
+CHECKGAMEGIRD > 0
+#ACT
+set [121] 0
+set [122] 0
+mov M0 0
+mov M1 0
+GAMEGIRD - 1
+SENDMSG 6 灵符数量减1,你当前的灵符数量为<$GAMEGIRD>张！
+mapmove D5071A 11 12
+#ELSESAY
+你给我的灵符在哪呢？要不你先去兑换一些？\ \
+<回庄园兑换灵符后再来找我吧/@exit>\
+}

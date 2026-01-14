@@ -1,0 +1,84 @@
+[@main]
+只有找齐山庄内全部的5部《卧龙古书》\
+同时，获得卧龙庄主手中的卧龙令牌，\
+才能获得名将的认可，获得挑战火龙的权利！\
+快去寻找《卧龙古书》，探索其中的秘密吧！\
+在看守古书的名将首领身上，可获得开启古书的秘密！\ \
+<我已经找齐了，我想获得自身属性的超越/@提高属性>
+
+[@提高属性]
+#IF
+CHECKBONUSPOINT = 0
+#ACT
+goto @永久提升
+#ELSESAY
+你的自身属性已经获得了超越，不能重复提升！\ \
+<退出/@exit>
+
+[@永久提升]
+#IF
+CHECKJOB warrior
+checkitem 橙色夜明珠 1
+checkitem 红色夜明珠 1
+checkitem 黄色夜明珠 1
+checkitem 蓝色夜明珠 1
+checkitem 绿色夜明珠 1
+checkitem 庄主令牌   1
+#SAY
+<$USERNAME>，你已经获得了自身属性的超越！
+#ACT
+take 橙色夜明珠 1
+take 红色夜明珠 1
+take 黄色夜明珠 1
+take 蓝色夜明珠 1
+take 绿色夜明珠 1
+take 庄主令牌   1
+BONUSPOINT 1 + 17
+SENDMSG 1 恭喜：<$USERNAME>完成了卧龙山庄守护人的任务，获得了战斗力的提升！
+break
+
+#IF
+CHECKJOB wizard
+checkitem 橙色夜明珠 1
+checkitem 红色夜明珠 1
+checkitem 黄色夜明珠 1
+checkitem 蓝色夜明珠 1
+checkitem 绿色夜明珠 1
+checkitem 庄主令牌   1
+#SAY
+<$USERNAME>，你已经获得了自身属性的超越！
+#ACT
+take 橙色夜明珠 1
+take 红色夜明珠 1
+take 黄色夜明珠 1
+take 蓝色夜明珠 1
+take 绿色夜明珠 1
+take 庄主令牌   1
+BONUSPOINT 2 + 25
+SENDMSG 1 恭喜：<$USERNAME>完成了卧龙山庄守护人的任务，获得了战斗力的提升！
+break
+
+#IF
+CHECKJOB taoist
+checkitem 橙色夜明珠 1
+checkitem 红色夜明珠 1
+checkitem 黄色夜明珠 1
+checkitem 蓝色夜明珠 1
+checkitem 绿色夜明珠 1
+checkitem 庄主令牌   1
+#SAY
+<$USERNAME>，你已经获得了自身属性的超越！
+#ACT
+take 橙色夜明珠 1
+take 红色夜明珠 1
+take 黄色夜明珠 1
+take 蓝色夜明珠 1
+take 绿色夜明珠 1
+take 庄主令牌   1
+BONUSPOINT 3 + 17
+SENDMSG 1 恭喜：<$USERNAME>完成了卧龙山庄守护人的任务，获得了战斗力的提升！
+break
+#ELSESAY
+你还没有找齐橙色、红色、黄色、蓝色、绿色夜明珠\
+和庄主令牌。\ \
+<退出/@exit>

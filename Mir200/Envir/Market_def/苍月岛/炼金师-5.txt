@@ -1,0 +1,416 @@
+(@@InPutInteger @@InPutString)
+[@main]
+使用元宝锻造可以获得更多经验，同时也可以获得附属品：金刚石\
+不过用元宝锻造的话，必须每次到我这里来领取\
+领取时，如果英雄已经招出，英雄也可以额外获得锻造带来的经验\
+一次性锻造元宝的数量在50到300之间，或一次性领取满12颗金刚石\
+都有可能得到神秘礼品！也存在一定几率不能获得这些礼品！\
+<查询元宝锻造规则/@guize>                <申请元宝锻造/@shenqdzao>　　\
+<领取锻造附赠品：金刚石/@lingqujgs>     　  　　\
+<申请或终止普通锻造/@普通锻造>金刚石        <进入庄园/@检测庄园>\
+<赠送/@@InPutString103>金刚石\
+
+[@InPutString103]
+#IF
+CHECKONLINE <$STR(S103)>
+#SAY
+<$STR(S103)> <在线/SCOLOR=250>，接下来请输入赠送数量\ \
+<输入赠送数量/@@InPutInteger103>\
+<返回/@main>
+#ELSEACT
+MESSAGEBOX 你输入的<$STR(S103)>不在线，或名字错误
+[@InPutInteger103]
+#IF
+EQUAL N103 0
+#ACT
+MESSAGEBOX 输入数据等于0，请重新输入。
+break
+#IF
+CHECKGAMEDIAMOND ? <$STR(N103)>
+#SAY
+你打算将<$STR(N103)>颗金刚石赠送给<$STR(S103)>\
+请检查数据是否正确再做决定，确定后操作出错我们不负责\  \
+<数据正确，确定赠送/@赠送>\
+<关闭/@exit>
+#ELSEACT
+MESSAGEBOX 你并没有那么多的金刚石，请重新输入
+[@赠送]
+#IF
+CHECKONLINE <$STR(S103)>
+CHECKGAMEDIAMOND ? <$STR(N103)>
+#ACT
+MOV A103 <$USERNAME>
+MOV I103 <$STR(N103)>
+GAMEDIAMOND - <$STR(N103)>
+HCall <$STR(S103)> @赠送金刚石
+#SAY
+成功将<$STR(N103)>颗金刚石赠送给你朋友<$STR(S103)>\ \
+<关闭/@exit>
+#ELSESAY
+数据出错了,\
+返回重新输入试试吧。\ \
+<重新输入/@main>
+
+[@普通锻造]
+错误：你的游戏时间不足
+
+[@检测庄园]
+#IF
+CHECKLEVELEX > 7 
+#ACT
+goto @MOVEGAO
+#ELSESAY
+你的能力不够，我不能送你去那里。\
+提示：进入庄园需要8级或以上！\ \
+<退出/@exit>
+
+[@MOVEGAO]
+#IF
+  random 4
+#act
+  mapmove GA0 61 64
+  break
+#IF
+  random 3
+#act
+  mapmove GA0 73 64
+  break
+#IF
+  random 2
+#act
+  goto @MOVEGAO
+  break
+#IF
+  random 1
+#act
+  mapmove GA0 73 69
+#ELSEACT
+  mapmove GA0 62 72
+
+[@guize]
+1、使用元宝申请锻造后，必须到NPC处领取经验值及附赠品:金刚石\
+2、使用锻造经验值的元宝数量单次申请范围在1~300之间\
+3、1元宝可以锻造6分钟，随之附赠3颗金刚石\
+4、使用元宝进行锻造，可以获得更多的经验\
+5、一次性锻造的元宝数量在50-300之间，将有机会得到一份礼物\
+6、每次领取满12颗金刚石时，将有机会得到一份神秘礼物\
+7、礼品由系统随机生成，也有不获得的可能性\
+8、普通锻造不能再申请，已申请的还可以继续获得经验值及金刚石\
+<已了解元宝锻造规则，返回/@main>
+[@lingqujgs]
+#IF
+  CHECKVAR HUMAN 可领取数 < 1
+#ACT
+  goto @shi
+break
+#IF
+  CHECKVAR HUMAN 可领取数 > 0
+#ACT
+  mov N7 <$HUMAN(可领取数)>
+  mov N8 <$LEVEL>
+  CALCVAR HUMAN 获得经验 = <$HUMAN(固定经验)>
+  CALCVAR HUMAN 获得经验 * <$STR(N8)>
+  SAVEVAR HUMAN 获得经验 ..\QuestDiary\数据文件\获得经验.txt
+  CALCVAR HUMAN 可领经验 = <$HUMAN(获得经验)>
+  CALCVAR HUMAN 可领经验 * <$HUMAN(可领取数)>
+  SAVEVAR HUMAN 可领经验 ..\QuestDiary\数据文件\可领经验.txt
+  goto @fou
+break
+[@fou]
+#IF
+  checknamelist ..\QuestDiary\数据文件\锻造名单.txt
+#ACT
+#say
+<$USERNAME> 您的元宝锻造金刚石信息如下：\
+申请总数：<$HUMAN(申请总数)> 颗\
+已锻造完成数：<$HUMAN(已完成数)> 颗\
+已领取数：<$HUMAN(已领取数)> 颗\
+本次可领取数：<$HUMAN(可领取数)> 颗\
+尚未完成数：<$HUMAN(未完成数)> 颗\ \
+您要领取吗？ <领取/@lingqu>     <返回/@main>
+#elsesay
+你还未申请锻造！\ \
+<退出/@exit>\
+[@shi]
+#IF
+  checknamelist ..\QuestDiary\数据文件\锻造名单.txt
+#ACT
+#say
+<$USERNAME> 您的元宝锻造金刚石信息如下：\
+申请总数：<$HUMAN(申请总数)> 颗\
+已锻造完成数：<$HUMAN(已完成数)> 颗\
+已领取数：<$HUMAN(已领取数)> 颗\
+本次可领取数：<$HUMAN(可领取数)> 颗\
+尚未完成数：<$HUMAN(未完成数)> 颗\ \
+<返回/@main>
+#elsesay
+你还未申请锻造！\ \
+<退出/@exit>\
+[@lingqu]
+#IF
+#say
+你成功领取金刚石 <$STR(N7)> 颗！获得经验：<$HUMAN(可领经验)>\ \ \
+<关闭/@exit>
+#ACT
+  GOTO @lgjl
+  CHANGEEXP + <$HUMAN(可领经验)> 1 1
+  GAMEDIAMOND + <$STR(N7)>
+  DELAYGOTO 3 ~InPutInteger6
+  break
+
+[@lgjl]
+#IF
+  large N7 11
+#ACT
+  GOTO @JL1
+BREAK
+
+[@JL1]
+#IF
+  RANDOM 6
+#SAY
+恭喜：奖励物品：<祝福油>\ \ \
+ <离开/@exit>
+#ACT
+  GIVE 祝福油 1
+  SendMSG 7 恭喜：奖励物品：<祝福油>
+  BREAK
+#IF
+  RANDOM 5
+#SAY
+恭喜：奖励物品：<矿洞组队卷轴>\ \ \
+ <离开/@exit>
+#ACT
+  GIVE 矿洞组队卷轴 1
+  SendMSG 7 恭喜：奖励物品：<矿洞组队卷轴>
+  BREAK
+#IF
+  RANDOM 4
+#SAY
+恭喜：奖励物品：<神殿组队卷轴>\ \ \
+ <离开/@exit>
+#ACT
+  GIVE 神殿组队卷轴 1
+  SendMSG 7 恭喜：奖励物品：<神殿组队卷轴>
+  BREAK
+#IF
+  RANDOM 3
+#SAY
+恭喜：奖励物品：<邪窟组队卷轴>\ \ \
+ <离开/@exit>
+#ACT
+  GIVE 邪窟组队卷轴 1
+  SendMSG 7 恭喜：奖励物品：<邪窟组队卷轴>
+  BREAK
+#IF
+  RANDOM 2
+#SAY
+恭喜：奖励物品：<地穴组队卷轴>\ \ \
+ <离开/@exit>
+#ACT
+  GIVE 地穴组队卷轴 1
+  SendMSG 7 恭喜：奖励物品：<地穴组队卷轴>
+  BREAK
+#IF
+  RANDOM 1
+#SAY
+恭喜：奖励物品：<石墓组队卷轴>\ \ \
+ <离开/@exit>
+#ACT
+  GIVE 石墓组队卷轴 1
+  SendMSG 7 恭喜：奖励物品：<石墓组队卷轴>
+  BREAK
+
+[~InPutInteger6]
+#IF
+#ACT
+  CALCVAR HUMAN 已领取数 + <$HUMAN(可领取数)>
+  SAVEVAR HUMAN 已领取数 ..\QuestDiary\数据文件\已领取数.txt
+  CALCVAR HUMAN 可领取数 = 0
+  SAVEVAR HUMAN 可领取数 ..\QuestDiary\数据文件\可领取数.txt
+  CALCVAR HUMAN 获得经验 = 0
+  SAVEVAR HUMAN 获得经验 ..\QuestDiary\数据文件\获得经验.txt
+  DELAYGOTO 3 ~InPutInteger4
+break
+[~InPutInteger4]
+#IF
+  CHECKVAR HUMAN 未完成数 < 1
+#ACT
+  delnamelist ..\QuestDiary\数据文件\锻造名单.txt
+  CALCVAR HUMAN 已领取数 = 0
+  SAVEVAR HUMAN 已领取数 ..\QuestDiary\数据文件\已领取数.txt
+  CALCVAR HUMAN 可领取数 = 0
+  SAVEVAR HUMAN 可领取数 ..\QuestDiary\数据文件\可领取数.txt
+  CALCVAR HUMAN 已完成数 = 0
+  SAVEVAR HUMAN 已完成数 ..\QuestDiary\数据文件\已完成数.txt
+  CALCVAR HUMAN 申请总数 = 0
+  SAVEVAR HUMAN 申请总数 ..\QuestDiary\数据文件\申请总数.txt
+  CALCVAR HUMAN 未完成数 = 0
+  SAVEVAR HUMAN 未完成数 ..\QuestDiary\数据文件\未完成数.txt
+  CALCVAR HUMAN 获得经验 = 0
+  SAVEVAR HUMAN 获得经验 ..\QuestDiary\数据文件\获得经验.txt
+break
+
+[@shenqdzao]
+锻造需要用强大的意志力，一旦开始锻造必须要你在线才能持续进行\
+1元宝可以锻造6分钟，随之附赠3颗金刚石\
+在我这里申请元宝锻造，没有等级限制\
+一旦申请元宝锻造成功后，此次锻造将不能被终止\
+锻造所获得的经验值，到我这里或者庄园炼金师那里来领取\
+如果要申请元宝锻造，就必须先终止当前的普通锻造\
+<同意元宝锻造规则并申请锻造/@kaishiduanzao>\
+<终止上次元宝锻造/@zhongzduanzao>\
+<返回/@main>\
+[@kaishiduanzao]
+请输入想要用于锻造经验值的元宝数量\
+一次申请范围在1~300个元宝之间\ \
+
+特别提醒:一次申请满50个元宝，将有机会得到一份礼品；\
+一次申请满300个元宝，将有机会得到一份超级大奖！\
+领取礼品前请注意留有足够的包裹空间，否则会导致不能正常领取\
+<请输入用于锻造的元宝数量/@@InPutInteger5>\
+<取消/@exit>\
+
+[@InPutInteger5]
+#IF
+large N5 300
+#act
+MessAgeBox [失败]:输入的元宝数超出了300，请再次输入纯正数
+Break
+#IF
+equal N5
+#act
+MessAgeBox [失败]:输入的元宝数不能为空，请再次输入纯正数
+Break
+#IF
+equal N5 0
+#act
+MessAgeBox [失败]:输入的元宝数只能是纯正数
+Break
+#IF
+equal N5 -
+#act
+MessAgeBox [失败]:输入的元宝数只能是纯正数
+Break
+#IF
+#ACT
+  mov N1 0
+  mov N2 0
+  mov N3 0
+  mov N4 0
+  mov N6 0
+  DELAYGOTO 1 ~InPutInteger5
+[~InPutInteger5]
+#IF
+#ACT
+  mov N1 <$STR(N5)>
+  mov N2 <$STR(N5)>
+  mov N3 <$STR(N5)>
+  inc N4 <$STR(N1)>
+  inc N4 <$STR(N2)>
+  inc N4 <$STR(N3)>
+  inc N6 <$STR(N4)>
+  inc N6 <$STR(N3)>
+  inc N6 <$STR(N2)>
+  inc N6 <$STR(N1)>
+#say
+<$USERNAME>，您打算使用 <$STR(N5)> 个元宝来锻造经验值，\
+并且，整个锻造过程中你将获得附赠：<$STR(N4)>颗金刚石，\
+这可能要花费 <$STR(N6)> 分钟的时间，请注意，锻造一但开始，\
+就无法终止；锻造成功后，您必须到我这里来领取经验值，\
+领取经验值的同时，您也将获得锻造附赠品：金刚石。\
+当您一次领取满12颗金刚石时，还会得到神秘礼品！\ 
+您确定开始锻造吗？\ \
+<开始锻造/@kaishi>
+
+[@kaishi]
+#IF
+  checknamelist ..\QuestDiary\数据文件\锻造名单.txt
+#ACT
+  MESSAGEBOX [错误]　您的元宝锻造尚未完成
+close
+break
+#IF
+  CHECKGAMEGOLD > <$STR(N5)>
+#ACT
+  mov N9 <$STR(N5)>
+  GAMEGOLD - <$STR(N5)>
+  MOVR N10 10 20
+  CALCVAR HUMAN 申请总数 + <$STR(N4)>
+  SAVEVAR HUMAN 申请总数 ..\QuestDiary\数据文件\申请总数.txt
+  CALCVAR HUMAN 未完成数 + <$STR(N4)>
+  SAVEVAR HUMAN 未完成数 ..\QuestDiary\数据文件\未完成数.txt
+  CALCVAR HUMAN 固定经验 = <$STR(N10)>
+  SAVEVAR HUMAN 固定经验 ..\QuestDiary\数据文件\固定经验.txt
+  ADDnamelist ..\QuestDiary\数据文件\锻造名单.txt
+  SENDMSG 7 提示：金刚石锻造开始，现在将计算锻造金刚石时间...
+  GOTO @SDX
+#CALL [英雄合击\炼金锻造\炼金系统.txt] @在线锻造
+#SAY
+恭喜您申请元宝锻造金刚石成功。\ \
+ <离开/@exit>
+#ELSESAY
+［失败］请先进行元宝冲值
+
+[@SDX]
+#IF
+large N5 299
+#ACT
+GOTO @D3B
+break
+
+#IF
+large N5 49
+#ACT
+GOTO @D5S
+break
+
+[@D5S]
+#ACT
+GetRandomText ..\QuestDiary\英雄合击\炼金锻造\五十礼品.txt S101
+give <$STR(S101)> 1
+SendMSG 7 恭喜你在申请金刚石锻造中获得了∶<$STR(S101)>
+#SAY
+恭喜你在申请金刚石锻造中获得了∶<$STR(S101)> \ \ \
+ <离开/@exit>
+
+[@D3B]
+#ACT
+GetRandomText ..\QuestDiary\英雄合击\炼金锻造\三百礼品.txt S102
+give <$STR(S102)> 1
+SendMSG 7 恭喜你在申请金刚石锻造中获得了∶<$STR(S102)>
+#SAY
+恭喜你在申请金刚石锻造中获得了∶<$STR(S102)> \ \ \
+ <离开/@exit>
+
+
+[@zhongzduanzao]
+如果要终止上次的锻造申请，请选择“终止锻造”\
+注意：正在锻造中的这些金刚石将消失且该锻造时间不能补回\ \
+<同意并终止锻造/@终止>\
+<返回/@main>
+[@终止]
+#IF
+  checknamelist ..\QuestDiary\数据文件\锻造名单.txt
+#ACT
+  delnamelist ..\QuestDiary\数据文件\锻造名单.txt
+  CALCVAR HUMAN 已领取数 = 0
+  SAVEVAR HUMAN 已领取数 ..\QuestDiary\数据文件\已领取数.txt
+  CALCVAR HUMAN 可领取数 = 0
+  SAVEVAR HUMAN 可领取数 ..\QuestDiary\数据文件\可领取数.txt
+  CALCVAR HUMAN 固定经验 = 0
+  SAVEVAR HUMAN 固定经验 ..\QuestDiary\数据文件\固定经验.txt
+  CALCVAR HUMAN 已完成数 = 0
+  SAVEVAR HUMAN 已完成数 ..\QuestDiary\数据文件\已完成数.txt
+  CALCVAR HUMAN 申请总数 = 0
+  SAVEVAR HUMAN 申请总数 ..\QuestDiary\数据文件\申请总数.txt
+  CALCVAR HUMAN 未完成数 = 0
+  SAVEVAR HUMAN 未完成数 ..\QuestDiary\数据文件\未完成数.txt
+  CALCVAR HUMAN 获得经验 = 0
+  SAVEVAR HUMAN 获得经验 ..\QuestDiary\数据文件\获得经验.txt
+  CLEARDELAYGOTO
+  SENDMSG 7 提示：金刚石锻造终止，锻造金刚石计算时间停止...
+  close
+#ELSEACT
+  SENDMSG 6 您尚未申请锻造无须终止
+  close

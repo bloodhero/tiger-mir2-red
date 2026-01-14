@@ -1,0 +1,92 @@
+[@虎卫检测]
+#IF
+CheckMapMonCount 1002 = 1 1
+CheckMapSameMonCount 1002 虎卫 > 0
+#ELSEACT
+GOTO @虎卫刷新
+#ACT
+MOV I11 1
+
+[@虎卫刷新]
+#IF
+EQUAL I11 27
+#ACT
+MonGenEx 1002 12 12 虎卫 5 1
+MOV I11 1
+break
+
+#IF
+EQUAL I11 0
+#ACT
+MonGenEx 1002 12 12 虎卫 5 1
+MOV I11 1
+break
+
+#IF
+#ACT
+INC I11 1
+break
+
+[@下午宫殿]
+#IF
+#ACT
+CLEARMAPMON GA1
+MonGenEx GA1 19 30 魔龙教主 10 1
+SENDMSG 1 魔龙教主已在魔龙宫殿出现，与其一决胜负,将其消灭，就能得到魔龙教主身上携带着的大量珍奇宝藏。
+
+[@晚上宫殿]
+#IF
+#ACT
+CLEARMAPMON GA1
+MonGenEx GA1 19 30 魔龙教主 10 1
+SENDMSG 1 魔龙教主已在魔龙宫殿出现，与其一决胜负,将其消灭，就能得到魔龙教主身上携带着的大量珍奇宝藏。
+
+[@火龙宝藏]
+#IF 
+#ACT
+mov I7 0
+mov I8 0
+mov I9 0
+SENDMSG 0 “名将的考验”现已开始，“宝藏守护人”已经出现！只有在20分钟内击败所有“宝藏守护人”，才能直接开启卧龙山庄的“火龙宝藏”！机会稍纵即逝！还不赶快迎接挑战，探寻火龙宝藏的真相？！
+MISSION HERO1 65  87
+PARAM1 65
+PARAM2 87
+PARAM3 1
+PARAM4 5
+MOBPLACE 宝藏守护人
+MOBPLACE 宝藏守护人1
+MOBPLACE 宝藏守护人2
+MOBPLACE 宝藏守护人3
+MOBPLACE 宝藏守护人4
+MOBPLACE 宝藏守护人5
+MISSION HERO1 78  70
+PARAM1 78
+PARAM2 71
+PARAM3 1
+PARAM4 0
+MOBPLACE 宝藏守护人
+MOBPLACE 宝藏守护人3
+MOBPLACE 宝藏守护人1
+MOBPLACE 宝藏守护人5
+[@火龙宝藏1]
+#IF 
+EQUAL I8 0
+#ACT
+SENDMSG 0 “名将的考验”正在进行中！只有在指定时间内击败所有的“宝藏守护人”，才能开启“火龙宝藏”，现在还剩15分钟
+[@火龙宝藏2]
+#IF 
+EQUAL I8 0
+#ACT
+SENDMSG 0 “名将的考验”正在进行中！只有在指定时间内击败所有的“宝藏守护人”，才能开启“火龙宝藏”，现在还剩10分钟
+[@火龙宝藏3]
+#IF 
+EQUAL I9 0
+#ACT
+SENDMSG 0 “名将的考验”正在进行中！只有在指定时间内击败所有的“宝藏守护人”，才能开启“火龙宝藏”，现在还剩5分钟
+[@火龙宝藏4]
+#IF 
+#ACT
+mov I7 0
+mov I8 0
+mov I9 0
+SENDMSG 0 “名将的考验”已经结束，火龙宝藏已经关闭。

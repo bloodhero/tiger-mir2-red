@@ -1,0 +1,61 @@
+[@main]
+#IF
+equal D0 2
+CheckMapMonCount 0156A = 0 1
+#ACT
+break
+#SAY
+大侠果然厉害，我们出去吧\
+我们一定会搞之门主大侠的恩情的\
+<快走吧惊动守卫就不好办了，我们走吧/@回盟>
+#IF
+large D0 0
+#ACT
+break
+#SAY
+大侠要小心啊！\ \
+<退出/@exit>
+#ELSESAY
+兄弟你怎么找到这的?\
+我以为我们这次是九死一生了\
+没想到还有一线生机!\
+<告诉他事情经过/@告诉经过>
+[@回盟]
+#ACT
+set [25] 1
+MAPMOVE 3 330 330
+[@告诉经过]
+原来如此...\
+大侠如此大恩，先受我一拜!\
+<不用不用，我们出去再说!/@出去再说>
+[@出去再说]
+#IF
+checkitem 黄金钥匙 1
+#SAY
+原来大侠已经得到了黄金钥匙啊，那好办，我们这就出去吧!\
+<好!走/@刷怪>
+#ELSESAY
+可是这房门上挂的黄金锁异常坚固，没有黄金钥匙是打不开的。\ \
+<退出/@exit>
+[@刷怪]
+#ACT
+mov D0 1
+MISSION 0156A 12 13
+PARAM1 3
+PARAM2 15
+PARAM3 1
+PARAM4 0
+MOBPLACE 牢房守卫
+SendMSG 4 糟糕，守卫来了!大侠快杀了他们!
+DELAYGOTO 30000 @牢房0.5刷怪
+close
+[@牢房0.5刷怪]
+#ACT
+mov D0 2
+MISSION 0156A 12 13
+PARAM1 3
+PARAM2 15
+PARAM3 1
+PARAM4 0
+MOBPLACE 牢房守卫
+SendMSG 4 大侠小心啊!

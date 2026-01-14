@@ -1,0 +1,765 @@
+
+[@main]
+这里是藏宝阁60号，我需要5个乾坤令，在完成我的要求之后，\
+你将得到一次掷骰子的机会，不要小瞧这次机会，它所\
+给出的奖励将由你掷出的3个骰子点数的总合来决定，\
+请在包裹中留出至少5个空格\
+<捆绑乾坤令/@捆绑乾坤>             <兑换乾坤令/@兑换乾坤令>\  \
+
+<给予乾坤令开始投骰子/@开始投骰子>\  \
+
+<离开藏宝阁/@离开藏宝阁>\
+
+[@兑换乾坤令]
+如果你不想要你身上的乾坤令，那就给我吧，\
+我对于这些散落的令牌非常感兴趣，\
+作为感谢，我给你些经验奖励。\ \
+
+<给你乾坤令/@兑换乾坤令1>\ \
+
+<返回/@main>\
+
+[@兑换乾坤令1]
+#IF
+CHECKITEM 乾坤令 1
+#ACT
+TAKE 乾坤令 1
+Changeexp + 200000
+#ELSESAY
+你没有足够的乾坤令啊！\
+<退出/@Exit>
+
+[@捆绑乾坤]
+#IF
+CHECKITEM 乾坤令 5
+#ACT
+TAKE 乾坤令 5
+give 乾坤令包 1
+#SAY
+解读成功
+#ELSESAY
+5个乾坤令可以捆绑成一个乾坤令包。\
+如果你已经带来了，就交给我吧！\
+
+[@离开藏宝阁]
+#IF
+#ACT
+map 3 330 330
+
+[@开始投骰子]
+#IF
+check [500] 0
+#SAY
+你已经获得了一次奖励，想要再获得，必须重新开始！\
+<返回起点重新开始/@重新开始>\
+<离开藏宝阁/@离开藏宝阁>\
+#ACT
+BREAK
+#IF
+#SAY
+骰子点数之和不同，将会得到以下奖励：\
+3点：斗笠51号至55号系列中随机一件\
+4点：星王装备系列随机1件\
+5点：战神、真魂、圣魔系列随机1件\
+6点：狂战、太极、混世系列随机1件\
+7点：祝福糕                8点：白金积分\
+9点：4000万经验            10点：3000万经验\
+11点：白金积分             12点：2000万经验\
+<下一页/@下一页>
+
+[@下一页]
+13点：白金积分             14点：3000万经验\
+15点：屠龙、嗜魂法杖中随机1件\
+16点：预言头盔、传说魔靴、誓言腰带随机1件\
+17点：魔龙衣服中随机一件\
+18点：镇龙盔、镇魔盔、镇魂盔随机1件\ \
+
+<投骰子/@投骰子>\
+
+[@投骰子]
+#IF
+check [500] 1
+CHECKITEM 乾坤令 5
+#ACT
+TAKE 乾坤令 5
+SET [440] 0
+SET [441] 0
+SET [442] 0
+SET [443] 0
+SET [444] 0
+SET [445] 0
+SET [446] 0
+SET [447] 0
+SET [448] 0
+SET [449] 0
+SET [450] 0
+SET [451] 0
+SET [452] 0
+SET [453] 0
+SET [454] 0
+SET [455] 0
+SET [456] 0
+SET [457] 0
+SET [458] 0
+SET [459] 0
+SET [460] 0
+SET [461] 0
+SET [462] 0
+SET [463] 0
+SET [464] 0
+SET [465] 0
+SET [466] 0
+SET [467] 0
+SET [468] 0
+SET [469] 0
+SET [470] 0
+SET [471] 0
+SET [472] 0
+SET [473] 0
+SET [474] 0
+SET [475] 0
+SET [476] 0
+SET [477] 0
+SET [478] 0
+SET [479] 0
+SET [480] 0
+SET [481] 0
+SET [482] 0
+SET [483] 0
+SET [484] 0
+SET [485] 0
+SET [486] 0
+SET [487] 0
+SET [488] 0
+SET [489] 0
+SET [490] 0
+SET [491] 0
+SET [492] 0
+SET [493] 0
+SET [494] 0
+SET [495] 0
+SET [496] 0
+SET [497] 0
+SET [498] 0
+SET [499] 0
+SET [500] 0
+movr d0 6
+inc d0 1
+movr d1 6
+inc d1 1
+movr d2 6
+inc d2 1
+movr d3 <$str(d0)>
+movr d3 <$str(d1)>
+movr d3 <$str(d2)>
+inc d3 <$str(d0)>
+inc d3 <$str(d1)>
+inc d3 <$str(d2)>
+playdice 3 @posi19
+break
+#ELSESAY
+必须交给我5个乾坤令，才可以开始投骰子！\
+
+[@重新开始]
+#if
+#act
+mapmove CB00
+[@离开藏宝阁]
+#IF
+#ACT
+mapmove 3 330 330
+
+[@posi19]
+#IF
+equal d3 3 
+#ACT
+goto @posi3
+
+break
+#IF
+equal d3 4 
+#ACT
+goto @posi4
+
+break
+#IF
+equal d3 5 
+#ACT
+goto @posi5
+
+break
+#IF
+equal d3 6 
+#ACT
+goto @posi6
+
+break
+#IF
+equal d3 7
+#ACT
+goto @posi7
+
+break
+#IF
+equal d3 8 
+#ACT
+goto @posi8
+
+break
+#IF
+equal d3 9 
+#ACT
+goto @posi9
+
+break
+#IF
+equal d3 10 
+#ACT
+goto @posi10
+
+break
+#IF
+equal d3 11 
+#ACT
+goto @posi11
+
+break
+#IF
+equal d3 12 
+#ACT
+goto @posi12
+
+break
+#IF
+equal d3 13 
+#ACT
+goto @posi13
+
+break
+#IF
+equal d3 14 
+#ACT
+goto @posi14
+
+break
+#IF
+equal d3 15 
+#ACT
+goto @posi15
+
+break
+#IF
+equal d3 16 
+#ACT
+goto @posi16
+
+break
+#IF
+equal d3 17 
+#ACT
+goto @posi17
+
+break
+#IF
+equal d3 18 
+#ACT
+goto @posi18
+
+break
+[@posi3]
+#IF
+  RANDOM 4
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：斗笠51号，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 斗笠51号 1
+  SENDMSG 7 恭喜：你获得了：斗笠51号
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：斗笠51号！
+  BREAK
+#IF
+  RANDOM 3
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：斗笠52号，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 斗笠52号 1
+  SENDMSG 7 恭喜：你获得了：斗笠52号
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：斗笠52号！
+  BREAK
+#IF
+  RANDOM 2
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：斗笠53号，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 斗笠53号 1
+  SENDMSG 7 恭喜：你获得了：斗笠53号
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：斗笠53号！
+  BREAK
+#IF
+  RANDOM 1
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：斗笠54号，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 斗笠54号 1
+  SENDMSG 7 恭喜：你获得了：斗笠54号
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：斗笠54号！
+  BREAK
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：斗笠55号，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 斗笠55号 1
+SENDMSG 7 恭喜：你获得了：斗笠55号
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：斗笠55号！
+BREAK
+
+[@posi4]
+#IF
+  RANDOM 5
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：星王战靴，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 星王战靴 1
+  SENDMSG 7 恭喜：你获得了：星王战靴
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：星王战靴)！
+  BREAK
+#IF
+  RANDOM 4
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：星王项链(道)，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 星王项链(道) 1
+  SENDMSG 7 恭喜：你获得了：星王项链(道)
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：星王项链(道)！
+  BREAK
+#IF
+  RANDOM 3
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：星王护腕(法)，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 星王护腕(法) 1
+  SENDMSG 7 恭喜：你获得了：星王护腕(法)
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：星王护腕(法)！
+  BREAK
+#IF
+  RANDOM 2
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：星王魔戒，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 星王魔戒 1
+  SENDMSG 7 恭喜：你获得了：星王魔戒
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：星王魔戒！
+  BREAK
+#IF
+  RANDOM 1
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：星王道盔，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 星王道盔 1
+  SENDMSG 7 恭喜：你获得了：星王道盔
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：星王道盔！
+  BREAK
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：星王腰带(战)，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 星王腰带(战) 1
+SENDMSG 7 恭喜：你获得了：星王腰带(战)
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：星王腰带(战)！
+BREAK
+
+[@posi5]
+#IF
+  RANDOM 8
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：真魂手镯，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 真魂手镯 1
+  SENDMSG 7 恭喜：你获得了：真魂手镯
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：真魂手镯！
+  BREAK
+#IF
+  RANDOM 7
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：真魂戒指，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 真魂戒指 1
+  SENDMSG 7 恭喜：你获得了：真魂戒指
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：真魂戒指！
+  BREAK
+#IF
+  RANDOM 6
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：真魂项链，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 真魂项链 1
+  SENDMSG 7 恭喜：你获得了：真魂项链
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：真魂项链！
+  BREAK
+#IF
+  RANDOM 5
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：圣魔项链，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 圣魔项链 1
+  SENDMSG 7 恭喜：你获得了：圣魔项链
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：圣魔项链！
+  BREAK
+#IF
+  RANDOM 4
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：圣魔戒指赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 圣魔戒指 1
+  SENDMSG 7 恭喜：你获得了：圣魔戒指
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：圣魔戒指！
+  BREAK
+#IF
+  RANDOM 3
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：战神项链，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 战神项链 1
+  SENDMSG 7 恭喜：你获得了：战神项链
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：战神项链！
+  BREAK
+#IF
+  RANDOM 2
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：战神戒指，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 战神戒指 1
+  SENDMSG 7 恭喜：你获得了：战神戒指
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：战神戒指！
+  BREAK
+#IF
+  RANDOM 1
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：圣魔手镯，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 圣魔手镯 1
+  SENDMSG 7 恭喜：你获得了：圣魔手镯
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：圣魔手镯！
+  BREAK
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：战神手镯，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 战神手镯 1
+SENDMSG 7 恭喜：你获得了：战神手镯
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：战神手镯！
+BREAK
+
+[@posi6]
+#IF
+  RANDOM 5
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：狂战戒指，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 狂战戒指 1
+  SENDMSG 7 恭喜：你获得了：狂战戒指
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：狂战戒指！
+  BREAK
+#IF
+  RANDOM 4
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：狂战手镯，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 狂战手镯 1
+  SENDMSG 7 恭喜：你获得了：狂战手镯
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：狂战手镯！
+  BREAK
+#IF
+  RANDOM 3
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：太极戒指，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 太极戒指 1
+  SENDMSG 7 恭喜：你获得了：太极戒指
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：太极戒指！
+  BREAK
+#IF
+  RANDOM 2
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：太极手镯，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 太极手镯 1
+  SENDMSG 7 恭喜：你获得了：太极手镯
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：太极手镯！
+  BREAK
+#IF
+  RANDOM 1
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：混世戒指，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 混世戒指 1
+  SENDMSG 7 恭喜：你获得了：混世戒指
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：混世戒指！
+  BREAK
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：混世手镯，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 混世手镯 1
+SENDMSG 7 恭喜：你获得了：混世手镯
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：混世手镯！
+BREAK
+
+[@posi7]
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：祝福糕，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 祝福糕 1
+SENDMSG 7 恭喜：你获得了：祝福糕
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：祝福糕！
+BREAK
+
+[@posi8]
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：白金积分，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 白金积分 1
+SENDMSG 7 恭喜：你获得了：白金积分
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：白金积分！
+BREAK
+
+[@posi9]
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：4000万经验奖励，赶紧查看一下吧\ \
+#ACT
+Changeexp + 40000000
+SENDMSG 7 恭喜：你获得了：4000万经验奖励
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：4000万经验奖励！
+BREAK
+
+[@posi10]
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：3000万经验奖励，赶紧查看一下吧\ \
+#ACT
+Changeexp + 30000000
+SENDMSG 7 恭喜：你获得了：3000万经验奖励
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：3000万经验奖励！
+BREAK
+
+[@posi11]
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：白金积分，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 白金积分 1
+SENDMSG 7 恭喜：你获得了：白金积分
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：白金积分！
+BREAK
+
+[@posi12]
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：2000万经验奖励，赶紧查看一下吧\ \
+#ACT
+Changeexp + 20000000
+SENDMSG 7 恭喜：你获得了：2000万经验奖励
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：2000万经验奖励！
+BREAK
+
+[@posi13]
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：白金积分，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 白金积分 1
+SENDMSG 7 恭喜：你获得了：白金积分
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：白金积分！
+BREAK
+
+[@posi14]
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：3000万经验奖励，赶紧查看一下吧\ \
+#ACT
+Changeexp + 30000000
+SENDMSG 7 恭喜：你获得了：3000万经验奖励
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：3000万经验奖励！
+BREAK
+
+[@posi15]
+#IF
+  RANDOM 1
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：屠龙，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 屠龙 1
+  SENDMSG 7 恭喜：你获得了：屠龙
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：屠龙！
+  BREAK
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：嗜魂法杖，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 嗜魂法杖 1
+SENDMSG 7 恭喜：你获得了：嗜魂法杖
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：嗜魂法杖！
+BREAK
+
+[@posi16]
+#IF
+  RANDOM 2
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：誓言腰带(道)，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 誓言腰带(道) 1
+  SENDMSG 7 恭喜：你获得了：誓言腰带(道)
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：誓言腰带(道)！
+  BREAK
+#IF
+  RANDOM 1
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：传说魔靴(战)，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 传说魔靴(战) 1
+  SENDMSG 7 恭喜：你获得了：传说魔靴(战)
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：传说魔靴(战)！
+  BREAK
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：预言头盔(法)，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 预言头盔(法) 1
+SENDMSG 7 恭喜：你获得了：预言头盔(法)
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：预言头盔(法)！
+BREAK
+
+[@posi17]
+#IF
+  RANDOM 5
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：光芒道袍(女)，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 光芒道袍(女) 1
+  SENDMSG 7 恭喜：你获得了：光芒道袍(女)
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：光芒道袍(女)！
+  BREAK
+#IF
+  RANDOM 4
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：光芒道袍(男)，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 光芒道袍(男) 1
+  SENDMSG 7 恭喜：你获得了：光芒道袍(男)
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：光芒道袍(男)！
+  BREAK
+#IF
+  RANDOM 3
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：烈焰魔衣(女)，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 烈焰魔衣(女) 1
+  SENDMSG 7 恭喜：你获得了：烈焰魔衣(女)
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：烈焰魔衣(女)！
+  BREAK
+#IF
+  RANDOM 2
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：烈焰魔衣(男)，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 烈焰魔衣(男) 1
+  SENDMSG 7 恭喜：你获得了：烈焰魔衣(男)
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：烈焰魔衣(男)！
+  BREAK
+#IF
+  RANDOM 1
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：雷霆战甲(女)，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 雷霆战甲(女) 1
+  SENDMSG 7 恭喜：你获得了：雷霆战甲(女)
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：雷霆战甲(女)！
+  BREAK
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：雷霆战甲(男)，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 雷霆战甲(男) 1
+SENDMSG 7 恭喜：你获得了：雷霆战甲(男)
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：雷霆战甲(男)！
+BREAK
+
+[@posi18]
+#IF
+  RANDOM 2
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：镇魂盔，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 镇魂盔 1
+  SENDMSG 7 恭喜：你获得了：镇魂盔
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：镇魂盔！
+  BREAK
+#IF
+  RANDOM 1
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：镇魔盔，赶紧打开包裹查看一下吧\ \
+#ACT
+  GIVE 镇魔盔 1
+  SENDMSG 7 恭喜：你获得了：镇魔盔
+  SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：镇魔盔！
+  BREAK
+#IF
+#SAY
+骰子的点数为：<$STR(D0)>，<$STR(D1)>，<$STR(D2)>，\ 
+你获得了奖励为：镇龙盔，赶紧打开包裹查看一下吧\ \
+#ACT
+GIVE 镇龙盔 1
+SENDMSG 7 恭喜：你获得了：镇龙盔
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁60号获得：镇龙盔！
+BREAK
+
+

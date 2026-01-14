@@ -1,0 +1,8 @@
+[@main]
+#if
+CheckItem 红色夜明珠 1
+#act
+Take 红色夜明珠 1
+OPENBOOK 1
+#elseact
+SENDMSG 6 必须携带相应的夜明珠才可以查看古书

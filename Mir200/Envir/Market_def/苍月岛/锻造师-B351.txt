@@ -1,0 +1,989 @@
+[@main]
+你要进行锻造吗？那可要准备好需要的物品啊!\
+锻造物品不需要消耗锻造时间,但存在锻造失败的可能,\
+您的职业、性别、等级以及要锻造的物品都将影响到锻造的成败,\
+锻造失败会扣除您提供的金刚石和配方中的其他物品，\
+而成功后就可收获您想要锻造的物品了.\
+并且还有可能得到高于你锻造物品原始属性的超级极品哦!\
+进行<锻造/@锻造>　　　　　<合成战神碎片/@合成>\
+锻造<雷霆、光芒、烈焰系列首饰/@雷锻>\
+查看<配方/@配方>\
+[@合成]
+你好，您是来合成战神、镇魂、圣魔装备的吗？\
+如果你带来了6个战神碎片，就可以合成一件装备。\
+这件装备将是战神、镇魂、圣魔装备中随机残生的一件。\
+但是由于这些装备的力量实在是太过于强大，我无法解开\
+禁锢他们的力量\
+\ \
+<合成战神碎片/@合成战神碎片>
+[@合成战神碎片]
+#IF
+checkitem 战神碎片 6
+#ACT
+take 战神碎片 6
+GetRandomText ..\QuestDiary\英雄合击\战神碎片\碎片合成.txt S50
+give <$STR(S50)> 1
+#SAY
+合成战神碎片：<$STR(S50)> 领取成功！\
+#elsesay
+你没有带来6块战神碎片，赶快去寻找吧！
+[@锻造]
+请选择你需要锻造的物品\
+<井中月/@14>\
+<无极棍/@15>\
+<裁决之杖/@21>\
+<龙纹剑/@22>\
+<骨玉权杖/@23>\
+<下一页/@xiaiyeu>  <离开/@exit>
+[@xiaiyeu]
+<血饮/@24>\
+<怒斩/@25>\
+<龙牙/@31>\
+<逍遥扇/@32>\
+<屠龙/@33>\
+<嗜魂法杖/@34>\
+<上一页/@锻造>  <离开/@exit>
+[@雷锻]
+请选择想要锻造的首饰，只要有足够的原料，就放心交给我吧。\
+<雷霆战戒/@pei35>        <雷霆护腕/@pei36>        <雷霆项链/@pei37>\
+<雷霆战靴/@pei38>        <雷霆腰带/@pei39>\
+<烈焰魔戒/@pei42>        <烈焰护腕/@pei43>        <烈焰项链/@pei44>\
+<烈焰魔靴/@pei45>        <烈焰腰带/@pei46>\
+<光芒道戒/@pei50>        <光芒护腕/@pei49>        <光芒项链/@pei51>\
+<光芒道靴/@pei52>        <光芒腰带/@pei53>\
+\ \
+<返回/@main>
+[@14]
+#IF
+CHECKGAMEDIAMOND > 2
+checkitem 勋章之心 2
+checkitem 绿宝石矿 2
+checkitem 紫水晶矿 2
+#SAY
+锻造武器不一定成功啊，失败了别赖我啊 \
+<确定锻造/@ok14>
+#ELSESAY
+对不起，你没有准备好锻造井中月所需要的物品。\
+[@ok14]
+#if
+CHECKGAMEDIAMOND > 2
+checkitem 勋章之心 2
+checkitem 绿宝石矿 2
+checkitem 紫水晶矿 2
+random 2
+#act
+GAMEDIAMOND - 3
+take 勋章之心 2
+TAKE 绿宝石矿 2
+take 紫水晶矿 2
+give 井中月 1
+break
+#SAY
+你的井中月锻造出来了,请拿好
+#if
+CHECKGAMEDIAMOND > 2
+checkitem 勋章之心 2
+checkitem 绿宝石矿 2
+checkitem 紫水晶矿 2
+#act
+GAMEDIAMOND - 3
+take 勋章之心 2
+TAKE 绿宝石矿 2
+take 紫水晶矿 2
+break
+#SAY
+你的锻造失败了.......
+[@15]
+#IF
+CHECKGAMEDIAMOND > 2
+checkitem 勋章之心 2
+checkitem 绿宝石矿 2
+checkitem 紫水晶矿 2
+#SAY
+锻造武器不一定成功啊，失败了别赖我啊 \
+<确定锻造/@ok15>
+#ELSESAY
+对不起，你没有准备好锻造无极棍所需要的物品。
+[@ok15]
+#if
+CHECKGAMEDIAMOND > 2
+checkitem 勋章之心 2
+checkitem 绿宝石矿 2
+checkitem 紫水晶矿 2
+random 2
+#act
+GAMEDIAMOND - 3
+take 勋章之心 2
+TAKE 绿宝石矿 2
+take 紫水晶矿 2
+give 无极棍 1
+break
+#SAY
+你的无极棍锻造出来了,请拿好
+#if
+CHECKGAMEDIAMOND > 2
+checkitem 勋章之心 2
+checkitem 绿宝石矿 2
+checkitem 紫水晶矿 2
+#act
+GAMEDIAMOND - 3
+take 勋章之心 2
+TAKE 绿宝石矿 2
+take 紫水晶矿 2
+break
+#SAY
+你的锻造失败了.......
+[@21]
+#IF
+CHECKGAMEDIAMOND > 7
+checkitem 勋章之心 5
+checkitem 绿宝石矿 5
+checkitem 紫水晶矿 5
+#SAY
+锻造不一定成功啊，失败了别赖我啊 \
+<确定锻造/@ok21>
+#ELSESAY
+对不起，你没有准备好锻造所需要的物品。
+[@ok21]
+#if
+CHECKGAMEDIAMOND > 7
+checkitem 勋章之心 5
+checkitem 绿宝石矿 5
+checkitem 紫水晶矿 5
+random 2
+#act
+GAMEDIAMOND - 8
+take 勋章之心 5
+TAKE 绿宝石矿 5
+take 紫水晶矿 5
+give 裁决之杖 1
+break
+#SAY
+你的裁决锻造成功
+#if
+CHECKGAMEDIAMOND > 7
+checkitem 勋章之心 5
+checkitem 绿宝石矿 5
+checkitem 紫水晶矿 5
+#act
+GAMEDIAMOND - 8
+take 勋章之心 5
+TAKE 绿宝石矿 5
+take 紫水晶矿 5
+break
+#SAY
+你的锻造失败了
+[@22]
+#IF
+CHECKGAMEDIAMOND > 7
+checkitem 勋章之心 5
+checkitem 绿宝石矿 5
+checkitem 紫水晶矿 5
+#SAY
+锻造不一定成功啊，失败了别赖我啊 \
+<确定锻造/@ok22>
+#ELSESAY
+对不起，你没有准备好锻造所需要的物品。
+[@ok22]
+#if
+CHECKGAMEDIAMOND > 7
+checkitem 勋章之心 5
+checkitem 绿宝石矿 5
+checkitem 紫水晶矿 5
+random 2
+#act
+GAMEDIAMOND - 8
+take 勋章之心 5
+TAKE 绿宝石矿 5
+take 紫水晶矿 5
+give 龙纹剑 1
+break
+#SAY
+你的龙纹锻造成功
+#if
+CHECKGAMEDIAMOND > 7
+checkitem 勋章之心 5
+checkitem 绿宝石矿 5
+checkitem 紫水晶矿 5
+#act
+GAMEDIAMOND - 8
+take 勋章之心 5
+TAKE 绿宝石矿 5
+take 紫水晶矿 5
+break
+#SAY
+你的锻造失败了
+[@23]
+#IF
+CHECKGAMEDIAMOND > 7
+checkitem 勋章之心 5
+checkitem 绿宝石矿 5
+checkitem 紫水晶矿 5
+#SAY
+锻造不一定成功啊，失败了别赖我啊 \
+<确定锻造/@ok23>
+#ELSESAY
+对不起，你没有准备好锻造所需要的物品。
+[@ok23]
+#if
+CHECKGAMEDIAMOND > 7
+checkitem 勋章之心 5
+checkitem 绿宝石矿 5
+checkitem 紫水晶矿 5
+random 2
+#act
+GAMEDIAMOND - 8
+take 勋章之心 5
+TAKE 绿宝石矿 5
+take 紫水晶矿 5
+give 骨玉权杖 1
+break
+#SAY
+你的骨玉锻造成功
+#if
+CHECKGAMEDIAMOND > 7
+checkitem 勋章之心 5
+checkitem 绿宝石矿 5
+checkitem 紫水晶矿 5
+#act
+GAMEDIAMOND - 8
+take 勋章之心 5
+TAKE 绿宝石矿 5
+take 紫水晶矿 5
+break
+#SAY
+你的锻造失败了
+[@24]
+#IF
+CHECKGAMEDIAMOND > 29
+checkitem 绿宝石矿 6
+checkitem 紫水晶矿 6
+#SAY
+血饮锻造不一定成功啊，失败了别赖我啊 \
+<确定锻造/@ok24>
+#ELSESAY
+对不起，你没有准备好锻造血饮的物品。
+[@ok24]
+#if
+CHECKGAMEDIAMOND > 29
+checkitem 绿宝石矿 6
+checkitem 紫水晶矿 6
+random 2
+#act
+GAMEDIAMOND - 30
+TAKE 绿宝石矿 6
+take 紫水晶矿 6
+give 血饮 1
+break
+#SAY
+你的血饮锻造成功
+#if
+CHECKGAMEDIAMOND > 29
+checkitem 绿宝石矿 6
+checkitem 紫水晶矿 6
+#act
+GAMEDIAMOND - 30
+TAKE 绿宝石矿 6
+take 紫水晶矿 6
+break
+#SAY
+你的血饮已破碎了
+[@25]
+#IF
+CHECKGAMEDIAMOND > 287
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+#SAY
+怒斩锻造不一定成功啊，失败了别赖我啊 \
+<确定锻造/@ok25>
+#ELSESAY
+对不起，你没有准备好锻造怒斩所需要的物品。
+[@ok25]
+#if
+CHECKGAMEDIAMOND > 287
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+random 2
+#act
+GAMEDIAMOND - 288
+TAKE 绿宝石矿 8
+take 紫水晶矿 8
+give 怒斩 1
+break
+#SAY
+恭喜,你的怒斩锻造成功
+#if
+CHECKGAMEDIAMOND > 287
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+#act
+GAMEDIAMOND - 288
+TAKE 绿宝石矿 8
+take 紫水晶矿 8
+break
+#SAY
+你的怒斩锻造失败
+[@31]
+#IF
+CHECKGAMEDIAMOND > 287
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+#SAY
+锻造不一定成功啊，失败了别赖我啊 \
+<确定锻造/@ok31>
+#ELSESAY
+对不起，你没有准备好锻造所需要的物品。
+[@ok31]
+#if
+CHECKGAMEDIAMOND > 287
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+random 2
+#act
+GAMEDIAMOND - 288
+TAKE 绿宝石矿 8
+take 紫水晶矿 8
+give 龙牙 1
+break
+#SAY
+恭喜,你的龙牙锻造成功
+#if
+CHECKGAMEDIAMOND > 287
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+#act
+GAMEDIAMOND - 288
+TAKE 绿宝石矿 8
+take 紫水晶矿 8
+break
+#SAY
+你的龙牙锻造失败
+[@32]
+#IF
+CHECKGAMEDIAMOND > 287
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+#SAY
+锻造不一定成功啊，失败了别赖我啊 \
+<确定锻造/@ok32>
+#ELSESAY
+对不起，你没有准备好锻造所需要的物品。
+[@ok32]
+#if
+CHECKGAMEDIAMOND > 287
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+random 2
+#act
+GAMEDIAMOND - 288
+TAKE 绿宝石矿 8
+take 紫水晶矿 8
+give 逍遥扇 1
+break
+#SAY
+恭喜,你的逍遥扇锻造成功
+#if
+CHECKGAMEDIAMOND > 287
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+#act
+GAMEDIAMOND - 288
+TAKE 绿宝石矿 8
+take 紫水晶矿 8
+break
+#SAY
+你的逍遥扇锻造失败
+[@33]
+#IF
+CHECKGAMEDIAMOND > 887
+checkitem 勋章之心 8
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+#SAY
+屠龙锻造靠运气的，失败了别赖我啊 \
+<确定锻造/@ok33>
+#ELSESAY
+对不起，你没有准备好锻造屠龙物品。
+[@ok33]
+#if
+CHECKGAMEDIAMOND > 887
+checkitem 勋章之心 8
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+random 2
+#act
+GAMEDIAMOND - 888
+take 勋章之心 8
+TAKE 绿宝石矿 8
+take 紫水晶矿 8
+give 屠龙 1
+break
+#SAY
+恭喜,你的屠龙锻造成功
+#if
+CHECKGAMEDIAMOND > 887
+checkitem 勋章之心 8
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+#act
+GAMEDIAMOND - 888
+take 勋章之心 8
+TAKE 绿宝石矿 8
+take 紫水晶矿 8
+break
+#SAY
+很遗憾您的屠龙锻造没成功
+[@34]
+#IF
+CHECKGAMEDIAMOND > 887
+checkitem 勋章之心 8
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+#SAY
+锻造靠运气的，失败了别赖我啊 \
+<确定锻造/@ok34>
+#ELSESAY
+对不起，你没有准备好锻造嗜魂法杖物品。
+[@ok34]
+#if
+CHECKGAMEDIAMOND > 887
+checkitem 勋章之心 8
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+random 2
+#act
+GAMEDIAMOND - 888
+take 勋章之心 8
+TAKE 绿宝石矿 8
+take 紫水晶矿 8
+give 嗜魂法杖 1
+break
+#SAY
+恭喜,你的嗜魂法杖锻造成功
+#if
+CHECKGAMEDIAMOND > 887
+checkitem 勋章之心 8
+checkitem 绿宝石矿 8
+checkitem 紫水晶矿 8
+#act
+GAMEDIAMOND - 888
+take 勋章之心 8
+TAKE 绿宝石矿 8
+take 紫水晶矿 8
+break
+#SAY
+很遗憾您的嗜魂法杖锻造没成功
+[@35]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图001 1
+checkitem 藏宝图002 1
+checkitem 藏宝图003 1
+checkitem 藏宝图004 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图001 1
+take 藏宝图002 1
+take 藏宝图003 1
+take 藏宝图004 1
+give 雷霆战戒 1
+break
+#SAY
+恭喜,你的<雷霆战戒>合成成功
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@36]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图005 1
+checkitem 藏宝图006 1
+checkitem 藏宝图007 1
+checkitem 藏宝图008 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图005 1
+take 藏宝图006 1
+take 藏宝图007 1
+take 藏宝图008 1
+give 雷霆护腕 1
+break
+#SAY
+恭喜,你的<雷霆护腕>合成成功
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@37]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图009 1
+checkitem 藏宝图010 1
+checkitem 藏宝图011 1
+checkitem 藏宝图012 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图009 1
+take 藏宝图010 1
+take 藏宝图011 1
+take 藏宝图012 1
+give 雷霆项链 1
+break
+#SAY
+恭喜,你的<雷霆项链>合成成功！
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@38]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图013 1
+checkitem 藏宝图014 1
+checkitem 藏宝图015 1
+checkitem 藏宝图016 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图013 1
+take 藏宝图014 1
+take 藏宝图015 1
+take 藏宝图016 1
+give 雷霆战靴 1
+break
+#SAY
+恭喜,你的<雷霆战靴>合成成功！
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@39]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图017 1
+checkitem 藏宝图018 1
+checkitem 藏宝图019 1
+checkitem 藏宝图020 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图017 1
+take 藏宝图018 1
+take 藏宝图019 1
+take 藏宝图020 1
+give 雷霆腰带 1
+break
+#SAY
+恭喜,你的<雷霆腰带>合成成功！
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@42]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图101 1
+checkitem 藏宝图102 1
+checkitem 藏宝图103 1
+checkitem 藏宝图104 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图101 1
+take 藏宝图102 1
+take 藏宝图103 1
+take 藏宝图104 1
+give 烈焰魔戒 1
+break
+#SAY
+恭喜,你的<烈焰魔戒>合成成功
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@43]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图105 1
+checkitem 藏宝图106 1
+checkitem 藏宝图107 1
+checkitem 藏宝图108 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图105 1
+take 藏宝图106 1
+take 藏宝图107 1
+take 藏宝图108 1
+give 烈焰护腕 1
+break
+#SAY
+恭喜,你的<烈焰护腕>合成成功
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@44]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图109 1
+checkitem 藏宝图110 1
+checkitem 藏宝图111 1
+checkitem 藏宝图112 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图109 1
+take 藏宝图110 1
+take 藏宝图111 1
+take 藏宝图112 1
+give 烈焰项链 1
+break
+#SAY
+恭喜,你的<烈焰项链>合成成功！
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@45]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图113 1
+checkitem 藏宝图114 1
+checkitem 藏宝图115 1
+checkitem 藏宝图116 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图113 1
+take 藏宝图114 1
+take 藏宝图115 1
+take 藏宝图116 1
+give 烈焰魔靴 1
+break
+#SAY
+恭喜,你的<烈焰魔靴>合成成功！
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@46]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图117 1
+checkitem 藏宝图118 1
+checkitem 藏宝图119 1
+checkitem 藏宝图120 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图117 1
+take 藏宝图118 1
+take 藏宝图119 1
+take 藏宝图120 1
+give 烈焰腰带 1
+break
+#SAY
+恭喜,你的<烈焰腰带>合成成功！
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@49]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图201 1
+checkitem 藏宝图202 1
+checkitem 藏宝图203 1
+checkitem 藏宝图204 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图201 1
+take 藏宝图202 1
+take 藏宝图203 1
+take 藏宝图204 1
+give 光芒护腕 1
+break
+#SAY
+恭喜,你的<光芒护腕>合成成功
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@50]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图205 1
+checkitem 藏宝图206 1
+checkitem 藏宝图207 1
+checkitem 藏宝图208 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图205 1
+take 藏宝图206 1
+take 藏宝图207 1
+take 藏宝图208 1
+give 光芒道戒 1
+break
+#SAY
+恭喜,你的<光芒道戒>合成成功
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@51]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图209 1
+checkitem 藏宝图210 1
+checkitem 藏宝图211 1
+checkitem 藏宝图212 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图209 1
+take 藏宝图210 1
+take 藏宝图211 1
+take 藏宝图212 1
+give 光芒项链 1
+break
+#SAY
+恭喜,你的<光芒项链>合成成功！
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@52]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图213 1
+checkitem 藏宝图214 1
+checkitem 藏宝图215 1
+checkitem 藏宝图216 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图213 1
+take 藏宝图214 1
+take 藏宝图215 1
+take 藏宝图216 1
+give 光芒道靴 1
+break
+#SAY
+恭喜,你的<光芒道靴>合成成功！
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@53]
+#IF
+CHECKGAMEDIAMOND > 17
+checkitem 藏宝图217 1
+checkitem 藏宝图218 1
+checkitem 藏宝图219 1
+checkitem 藏宝图220 1
+#act
+GAMEDIAMOND - 18
+take 藏宝图217 1
+take 藏宝图218 1
+take 藏宝图219 1
+take 藏宝图220 1
+give 光芒腰带 1
+break
+#SAY
+恭喜,你的<光芒腰带>合成成功！
+#ELSESAY
+很可惜，您没有合成所需的足够原料
+[@配方]
+请选择想要查看的武器锻造配方:\
+<井中月/@88>        <无极棍/@89>        <骨玉权杖/@92>      <裁决之杖/@90>\
+<龙纹剑/@91>        <血饮/@93>          <怒斩/@94>          <龙牙/@95>\
+<逍遥扇/@96>        <屠龙/@97>          <嗜魂法杖/@98>\
+\ \
+<返回/@main>
+[@88]
+锻造 <井中月> 需要以下的物品:\
+\ \
+金刚石………… 3 颗       紫水晶矿………… 2 把(个)\
+绿宝石矿……… 2 把(个)   勋章之心………… 2 把(个)\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@14> 或 <查看/@配方> 其它配方。\
+[@89]
+锻造 <无极棍> 需要以下的物品:\
+\ \
+金刚石………… 3 颗       紫水晶矿………… 2 把(个)\
+绿宝石矿……… 2 把(个)   勋章之心………… 2 把(个)\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@15> 或 <查看/@配方> 其它配方。\
+[@90]
+锻造 <裁决之杖> 需要以下的物品:\
+\ \
+金刚石………… 8 颗       紫水晶矿………… 5 把(个)\
+绿宝石矿……… 5 把(个)   勋章之心………… 5 把(个)\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@21> 或 <查看/@配方> 其它配方。\
+[@91]
+锻造 <龙纹剑> 需要以下的物品:\
+\ \
+金刚石………… 8 颗       紫水晶矿………… 5 把(个)\
+绿宝石矿……… 5 把(个)   勋章之心………… 5 把(个)\
+\ \
+请选择开始 <锻造/@22> 或 <查看/@配方> 其它配方。\
+[@92]
+锻造 <骨玉权杖> 需要以下的物品:\
+\ \
+金刚石………… 8 颗       紫水晶矿………… 5 把(个)\
+绿宝石矿……… 5 把(个)   勋章之心………… 5 把(个)\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@23> 或 <查看/@配方> 其它配方。\
+[@93]
+锻造 <血饮> 需要以下的物品:\
+\ \
+金刚石………… 30 颗       紫水晶矿……… 6 把(个)\
+绿宝石矿………… 6 把(个)\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@24> 或 <查看/@配方> 其它配方。\
+[@94]
+锻造 <怒斩> 需要以下的物品:\
+\ \
+金刚石………… 288 颗     紫水晶矿………… 8 把(个)\
+绿宝石矿……… 8 把(个)\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@25> 或 <查看/@配方> 其它配方。\
+[@95]
+锻造 <龙牙> 需要以下的物品:\
+\ \
+金刚石………… 288 颗     紫水晶矿………… 8 把(个)\
+绿宝石矿……… 8 把(个)\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@31> 或 <查看/@配方> 其它配方。\
+[@96]
+锻造 <逍遥扇> 需要以下的物品:\
+\ \
+金刚石………… 288 颗     紫水晶矿………… 8 把(个)\
+绿宝石矿……… 8 把(个)\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@32> 或 <查看/@配方> 其它配方。\
+[@97]
+锻造 <屠龙> 需要以下的物品:\
+\ \
+金刚石………… 888 颗     紫水晶矿………… 8 把(个)\
+绿宝石矿……… 8 把(个)   勋章之心………… 8 把(个)\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@33> 或 <查看/@配方> 其它配方。\
+[@98]
+锻造 <嗜魂法杖> 需要以下的物品:\
+\ \
+金刚石………… 888 颗     紫水晶矿………… 8 把(个)\
+绿宝石矿……… 8 把(个)   勋章之心………… 8 把(个)\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@34> 或 <查看/@配方> 其它配方。\
+[@pei35]
+合成 <雷霆战戒> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图001………… 1 张\
+藏宝图002……  1 张      藏宝图003………… 1 张\
+藏宝图004……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@35> 或 <查看/@雷锻> 其它配方。\
+[@pei36]
+合成 <雷霆护腕> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图005………… 1 张\
+藏宝图006……  1 张      藏宝图007………… 1 张\
+藏宝图008……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@36> 或 <查看/@雷锻> 其它配方。\
+[@pei37]
+合成 <雷霆项链> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图009………… 1 张\
+藏宝图010……  1 张      藏宝图011………… 1 张\
+藏宝图012……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@37> 或 <查看/@雷锻> 其它配方。\
+[@pei38]
+合成 <雷霆战靴> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图013………… 1 张\
+藏宝图014……  1 张      藏宝图015………… 1 张\
+藏宝图016……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@38> 或 <查看/@雷锻> 其它配方。\
+[@pei39]
+合成 <雷霆腰带> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图017………… 1 张\
+藏宝图018……  1 张      藏宝图019………… 1 张\
+藏宝图020……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@39> 或 <查看/@雷锻> 其它配方。\
+[@pei42]
+合成 <烈焰魔戒> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图101………… 1 张\
+藏宝图102……  1 张      藏宝图103………… 1 张\
+藏宝图104……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@42> 或 <查看/@雷锻> 其它配方。\
+[@pei43]
+合成 <烈焰护腕> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图105………… 1 张\
+藏宝图106……  1 张      藏宝图107………… 1 张\
+藏宝图108……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@43> 或 <查看/@雷锻> 其它配方。\
+[@pei44]
+合成 <烈焰项链> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图109………… 1 张\
+藏宝图110……  1 张      藏宝图111………… 1 张\
+藏宝图112……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@44> 或 <查看/@雷锻> 其它配方。\
+[@pei45]
+合成 <烈焰魔靴> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图113………… 1 张\
+藏宝图114……  1 张      藏宝图115………… 1 张\
+藏宝图116……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@45> 或 <查看/@雷锻> 其它配方。\
+[@pei46]
+合成 <烈焰腰带> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图117………… 1 张\
+藏宝图118……  1 张      藏宝图119………… 1 张\
+藏宝图120……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@46> 或 <查看/@雷锻> 其它配方。\
+[@pei49]
+合成 <光芒护腕> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图201………… 1 张\
+藏宝图202……  1 张      藏宝图203………… 1 张\
+藏宝图204……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@49> 或 <查看/@雷锻> 其它配方。\
+[@pei50]
+合成 <光芒道戒> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图205………… 1 张\
+藏宝图206……  1 张      藏宝图207………… 1 张\
+藏宝图208……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@50> 或 <查看/@雷锻> 其它配方。\
+[@pei51]
+合成 <光芒项链> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图209………… 1 张\
+藏宝图210……  1 张      藏宝图211………… 1 张\
+藏宝图212……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@51> 或 <查看/@雷锻> 其它配方。\
+[@pei52]
+合成 <光芒道靴> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图213………… 1 张\
+藏宝图214……  1 张      藏宝图215………… 1 张\
+藏宝图216……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@52> 或 <查看/@雷锻> 其它配方。\
+[@pei53]
+合成 <光芒腰带> 需要以下的物品:\
+\ \
+金刚石………… 18 颗     藏宝图217………… 1 张\
+藏宝图218……  1 张      藏宝图219………… 1 张\
+藏宝图220……  1 张\
+\ \
+您当前拥有的金刚石数量为: <$GAMEDIAMOND>\
+请选择开始 <锻造/@53> 或 <查看/@雷锻> 其它配方。\

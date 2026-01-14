@@ -1,0 +1,1471 @@
+(@buy @sell @repair @s_repair )
+100%
++10
++11
++62
++64
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+我不想和你这样的人打交道.. \ \
+<退出/@exit>
+#ELSEACT
+goto @main-1
+
+[@main-1]
+#if
+  random 2
+#act
+  break
+#SAY
+什么？您想知道什么？是谁告诉您我知道这些消息的。\
+哎~看来这个秘密是守不住了。\
+国王为了防止宝藏被盗，他将藏宝图分别交给了几大将领。\
+这些将领最近都在封魔谷一带活动，您可以去那里打探一下哦.\
+ <打听天工神剪的故事/@DTTGSJ>\
+ <合成/@HCLTANDLYGM>雷霆战甲、烈焰魔衣、光芒道袍\
+ <买/@buy>衣服　　　　　<修补/@repair>衣服\
+ <卖/@sell>衣服　　　　　<特殊修理/@s_repair>\
+ <退出/@exit>\
+#if
+  random 2
+#act
+  break
+#SAY
+欢迎，你需要点什么？\ \
+ <打听天工神剪的故事/@DTTGSJ>\
+ <合成/@HCLTANDLYGM>雷霆战甲、烈焰魔衣、光芒道袍\
+ <买/@buy>　衣服\
+ <卖/@sell>　衣服\
+ <修补/@repair>衣服\
+ <特殊修理/@s_repair>\
+ <退出/@exit>\
+#if
+#act
+  break
+#SAY
+欢迎，你需要点什么？\ \
+ <打听天工神剪的故事/@DTTGSJ>\
+ <合成/@HCLTANDLYGM>雷霆战甲、烈焰魔衣、光芒道袍\
+ <买/@buy>　衣服\
+ <卖/@sell>　衣服\
+ <修补/@repair>衣服\
+ <特殊修理/@s_repair>\
+ <退出/@exit>\
+
+[@DTTGSJ]
+天工神剪可是我的师傅，教会了我很多手艺\
+不过自从我学成出师之后，我也再也没有见过师傅了\
+后来我才听师兄弟们说起好象师傅失踪了，可能是被魔神囚禁了\
+我们都很焦急，不知道你能不能帮助我们找到我们的师傅\
+听说他被囚禁在地下宫殿\
+魔王为了不让人类前去营救，将魔兽都派去地下宫殿\
+当然，它们也带去了为数壮观的宝藏。\
+作为报答，我们决定把从没公开过的技艺公布\
+ <升级雷霆、光芒、烈焰套装的线索/@LOOKSJWP>　　　　　　<离开/@exit>\
+
+[@LOOKSJWP]
+升级雷霆系列需要雷霆绒丝，光芒系列需要光芒绒丝\
+烈焰系列需要烈焰绒丝，如果你找天工神剪，就会找到这些\
+除了需要绒丝，升级还需要一些材料和足够的金刚石\
+ <了解升级的具体规则/@LOOKSJJTGZ>\
+ <神秘升级材料的线索/@LOOKSMSJXS>\
+ <千年蜘丝的线索/@LOOKQNZSXS>\
+ <开始升级/@OKSJQHSS>\
+ <返回/@Main>
+
+[@LOOKSJJTGZ]
+由于我本领有限，升级成强化物品，需要3个原有的首饰才可以，\
+也就是说你想要升级成强化雷霆腰带，就必须给我3个雷霆腰带，\
+除了3个首饰，还需要提供给我一些配方，否则，我也无能为力，\
+首先，升级需要888颗金刚石，可以保证升级后物品的纯度，\
+升级除了相应的绒线，还需要魔龙颚骨、魔龙骨、魔龙牙各一件，\
+如果你有上述物品，你就交给我吧，我保证给您一个强化的物品，\
+ <返回/@LOOKSJWP>\
+
+[@LOOKSMSJXS]
+神秘绒丝、魔龙颚骨、魔龙骨、魔龙牙都是旷世罕见的稀世珍宝，\
+不仅靠一已的力量是无法获得这些神奇的宝贝，您必须拥有队友的协作！\
+在盟重镇魔守将处使用任意一中组队卷轴选择组队前往地下迷宫\
+通过崎岖的地下迷宫和妖魔守卫的宫殿长廊，到达地下宫殿,\
+注意，您必须拥有千年蜘丝,\
+地下宫殿中宫殿守卫才会透露这些神奇宝贝的获得方法。\
+ <返回/@LOOKSJWP>\
+
+[@LOOKQNZSXS]
+只有真正的孤胆英雄才能获得“盘丝洞”中神秘的千年蜘丝！\
+在盟重镇魔守将处使用任意一中组队卷轴选择组队前往地下迷宫.\
+通过崎岖的地下迷宫和妖魔守卫的宫殿长廊，到达地下宫殿,\
+在地下宫殿的宫殿守卫会告诉您进入“盘丝洞”的方法。\
+ <返回/@LOOKSJWP>\
+
+[@OKSJQHSS]
+升级需要的物品都带齐了吧？\
+您想升级什么物品呢？就把它们交给我吧。\
+ <升级雷霆腰带/@SJQHLTYD>　　　　<升级雷霆战靴/@SJQHLTZX>\
+ <升级烈焰腰带/@SJQHLYYD>　　　　<升级烈焰魔靴/@SJQHLYMX>\
+ <升级光芒腰带/@SJQHGMYD>　　　　<升级光芒道靴/@SJQHGMDX>\
+ <返回/@LOOKSJWP>\
+
+[@SJQHLTYD]
+#IF
+  CHECKGAMEDIAMOND > 887
+  checkitem 雷霆腰带 3
+  checkitem 雷霆绒丝 1
+  checkitem 魔龙颚骨 1
+  checkitem 魔龙骨 1
+  checkitem 魔龙牙 1
+#ACT
+  GAMEDIAMOND - 888
+  take 雷霆腰带 3
+  take 雷霆绒丝 1
+  take 魔龙颚骨 1
+  take 魔龙骨 1
+  take 魔龙牙 1
+  give 强化雷霆腰带 1
+#SAY
+恭喜，升级强化雷霆腰带成功！\
+您的雷霆腰带已经成功为您升级成强化雷霆腰带。\ \
+ <返回/@LOOKSJWP>
+#ELSESAY
+您没有升级需要的足够原料，我也无能为力了。\ \
+ <关闭/@exit>
+
+[@SJQHLYYD]
+#IF
+  CHECKGAMEDIAMOND > 887
+  checkitem 烈焰腰带 3
+  checkitem 烈焰绒丝 1
+  checkitem 魔龙颚骨 1
+  checkitem 魔龙骨 1
+  checkitem 魔龙牙 1
+#ACT
+  GAMEDIAMOND - 888
+  take 烈焰腰带 3
+  take 烈焰绒丝 1
+  take 魔龙颚骨 1
+  take 魔龙骨 1
+  take 魔龙牙 1
+  give 强化烈焰腰带 1
+#SAY
+恭喜，升级强化烈焰腰带成功！\
+您的烈焰腰带已经成功为您升级成强化烈焰腰带。\ \
+ <返回/@LOOKSJWP>
+#ELSESAY
+您没有升级需要的足够原料，我也无能为力了。\ \
+ <关闭/@exit>
+
+[@SJQHGMYD]
+#IF
+  CHECKGAMEDIAMOND > 887
+  checkitem 光芒腰带 3
+  checkitem 光芒绒丝 1
+  checkitem 魔龙颚骨 1
+  checkitem 魔龙骨 1
+  checkitem 魔龙牙 1
+#ACT
+  GAMEDIAMOND - 888
+  take 光芒腰带 3
+  take 光芒绒丝 1
+  take 魔龙颚骨 1
+  take 魔龙骨 1
+  take 魔龙牙 1
+  give 强化光芒腰带 1
+#SAY
+恭喜，升级强化光芒腰带成功！\
+您的光芒腰带已经成功为您升级成强化光芒腰带。\ \
+ <返回/@LOOKSJWP>
+#ELSESAY
+您没有升级需要的足够原料，我也无能为力了。\ \
+ <关闭/@exit>
+
+[@SJQHLTZX]
+#IF
+  CHECKGAMEDIAMOND > 887
+  checkitem 雷霆战靴 3
+  checkitem 雷霆绒丝 1
+  checkitem 魔龙颚骨 1
+  checkitem 魔龙骨 1
+  checkitem 魔龙牙 1
+#ACT
+  GAMEDIAMOND - 888
+  take 雷霆战靴 3
+  take 雷霆绒丝 1
+  take 魔龙颚骨 1
+  take 魔龙骨 1
+  take 魔龙牙 1
+  give 强化雷霆战靴 1
+#SAY
+恭喜，升级强化雷霆战靴成功！\
+您的雷霆战靴已经成功为您升级成强化雷霆战靴。\ \
+ <返回/@LOOKSJWP>
+#ELSESAY
+您没有升级需要的足够原料，我也无能为力了。\ \
+ <关闭/@exit>
+
+[@SJQHLYMX]
+#IF
+  CHECKGAMEDIAMOND > 887
+  checkitem 烈焰魔靴 3
+  checkitem 烈焰绒丝 1
+  checkitem 魔龙颚骨 1
+  checkitem 魔龙骨 1
+  checkitem 魔龙牙 1
+#ACT
+  GAMEDIAMOND - 888
+  take 烈焰魔靴 3
+  take 烈焰绒丝 1
+  take 魔龙颚骨 1
+  take 魔龙骨 1
+  take 魔龙牙 1
+  give 强化烈焰魔靴 1
+#SAY
+恭喜，升级强化烈焰魔靴成功！\
+您的烈焰魔靴已经成功为您升级成强化烈焰魔靴。\ \
+ <返回/@LOOKSJWP>
+#ELSESAY
+您没有升级需要的足够原料，我也无能为力了。\ \
+ <关闭/@exit>
+
+[@SJQHGMDX]
+#IF
+  CHECKGAMEDIAMOND > 887
+  checkitem 光芒道靴 3
+  checkitem 光芒绒丝 1
+  checkitem 魔龙颚骨 1
+  checkitem 魔龙骨 1
+  checkitem 魔龙牙 1
+#ACT
+  GAMEDIAMOND - 888
+  take 光芒道靴 3
+  take 光芒绒丝 1
+  take 魔龙颚骨 1
+  take 魔龙骨 1
+  take 魔龙牙 1
+  give 强化光芒道靴 1
+#SAY
+恭喜，升级强化光芒道靴成功！\
+您的光芒道靴已经成功为您升级成强化光芒道靴。\ \
+ <返回/@LOOKSJWP>
+#ELSESAY
+您没有升级需要的足够原料，我也无能为力了。\ \
+ <关闭/@exit>
+
+[@HCLTANDLYGM]
+合成需要的圣战、法神、天尊系列的物品，\
+只要一个系列的任意物品1-10件就可以了，\
+如果合成失败，只有藏宝图还能返还给你，你想合成什么呢？\
+<雷霆战甲(男)/@OKLTZJMAN>　　　<雷霆战甲(女)/@OKLTZJWUMAN>\
+<烈焰魔衣(男)/@OKLYMYMAN>　　　<烈焰魔衣(女)/@OKLYMYWUMAN>\
+<光芒道袍(男)/@OKGMDPMAN>　　　<光芒道袍(女)/@OKGMDPWUMAN>\
+\ \
+<返回/@main>
+
+[@OKLTZJMAN]
+#IF
+CHECKGAMEDIAMOND > 187
+#ACT
+GOTO @OKLTZJMAN_1
+BREAK
+#IF
+#SAY
+你的金刚石不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKLTZJMAN_1]
+#IF
+checkitem 藏宝图301 1
+checkitem 藏宝图302 1
+checkitem 藏宝图303 1
+checkitem 藏宝图304 1
+checkitem 藏宝图305 1
+checkitem 藏宝图306 1
+checkitem 藏宝图307 1
+checkitem 藏宝图308 1
+#ACT
+GOTO @OKLTZJMAN_2
+BREAK
+#IF
+#SAY
+你的藏宝图不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKLTZJMAN_2]
+#IF
+checkitem 圣战头盔 1
+#ACT
+GOTO @OKLTZJMAN_3_1
+BREAK
+#IF
+checkitem 圣战项链 1
+#ACT
+GOTO @OKLTZJMAN_3_2
+BREAK
+#IF
+checkitem 圣战手镯 1
+#ACT
+GOTO @OKLTZJMAN_3_3
+BREAK
+#IF
+checkitem 圣战戒指 1
+#ACT
+GOTO @OKLTZJMAN_3_4
+BREAK
+#IF
+#SAY
+你的圣战首饰不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKLTZJMAN_3_1]
+#IF
+RANDOM 2
+checkitem 圣战头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图301 1
+TAKE 藏宝图302 1
+TAKE 藏宝图303 1
+TAKE 藏宝图304 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 圣战头盔 46
+GIVE 雷霆战甲(男) 1
+BREAK
+#SAY
+合成[雷霆战甲(男)]成功！\
+已经成为您雷霆战甲(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 圣战头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 圣战头盔 46
+BREAK
+#SAY
+合成[雷霆战甲(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLTZJMAN_3_2]
+#IF
+RANDOM 2
+checkitem 圣战项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图301 1
+TAKE 藏宝图302 1
+TAKE 藏宝图303 1
+TAKE 藏宝图304 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 圣战项链 46
+GIVE 雷霆战甲(男) 1
+BREAK
+#SAY
+合成[雷霆战甲(男)]成功！\
+已经成为您雷霆战甲(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 圣战项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 圣战项链 46
+BREAK
+#SAY
+合成[雷霆战甲(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLTZJMAN_3_3]
+#IF
+RANDOM 2
+checkitem 圣战手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图301 1
+TAKE 藏宝图302 1
+TAKE 藏宝图303 1
+TAKE 藏宝图304 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 圣战手镯 46
+GIVE 雷霆战甲(男) 1
+BREAK
+#SAY
+合成[雷霆战甲(男)]成功！\
+已经成为您雷霆战甲(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 圣战手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 圣战手镯 46
+BREAK
+#SAY
+合成[雷霆战甲(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLTZJMAN_3_4]
+#IF
+RANDOM 2
+checkitem 圣战戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图301 1
+TAKE 藏宝图302 1
+TAKE 藏宝图303 1
+TAKE 藏宝图304 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 圣战戒指 46
+GIVE 雷霆战甲(男) 1
+BREAK
+#SAY
+合成[雷霆战甲(男)]成功！\
+已经成为您雷霆战甲(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 圣战戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 圣战戒指 46
+BREAK
+#SAY
+合成[雷霆战甲(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLTZJWUMAN]
+#IF
+CHECKGAMEDIAMOND > 187
+#ACT
+GOTO @OKLTZJWUMAN_1
+BREAK
+#IF
+#SAY
+你的金刚石不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKLTZJWUMAN_1]
+#IF
+checkitem 藏宝图301 1
+checkitem 藏宝图302 1
+checkitem 藏宝图309 1
+checkitem 藏宝图310 1
+checkitem 藏宝图311 1
+checkitem 藏宝图312 1
+checkitem 藏宝图313 1
+checkitem 藏宝图314 1
+#ACT
+GOTO @OKLTZJWUMAN_2
+BREAK
+#IF
+#SAY
+你的藏宝图不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKLTZJWUMAN_2]
+#IF
+checkitem 圣战头盔 1
+#ACT
+GOTO @OKLTZJWUMAN_3_1
+BREAK
+#IF
+checkitem 圣战项链 1
+#ACT
+GOTO @OKLTZJWUMAN_3_2
+BREAK
+#IF
+checkitem 圣战手镯 1
+#ACT
+GOTO @OKLTZJWUMAN_3_3
+BREAK
+#IF
+checkitem 圣战戒指 1
+#ACT
+GOTO @OKLTZJWUMAN_3_4
+BREAK
+#IF
+#SAY
+你的圣战首饰不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKLTZJWUMAN_3_1]
+#IF
+RANDOM 2
+checkitem 圣战头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图301 1
+TAKE 藏宝图302 1
+TAKE 藏宝图309 1
+TAKE 藏宝图310 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 藏宝图314 1
+TAKE 圣战头盔 46
+GIVE 雷霆战甲(女) 1
+BREAK
+#SAY
+合成[雷霆战甲(女)]成功！\
+已经成为您雷霆战甲(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 圣战头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 圣战头盔 46
+BREAK
+#SAY
+合成[雷霆战甲(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLTZJWUMAN_3_2]
+#IF
+RANDOM 2
+checkitem 圣战项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图301 1
+TAKE 藏宝图302 1
+TAKE 藏宝图309 1
+TAKE 藏宝图310 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 藏宝图314 1
+TAKE 圣战项链 46
+GIVE 雷霆战甲(女) 1
+BREAK
+#SAY
+合成[雷霆战甲(女)]成功！\
+已经成为您雷霆战甲(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 圣战项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 圣战项链 46
+BREAK
+#SAY
+合成[雷霆战甲(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLTZJWUMAN_3_3]
+#IF
+RANDOM 2
+checkitem 圣战手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图301 1
+TAKE 藏宝图302 1
+TAKE 藏宝图309 1
+TAKE 藏宝图310 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 藏宝图314 1
+TAKE 圣战手镯 46
+GIVE 雷霆战甲(女) 1
+BREAK
+#SAY
+合成[雷霆战甲(女)]成功！\
+已经成为您雷霆战甲(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 圣战手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 圣战手镯 46
+BREAK
+#SAY
+合成[雷霆战甲(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLTZJWUMAN_3_4]
+#IF
+RANDOM 2
+checkitem 圣战戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图301 1
+TAKE 藏宝图302 1
+TAKE 藏宝图309 1
+TAKE 藏宝图310 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 藏宝图314 1
+TAKE 圣战戒指 46
+GIVE 雷霆战甲(女) 1
+BREAK
+#SAY
+合成[雷霆战甲(女)]成功！\
+已经成为您雷霆战甲(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 圣战戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 圣战戒指 46
+BREAK
+#SAY
+合成[雷霆战甲(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLYMYMAN]
+#IF
+CHECKGAMEDIAMOND > 187
+#ACT
+GOTO @OKLYMYMAN_1
+BREAK
+#IF
+#SAY
+你的金刚石不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKLYMYMAN_1]
+#IF
+checkitem 藏宝图315 1
+checkitem 藏宝图316 1
+checkitem 藏宝图317 1
+checkitem 藏宝图318 1
+checkitem 藏宝图305 1
+checkitem 藏宝图306 1
+checkitem 藏宝图307 1
+checkitem 藏宝图308 1
+#ACT
+GOTO @OKLYMYMAN_2
+BREAK
+#IF
+#SAY
+你的藏宝图不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKLYMYMAN_2]
+#IF
+checkitem 法神头盔 1
+#ACT
+GOTO @OKLYMYMAN_3_1
+BREAK
+#IF
+checkitem 法神项链 1
+#ACT
+GOTO @OKLYMYMAN_3_2
+BREAK
+#IF
+checkitem 法神手镯 1
+#ACT
+GOTO @OKLYMYMAN_3_3
+BREAK
+#IF
+checkitem 法神戒指 1
+#ACT
+GOTO @OKLYMYMAN_3_4
+BREAK
+#IF
+#SAY
+你的法神首饰不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKLYMYMAN_3_1]
+#IF
+RANDOM 2
+checkitem 法神头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图315 1
+TAKE 藏宝图316 1
+TAKE 藏宝图317 1
+TAKE 藏宝图318 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 法神头盔 46
+GIVE 烈焰魔衣(男) 1
+BREAK
+#SAY
+合成[烈焰魔衣(男)]成功！\
+已经成为您烈焰魔衣(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 法神头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 法神头盔 46
+BREAK
+#SAY
+合成[烈焰魔衣(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLYMYMAN_3_2]
+#IF
+RANDOM 2
+checkitem 法神项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图315 1
+TAKE 藏宝图316 1
+TAKE 藏宝图317 1
+TAKE 藏宝图318 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 法神项链 46
+GIVE 烈焰魔衣(男) 1
+BREAK
+#SAY
+合成[烈焰魔衣(男)]成功！\
+已经成为您烈焰魔衣(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 法神项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 法神项链 46
+BREAK
+#SAY
+合成[烈焰魔衣(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLYMYMAN_3_3]
+#IF
+RANDOM 2
+checkitem 法神手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图315 1
+TAKE 藏宝图316 1
+TAKE 藏宝图317 1
+TAKE 藏宝图318 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 法神手镯 46
+GIVE 烈焰魔衣(男) 1
+BREAK
+#SAY
+合成[烈焰魔衣(男)]成功！\
+已经成为您烈焰魔衣(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 法神手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 法神手镯 46
+BREAK
+#SAY
+合成[烈焰魔衣(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLYMYMAN_3_4]
+#IF
+RANDOM 2
+checkitem 法神戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图315 1
+TAKE 藏宝图316 1
+TAKE 藏宝图317 1
+TAKE 藏宝图318 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 法神戒指 46
+GIVE 烈焰魔衣(男) 1
+BREAK
+#SAY
+合成[烈焰魔衣(男)]成功！\
+已经成为您烈焰魔衣(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 法神戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 法神戒指 46
+BREAK
+#SAY
+合成[烈焰魔衣(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLYMYWUMAN_2]
+#IF
+checkitem 法神头盔 1
+#ACT
+GOTO @OKLYMYWUMAN_3_1
+BREAK
+#IF
+checkitem 法神项链 1
+#ACT
+GOTO @OKLYMYWUMAN_3_2
+BREAK
+#IF
+checkitem 法神手镯 1
+#ACT
+GOTO @OKLYMYWUMAN_3_3
+BREAK
+#IF
+checkitem 法神戒指 1
+#ACT
+GOTO @OKLYMYWUMAN_3_4
+BREAK
+#IF
+#SAY
+你的法神首饰不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKLYMYWUMAN_3_1]
+#IF
+RANDOM 2
+checkitem 法神头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图315 1
+TAKE 藏宝图316 1
+TAKE 藏宝图314 1
+TAKE 藏宝图319 1
+TAKE 藏宝图320 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 法神头盔 46
+GIVE 烈焰魔衣(女) 1
+BREAK
+#SAY
+合成[烈焰魔衣(女)]成功！\
+已经成为您烈焰魔衣(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 法神头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 法神头盔 46
+BREAK
+#SAY
+合成[烈焰魔衣(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLYMYWUMAN_3_2]
+#IF
+RANDOM 2
+checkitem 法神项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图315 1
+TAKE 藏宝图316 1
+TAKE 藏宝图314 1
+TAKE 藏宝图319 1
+TAKE 藏宝图320 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 法神项链 46
+GIVE 烈焰魔衣(女) 1
+BREAK
+#SAY
+合成[烈焰魔衣(女)]成功！\
+已经成为您烈焰魔衣(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 法神项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 法神项链 46
+BREAK
+#SAY
+合成[烈焰魔衣(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLYMYWUMAN_3_3]
+#IF
+RANDOM 2
+checkitem 法神手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图315 1
+TAKE 藏宝图316 1
+TAKE 藏宝图314 1
+TAKE 藏宝图319 1
+TAKE 藏宝图320 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 法神手镯 46
+GIVE 烈焰魔衣(女) 1
+BREAK
+#SAY
+合成[烈焰魔衣(女)]成功！\
+已经成为您烈焰魔衣(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 法神手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 法神手镯 46
+BREAK
+#SAY
+合成[烈焰魔衣(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKLYMYWUMAN_3_4]
+#IF
+RANDOM 2
+checkitem 法神戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图315 1
+TAKE 藏宝图316 1
+TAKE 藏宝图314 1
+TAKE 藏宝图319 1
+TAKE 藏宝图320 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 法神戒指 46
+GIVE 烈焰魔衣(女) 1
+BREAK
+#SAY
+合成[烈焰魔衣(女)]成功！\
+已经成为您烈焰魔衣(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 法神戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 法神戒指 46
+BREAK
+#SAY
+合成[烈焰魔衣(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKGMDPMAN]
+#IF
+CHECKGAMEDIAMOND > 187
+#ACT
+GOTO @OKGMDPMAN_1
+BREAK
+#IF
+#SAY
+你的金刚石不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKGMDPMAN_1]
+#IF
+checkitem 藏宝图321 1
+checkitem 藏宝图322 1
+checkitem 藏宝图323 1
+checkitem 藏宝图324 1
+checkitem 藏宝图305 1
+checkitem 藏宝图306 1
+checkitem 藏宝图307 1
+checkitem 藏宝图308 1
+#ACT
+GOTO @OKGMDPMAN_2
+BREAK
+#IF
+#SAY
+你的藏宝图不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKGMDPMAN_2]
+#IF
+checkitem 天尊头盔 1
+#ACT
+GOTO @OKGMDPMAN_3_1
+BREAK
+#IF
+checkitem 天尊项链 1
+#ACT
+GOTO @OKGMDPMAN_3_2
+BREAK
+#IF
+checkitem 天尊手镯 1
+#ACT
+GOTO @OKGMDPMAN_3_3
+BREAK
+#IF
+checkitem 天尊戒指 1
+#ACT
+GOTO @OKGMDPMAN_3_4
+BREAK
+#IF
+#SAY
+你的天尊首饰不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKGMDPMAN_3_1]
+#IF
+RANDOM 2
+checkitem 天尊头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图321 1
+TAKE 藏宝图322 1
+TAKE 藏宝图323 1
+TAKE 藏宝图324 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 天尊头盔 46
+GIVE 光芒道袍(男) 1
+BREAK
+#SAY
+合成[光芒道袍(男)]成功！\
+已经成为您光芒道袍(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 天尊头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 天尊头盔 46
+BREAK
+#SAY
+合成[光芒道袍(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKGMDPMAN_3_2]
+#IF
+RANDOM 2
+checkitem 天尊项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图321 1
+TAKE 藏宝图322 1
+TAKE 藏宝图323 1
+TAKE 藏宝图324 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 天尊项链 46
+GIVE 光芒道袍(男) 1
+BREAK
+#SAY
+合成[光芒道袍(男)]成功！\
+已经成为您光芒道袍(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 天尊项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 天尊项链 46
+BREAK
+#SAY
+合成[光芒道袍(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKGMDPMAN_3_3]
+#IF
+RANDOM 2
+checkitem 天尊手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图321 1
+TAKE 藏宝图322 1
+TAKE 藏宝图323 1
+TAKE 藏宝图324 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 天尊手镯 46
+GIVE 光芒道袍(男) 1
+BREAK
+#SAY
+合成[光芒道袍(男)]成功！\
+已经成为您光芒道袍(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 天尊手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 天尊手镯 46
+BREAK
+#SAY
+合成[光芒道袍(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKGMDPMAN_3_4]
+#IF
+RANDOM 2
+checkitem 天尊戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图321 1
+TAKE 藏宝图322 1
+TAKE 藏宝图323 1
+TAKE 藏宝图324 1
+TAKE 藏宝图305 1
+TAKE 藏宝图306 1
+TAKE 藏宝图307 1
+TAKE 藏宝图308 1
+TAKE 天尊戒指 46
+GIVE 光芒道袍(男) 1
+BREAK
+#SAY
+合成[光芒道袍(男)]成功！\
+已经成为您光芒道袍(男)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 天尊戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 天尊戒指 46
+BREAK
+#SAY
+合成[光芒道袍(男)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKGMDPWUMAN]
+#IF
+CHECKGAMEDIAMOND > 187
+#ACT
+GOTO @OKGMDPWUMAN_1
+BREAK
+#IF
+#SAY
+你的金刚石不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKGMDPWUMAN_1]
+#IF
+checkitem 藏宝图321 1
+checkitem 藏宝图322 1
+checkitem 藏宝图325 1
+checkitem 藏宝图326 1
+checkitem 藏宝图311 1
+checkitem 藏宝图312 1
+checkitem 藏宝图313 1
+checkitem 藏宝图314 1
+#ACT
+GOTO @OKGMDPWUMAN_2
+BREAK
+#IF
+#SAY
+你的藏宝图不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKGMDPWUMAN_2]
+#IF
+checkitem 天尊头盔 1
+#ACT
+GOTO @OKGMDPWUMAN_3_1
+BREAK
+#IF
+checkitem 天尊项链 1
+#ACT
+GOTO @OKGMDPWUMAN_3_2
+BREAK
+#IF
+checkitem 天尊手镯 1
+#ACT
+GOTO @OKGMDPWUMAN_3_3
+BREAK
+#IF
+checkitem 天尊戒指 1
+#ACT
+GOTO @OKGMDPWUMAN_3_4
+BREAK
+#IF
+#SAY
+你的天尊首饰不足！\
+\ \
+\ \
+<取消/@exit>
+
+[@OKGMDPWUMAN_3_1]
+#IF
+RANDOM 2
+checkitem 天尊头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图321 1
+TAKE 藏宝图322 1
+TAKE 藏宝图325 1
+TAKE 藏宝图326 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 藏宝图314 1
+TAKE 天尊头盔 46
+GIVE 光芒道袍(女) 1
+BREAK
+#SAY
+合成[光芒道袍(女)]成功！\
+已经成为您光芒道袍(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 天尊头盔 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 天尊头盔 46
+BREAK
+#SAY
+合成[光芒道袍(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKGMDPWUMAN_3_2]
+#IF
+RANDOM 2
+checkitem 天尊项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图321 1
+TAKE 藏宝图322 1
+TAKE 藏宝图325 1
+TAKE 藏宝图326 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 藏宝图314 1
+TAKE 天尊项链 46
+GIVE 光芒道袍(女) 1
+BREAK
+#SAY
+合成[光芒道袍(女)]成功！\
+已经成为您光芒道袍(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 天尊项链 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 天尊项链 46
+BREAK
+#SAY
+合成[光芒道袍(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKGMDPWUMAN_3_3]
+#IF
+RANDOM 2
+checkitem 天尊手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图321 1
+TAKE 藏宝图322 1
+TAKE 藏宝图325 1
+TAKE 藏宝图326 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 藏宝图314 1
+TAKE 天尊手镯 46
+GIVE 光芒道袍(女) 1
+BREAK
+#SAY
+合成[光芒道袍(女)]成功！\
+已经成为您光芒道袍(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 天尊手镯 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 天尊手镯 46
+BREAK
+#SAY
+合成[光芒道袍(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@OKGMDPWUMAN_3_4]
+#IF
+RANDOM 2
+checkitem 天尊戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 藏宝图321 1
+TAKE 藏宝图322 1
+TAKE 藏宝图325 1
+TAKE 藏宝图326 1
+TAKE 藏宝图311 1
+TAKE 藏宝图312 1
+TAKE 藏宝图313 1
+TAKE 藏宝图314 1
+TAKE 天尊戒指 46
+GIVE 光芒道袍(女) 1
+BREAK
+#SAY
+合成[光芒道袍(女)]成功！\
+已经成为您光芒道袍(女)。\
+\ \
+<返回/@HCLTANDLYGM>
+
+#IF
+checkitem 天尊戒指 1
+#ACT
+GAMEDIAMOND - 188
+TAKE 天尊戒指 46
+BREAK
+#SAY
+合成[光芒道袍(女)]失败！\
+\ \
+\ \
+<关闭/@exit>
+
+[@buy]
+你想买什么样的衣服？\ \ \
+ <返回/@Main>
+
+[@sell]
+把要卖的衣服给我看看，我会给你个估价。\ \ \
+ <返回/@Main>
+
+[@repair]
+请放上去要修补的衣服.\ \ \
+ <返回/@Main>
+
+[~@repair]
+这个看上去已修好了\ \ \
+ <返回/@Main>
+
+[@s_repair]
+你这家伙，你可太幸运了，我正好有材料做特殊修补．\
+但是费用是普通的三倍！\
+
+[goods]
+布衣(男)        50      10
+布衣(女)        50      10
+轻型盔甲(男)    50      10
+轻型盔甲(女)    50      10
+中型盔甲(男)    50      10
+中型盔甲(女)    50      10
+重盔甲(男)	50	10
+重盔甲(女)	50	10
+魔法长袍(男)	50	10
+魔法长袍(女)	50	10
+灵魂战衣(男)	50	10
+灵魂战衣(女)	50	10

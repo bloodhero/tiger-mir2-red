@@ -1,0 +1,19 @@
+[@main]
+#IF
+CheckMapSameMonCount hero1 宝藏守护人 = 0
+CheckMapSameMonCount hero1 宝藏守护人1 = 0
+CheckMapSameMonCount hero1 宝藏守护人2 = 0
+CheckMapSameMonCount hero1 宝藏守护人3 = 0
+CheckMapSameMonCount hero1 宝藏守护人4 = 0
+CheckMapSameMonCount hero1 宝藏守护人5 = 0
+#ACT
+MOV I8  1
+GIVE 火龙珠 1
+SENDMSG 0 所有“宝藏守护人”已经成功击败！卧龙山庄的“火龙宝藏”即将在1分钟后开启！开启后即可免费领取“火龙宝藏”。“火龙宝藏”开启时间，请各位勇士抓紧时间！
+DELAYGOTO 60000  @KQHLZ
+
+
+[@KQHLZ]
+#IF
+#ACT
+MOV I9 1

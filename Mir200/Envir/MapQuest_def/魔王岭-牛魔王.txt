@@ -1,0 +1,361 @@
+[@main] 
+#IF 
+random 2 
+#ACT 
+THROWITEM <$MAP> 35 36 3 °×Òø±¦Ïä 1 
+#IF 
+random 5 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ³à½ð±¦Ïä 1 
+#IF 
+random 100 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ÈÈÑª»ý·Ö 1 
+#IF 
+random 100 
+#ACT 
+THROWITEM <$MAP> 35 36 3 °×½ð»ý·Ö 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼001 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼002 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼003 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼004 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼005 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼006 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼007 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼008 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼009 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼010 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼011 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼012 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼013 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼014 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼015 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼016 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼017 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼018 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼019 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼020 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼101 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼102 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼103 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼104 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼105 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼106 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼107 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼108 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼109 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼110 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼111 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼112 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼113 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼114 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼115 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼116 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼117 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼118 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼119 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼120 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼201 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼202 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼203 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼204 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼205 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼206 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼207 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼208 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼209 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼210 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼211 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼212 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼213 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼214 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼215 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼216 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼217 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼218 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼219 1 
+#IF 
+random 3000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼220 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼301 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼302 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼303 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼304 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼305 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼306 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼307 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼308 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼309 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼310 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼311 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼312 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼313 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼314 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼315 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼316 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼317 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼318 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼319 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼320 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼321 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼322 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼323 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼324 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼325 1 
+#IF 
+random 9000 
+#ACT 
+THROWITEM <$MAP> 35 36 3 ²Ø±¦Í¼326 1 

@@ -1,0 +1,1210 @@
+[@main]
+赶快召唤出弓箭手，盗走天关宝物的怪物就要出现了！ \
+拦截逃离的怪物，夺回被盗的宝物！ \
+每次用<5个弩牌/FCOLOR=250>换取弓箭手，都需要付出<一张灵符/FCOLOR=250>哦 \
+请<选择摆放弓箭手位置/@位置>摆放第一个弓箭手， \
+如果移动弓箭手的位置错误，也可以在这里重新放置 \ \
+<使用5个弩牌换取弓箭手/@使用>　　<使用1个弩牌移动弓箭手/@移动> \ \
+<领奖/@领>　　　　　　　　　　<查看规则/@规则>\
+
+[@首次寻路]
+#if
+;FINDMAPPATH <$MAP> 29 23 58 43
+#act
+INC M18 1
+Mov M20 59
+Mov M21 5
+Mov M22 0
+Mov M23 0
+Mov M24 0
+Mov M30 0
+Delaygoto 300 @刷怪
+close
+#elsesay
+无法到达终点!
+
+[@刷怪]
+#if
+equal M1 0
+#act
+break
+
+#if
+CHECKMAPNAME Self K004E
+#elseact
+break
+
+#if 
+large M22 <$STR(M20)>
+#act
+break
+
+#if
+equal M23 <$STR(M24)>
+#act
+INC M23 1
+GetRandomText ..\QuestDiary\英雄合击\挑战魔岭\刷怪.txt S11
+
+#if
+CheckRangeMonCount <$MAP> 29 23 0 = 0
+#act
+MOBPLACE <$STR(S11)> 1
+Inc M22 1
+DIV M24 <$STR(M22)> <$STR(M21)>
+Delaygoto 500 @刷怪
+#elseact
+Delaygoto 300 @刷怪
+
+[@位置]
+#IF
+EQUAL M19 1
+#ACT
+BREAK
+#SAY
+\
+恭喜您，已经成功狙击了一批魔王岭盗贼!\ \
+<我要回天庭/@返回> \
+<进入下一关/@下关>\
+
+#IF
+CHECKLEVELEX > 0
+#ACT
+BREAK
+#SAY
+　　您当前拥有元宝：{<$GAMEGOLD>/FCOLOR=250}个  灵符：{<$GAMEGIRD>/FCOLOR=250}个  已雇用弓箭手：{<$STR(M18)>/FCOLOR=250}个 \ \
+　　　　　　　　<请选择放置弓箭手的位置/FCOLOR=253> \
+　　■{◎/FCOLOR=<$STR(S1)>}<1号/@1号> 　　　　　　　　　　　　　　　　{◎/FCOLOR=<$STR(S10)>}<10号/@10号>■ \
+　　■　　　　　<◎/FCOLOR=250>表示已经放置好弓箭手　　　　　　■ \
+　　■{◎/FCOLOR=<$STR(S2)>}<2号/@2号>     <◎/FCOLOR=249>表示还没有放置弓箭手      {◎/FCOLOR=<$STR(S9)>}<09号/@9号>■ \
+　　■　　　　　                                  ■ \
+　　■{◎/FCOLOR=<$STR(S3)>}<3号/@3号>  {◎/FCOLOR=<$STR(S4)>}<4号/@4号>  {◎/FCOLOR=<$STR(S5)>}<5号/@5号>     {◎/FCOLOR=<$STR(S6)>}<6号/@6号>  {◎/FCOLOR=<$STR(S7)>}<7号/@7号>  {◎/FCOLOR=<$STR(S8)>}<08号/@8号>■ \
+　　■■■■■■■■■■■■■■■■■■■■■■■■ \
+
+[@使用]
+#IF
+  CHECKGAMEGIRD > 0
+#ACT
+#SAY
+　　您当前拥有元宝：{<$GAMEGOLD>/FCOLOR=250}个  灵符：{<$GAMEGIRD>/FCOLOR=250}个  已雇用弓箭手：{<$STR(M18)>/FCOLOR=250}个 \ \
+　　　　　　　　<请选择放置弓箭手的位置/FCOLOR=253> \
+　　■{◎/FCOLOR=<$STR(S1)>}<1号/@11号> 　　　　　　　　　　　　　　　　{◎/FCOLOR=<$STR(S10)>}<10号/@110号>■ \
+　　■　　　　　<◎/FCOLOR=250>表示已经放置好弓箭手　　　　　　■ \
+　　■{◎/FCOLOR=<$STR(S2)>}<2号/@22号>     <◎/FCOLOR=249>表示还没有放置弓箭手      {◎/FCOLOR=<$STR(S9)>}<09号/@99号>■ \
+　　■　　　　　                                  ■ \
+　　■{◎/FCOLOR=<$STR(S3)>}<3号/@33号>  {◎/FCOLOR=<$STR(S4)>}<4号/@44号>  {◎/FCOLOR=<$STR(S5)>}<5号/@55号>     {◎/FCOLOR=<$STR(S6)>}<6号/@66号>  {◎/FCOLOR=<$STR(S7)>}<7号/@77号>  {◎/FCOLOR=<$STR(S8)>}<08号/@88号>■ \
+　　■■■■■■■■■■■■■■■■■■■■■■■■ \
+#elsesay
+　　您当前拥有元宝：{<$GAMEGOLD>/FCOLOR=250}个  灵符：{<$GAMEGIRD>/FCOLOR=250}个  已雇用弓箭手：{<$STR(M18)>/FCOLOR=250}个 \ \
+　　　　　　<您没有一张灵符无法继续放置弓箭手/AUTOCOLOR=251,168,250,70,243,249> \
+　　■{◎/FCOLOR=<$STR(S1)>}<1号/FCOLOR=251> 　　　　　　　　　　　　　　　　{◎/FCOLOR=<$STR(S10)>}<10号/FCOLOR=251>■ \
+　　■　　　　　<◎/FCOLOR=250>表示已经放置好弓箭手　　　　　　■ \
+　　■{◎/FCOLOR=<$STR(S2)>}<2号/FCOLOR=251>     <◎/FCOLOR=249>表示还没有放置弓箭手      {◎/FCOLOR=<$STR(S9)>}<09号/FCOLOR=251>■ \
+　　■　　　　　                                  ■ \
+　　■{◎/FCOLOR=<$STR(S3)>}<3号/FCOLOR=251>  {◎/FCOLOR=<$STR(S4)>}<4号/FCOLOR=251>  {◎/FCOLOR=<$STR(S5)>}<5号/FCOLOR=251>    {◎/FCOLOR=<$STR(S6)>}<6号/FCOLOR=251>   {◎/FCOLOR=<$STR(S7)>}<7号/FCOLOR=251>  {◎/FCOLOR=<$STR(S8)>}<08号/FCOLOR=251>■ \
+　　■■■■■■■■■■■■■■■■■■■■■■■■ \
+
+[@移动]
+　　您当前拥有元宝：{<$GAMEGOLD>/FCOLOR=250}个  灵符：{<$GAMEGIRD>/FCOLOR=250}个  已雇用弓箭手：{<$STR(M18)>/FCOLOR=250}个 \ \
+　　　　　　　　<请选择要移动的弓箭手位置/FCOLOR=253> \
+　　■{◎/FCOLOR=<$STR(S1)>}<1号/@211号> 　　　　　　　　　　　　　　　　{◎/FCOLOR=<$STR(S10)>}<10号/@2110号>■ \
+　　■　　　　　<◎/FCOLOR=250>表示已经放置好弓箭手　　　　　　■ \
+　　■{◎/FCOLOR=<$STR(S2)>}<2号/@222号>     <◎/FCOLOR=249>表示还没有放置弓箭手      {◎/FCOLOR=<$STR(S9)>}<09号/@299号>■ \
+　　■　　　　　                                  ■ \
+　　■{◎/FCOLOR=<$STR(S3)>}<3号/@233号>  {◎/FCOLOR=<$STR(S4)>}<4号/@244号>  {◎/FCOLOR=<$STR(S5)>}<5号/@255号>     {◎/FCOLOR=<$STR(S6)>}<6号/@266号>  {◎/FCOLOR=<$STR(S7)>}<7号/@277号>  {◎/FCOLOR=<$STR(S8)>}<08号/@288号>■ \
+　　■■■■■■■■■■■■■■■■■■■■■■■■ \
+
+[@放置]
+　　您当前拥有元宝：{<$GAMEGOLD>/FCOLOR=250}个  灵符：{<$GAMEGIRD>/FCOLOR=250}个  已雇用弓箭手：{<$STR(M18)>/FCOLOR=250}个 \ \
+　　　　　　　　<请选择放置弓箭手的位置/FCOLOR=253> \
+　　■{◎/FCOLOR=<$STR(S1)>}<1号/@3211号> 　　　　　　　　　　　　　　　　{◎/FCOLOR=<$STR(S10)>}<10号/@32110号>■ \
+　　■　　　　　<◎/FCOLOR=250>表示已经放置好弓箭手　　　　　　■ \
+　　■{◎/FCOLOR=<$STR(S2)>}<2号/@3222号>     <◎/FCOLOR=249>表示还没有放置弓箭手      {◎/FCOLOR=<$STR(S9)>}<09号/@3299号>■ \
+　　■　　　　　                                  ■ \
+　　■{◎/FCOLOR=<$STR(S3)>}<3号/@3233号>  {◎/FCOLOR=<$STR(S4)>}<4号/@3244号>  {◎/FCOLOR=<$STR(S5)>}<5号/@3255号>     {◎/FCOLOR=<$STR(S6)>}<6号/@3266号>  {◎/FCOLOR=<$STR(S7)>}<7号/@3277号>  {◎/FCOLOR=<$STR(S8)>}<08号/@3288号>■ \
+　　■■■■■■■■■■■■■■■■■■■■■■■■ \
+
+[@10号]
+#if
+large M1 0
+#say
+弓箭手已经准备就绪。
+#act
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 51 43 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+Mov S10 250
+ReCallMobEx 魔王岭弓箭手 2 51 43
+Delaygoto 300 @首次寻路
+SENDMSG 6 %S，10号弓箭手已经准备就绪。
+Close
+#elseact
+MESSAGEBOX [失败]：10号位置，已经有弓箭手。
+
+
+[@9号]
+#if
+large M1 0
+#say
+弓箭手已经准备就绪。
+#act
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 48 47 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+Mov S9 250
+ReCallMobEx 魔王岭弓箭手 2 48 47
+Delaygoto 300 @首次寻路
+SENDMSG 6 %S，9号弓箭手已经准备就绪。
+Close
+#elseact
+MESSAGEBOX [失败]：9号位置，已经有弓箭手。
+
+[@8号]
+#if
+large M1 0
+#say
+弓箭手已经准备就绪。
+#act
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 45 51 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+Mov S8 250
+ReCallMobEx 魔王岭弓箭手 2 45 51
+Delaygoto 300 @首次寻路
+SENDMSG 6 %S，8号弓箭手已经准备就绪。
+Close
+#elseact
+MESSAGEBOX [失败]：8号位置，已经有弓箭手。
+
+
+[@7号]
+#if
+large M1 0
+#say
+弓箭手已经准备就绪。
+#act
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 41 49 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+Mov S7 250
+ReCallMobEx 魔王岭弓箭手 2 41 49
+Delaygoto 300 @首次寻路
+SENDMSG 6 %S，7号弓箭手已经准备就绪。
+Close
+#elseact
+MESSAGEBOX [失败]：7号位置，已经有弓箭手。
+
+
+[@6号]
+#if
+large M1 0
+#say
+弓箭手已经准备就绪。
+#act
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 38 46 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+Mov S6 250
+ReCallMobEx 魔王岭弓箭手 2 38 46
+Delaygoto 300 @首次寻路
+SENDMSG 6 %S，6号弓箭手已经准备就绪。
+Close
+#elseact
+MESSAGEBOX [失败]：6号位置，已经有弓箭手。
+
+[@5号]
+#if
+large M1 0
+#say
+弓箭手已经准备就绪。
+#act
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 34 44 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+Mov S5 250
+ReCallMobEx 魔王岭弓箭手 2 34 44
+Delaygoto 300 @首次寻路
+SENDMSG 6 %S，5号弓箭手已经准备就绪。
+Close
+#elseact
+MESSAGEBOX [失败]：5号位置，已经有弓箭手。
+
+[@4号]
+#if
+large M1 0
+#say
+弓箭手已经准备就绪。
+#act
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 31 41 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+Mov S4 250
+ReCallMobEx 魔王岭弓箭手 2 31 41
+Delaygoto 300 @首次寻路
+SENDMSG 6 %S，4号弓箭手已经准备就绪。
+Close
+#elseact
+MESSAGEBOX [失败]：4号位置，已经有弓箭手。
+
+[@3号]
+#if
+large M1 0
+#say
+弓箭手已经准备就绪。
+#act
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 29 37 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+Mov S3 250
+ReCallMobEx 魔王岭弓箭手 2 29 37
+Delaygoto 300 @首次寻路
+SENDMSG 6 %S，3号弓箭手已经准备就绪。
+Close
+#elseact
+MESSAGEBOX [失败]：3号位置，已经有弓箭手。
+
+[@2号]
+#if
+large M1 0
+#say
+弓箭手已经准备就绪。
+#act
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 27 33 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+Mov S2 250
+ReCallMobEx 魔王岭弓箭手 2 27 33
+Delaygoto 300 @首次寻路
+SENDMSG 6 %S，2号弓箭手已经准备就绪。
+Close
+#elseact
+MESSAGEBOX [失败]：2号位置，已经有弓箭手。
+
+[@1号]
+#if
+large M1 0
+#say
+弓箭手已经准备就绪。
+#act
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 30 30 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+Mov S1 250
+ReCallMobEx 魔王岭弓箭手 2 30 30
+Delaygoto 300 @首次寻路
+SENDMSG 6 %S，1号弓箭手已经准备就绪。
+Close
+#elseact
+MESSAGEBOX [失败]：1号位置，已经有弓箭手。
+
+[@32110号]
+#if 
+CHECKRANGEMONCOUNTEX <$MAP> 51 43 魔王岭弓箭手 > 0
+#act
+MESSAGEBOX [失败]：10号位置，已经有弓箭手。
+#elseact
+MOVEMAPMONTOPOS 魔王岭弓箭手 <$MAP> <$STR(M10)> <$STR(M11)> <$MAP> 51 43
+Mov S10 250
+close
+
+[@3299号]
+#if 
+CHECKRANGEMONCOUNTEX <$MAP> 48 47 魔王岭弓箭手 > 0
+#act
+MESSAGEBOX [失败]：9号位置，已经有弓箭手。
+#elseact
+MOVEMAPMONTOPOS 魔王岭弓箭手 <$MAP> <$STR(M10)> <$STR(M11)> <$MAP> 48 47
+Mov S9 250
+close
+
+[@3288号]
+#if 
+CHECKRANGEMONCOUNTEX <$MAP> 45 51 魔王岭弓箭手 > 0
+#act
+MESSAGEBOX [失败]：8号位置，已经有弓箭手。
+#elseact
+MOVEMAPMONTOPOS 魔王岭弓箭手 <$MAP> <$STR(M10)> <$STR(M11)> <$MAP> 45 51
+Mov S8 250
+close
+
+[@3277号]
+#if 
+CHECKRANGEMONCOUNTEX <$MAP> 41 49 魔王岭弓箭手 > 0
+#act
+MESSAGEBOX [失败]：7号位置，已经有弓箭手。
+#elseact
+MOVEMAPMONTOPOS 魔王岭弓箭手 <$MAP> <$STR(M10)> <$STR(M11)> <$MAP> 41 49
+Mov S7 250
+close
+
+[@3266号]
+#if 
+CHECKRANGEMONCOUNTEX <$MAP> 38 46 魔王岭弓箭手 > 0
+#act
+MESSAGEBOX [失败]：6号位置，已经有弓箭手。
+#elseact
+MOVEMAPMONTOPOS 魔王岭弓箭手 <$MAP> <$STR(M10)> <$STR(M11)> <$MAP> 38 46
+Mov S6 250
+close
+
+[@3255号]
+#if 
+CHECKRANGEMONCOUNTEX <$MAP> 34 44 魔王岭弓箭手 > 0
+#act
+MESSAGEBOX [失败]：5号位置，已经有弓箭手。
+#elseact
+MOVEMAPMONTOPOS 魔王岭弓箭手 <$MAP> <$STR(M10)> <$STR(M11)> <$MAP> 34 44
+Mov S5 250
+close
+
+[@3244号]
+#if 
+CHECKRANGEMONCOUNTEX <$MAP> 31 41 魔王岭弓箭手 > 0
+#act
+MESSAGEBOX [失败]：4号位置，已经有弓箭手。
+#elseact
+MOVEMAPMONTOPOS 魔王岭弓箭手 <$MAP> <$STR(M10)> <$STR(M11)> <$MAP> 31 41
+Mov S4 250
+close
+
+[@3233号]
+#if 
+CHECKRANGEMONCOUNTEX <$MAP> 29 37 魔王岭弓箭手 > 0
+#act
+MESSAGEBOX [失败]：3号位置，已经有弓箭手。
+#elseact
+MOVEMAPMONTOPOS 魔王岭弓箭手 <$MAP> <$STR(M10)> <$STR(M11)> <$MAP> 29 37
+Mov S3 250
+close
+
+[@3222号]
+#if 
+CHECKRANGEMONCOUNTEX <$MAP> 27 33 魔王岭弓箭手 > 0
+#act
+MESSAGEBOX [失败]：2号位置，已经有弓箭手。
+#elseact
+MOVEMAPMONTOPOS 魔王岭弓箭手 <$MAP> <$STR(M10)> <$STR(M11)> <$MAP> 27 33
+Mov S2 250
+close
+
+[@3211号]
+#if 
+CHECKRANGEMONCOUNTEX <$MAP> 30 30 魔王岭弓箭手 > 0
+#act
+MESSAGEBOX [失败]：1号位置，已经有弓箭手。
+#elseact
+MOVEMAPMONTOPOS 魔王岭弓箭手 <$MAP> <$STR(M10)> <$STR(M11)> <$MAP> 30 30
+Mov S1 250
+close
+
+[@2110号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足1个。
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 51 43 魔王岭弓箭手 > 0
+#act
+Mov M10 51
+Mov M11 43
+take 弩牌 1
+Mov S10 249
+goto @放置
+#elseact
+MESSAGEBOX [失败]：10号位置没有可移动弓箭手。
+
+[@299号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足1个。
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 48 47 魔王岭弓箭手 > 0
+#act
+Mov M10 48
+Mov M11 47
+take 弩牌 1
+Mov S9 249
+goto @放置
+#elseact
+MESSAGEBOX [失败]：9号位置没有可移动弓箭手。
+
+[@288号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足1个。
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 45 51 魔王岭弓箭手 > 0
+#act
+Mov M10 45
+Mov M11 51
+take 弩牌 1
+Mov S8 249
+goto @放置
+#elseact
+MESSAGEBOX [失败]：8号位置没有可移动弓箭手。
+
+[@277号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足1个。
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 41 49 魔王岭弓箭手 > 0
+#act
+Mov M10 41
+Mov M11 49
+take 弩牌 1
+Mov S7 249
+goto @放置
+#elseact
+MESSAGEBOX [失败]：7号位置没有可移动弓箭手。
+
+[@266号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足1个。
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 38 46 魔王岭弓箭手 > 0
+#act
+Mov M10 38
+Mov M11 46
+take 弩牌 1
+Mov S6 249
+goto @放置
+#elseact
+MESSAGEBOX [失败]：6号位置没有可移动弓箭手。
+
+[@255号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足1个。
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 34 44 魔王岭弓箭手 > 0
+#act
+Mov M10 34
+Mov M11 44
+take 弩牌 1
+Mov S5 249
+goto @放置
+#elseact
+MESSAGEBOX [失败]：5号位置没有可移动弓箭手。
+
+[@244号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足1个。
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 31 41 魔王岭弓箭手 > 0
+#act
+Mov M10 31
+Mov M11 41
+take 弩牌 1
+Mov S4 249
+goto @放置
+#elseact
+MESSAGEBOX [失败]：4号位置没有可移动弓箭手。
+
+[@233号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足1个。
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 29 37 魔王岭弓箭手 > 0
+#act
+Mov M10 29
+Mov M11 37
+take 弩牌 1
+Mov S3 249
+goto @放置
+#elseact
+MESSAGEBOX [失败]：3号位置没有可移动弓箭手。
+
+[@222号]
+#if
+CHECKITEM 弩牌 1
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足1个。
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 27 33 魔王岭弓箭手 > 0
+#act
+Mov M10 27
+Mov M11 33
+take 弩牌 1
+Mov S2 249
+goto @放置
+#elseact
+MESSAGEBOX [失败]：2号位置没有可移动弓箭手。
+
+[@211号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足1个。
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 30 30 魔王岭弓箭手 > 0
+#act
+Mov M10 30
+Mov M11 30
+take 弩牌 1
+Mov S1 249
+goto @放置
+#elseact
+MESSAGEBOX [失败]：1号位置没有可移动弓箭手。
+
+[@110号]
+#if 
+large M18 5
+#act
+MESSAGEBOX [失败]：对不起，您已经使用了6名弓箭手。
+break
+
+#if
+CHECKITEM 弩牌 5
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足5个！
+close
+break
+
+#if
+CHECKGAMEGIRD > 0
+#act
+#elseact
+MESSAGEBOX [失败]：您的灵符数量不够！
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 51 43 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+INC M18 1
+Mov S10 250
+take 弩牌 5
+GAMEGIRD - 1
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+ReCallMobEx 魔王岭弓箭手 2 51 43
+GOTO @使用
+#elseact
+MESSAGEBOX [失败]：10号位置，已经有弓箭手。
+
+
+[@99号]
+#if 
+large M18 5
+#act
+MESSAGEBOX [失败]：对不起，您已经使用了6名弓箭手。
+break
+
+#if
+CHECKITEM 弩牌 5
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足5个！
+close
+break
+
+#if
+CHECKGAMEGIRD > 0
+#act
+#elseact
+MESSAGEBOX [失败]：您的灵符数量不够！
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 48 47 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+INC M18 1
+Mov S9 250
+take 弩牌 5
+GAMEGIRD - 1
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+ReCallMobEx 魔王岭弓箭手 2 48 47
+GOTO @使用
+#elseact
+MESSAGEBOX [失败]：9号位置，已经有弓箭手。
+
+[@88号]
+#if 
+large M18 5
+#act
+MESSAGEBOX [失败]：对不起，您已经使用了6名弓箭手。
+break
+
+#if
+CHECKITEM 弩牌 5
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足5个！
+close
+break
+
+#if
+CHECKGAMEGIRD > 0
+#act
+#elseact
+MESSAGEBOX [失败]：您的灵符数量不够！
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 45 51 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+INC M18 1
+Mov S8 250
+take 弩牌 5
+GAMEGIRD - 1
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+ReCallMobEx 魔王岭弓箭手 2 45 51
+GOTO @使用
+#elseact
+MESSAGEBOX [失败]：8号位置，已经有弓箭手。
+
+
+[@77号]
+#if 
+large M18 5
+#act
+MESSAGEBOX [失败]：对不起，您已经使用了6名弓箭手。
+break
+
+#if
+CHECKITEM 弩牌 5
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足5个！
+close
+break
+
+#if
+CHECKGAMEGIRD > 0
+#act
+#elseact
+MESSAGEBOX [失败]：您的灵符数量不够！
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 41 49 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+INC M18 1
+Mov S7 250
+take 弩牌 5
+GAMEGIRD - 1
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+ReCallMobEx 魔王岭弓箭手 2 41 49
+GOTO @使用
+#elseact
+MESSAGEBOX [失败]：7号位置，已经有弓箭手。
+
+
+[@66号]
+#if 
+large M18 5
+#act
+MESSAGEBOX [失败]：对不起，您已经使用了6名弓箭手。
+break
+
+#if
+CHECKITEM 弩牌 5
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足5个！
+close
+break
+
+#if
+CHECKGAMEGIRD > 0
+#act
+#elseact
+MESSAGEBOX [失败]：您的灵符数量不够！
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 38 46 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+INC M18 1
+Mov S6 250
+take 弩牌 5
+GAMEGIRD - 1
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+ReCallMobEx 魔王岭弓箭手 2 38 46
+GOTO @使用
+#elseact
+MESSAGEBOX [失败]：6号位置，已经有弓箭手。
+
+[@55号]
+#if 
+large M18 5
+#act
+MESSAGEBOX [失败]：对不起，您已经使用了6名弓箭手。
+break
+
+#if
+CHECKITEM 弩牌 5
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足5个！
+close
+break
+
+#if
+CHECKGAMEGIRD > 0
+#act
+#elseact
+MESSAGEBOX [失败]：您的灵符数量不够！
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 34 44 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+INC M18 1
+Mov S5 250
+take 弩牌 5
+GAMEGIRD - 1
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+ReCallMobEx 魔王岭弓箭手 2 34 44
+GOTO @使用
+#elseact
+MESSAGEBOX [失败]：5号位置，已经有弓箭手。
+
+[@44号]
+#if 
+large M18 5
+#act
+MESSAGEBOX [失败]：对不起，您已经使用了6名弓箭手。
+break
+
+#if
+CHECKITEM 弩牌 5
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足5个！
+close
+break
+
+#if
+CHECKGAMEGIRD > 0
+#act
+#elseact
+MESSAGEBOX [失败]：您的灵符数量不够！
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 31 41 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+INC M18 1
+Mov S4 250
+take 弩牌 5
+GAMEGIRD - 1
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+ReCallMobEx 魔王岭弓箭手 2 31 41
+GOTO @使用
+#elseact
+MESSAGEBOX [失败]：4号位置，已经有弓箭手。
+
+[@33号]
+#if 
+large M18 5
+#act
+MESSAGEBOX [失败]：对不起，您已经使用了6名弓箭手。
+break
+
+#if
+CHECKITEM 弩牌 5
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足5个！
+close
+break
+
+#if
+CHECKGAMEGIRD > 0
+#act
+#elseact
+MESSAGEBOX [失败]：您的灵符数量不够！
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 29 37 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+INC M18 1
+Mov S3 250
+take 弩牌 5
+GAMEGIRD - 1
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+ReCallMobEx 魔王岭弓箭手 2 29 37
+GOTO @使用
+#elseact
+MESSAGEBOX [失败]：3号位置，已经有弓箭手。
+
+[@22号]
+#if 
+large M18 5
+#act
+MESSAGEBOX [失败]：对不起，您已经使用了6名弓箭手。
+break
+
+#if
+CHECKITEM 弩牌 5
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足5个！
+close
+break
+
+#if
+CHECKGAMEGIRD > 0
+#act
+#elseact
+MESSAGEBOX [失败]：您的灵符数量不够！
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 27 33 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+INC M18 1
+Mov S2 250
+take 弩牌 5
+GAMEGIRD - 1
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+ReCallMobEx 魔王岭弓箭手 2 27 33
+GOTO @使用
+#elseact
+MESSAGEBOX [失败]：2号位置，已经有弓箭手。
+
+[@11号]
+#if 
+large M18 5
+#act
+MESSAGEBOX [失败]：对不起，您已经使用了6名弓箭手。
+break
+
+#if
+CHECKITEM 弩牌 5
+#act
+#elseact
+MESSAGEBOX [失败]：您的包裹里[弩牌]不足5个！
+close
+break
+
+#if
+CHECKGAMEGIRD > 0
+#act
+#elseact
+MESSAGEBOX [失败]：您的灵符数量不够！
+close
+break
+
+#if
+CHECKRANGEMONCOUNTEX <$MAP> 30 30 魔王岭弓箭手 < 1
+#act
+Mov M1 1
+INC M18 1
+Mov S1 250
+take 弩牌 5
+GAMEGIRD - 1
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+ReCallMobEx 魔王岭弓箭手 2 30 30
+GOTO @使用
+#elseact
+MESSAGEBOX [失败]：1号位置，已经有弓箭手。
+
+[@规则]
+\ \
+调遣你的弓箭手，拦截逃离的怪物，获得怪物盗走的宝物 \
+逃离的怪物越少，您能获得的奖励将更加丰富 \
+不放走1个怪物，更有机会获得<黄金宝箱/FCOLOR=250> \
+每次使用5张弩牌换取弓箭手，都需要付出1张灵符 \
+<什么是弩牌？/@什么>　　 <如何摆放弓箭手/@摆放>　　 <如何移动弓箭手/@移弓>\
+<有什么奖励？/@奖励>　　 <如何领取奖励？/@如励>　　 <返回上页/@main>
+
+
+[@奖励]
+拦截的怪物<50个/FCOLOR=253>以上，还可以获得<赤金宝箱/FCOLOR=250>\
+拦截的怪物<40个/FCOLOR=253>以上，还可以获得<白银宝箱/FCOLOR=250>\
+拦截的怪物<30个/FCOLOR=253>以上，还可以获得<紫铜宝箱/FCOLOR=250>\
+拦截的怪物<15个/FCOLOR=253>以上，还可以获得<檀木宝箱/FCOLOR=250>\
+拦截的怪物<15个/FCOLOR=253>以下，您只能获得<相对应经验值/FCOLOR=250>\ \
+木、铜、银、赤金、黄金等宝箱需要对应<钥匙/FCOLOR=251>才能打开， \
+钥匙可以<商铺/FCOLOR=70>或<商店/FCOLOR=70>购买，打开后奖品会自动放到您的包裹里， \
+<返回/@规则>
+
+[@如励]
+\ \
+当您狙击怪物的数量达到一定时 \
+便可以选择<"领奖"/FCOLOR=250>领取挑战奖励 \
+如果您已经领取了奖励，则领取奖励后再狙击的怪物不再计入成绩 \
+如果您能保持连续的全狙成绩，更有神秘关卡等待着你！ \  \
+<返回/@规则>
+
+[@移弓]
+当您包裹里存在1个弩牌，并且拥有1个以上弓箭手时 \
+您可以选择<“使用1个弩牌移动弓箭手”/FCOLOR=70> \
+先选择要移动的弓箭手后，再选择要放置的位置，即可移动 \
+如果您已经选择了移动弓箭手，但是放置的位置错误 \
+可以再次选择<“选择摆放弓箭手位置”/FCOLOR=70>摆放弓箭手 \
+移动弓箭手<“不需要付出灵符”/FCOLOR=250> \ \
+<返回/@规则>
+
+[@摆放]
+比赛开始，第一次摆放弓箭手时 \
+您可以点击<“选择摆放弓箭手位置”/FCOLOR=70>选择摆放<第一个/FCOLOR=251>弓箭手的位置 \
+第一个弓箭手位置一旦放置完毕，则怪物大军开始逃离！ \
+您的弓箭手杀死怪物，会在杀死怪物的弓箭手旁掉蓝<“弩牌”/@什么> \
+当您拥有5个弩牌时可以选择<“使用5个弩牌换取弓箭手”/FCOLOR=70> \
+同时您<“必须付出1张灵符”/FCOLOR=253>，将获得再次选择摆放1个弓箭手的机会 \
+如果您再交出弩牌后没有立刻摆放弓箭手 \
+可以再次选择<“选择摆放弓箭手位置”/FCOLOR=70>进行摆放 \
+<下一页/@下页>
+
+[@下页]
+每次狙击战中您只能摆放<6个/FCOLOR=253>弓箭手 \
+<返回/@规则>
+
+[@什么]
+弩牌为召唤和移动弓箭手的凭证 \
+你可以使用<5个弩牌/FCOLOR=250>和<1张灵符/FCOLOR=250>换取1个弓箭手为你作战 \
+或者使用1个弩牌为你的1个弓箭手移位 \
+杀死逃离的怪物有机会获得弩牌 \
+弩牌只能在魔王岭中使用，一旦带离魔王岭，它将失去魔力 \
+再进入魔王岭时会被传送之力所粉碎 \
+<返回/@规则>
+
+[@领]
+不需要结束这次挑战，您就可以到我这里领取奖励， \
+但是领取的奖励将由您已经消灭的怪物数量来决定， \
+木、铜、银、赤金、黄金等宝箱需要对应<钥匙/FCOLOR=251>就可以打开， \
+钥匙可以<商铺/FCOLOR=70>或<商店/FCOLOR=70>购买，打开后奖品会自动放到您的包裹里， \
+请您务必注意，领奖时要<确保包裹有足够的空间/FCOLOR=250>哦， \
+否则将会无法领取宝箱或奖励。 \
+<您确认您现在就要来领取奖励吗？/FCOLOR=250> \
+<我确认，我现在就要领取奖励/@取奖> \
+<等我结束这次挑战后再来领取吧/@exit> \
+
+[@取奖]
+#if
+equal M1 0 
+#say
+尚未开始任务\ \
+<返回/@Main>
+#act
+break
+
+#if
+large M30 59
+#say
+你本次总共阻击了 <$STR(M30)> 个怪物 \
+您获得了：黄金宝箱\
+经验：1414000点\
+您给我一张灵符，我可以直接带您进入下一关 \
+<不，我要回土城/@返回1>　　　　　<是的，进入下一关/@下关>
+#act
+Mov M1 0
+Mov M19 1
+Take 弩牌 46
+give 黄金宝箱 1
+CHANGEEXP + 1414000
+SENDMSG 1 恭喜[%S]，在魔王岭歼灭了魔王大军的全部怪物！
+CLEARMAPMON <$MAP>
+CLEARMAPITEM <$MAP> 40 40 20
+break
+
+#if
+large M30 49
+#say
+你本次总共阻击了 <$STR(M30)> 个怪物 \
+您获得了：赤金宝箱\
+经验：1220000点\
+您给我一张灵符，我可以直接带您进入下一关 \
+<不，我要回土城/@返回1>　　　　　<是的，进入下一关/@下关>
+#act
+Mov M1 0
+Mov M19 1
+Take 弩牌 46
+give 赤金宝箱 1
+CHANGEEXP + 1220000
+CLEARMAPMON <$MAP>
+CLEARMAPITEM <$MAP> 40 40 20
+break
+
+#if
+large M30 39
+#say
+你本次总共阻击了 <$STR(M30)> 个怪物 \
+您获得了：白银宝箱\
+经验 : 914000点\
+您给我一张灵符，我可以直接带您进入下一关 \
+<不，我要回土城/@返回1>　　　　　<是的，进入下一关/@下关>
+#act
+Mov M1 0
+Mov M19 1
+Take 弩牌 46
+give 白银宝箱 1
+CHANGEEXP + 914000
+CLEARMAPMON <$MAP>
+CLEARMAPITEM <$MAP> 40 40 20
+break
+
+#if
+large M30 29
+#say
+你本次总共阻击了 <$STR(M30)> 个怪物 \
+您获得了：紫铜宝箱\
+经验 : 814000点\
+您给我一张灵符，我可以直接带您进入下一关 \
+<不，我要回土城/@返回1>　　　　　<是的，进入下一关/@下关>
+#act
+Mov M1 0
+Mov M19 1
+Take 弩牌 46
+give 紫铜宝箱 1
+CHANGEEXP + 814000
+CLEARMAPMON <$MAP>
+CLEARMAPITEM <$MAP> 40 40 20
+break
+
+#if
+large M30 14
+#say
+你本次总共阻击了 <$STR(M30)> 个怪物 \
+您获得了：檀木宝箱\
+经验 : 114000点\
+您给我一张灵符，我可以直接带您进入下一关 \
+<不，我要回土城/@返回1>　　　　　<是的，进入下一关/@下关>
+#act
+Mov M1 0
+Mov M19 1
+Take 弩牌 46
+give 檀木宝箱 1
+CHANGEEXP + 114000
+CLEARMAPMON <$MAP>
+CLEARMAPITEM <$MAP> 40 40 20
+break
+
+#if
+SMALL M30 15
+#say
+你本次总共阻击了 <$STR(M30)> 个怪物 \
+因为没有完成狙击任务，你没能获得实物奖品！\
+获得参与奖 : 经验 38000点\
+您给我一张灵符，我可以直接带您进入下一关 \
+<不，我要回天庭/@返回>　　　　　<是的，进入下一关/@下关>
+#act
+Mov M1 0
+Mov M19 1
+Take 弩牌 46
+CHANGEEXP + 38000
+CLEARMAPMON <$MAP>
+CLEARMAPITEM <$MAP> 40 40 20
+break
+
+
+[@下关]
+#IF
+  CHECKGAMEGIRD > 0
+#ACT
+GAMEGIRD - 1
+Mov M1 0
+MOV M30 0
+CLEARMAPMON <$MAP>
+CLEARMAPITEM <$MAP> 40 40 20
+MAPMOVE D5071A 11 13
+SENDMSG 7 灵符数量减(1),你当前的灵符数量为<$GAMEGIRD>张！
+BREAK
+#ELSESAY
+你的灵符点不够，我无法给你送达，要不你先去兑换一些？\ \ \
+<返回天庭/@返回>
+[@返回1]
+#if
+#act
+mapmove 3 330 330
+[@返回]
+#IF
+CHECKLEVELEX > 0
+#ACT
+Mov M1 0
+MOV M30 0
+CLEARMAPMON <$MAP>
+CLEARMAPITEM <$MAP> 40 40 20
+MAPMOVE 0122A

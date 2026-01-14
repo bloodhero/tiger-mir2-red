@@ -1,0 +1,92 @@
+[@main]
+#IF
+equal d0 0
+#say
+你是来接受考验的吧,那就开始吧\
+一共有3批地蛙,每批限时2分钟,一共只有6分钟时间\
+在限定时间内消灭完全部3批地蛙,考验就过关了\
+我就可以送您去盟重解封你的封印头盔了\
+<开始考验/@开始考验>\
+<我在考虑一下/@exit>
+#ELSESAY
+你正在接受考验吧
+[@开始考验]
+#ACT
+MOV D0 1
+Param1 D2002A
+Param2 24
+Param3 24
+MonGen 地蛙 15 10
+CLEARMAPMON Q004A
+Param1 Q004A
+Param2 15
+Param3 15
+MonGen 电僵王 10 10
+MonGen 月魔蜘蛛 10 10
+MonGen 花吻蜘蛛 10 10
+MonGen 黑锷蜘蛛 10 10
+MonGen 暗之触龙神 10 10
+MonGen 魔龙邪眼 10 10
+MonGen 魔龙刀兵 10 10
+MonGen 魔龙破甲兵 10 10
+MonGen 牛魔王 1 10
+SendMsg 6 第一批地蛙出现！赶快消灭它们吧!
+DELAYGOTO 120000 @刷怪2
+#SAY
+第一批地蛙出现！赶快消灭它们吧!
+[@刷怪2]
+#if
+CheckMapMonCount D2002A > 0 1
+ISONMAP D2002A
+#ACT
+mapmove 3 330 330
+break
+#SAY
+很可惜，你没有在指定的时间内消灭掉三批地蛙
+#IF
+ISONMAP D2002A
+#ACT
+Param1 D2002A
+Param2 24
+Param3 24
+MonGen 地蛙 15 10
+SendMsg 6 第二批地蛙出现！赶快消灭它们吧!
+DELAYGOTO 120000 @刷怪3
+#SAY
+第二批地蛙出现！赶快消灭它们吧!
+[@刷怪3]
+#if
+CheckMapMonCount D2002A > 0 1
+ISONMAP D2002A
+#ACT
+mapmove 3 330 330
+break
+#SAY
+很可惜，你没有在指定的时间内消灭掉三批地蛙
+#IF
+ISONMAP D2002A
+#ACT
+Param1 D2002A
+Param2 24
+Param3 24
+MonGen 地蛙 15 10
+SendMsg 6 第三批地蛙出现！赶快消灭它们吧!
+DELAYGOTO 120000 @检测
+#SAY
+第三批地蛙出现！赶快消灭它们吧!
+[@检测]
+#if
+CheckMapMonCount D2002A = 0 1
+ISONMAP D2002A
+#ACT
+set [139] 1
+mapmove 3 330 330
+break
+#SAY
+恭喜你，你现在可以到我这里来解除头盔的封印了
+#IF
+ISONMAP D2002A
+#ACT
+mapmove 3 330 330
+#SAY
+很可惜，你没有在指定的时间内消灭掉三批地蛙

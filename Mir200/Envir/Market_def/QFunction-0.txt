@@ -1,0 +1,520 @@
+(@@sendmsg @storage @PlayOffline @getback @buy @sell @repair @s_repair @@offlinemsg @storage @getback @getnextpage @getPreviouspage @@INPUTINTEGER @@InPutString )
+
+[@TakeOn0]
+#IF
+NOT ISCASTLEMASTER
+Checkitemw 城主战袍(男) 1
+#ACT
+TakeOff 0
+sendmsg 5 只有沙巴克城主才能穿戴！！
+
+#IF
+NOT ISCASTLEMASTER
+Checkitemw 城主战袍(女) 1
+#ACT
+TakeOff 0
+sendmsg 5 只有沙巴克城主才能穿戴！！
+Break
+
+#IF
+CHECKLEVELEX < 60
+Checkitemw 城主战袍(男) 1
+#ACT
+TakeOff 0
+sendmsg 5 需要等级60级才能穿戴！！
+
+#IF
+CHECKLEVELEX < 60
+Checkitemw 城主战袍(女) 1
+#ACT
+TakeOff 0
+sendmsg 5 需要等级60级才能穿戴！！
+
+[@GetCastle]
+#IF
+gender man
+ISCASTLEMASTER
+#ACT
+Give 城主战袍(男) 1
+Break
+
+#IF
+gender woman
+ISCASTLEMASTER
+#ACT
+Give 城主战袍(女) 1
+
+[@ButchCloneItem秘室守护兽]
+#IF
+Random 50
+CHECKGAMEGIRD > 0
+#ACT
+GAMEGIRD - 1
+give 古籍残片(小) 1
+Sendmsg 7 恭喜：你获得了：古籍残片(小)
+Break
+
+#IF
+Random 30
+CHECKGAMEGIRD > 0
+#ACT
+GAMEGIRD - 1
+GAMEDIAMOND + 1
+Sendmsg 7 恭喜：你获得了：金刚石:1
+Break
+
+#IF
+Random 10
+CHECKGAMEGIRD > 0
+#ACT
+GAMEGIRD - 1
+CHANGEEXP + 1000 1 1
+Sendmsg 7 恭喜：你获得了：经验值:1000
+Break
+
+#IF
+CHECKGAMEGIRD > 0
+#ACT
+GAMEGIRD - 1
+Sendmsg 5 未获取任何物品！！！
+#ELSEACT
+Sendmsg 5 你的灵符数不足无法探索！！！
+
+[@ButchCloneItem秘室守护兽1]
+#IF
+Random 50
+CHECKGAMEGIRD > 0
+#ACT
+GAMEGIRD - 1
+give 乾坤令 1
+Sendmsg 7 恭喜：你获得了：乾坤令
+Break
+
+#IF
+Random 30
+CHECKGAMEGIRD > 0
+#ACT
+GAMEGIRD - 1
+GAMEDIAMOND + 1
+Sendmsg 7 恭喜：你获得了：金刚石:1
+Break
+
+#IF
+Random 10
+CHECKGAMEGIRD > 0
+#ACT
+GAMEGIRD - 1
+CHANGEEXP + 1000 1 1
+Sendmsg 7 恭喜：你获得了：经验值:1000
+Break
+
+#IF
+CHECKGAMEGIRD > 0
+#ACT
+GAMEGIRD - 1
+Sendmsg 5 未获取任何物品！！！
+#ELSEACT
+Sendmsg 5 你的灵符数不足无法探索！！！
+
+[@MagSelfFunc75]
+#IF
+CheckHeroOnline
+CheckHeroLevel > 38
+H.CHECKSKILL 护体神盾 = 0
+#ACT
+ADDSKILL 护体神盾
+break
+
+#IF
+CheckHeroOnline
+CheckHeroLevel > 38
+H.CHECKSKILL 护体神盾 > 0
+#ACT
+ADDSKILL 护体神盾
+#ELSEACT
+DELSKILL 护体神盾
+
+[@StdModeFunc14] 
+#IF
+checkitem 强效太阳水 6
+#ACT
+take 强效太阳水 6
+give 强效太阳水包 1 
+#ELSEACT
+AddFunItemDura 1000
+
+[@StdModeFunc15]
+#IF
+checkitem 万年雪霜 6
+#ACT
+take 万年雪霜 6
+give 万年雪霜包 1
+#ELSEACT
+AddFunItemDura 1000 
+
+[@StdModeFunc16] 
+#IF 
+checkitem 疗伤药 6
+#ACT 
+take 疗伤药 6
+give 疗伤药包 1
+#ELSEACT
+AddFunItemDura 1000
+
+[@StdModeFunc17] 
+#ACT 
+close 
+mapmove 0 327 272 
+
+[@StdModeFunc18] 
+#ACT 
+close
+mapmove 3 330 330
+
+;个性发型
+[@StdModeFunc22]
+#ACT
+HAIRSTYLE 0
+sendmsg 5 你的发型已改变！！
+
+[@StdModeFunc23]
+#ACT
+HAIRSTYLE 1
+sendmsg 5 你的发型已改变！！
+
+[@StdModeFunc27]
+#IF
+RANDOM 5
+#ACT
+GAMEGOLD + 1
+SENDMSG 5 恭喜：你获得了1元宝，当前元宝数量：<$GAMEGOLD>。
+break
+
+#IF
+RANDOM 4
+#ACT
+GAMEGOLD + 2
+SENDMSG 5 恭喜：你获得了2元宝，当前元宝数量：<$GAMEGOLD>。
+break
+
+#IF
+RANDOM 3
+#ACT
+GAMEGOLD + 3
+SENDMSG 5 恭喜：你获得了3元宝，当前元宝数量：<$GAMEGOLD>。
+break
+
+#IF
+RANDOM 2
+#ACT
+GAMEGOLD + 4
+SENDMSG 5 恭喜：你获得了4元宝，当前元宝数量：<$GAMEGOLD>。
+break
+
+#IF
+#ACT
+GAMEGOLD + 5
+SENDMSG 5 恭喜：你获得了5元宝，当前元宝数量：<$GAMEGOLD>。
+break
+
+[@StdModeFunc28]
+#IF
+RANDOM 5
+#ACT
+GAMEGOLD + 10
+SENDMSG 5 恭喜：你获得了10元宝，当前元宝数量：<$GAMEGOLD>。
+break
+
+#IF
+RANDOM 4
+#ACT
+GAMEGOLD + 20
+SENDMSG 5 恭喜：你获得了20元宝，当前元宝数量：<$GAMEGOLD>。
+break
+
+#IF
+RANDOM 3
+#ACT
+GAMEGOLD + 30
+SENDMSG 5 恭喜：你获得了30元宝，当前元宝数量：<$GAMEGOLD>。
+break
+
+#IF
+RANDOM 2
+#ACT
+GAMEGOLD + 40
+SENDMSG 5 恭喜：你获得了40元宝，当前元宝数量：<$GAMEGOLD>。
+break
+
+#IF
+#ACT
+GAMEGOLD + 50
+SENDMSG 5 恭喜：你获得了50元宝，当前元宝数量：<$GAMEGOLD>。
+break
+
+[@StdModeFunc29]
+#IF
+#ACT
+POWERRATE 150 1800
+SENDMSG 7 你获得了半小时1.5倍攻击力,期间死亡或下线效果即刻消失,重复使用无效!
+
+[@StdModeFunc30]
+#IF
+#ACT
+KILLMONEXPRATE 200 3600
+SENDMSG 7 你获得了1个小时双倍经验,期间死亡或下线不减少双倍时间,重复使用无效!
+
+[@StdModeFunc31]
+#IF
+#ACT
+KILLMONEXPRATE 200 10800
+SENDMSG 7 你获得了3个小时双倍经验,期间死亡或下线不减少双倍时间,重复使用无效!
+
+[@StdModeFunc32]
+#IF
+#ACT
+KILLMONEXPRATE 200 21600
+SENDMSG 7 你获得了6个小时双倍经验,期间死亡或下线不减少双倍时间,重复使用无效!
+
+[@StdModeFunc33]
+#IF
+CheckJob Taoist
+#ACT
+ChangeSlaveLevel 变异骷髅 = 7
+ChangeSlaveLevel 神兽 = 7
+ChangeSlaveLevel 神兽0 = 7
+Break
+#ELSEACT
+sendmsg 7 召唤强化卷只适合道士职业使用！！
+
+[@StdModeFunc34] 
+#IF 
+checkjob Wizard
+CheckSlaveCount < 5 
+#ACT
+RECALLMOB 虎卫 3
+break 
+#IF 
+CheckSlaveCount < 5 
+#ACT 
+SENDMSG 7 虎卫卷轴只适合法师职业使用！！
+#ELSEACT 
+SENDMSG 7 可带领的宠物数量已达到5个的上限！！
+
+[@StdModeFunc35]
+#IF
+Random 5
+#ACT
+CHANGEEXP + 40000 1 1
+break
+#IF
+Random 4
+#ACT
+CHANGEEXP + 80000 1 1
+break
+#IF
+Random 3
+#ACT
+CHANGEEXP + 70000 1 1
+break
+#IF
+Random 2
+#ACT
+CHANGEEXP + 30000 1 1
+#ELSEACT
+CHANGEEXP + 10000 1 1
+
+[@StdModeFunc36]
+#IF
+checkitemw 火云石 1
+CheckItemDura 9 < 3000 0
+#ACT
+;ChangeItemDura 9 + 500
+#ELSEACT
+give 火云晶石 1
+sendmsg 5 你没有佩戴火云石或火云石持久为最大，无法增加持久。
+
+[@StdModeFunc37]
+#IF
+EQUAL I74 0
+#ACT
+MOV I74 1
+#CALL [系统功能\锦囊问题.txt] @锦囊问题
+#ELSEACT
+SENDMSG 5 您今天已经使用过锦囊，不能再使用了。 
+
+[@StdModeFunc38]
+#IF
+CheckHeroOnline
+CheckHeroLoyal > 10
+CheckHerolevel > 43
+CheckHeroJob WARRIOR
+H.CHECKSKILL 白日门烈火 = 3
+#ACT
+ChangeHeroLoyal = 3000
+#ELSEACT
+messagebox 未达到战士英雄满44级，忠诚大于10%，白日门烈火3级的条件，学习失败！
+give 四级烈火剑法 1
+
+[@StdModeFunc39]
+#IF
+CheckHeroOnline
+CheckHeroLoyal > 10
+CheckHerolevel > 43
+CheckHeroJob WARRIOR
+H.CHECKSKILL 白日门灭天火 = 3
+#ACT
+ChangeHeroLoyal = 3000
+#ELSEACT
+messagebox 未达到法师英雄满44级，忠诚大于10%，白日门灭天火3级的条件，学习失败！
+give 四级灭天火 1
+
+[@StdModeFunc40]
+#IF
+CheckHeroOnline
+CheckHeroLoyal > 10
+CheckHerolevel > 43
+CheckHeroJob WARRIOR
+H.CHECKSKILL 白日门火符 = 3
+#ACT
+ChangeHeroLoyal = 3000
+#ELSEACT
+messagebox 未达到道士英雄满44级，忠诚大于10%，白日门火符3级的条件，学习失败！
+give 四级灵魂火符 1
+
+[@StdModeFunc79]
+#IF
+#ACT
+Gmexecute showeffect 79
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc80]
+#IF
+#ACT
+Gmexecute showeffect 80
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc81]
+#IF
+#ACT
+Gmexecute showeffect 81
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc82]
+#IF
+#ACT
+Gmexecute showeffect 82
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc83]
+#IF
+#ACT
+Gmexecute showeffect 83
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc84]
+#IF
+#ACT
+Gmexecute showeffect 84
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc85]
+#IF
+#ACT
+Gmexecute showeffect 85
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc86]
+#IF
+#ACT
+Gmexecute showeffect 86
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放庆典蛋糕了!大家快去看啦。
+
+[@StdModeFunc87]
+#IF
+#ACT
+Gmexecute showeffect 85
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc88]
+#IF
+CHECKBAGSIZE 5
+#ACT
+GIVE 乾坤令 5
+#ELSEACT
+GIVE 乾坤令包 1
+
+[@StdModeFunc90] 
+#IF 
+checknamelist ..\QuestDiary\数据文件\金牌帐号.txt
+#ACT 
+give 金牌凭证 1 
+SENDMSG 5 你已经是金牌帐号，不能再使用此物品！ 
+#ELSEACT 
+addnamelist ..\QuestDiary\数据文件\金牌帐号.txt
+SENDMSG 6 祝贺你成为金牌帐号！
+
+[@StdModeFunc91]
+#IF 
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt 
+#ACT 
+give 热血令牌 1 
+SENDMSG 5 你已经是热血勇士，不能再使用此物品！ 
+#ELSEACT 
+addnamelist ..\QuestDiary\数据文件\热血勇士.txt 
+SENDMSG 6 祝贺你成为热血勇士！
+
+[@StdModeFunc92] 
+#IF 
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt 
+#ACT 
+give 白金令牌 1 
+SENDMSG 5 你已经是白金帐号，不能再使用此物品！ 
+#ELSEACT 
+addnamelist ..\QuestDiary\数据文件\白金帐号.txt 
+SENDMSG 6 祝贺你成为白金帐号！
+
+[@NoButchItem]
+#if
+random 400
+#act
+give 赤金宝箱 1
+Break
+
+#if
+random 200
+#act
+give 白银宝箱 1
+Break
+
+#if
+random 100
+#act
+give 紫铜宝箱 1
+Break
+
+#if
+random 50
+#act
+give 檀木宝箱 1
+Break
+
+[@HeroLevelUp]
+#ACT
+#CALL [英雄合击\英血技装\英雄血量.txt] @YXXL
+
+[@HeroGetExp]
+#ACT
+SENDMSG 5 <$HeroGetExp> 英雄经验值增加.
+
+[@GetExp]
+#ACT
+SENDMSG 5 <$GetExp> 经验值增加.
+
+[@UserCmd1]
+#ACT
+#CALL [系统功能\后台管理.txt] @管理
+
+[@Help]
+#ACT
+#CALL [系统功能\帮助菜单.txt] @帮菜

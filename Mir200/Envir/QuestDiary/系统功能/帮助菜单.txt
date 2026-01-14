@@ -1,0 +1,1043 @@
+(@@InPutString @@InPutInteger)
+[@帮菜]
+{
+你可以选择支付相应金币，招募以下队友，限招募3名，时长6小时。\
+你也可以花20万金币点随机招募，有机会招募到隐藏的51级队友哦！\
+性别职业　16级　21级　26级　31级　36级　41级　46级 <☆/SCOLOR=253><温馨提示/@温馨提示>\
+メ男战士　<一万/@16男战>　<二万/@21男战>　<三万/@26男战>　<四万/@31男战>　<五万/@36男战>　<六万/@41男战>　<七万/@46男战>\
+メ女战士　<一万/@16女战>　<二万/@21女战>　<三万/@26女战>　<四万/@31女战>　<五万/@36女战>　<六万/@41女战>　<七万/@46女战> <┏/SCOLOR=253><随机招募/@随机招募>\
+♀男法师　<一万/@16男法>　<二万/@21男法>　<三万/@26男法>　<四万/@31男法>　<五万/@36男法>　<六万/@41男法>　<七万/@46男法> <┗/SCOLOR=253><踢除队友/@踢除队友>\
+♀女法师　<一万/@16女法>　<二万/@21女法>　<三万/@26女法>　<四万/@31女法>　<五万/@36女法>　<六万/@41女法>　<七万/@46女法>\
+§男道士　<一万/@16男道>　<二万/@21男道>　<三万/@26男道>　<四万/@31男道>　<五万/@36男道>　<六万/@41男道>　<七万/@46男道> <┏/SCOLOR=253><跟随陪练/@跟随陪练>\
+§女道士　<一万/@16女道>　<二万/@21女道>　<三万/@26女道>　<四万/@31女道>　<五万/@36女道>　<六万/@41女道>　<七万/@46女道> <┗/SCOLOR=253><强制组队/@强制组队>\
+
+[@跟随陪练]
+#IF
+#ACT
+messagebox 稳定版无此功能，如需赞助开发版，请加单机交流QQ群：195140489。
+
+[@温馨提示]
+#SAY
+本招募脚本严格按照传奇本身人物属性进行设计。招募的队友无论\
+等级、HP、MP、防御、魔御、攻击力、魔法力、精神力以及学习技\
+能和技能等级均与真实玩家一致。Ctrl+A可控制队友攻击或休息。\ \
+职业为魔法师和道士需注意，在招募队友前，请不要召唤宝宝。本\
+脚本设定招募上限为3，如果玩家自身带了神兽或其他宝宝，会导致\
+招募限额降低。特此说明，敬请留意！\
+<关于强制组队/@温馨提示2>\
+<返回/@帮菜>
+
+[@温馨提示2]
+玩家可点击强制组队按钮，将假人玩家强制加入自己的队伍里。\
+由于假人玩家灵活性较强，不便于玩家管理，故强制组队成功后\
+假人会每隔一定时间被传送至玩家身旁，协助玩家打怪练级。\
+如不喜欢假人队友，可通过组队按钮删除队友，亦或小退退组。\
+此功能可组到比招募组队还要强大的队友，且无任何金币要求。\
+因盛大热血传奇组队无任何条件，故此组队功能不设金币要求。\
+若是注重游戏平衡性的玩家请慎用此功能！\ \
+<返回/@温馨提示>
+
+[@强制组队]
+#if
+#act
+messagebox 稳定版无此功能，如需赞助开发版，请加单机交流QQ群：195140489。
+
+[@踢除队友]
+#IF
+#ACT
+KILLSLAVE
+DELAYGOTO 1 @踢除队友1
+break
+
+[@踢除队友1]
+#IF
+#ACT
+KILLSLAVE
+break
+
+[@16男战]
+#IF
+checkgold 10000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 10000
+RECALLMOB 一六男战 0 360 5
+;ChangeSlaveNameColor 一六男战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@16女战]
+#IF
+checkgold 10000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 10000
+RECALLMOB 一六女战 0 360 5
+;ChangeSlaveNameColor 一六女战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@16男法]
+#IF
+checkgold 10000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 10000
+RECALLMOB 一六男法 0 360 5
+;ChangeSlaveNameColor 一六男法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@16女法]
+#IF
+checkgold 10000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 10000
+RECALLMOB 一六女法 0 360 5
+;ChangeSlaveNameColor 一六女法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@16男道]
+#IF
+checkgold 10000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 10000
+RECALLMOB 一六男道 0 360 5
+;ChangeSlaveNameColor 一六男道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@16女道]
+#IF
+checkgold 10000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 10000
+RECALLMOB 一六女道 0 360 5
+;ChangeSlaveNameColor 一六女道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@21男战]
+#IF
+checkgold 20000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 20000
+RECALLMOB 二一男战 0 360 5
+;ChangeSlaveNameColor 二一男战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@21女战]
+#IF
+checkgold 20000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 20000
+RECALLMOB 二一女战 0 360 5
+;ChangeSlaveNameColor 二一女战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@21男法]
+#IF
+checkgold 20000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 20000
+RECALLMOB 二一男法 0 360 5
+;ChangeSlaveNameColor 二一男法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@21女法]
+#IF
+checkgold 20000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 20000
+RECALLMOB 二一女法 0 360 5
+;ChangeSlaveNameColor 二一女法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@21男道]
+#IF
+checkgold 20000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 20000
+RECALLMOB 二一男道 0 360 5
+;ChangeSlaveNameColor 二一男道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@21女道]
+#IF
+checkgold 20000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 20000
+RECALLMOB 二一女道 0 360 5
+;ChangeSlaveNameColor 二一女道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@26男战]
+#IF
+checkgold 30000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 30000
+RECALLMOB 二六男战 0 360 5
+;ChangeSlaveNameColor 二六男战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@26女战]
+#IF
+checkgold 30000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 30000
+RECALLMOB 二六女战 0 360 5
+;ChangeSlaveNameColor 二六女战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@26男法]
+#IF
+checkgold 30000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 30000
+RECALLMOB 二六男法 0 360 5
+;ChangeSlaveNameColor 二六男法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@26女法]
+#IF
+checkgold 30000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 30000
+RECALLMOB 二六女法 0 360 5
+;ChangeSlaveNameColor 二六女法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@26男道]
+#IF
+checkgold 30000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 30000
+RECALLMOB 二六男道 0 360 5
+;ChangeSlaveNameColor 二六男道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@26女道]
+#IF
+checkgold 30000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 30000
+RECALLMOB 二六女道 0 360 5
+;ChangeSlaveNameColor 二六女道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@31男战]
+#IF
+checkgold 40000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 40000
+RECALLMOB 三一男战 0 360 5
+;ChangeSlaveNameColor 三一男战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@31女战]
+#IF
+checkgold 40000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 40000
+RECALLMOB 三一女战 0 360 5
+;ChangeSlaveNameColor 三一女战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@31男法]
+#IF
+checkgold 40000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 40000
+RECALLMOB 三一男法 0 360 5
+;ChangeSlaveNameColor 三一男法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@31女法]
+#IF
+checkgold 40000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 40000
+RECALLMOB 三一女法 0 360 5
+;ChangeSlaveNameColor 三一女法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@31男道]
+#IF
+checkgold 40000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 40000
+RECALLMOB 三一男道 0 360 5
+;ChangeSlaveNameColor 三一男道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@31女道]
+#IF
+checkgold 40000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 40000
+RECALLMOB 三一女道 0 360 5
+;ChangeSlaveNameColor 三一女道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@36男战]
+#IF
+checkgold 50000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 50000
+RECALLMOB 三六男战 0 360 5
+;ChangeSlaveNameColor 三六男战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@36女战]
+#IF
+checkgold 50000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 50000
+RECALLMOB 三六女战 0 360 5
+;ChangeSlaveNameColor 三六女战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@36男法]
+#IF
+checkgold 50000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 50000
+RECALLMOB 三六男法 0 360 5
+;ChangeSlaveNameColor 三六男法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@36女法]
+#IF
+checkgold 50000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 50000
+RECALLMOB 三六女法 0 360 5
+;ChangeSlaveNameColor 三六女法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@36男道]
+#IF
+checkgold 50000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 50000
+RECALLMOB 三六男道 0 360 5
+;ChangeSlaveNameColor 三六男道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@36女道]
+#IF
+checkgold 50000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 50000
+RECALLMOB 三六女道 0 360 5
+;ChangeSlaveNameColor 三六女道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@41男战]
+#IF
+checkgold 60000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 60000
+RECALLMOB 四一男战 0 360 5
+;ChangeSlaveNameColor 四一男战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@41女战]
+#IF
+checkgold 60000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 60000
+RECALLMOB 四一女战 0 360 5
+;ChangeSlaveNameColor 四一女战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@41男法]
+#IF
+checkgold 60000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 60000
+RECALLMOB 四一男法 0 360 5
+;ChangeSlaveNameColor 四一男法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@41女法]
+#IF
+checkgold 60000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 60000
+RECALLMOB 四一女法 0 360 5
+;ChangeSlaveNameColor 四一女法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@41男道]
+#IF
+checkgold 60000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 60000
+RECALLMOB 四一男道 0 360 5
+;ChangeSlaveNameColor 四一男道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@41女道]
+#IF
+checkgold 60000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 60000
+RECALLMOB 四一女道 0 360 5
+;ChangeSlaveNameColor 四一女道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@46男战]
+#IF
+checkgold 70000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 70000
+RECALLMOB 四六男战 0 360 5
+;ChangeSlaveNameColor 四六男战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@46女战]
+#IF
+checkgold 70000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 70000
+RECALLMOB 四六女战 0 360 5
+;ChangeSlaveNameColor 四六女战 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@46男法]
+#IF
+checkgold 70000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 70000
+RECALLMOB 四六男法 0 360 5
+;ChangeSlaveNameColor 四六男法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@46女法]
+#IF
+checkgold 70000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 70000
+RECALLMOB 四六女法 0 360 5
+;ChangeSlaveNameColor 四六女法 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@46男道]
+#IF
+checkgold 70000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 70000
+RECALLMOB 四六男道 0 360 5
+;ChangeSlaveNameColor 四六男道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@46女道]
+#IF
+checkgold 70000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 70000
+RECALLMOB 四六女道 0 360 5
+;ChangeSlaveNameColor 四六女道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+
+[@随机招募]
+#IF
+RANDOM 48
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 一六男战 0 360 5
+;ChangeSlaveNameColor 一六男战 255
+break
+
+#IF
+RANDOM 47
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 一六女战 0 360 5
+;ChangeSlaveNameColor 一六女战 255
+break
+
+#IF
+RANDOM 46
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 一六男法 0 360 5
+;ChangeSlaveNameColor 一六男法 255
+break
+
+#IF
+RANDOM 45
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 一六女法 0 360 5
+;ChangeSlaveNameColor 一六女法 255
+break
+
+#IF
+RANDOM 44
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 一六男道 0 360 5
+;ChangeSlaveNameColor 一六男道 255
+break
+
+#IF
+RANDOM 43
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 一六女道 0 360 5
+;ChangeSlaveNameColor 一六女道 255
+break
+
+#IF
+RANDOM 42
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二一男战 0 360 5
+;ChangeSlaveNameColor 二一男战 255
+break
+
+#IF
+RANDOM 41
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二一女战 0 360 5
+;ChangeSlaveNameColor 二一女战 255
+break
+
+#IF
+RANDOM 40
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二一男法 0 360 5
+;ChangeSlaveNameColor 二一男法 255
+break
+
+#IF
+RANDOM 39
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二一女法 0 360 5
+;ChangeSlaveNameColor 二一女法 255
+break
+
+#IF
+RANDOM 38
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二一男道 0 360 5
+;ChangeSlaveNameColor 二一男道 255
+break
+
+#IF
+RANDOM 37
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二一女道 0 360 5
+;ChangeSlaveNameColor 二一女道 255
+break
+
+#IF
+RANDOM 36
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二六男战 0 360 5
+;ChangeSlaveNameColor 二六男战 255
+break
+
+#IF
+RANDOM 35
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二六女战 0 360 5
+;ChangeSlaveNameColor 二六女战 255
+break
+
+#IF
+RANDOM 34
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二六男法 0 360 5
+;ChangeSlaveNameColor 二六男法 255
+break
+
+#IF
+RANDOM 33
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二六女法 0 360 5
+;ChangeSlaveNameColor 二六女法 255
+break
+
+#IF
+RANDOM 32
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二六男道 0 360 5
+;ChangeSlaveNameColor 二六男道 255
+break
+
+#IF
+RANDOM 31
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 二六女道 0 360 5
+;ChangeSlaveNameColor 二六女道 255
+break
+
+#IF
+RANDOM 30
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三一男战 0 360 5
+;ChangeSlaveNameColor 三一男战 255
+break
+
+#IF
+RANDOM 29
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三一女战 0 360 5
+;ChangeSlaveNameColor 三一女战 255
+break
+
+#IF
+RANDOM 28
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三一男法 0 360 5
+;ChangeSlaveNameColor 三一男法 255
+break
+
+#IF
+RANDOM 27
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三一女法 0 360 5
+;ChangeSlaveNameColor 三一女法 255
+break
+
+#IF
+RANDOM 26
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三一男道 0 360 5
+;ChangeSlaveNameColor 三一男道 255
+break
+
+#IF
+RANDOM 25
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三一女道 0 360 5
+;ChangeSlaveNameColor 三一女道 255
+break
+
+#IF
+RANDOM 24
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三六男战 0 360 5
+;ChangeSlaveNameColor 三六男战 255
+break
+
+#IF
+RANDOM 23
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三六女战 0 360 5
+;ChangeSlaveNameColor 三六女战 255
+break
+
+#IF
+RANDOM 22
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三六男法 0 360 5
+;ChangeSlaveNameColor 三六男法 255
+break
+
+#IF
+RANDOM 21
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三六女法 0 360 5
+;ChangeSlaveNameColor 三六女法 255
+break
+
+#IF
+RANDOM 20
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三六男道 0 360 5
+;ChangeSlaveNameColor 三六男道 255
+break
+
+#IF
+RANDOM 19
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 三六女道 0 360 5
+;ChangeSlaveNameColor 三六女道 255
+break
+
+#IF
+RANDOM 18
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四一男战 0 360 5
+;ChangeSlaveNameColor 四一男战 255
+break
+
+#IF
+RANDOM 17
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四一女战 0 360 5
+;ChangeSlaveNameColor 四一女战 255
+break
+
+#IF
+RANDOM 16
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四一男法 0 360 5
+;ChangeSlaveNameColor 四一男法 255
+break
+
+#IF
+RANDOM 15
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四一女法 0 360 5
+;ChangeSlaveNameColor 四一女法 255
+break
+
+#IF
+RANDOM 14
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四一男道 0 360 5
+;ChangeSlaveNameColor 四一男道 255
+break
+
+#IF
+RANDOM 13
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四一女道 0 360 5
+;ChangeSlaveNameColor 四一女道 255
+break
+
+#IF
+RANDOM 12
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四六男战 0 360 5
+;ChangeSlaveNameColor 四六男战 255
+break
+
+#IF
+RANDOM 11
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四六女战 0 360 5
+;ChangeSlaveNameColor 四六女战 255
+break
+
+#IF
+RANDOM 10
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四六男法 0 360 5
+;ChangeSlaveNameColor 四六男法 255
+break
+
+#IF
+RANDOM 9
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四六女法 0 360 5
+;ChangeSlaveNameColor 四六女法 255
+break
+
+#IF
+RANDOM 8
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四六男道 0 360 5
+;ChangeSlaveNameColor 四六男道 255
+break
+
+#IF
+RANDOM 7
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 四六女道 0 360 5
+;ChangeSlaveNameColor 四六女道 255
+break
+
+#IF
+RANDOM 6
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 五一男战 0 360 5
+;ChangeSlaveNameColor 五一男战 255
+break
+
+#IF
+RANDOM 5
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 五一女战 0 360 5
+;ChangeSlaveNameColor 五一女战 255
+break
+
+#IF
+RANDOM 4
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 五一男法 0 360 5
+;ChangeSlaveNameColor 五一男法 255
+break
+
+#IF
+RANDOM 3
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 五一女法 0 360 5
+;ChangeSlaveNameColor 五一女法 255
+break
+
+#IF
+RANDOM 2
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 五一男道 0 360 5
+;ChangeSlaveNameColor 五一男道 255
+break
+
+#IF
+checkgold 200000
+CHECKSLAVECOUNT < 3
+#ACT
+take 金币 200000
+RECALLMOB 五一女道 0 360 5
+;ChangeSlaveNameColor 五一女道 255
+#ELSEACT
+MESSAGEBOX 你的金币不足或队友已达到了上限，无法招募该队友！！
+break
+}

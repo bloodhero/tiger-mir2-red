@@ -1,0 +1,255 @@
+
+[@main]
+你好，<$USERNAME>，这里是藏宝阁53号，你可以直接掷骰子，\
+当骰子点数为<单数>时，你将会<前进>这个步数，\
+当骰子点数为<双数>时，你将会<后退>这个步数，\
+5个乾坤令可以捆绑成一个乾坤令包\
+<捆绑乾坤令/@捆绑乾坤>             <兑换乾坤令/@兑换乾坤令>\  \
+
+<投骰子/@掷骰子>\  \
+
+<离开藏宝阁/@离开藏宝阁>\
+
+[@兑换乾坤令]
+如果你不想要你身上的乾坤令，那就给我吧，\
+我对于这些散落的令牌非常感兴趣，\
+作为感谢，我给你些经验奖励。\ \
+
+<给你乾坤令/@兑换乾坤令1>\ \
+
+<返回/@main>\
+
+[@兑换乾坤令1]
+#IF
+CHECKITEM 乾坤令 1
+#ACT
+TAKE 乾坤令 1
+Changeexp + 200000
+#ELSESAY
+你没有足够的乾坤令啊！\
+<退出/@Exit>
+
+[@捆绑乾坤]
+#IF
+CHECKITEM 乾坤令 5
+#ACT
+TAKE 乾坤令 5
+give 乾坤令包 1
+#SAY
+解读成功
+#ELSESAY
+5个乾坤令可以捆绑成一个乾坤令包。\
+如果你已经带来了，就交给我吧！\
+
+[@离开藏宝阁]
+#IF
+#ACT
+mapmove 3 330 330
+
+[@掷骰子]
+#IF
+check [493] 1
+#ACT
+SET [493] 0
+movr d0 6 
+inc d0 1 
+playdice 1 @cube_cds-2
+BREAK
+#IF
+check [494] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你可以前进<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+BREAK
+#IF
+check [491] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你必须后退<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+BREAK
+#IF
+check [496] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你可以前进<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+BREAK
+#IF
+check [489] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你必须后退<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+BREAK
+#IF
+check [498] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你可以前进<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+BREAK
+#IF
+check [487] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你必须后退<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+
+[@cube_cds-2]
+#IF
+equal D0 1
+#SAY
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [494] 1
+break
+#IF
+equal D0 2
+#SAY
+骰子的点数 <$STR(D0)>\
+你必须后退<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [491] 1
+break
+#IF
+equal D0 3
+#SAY
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [496] 1
+break
+#IF
+equal D0 4
+#SAY
+骰子的点数 <$STR(D0)>\
+你必须后退<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [489] 1
+break
+#IF
+equal D0 5
+#SAY
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [498] 1
+break
+#IF
+equal D0 6
+#ACT
+SET [487] 1
+#SAY
+骰子的点数 <$STR(D0)>\
+你必须后退<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+
+[@cube_cds-3]
+#IF
+equal D0 1
+#ACT
+batchDelay 1
+addbatch CB54
+batchmove
+Param1 CB54
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+break
+#IF
+equal D0 2
+#ACT
+batchDelay 1
+addbatch CB52
+addbatch CB51
+batchmove
+Param1 CB51
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+break
+#IF
+equal D0 3
+#ACT
+batchDelay 1
+addbatch CB54
+addbatch CB55
+addbatch CB56
+batchmove
+Param1 CB56
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+break
+#IF
+equal D0 4
+#ACT
+batchDelay 1
+addbatch CB52
+addbatch CB51
+addbatch CB50
+addbatch CB49
+batchmove
+Param1 CB49
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+break
+#IF
+equal D0 5
+#ACT
+batchDelay 1
+addbatch CB54
+addbatch CB55
+addbatch CB56
+addbatch CB57
+addbatch CB58
+batchmove
+Param1 CB58
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+break
+#IF
+equal D0 6
+#ACT
+batchDelay 1
+addbatch CB52
+addbatch CB51
+addbatch CB50
+addbatch CB49
+addbatch CB48
+addbatch CB47
+batchmove
+Param1 CB47
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+break
+
+

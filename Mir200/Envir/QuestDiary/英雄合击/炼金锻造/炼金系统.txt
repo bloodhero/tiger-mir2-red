@@ -1,0 +1,16 @@
+[@在线锻造] 
+{
+#IF
+checknamelist ..\QuestDiary\数据文件\锻造名单.txt
+#ACT
+SetOnTimer 255 360
+
+[@锻造检测]
+#IF
+CHECKVAR HUMAN 未完成数 > 0
+#ACT
+SetOnTimer 255 360
+#ELSEACT
+SetOffTimer 255
+SENDMSG 5 提示：所有金刚石锻造完成。
+} 

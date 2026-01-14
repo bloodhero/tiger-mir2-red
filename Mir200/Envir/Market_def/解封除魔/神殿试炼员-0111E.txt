@@ -1,0 +1,33 @@
+[@main]
+这里是通向神殿的试炼之屋!\
+你必须快速的进入下层\
+要不然,你就要接受这里无比强大的怪物考验\
+下面二层，你只有四十分钟的时间接受挑战\
+规定时间后，将被自动返回盟重\
+<快传送我到下层吧/@去神殿一>\
+<我要先接受试炼/@exit>
+[@去神殿一]
+#IF
+ISGROUPMASTER
+#ACT
+Param1 D5072A
+Param2 50
+Param3 50
+MonGen 祖玛雕像 10 40
+MonGen 祖玛卫士 10 40
+MonGen 祖玛弓箭手 5 40
+MonGen 祖玛雕像3 15 40
+MonGen 祖玛卫士3 15 40
+MonGen 祖玛弓箭手3 20 40
+MonGen 电僵王 1 40
+Param1 D5072A
+Param2 25
+Param3 37
+MonGen 恶魔弓箭手0 1 0
+Param1 D5072A
+Param2 29
+Param3 33
+MonGen 恶魔弓箭手0 1 0
+GROUPMOVE D5072A @神殿一层20
+#ELSESAY
+您不是所在队伍的队长，不能前往

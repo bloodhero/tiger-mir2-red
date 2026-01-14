@@ -1,0 +1,438 @@
+[@Startup]
+#ACT
+;天下第一
+MOV A35 天下第一男战士
+MOV A36 天下第一女战士
+MOV A37 天下第一男法师
+MOV A38 天下第一女法师
+MOV A39 天下第一男道士
+MOV A40 天下第一女道士
+
+[@Login]
+#ACT
+VAR Integer HUMAN 圣殿灵符
+VAR Integer HUMAN 申请总数
+VAR Integer HUMAN 固定经验
+VAR Integer HUMAN 已领取数
+VAR Integer HUMAN 可领取数
+VAR Integer HUMAN 已完成数
+VAR Integer HUMAN 未完成数
+VAR Integer HUMAN 获得经验
+VAR Integer HUMAN 可领经验
+LOADVAR HUMAN 圣殿灵符 ..\QuestDiary\数据文件\圣殿灵符.txt
+LOADVAR HUMAN 申请总数 ..\QuestDiary\数据文件\申请总数.txt
+LOADVAR HUMAN 固定经验 ..\QuestDiary\数据文件\固定经验.txt
+LOADVAR HUMAN 已领取数 ..\QuestDiary\数据文件\已领取数.txt
+LOADVAR HUMAN 可领取数 ..\QuestDiary\数据文件\可领取数.txt
+LOADVAR HUMAN 未完成数 ..\QuestDiary\数据文件\未完成数.txt
+LOADVAR HUMAN 已完成数 ..\QuestDiary\数据文件\已完成数.txt
+LOADVAR HUMAN 获得经验 ..\QuestDiary\数据文件\获得经验.txt
+LOADVAR HUMAN 获得经验 ..\QuestDiary\数据文件\可领经验.txt
+VAR INTEGER HUMAN Cache
+CALCVAR HUMAN Cache = 0
+DELAYGOTO 1 @MAIN
+
+[@MAIN]
+#IF
+#ACT
+DELSKILL 护体神盾
+SENDMSG 6 提示：当前的声望值为:<$CREDITPOINT>点...
+
+#IF
+ISCASTLEMASTER
+#ACT
+SENDMSG 0 万众欢呼，号令天下的沙城主『<$USERNAME>』进入游戏!
+;城主
+SetIcon 0 65535
+
+#IF
+RANDOM 10
+ISNEWHUMAN
+#ACT
+give 蜡烛 1
+give 金牌凭证 1
+SENDMSG 5 新手提示：请按F12呼出游戏内挂，请于4级前到助手小姐处接任务！
+SENDMSG 5 系统：你获得了金牌帐号的资格，不是每一位新人都能获得的哦！！
+Break
+
+#IF
+ISNEWHUMAN
+#ACT
+give 蜡烛 1
+SENDMSG 5 新手提示：请按F12呼出游戏内挂，请于4级前到助手小姐处接任务！
+SENDMSG 5 系统：新人有几率获得金牌帐号的资格，很遗憾此角色没有获得！！
+Break
+
+#IF
+EQUAL I74 0
+CHECKBAGSIZE  1
+NOT CHECKITEM 锦囊 1
+#ACT
+GIVE 锦囊 1
+
+#IF
+RANDOM 3
+EQUAL I75 0
+CHECKBAGSIZE  1
+CHECKLEVELEX > 39
+CHECKLEVELEX < 47
+NOT CHECKITEM 宝藏钥匙 1
+#ACT
+MOV I75 1
+GIVE 宝藏钥匙 1
+
+#IF
+checknamelist ..\QuestDiary\数据文件\锻造名单.txt
+#ACT
+SENDMSG 7 提示：由于你退出游戏,现在将重新计算锻造金刚石时间...
+#CALL [英雄合击\炼金锻造\炼金系统.txt] @在线锻造
+
+[@OnTimer255]
+#IF
+CHECKVAR HUMAN 未完成数 > 0
+#ACT
+CALCVAR HUMAN 已完成数 + 3
+SAVEVAR HUMAN 已完成数 ..\QuestDiary\数据文件\已完成数.txt
+CALCVAR HUMAN 可领取数 + 3
+SAVEVAR HUMAN 可领取数 ..\QuestDiary\数据文件\可领取数.txt
+CALCVAR HUMAN 未完成数 - 3
+SAVEVAR HUMAN 未完成数 ..\QuestDiary\数据文件\未完成数.txt
+SENDMSG 7 提示：您申请的金刚石锻造目前完成<$HUMAN(可领取数)>颗，剩余<$HUMAN(未完成数)>颗尚未完成。
+DelayGoto 1 @锻造检测
+#ELSEACT
+SetOffTimer 255
+SENDMSG 5 提示：所有金刚石锻造完成。
+
+[@Member]
+#CALL [系统功能\后台管理.txt] @管理
+
+[@HeroLogin]
+#IF
+H.CHECKBAGSIZE 1
+H.CHECKSKILL 破魂斩 = 0
+H.CHECKTRANPOINT 破魂斩 = 0
+NOT Checkitem 火龙之心 1
+NOT Checkitemw 火龙之心 1
+NOT H.Checkitem 火龙之心 1
+NOT H.Checkitemw 火龙之心 1
+#ACT
+H.Give 火龙之心 1
+
+#IF
+H.CHECKBAGSIZE 1
+H.CHECKSKILL 劈星斩 = 0
+H.CHECKTRANPOINT 劈星斩 = 0
+NOT Checkitem 火龙之心 1
+NOT Checkitemw 火龙之心 1
+NOT H.Checkitem 火龙之心 1
+NOT H.Checkitemw 火龙之心 1
+#ACT
+H.Give 火龙之心 1
+
+#IF
+H.CHECKBAGSIZE 1
+H.CHECKSKILL 雷霆一击 = 0
+H.CHECKTRANPOINT 雷霆一击 = 0
+NOT Checkitem 火龙之心 1
+NOT Checkitemw 火龙之心 1
+NOT H.Checkitem 火龙之心 1
+NOT H.Checkitemw 火龙之心 1
+#ACT
+H.Give 火龙之心 1
+
+#IF
+H.CHECKBAGSIZE 1
+H.CHECKSKILL 噬魂沼泽 = 0
+H.CHECKTRANPOINT 噬魂沼泽 = 0
+NOT Checkitem 火龙之心 1
+NOT Checkitemw 火龙之心 1
+NOT H.Checkitem 火龙之心 1
+NOT H.Checkitemw 火龙之心 1
+#ACT
+H.Give 火龙之心 1
+
+#IF
+H.CHECKBAGSIZE 1
+H.CHECKSKILL 末日审判 = 0
+H.CHECKTRANPOINT 末日审判 = 0
+NOT Checkitem 火龙之心 1
+NOT Checkitemw 火龙之心 1
+NOT H.Checkitem 火龙之心 1
+NOT H.Checkitemw 火龙之心 1
+#ACT
+H.Give 火龙之心 1
+
+#IF
+H.CHECKBAGSIZE 1
+H.CHECKSKILL 火龙气焰 = 0
+H.CHECKTRANPOINT 火龙气焰 = 0
+NOT Checkitem 火龙之心 1
+NOT Checkitemw 火龙之心 1
+NOT H.Checkitem 火龙之心 1
+NOT H.Checkitemw 火龙之心 1
+#ACT
+H.Give 火龙之心 1
+
+#IF
+CheckMpPer = 100
+#ACT
+H.ChangeModeEx 1 1
+
+#IF
+#ACT
+H.CREDITPOINT = <$CREDITPOINT>
+#CALL [英雄合击\英血技装\英雄血量.txt] @YXXL
+
+#IF
+CheckHeroLevel > 38
+H.CheckSkill 护体神盾 = 0
+#ACT
+ADDSKILL 护体神盾
+Break
+
+#IF
+CheckHeroLevel > 38
+H.CheckSkill 护体神盾 > 0
+#ACT
+ADDSKILL 护体神盾
+#ELSEACT
+DELSKILL 护体神盾
+
+[@赠送金刚石]
+#ACT
+GAMEDIAMOND + <$STR(I103)>
+sendmsg 7 提示：你已成功收到好友<$STR(A103)>赠送的<$STR(I103)>颗金刚石。
+
+[@英雄任务5回药] 
+#IF
+ISONMAP T340 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @30回药 
+[@30回药] 
+#IF
+ISONMAP T340 
+#ACT
+MAP b343
+[@热血令之路一40]
+#IF
+ISONMAP TX03
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 2400000 @热血令之路一40回盟
+[@热血令之路一40回盟] 
+#IF
+ISONMAP TX03
+#ACT
+mapmove 3 333 333
+[@神殿试炼5] 
+#IF
+ISONMAP 0111E 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 300000 @神殿试炼5回盟 
+[@神殿试炼5回盟] 
+#IF
+ISONMAP 0111E 
+#ACT
+mapmove 3 333 333 
+[@神殿一层20] 
+#IF
+ISONMAP D5072A 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @神殿一层20回盟 
+[@神殿一层20回盟] 
+#IF
+ISONMAP D5072A 
+#ACT
+mapmove 3 333 333 
+[@神殿二层20] 
+#IF
+ISONMAP 0157A 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @神殿二层20回盟 
+[@神殿二层20回盟] 
+#IF
+ISONMAP 0157A 
+#ACT
+mapmove 3 333 333 
+[@石墓试炼5] 
+#IF
+ISONMAP 0111D 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 300000 @石墓试炼5回盟 
+[@石墓试炼5回盟] 
+#IF
+ISONMAP 0111D 
+#ACT
+mapmove 3 333 333 
+[@石墓一层20] 
+#IF
+ISONMAP E702A 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @石墓一层20回盟 
+[@石墓一层20回盟] 
+#IF
+ISONMAP E702A 
+#ACT
+mapmove 3 333 333 
+[@石墓二层20] 
+#IF
+ISONMAP E703A 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @石墓二层20回盟 
+[@石墓二层20回盟] 
+#IF
+ISONMAP E703A 
+#ACT
+mapmove 3 333 333 
+[@矿洞试炼5] 
+#IF
+ISONMAP 0111B 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 300000 @矿洞试炼5回盟 
+[@矿洞试炼5回盟] 
+#IF
+ISONMAP 0111B 
+#ACT
+mapmove 3 333 333 
+[@矿洞一层20] 
+#IF
+ISONMAP D411A 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @矿洞一层20回盟 
+[@矿洞一层20回盟] 
+#IF
+ISONMAP D411A 
+#ACT
+mapmove 3 333 333 
+[@矿洞二层20] 
+#IF
+ISONMAP D412A 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @矿洞二层20回盟 
+[@矿洞二层20回盟] 
+#IF
+ISONMAP D412A 
+#ACT
+mapmove 3 333 333 
+[@地穴试炼5] 
+#IF
+ISONMAP 0111C 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 300000 @地穴试炼5回盟 
+[@地穴试炼5回盟] 
+#IF
+ISONMAP 0111C 
+#ACT
+mapmove 3 333 333 
+[@地穴一层20] 
+#IF
+ISONMAP D613B 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @地穴一层20回盟 
+[@地穴一层20回盟] 
+#IF
+ISONMAP D613B 
+#ACT
+mapmove 3 333 333 
+[@地穴二层20] 
+#IF
+ISONMAP D617A 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @地穴二层20回盟 
+[@邪窟二层20回盟] 
+#IF
+ISONMAP D617A 
+#ACT
+mapmove 3 333 333 
+[@邪窟试炼5] 
+#IF
+ISONMAP 0111A 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 300000 @邪窟试炼5回盟 
+[@邪窟试炼5回盟] 
+#IF
+ISONMAP 0111A 
+#ACT
+mapmove 3 333 333 
+[@邪窟一层20] 
+#IF
+ISONMAP D413A 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @邪窟一层20回盟 
+[@邪窟一层20回盟] 
+#IF
+ISONMAP D413A 
+#ACT
+mapmove 3 333 333 
+[@邪窟二层20] 
+#IF
+ISONMAP E404A 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @邪窟二层20回盟 
+[@邪窟二层20回盟] 
+#IF
+ISONMAP E404A 
+#ACT
+mapmove 3 333 333 
+[@组队解封一20] 
+#IF
+ISONMAP M100B 
+#ACT
+mov D0 0
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @组队解封一20回盟 
+[@组队解封一20回盟] 
+#IF
+ISONMAP M100B 
+#ACT
+mapmove 3 333 333 
+[@组队解封二20] 
+#IF
+ISONMAP T340A 
+#ACT
+MOV D0 0 
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @组队解封二20回盟 
+[@组队解封二20回盟] 
+#IF
+ISONMAP T340A 
+#ACT
+mapmove 3 333 333 
+[@宫殿一层20] 
+#IF
+ISONMAP D411B 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @宫殿一层20回殿 
+[@宫殿一层20回殿] 
+#IF
+ISONMAP D411B 
+#ACT
+map DM002A 
+[@宫殿二层30] 
+#IF
+ISONMAP T240 
+#ACT
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @宫殿二层30回殿 
+[@宫殿二层30回殿] 
+#IF
+ISONMAP T240 
+#ACT
+map DM002A

@@ -1,0 +1,11 @@
+[@main]
+#IF
+random 5
+#ACT
+THROWITEM <$MAP> 35 36 3 °×Òø±¦Ïä 1
+break
+#IF
+random 10 
+#ACT
+THROWITEM <$MAP> 35 36 3 ³à½ð±¦Ïä 1
+break

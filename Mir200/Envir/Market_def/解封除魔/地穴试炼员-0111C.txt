@@ -1,0 +1,27 @@
+[@main]
+这里是通向地穴的试炼之屋!\
+你必须快速的进入下层\
+要不然,你就要接受这里无比强大的怪物考验\
+下面二层，你只有四十分钟的时间接受挑战\
+规定时间后，将被自动返回盟重\
+<快传送我到下层吧/@去地穴一>\
+<我要先接受试炼/@exit>
+[@去地穴一]
+#IF
+ISGROUPMASTER
+#ACT
+Param1 D613B
+Param2 50
+Param3 40
+MonGen 黑色恶蛆 10 40
+MonGen 巨型蠕虫 10 40
+MonGen 钳虫 10 40
+MonGen 蜈蚣 10 40
+MonGen 跳跳蜂 10 40
+MonGen 触龙神 2 40
+MonGen 邪恶钳虫 4 40
+MonGen 石墓尸王 2 40
+MonGen 恶魔弓箭手0 5 40
+GROUPMOVE D613B @地穴一层20
+#ELSESAY
+您不是所在队伍的队长，不能前往

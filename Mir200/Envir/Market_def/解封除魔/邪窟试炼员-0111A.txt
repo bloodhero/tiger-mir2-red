@@ -1,0 +1,30 @@
+[@main]
+这里是通向邪窟的试炼之屋!\
+你必须快速的进入下层\
+要不然,你就要接受这里无比强大的怪物考验\
+下面二层，你只有四十分钟的时间接受挑战\
+规定时间后，将被自动返回盟重\
+<快传送我到下层吧/@去邪窟一>\
+<我要先接受试炼/@exit>
+[@去邪窟一]
+#IF
+ISGROUPMASTER
+#ACT
+Param1 D413A
+Param2 45
+Param3 35
+MonGen 恶灵僵尸 15 35
+MonGen 恶灵尸王 15 35
+MonGen 电僵王 6 35
+MonGen 石墓尸王 6 35
+Param1 D413A
+Param2 80
+Param3 22
+MonGen 恶魔弓箭手0 1 0
+Param1 D413A
+Param2 81
+Param3 22
+MonGen 恶魔弓箭手0 1 0
+GROUPMOVE D413A @邪窟一层20
+#ELSESAY
+您不是所在队伍的队长，不能前往

@@ -1,0 +1,331 @@
+
+[@main]
+恭喜你进入了10号奖励藏宝阁，在完成我的要求之后，\
+你还可以得到额外的奖励。请记得在包裹中留下\
+至少五格空间，否则将得不到奖励。\
+5个乾坤令可以捆绑成一个乾坤令包\
+<捆绑乾坤令/@捆绑乾坤>       <兑换乾坤令/@兑换乾坤令>\  \
+
+<给予乾坤令开始投骰子/@掷骰子>\  \
+
+<离开藏宝阁/@离开藏宝阁>\
+
+[@兑换乾坤令]
+如果你不想要你身上的乾坤令，那就给我吧，\
+我对于这些散落的令牌非常感兴趣，\
+作为感谢，我给你些经验奖励。\ \
+
+<给你乾坤令/@兑换乾坤令1>\ \
+
+<返回/@main>\
+
+[@兑换乾坤令1]
+#IF
+CHECKITEM 乾坤令 1
+#ACT
+TAKE 乾坤令 1
+Changeexp + 200000
+#ELSESAY
+你没有足够的乾坤令啊！\
+<退出/@Exit>
+[@捆绑乾坤]
+#IF
+CHECKITEM 乾坤令 5
+#ACT
+TAKE 乾坤令 5
+give 乾坤令包 1
+#SAY
+解读成功
+#ELSESAY
+5个乾坤令可以捆绑成一个乾坤令包。\
+如果你已经带来了，就交给我吧！\
+
+[@离开藏宝阁]
+#IF
+#ACT
+mapmove 3 330 330
+
+[@掷骰子]
+#IF
+check [450] 1
+#ACT
+SET [450] 0
+movr d0 6 
+inc d0 1 
+playdice 1 @cube_cds-2
+BREAK
+#IF
+check [451] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你可以前进<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+BREAK
+#IF
+check [452] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你可以前进<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+BREAK
+#IF
+check [453] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你可以前进<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+BREAK
+#IF
+check [454] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你可以前进<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+BREAK
+#IF
+check [455] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你可以前进<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+#ACT
+BREAK
+#IF
+check [456] 1
+#SAY
+之前，你投出的骰子的点数为：<$STR(D0)>\
+你可以前进<$STR(D0)>个房间\ \
+
+<移动/@cube_cds-3>
+
+[@cube_cds-2]
+#IF
+equal D0 1
+#SAY
+恭喜你，你将获得乾坤令包2个，\
+请在包裹中保留足够的空间。\
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [451] 1
+break
+#IF
+equal D0 2
+#SAY
+恭喜你，你将获得乾坤令包2个，\
+请在包裹中保留足够的空间。\
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [452] 1
+break
+#IF
+equal D0 3
+#SAY
+恭喜你，你将获得乾坤令包2个，\
+请在包裹中保留足够的空间。\
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [453] 1
+break
+#IF
+equal D0 4
+#SAY
+恭喜你，你将获得乾坤令包3个，\
+请在包裹中保留足够的空间。\
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [454] 1
+break
+#IF
+equal D0 5
+#SAY
+恭喜你，你将获得乾坤令包4个，\
+请在包裹中保留足够的空间。\
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [455] 1
+break
+#IF
+equal D0 6
+#ACT
+SET [456] 1
+#SAY
+恭喜你，你将获得乾坤令包5个，\
+请在包裹中保留足够的空间。\
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+
+[@cube_cds-3]
+#IF
+equal D0 1
+#ACT
+batchDelay 1
+addbatch CB11
+batchmove
+Param1 CB11
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+MONGENEX CB11 15 15 秘室守护兽1|1|242 2 1
+DELAYGOTO 1 @CQJLIW
+break
+#IF
+equal D0 2
+#ACT
+batchDelay 1
+addbatch CB11
+addbatch CB12
+batchmove
+Param1 CB12
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+MONGENEX CB12 15 15 秘室守护兽1|1|242 2 1
+DELAYGOTO 1 @CQJLIW
+break
+#IF
+equal D0 3
+#ACT
+batchDelay 1
+addbatch CB11
+addbatch CB12
+addbatch CB13
+batchmove
+Param1 CB13
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+MONGENEX CB13 15 15 秘室守护兽1|1|242 2 1
+DELAYGOTO 1 @CQJLIW
+break
+#IF
+equal D0 4
+#ACT
+batchDelay 1
+addbatch CB11
+addbatch CB12
+addbatch CB13
+addbatch CB14
+batchmove
+Param1 CB14
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+MONGENEX CB14 15 15 秘室守护兽1|1|242 2 1
+DELAYGOTO 1 @CQJLIW
+break
+#IF
+equal D0 5
+#ACT
+batchDelay 1
+addbatch CB11
+addbatch CB12
+addbatch CB13
+addbatch CB14
+addbatch CB15
+batchmove
+Param1 CB15
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+MONGENEX CB15 15 15 秘室守护兽1|1|242 2 1
+DELAYGOTO 1 @CQJLIW
+break
+#IF
+equal D0 6
+#ACT
+batchDelay 1
+addbatch CB11
+addbatch CB12
+addbatch CB13
+addbatch CB14
+addbatch CB15
+addbatch CB16
+batchmove
+Param1 CB16
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1
+MONGENEX CB16 15 15 秘室守护兽1|1|242 2 1
+DELAYGOTO 1 @CQJLIW
+break
+
+[@CQJLIW]
+#IF
+equal d0 1
+#ACT
+SET [440] 1
+give 乾坤令包 2
+SENDMSG 7 恭喜：你获得了：乾坤令包
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁10号获得：乾坤令包2个奖励！
+break
+
+#IF
+equal d0 2
+#ACT
+SET [440] 1
+give 乾坤令包 2
+SENDMSG 7 恭喜：你获得了：乾坤令包
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁10号获得：乾坤令包2个奖励！
+break
+
+#IF
+equal d0 3
+#ACT
+SET [440] 1
+give 乾坤令包 2
+SENDMSG 7 恭喜：你获得了：乾坤令包
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁10号获得：乾坤令包2个奖励！
+break
+
+#IF
+equal d0 4
+#ACT
+SET [440] 1
+give 乾坤令包 3
+SENDMSG 7 恭喜：你获得了：乾坤令包
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁10号获得：乾坤令包3个奖励！
+break
+
+#IF
+equal d0 5
+#ACT
+SET [440] 1
+give 乾坤令包 4
+SENDMSG 7 恭喜：你获得了：乾坤令包
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁10号获得：乾坤令包4个奖励！
+break
+
+#IF
+equal d0 6
+#ACT
+SET [440] 1
+give 乾坤令包 5
+SENDMSG 7 恭喜：你获得了：乾坤令包
+SENDMSG 0 恭喜：<$USERNAME>，在藏宝阁10号获得：乾坤令包5个奖励！
+break

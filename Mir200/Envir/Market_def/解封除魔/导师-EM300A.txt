@@ -1,0 +1,101 @@
+[@MAIN]
+男方需要进入生存考验场接受考验，我可以送您去\
+如果在生存考验场遇到了生命危险\
+我还可以使用移形换位大法，让你们互换\ \
+<我要进入生存考验场/@考验开始>\
+<我要移形换位/@移形换位>\
+<返回姻缘神殿，重新挑战/@重新挑战>\
+
+[@重新挑战]
+#IF
+#ACT
+MAPMOVE M101
+
+[@移形换位]
+#IF
+CHECKDEARONMAP EM300B
+#ACT
+MAPMOVE EM300B 14 15
+GMEXECUTE 集体传送 EM300B EM300A
+SENDMSG 7 成功使用移形换位大法！
+BREAK
+#ELSESAY
+你们还没有接受挑战，或您的爱人已退出挑战！\
+无法使用移形换位大法！\
+
+[@考验开始]
+#IF
+CHECKRANGEMONCOUNT EM300B 15 15 10 > 0
+#SAY
+你们正在接受生存考验……\
+你可以通过移形换位大法，解救您的爱人。\
+#ACT
+BREAK
+#IF
+gender man
+#ACT
+CLEARDELAYGOTO
+MAPMOVE EM300B 14 15
+PARAM1 EM300B
+PARAM2 14
+PARAM3 15
+MONGEN 月魔蜘蛛 8 2
+PARAM1 EM300B
+PARAM2 14
+PARAM3 15
+MONGEN 邪恶毒蛇 5 2
+PARAM1 EM300B
+PARAM2 14
+PARAM3 15
+MONGEN 电僵王 2 2
+PARAM1 EM300B
+PARAM2 14
+PARAM3 15
+MONGEN 暗之触龙神 4 2
+PARAM1 EM300B
+PARAM2 14
+PARAM3 15
+MONGEN 花吻蜘蛛 3 2
+PARAM1 EM300B
+PARAM2 14
+PARAM3 15
+MONGEN 暴牙蜘蛛 8 2
+DELAYGOTO 300000 @SBSM
+#ELSESAY
+男方身体健壮，需男方先进入挑战！\
+女方可以接到男方求救时，使用移形换位大法，\
+解救男方回到挑战房间，女方进入挑战，\
+同时女方求救时，男方也可利用移形换位大法。\
+不需要打怪，保证双方<5分钟/@>不死亡就可以了\
+
+[@SBSM]
+#IF
+ISONMAP EM300A
+CHECKDEARONMAP EM300B
+#ACT
+SET [140] 1
+MAPMOVE M101
+GMEXECUTE 夫妻传送
+SENDMSG 7 夫妻生存考验成功！
+BREAK
+#IF
+ISONMAP EM300B
+CHECKDEARONMAP EM300A
+#ACT
+SET [140] 1
+MAPMOVE M101
+GMEXECUTE 夫妻传送
+SENDMSG 7 夫妻生存考验成功！
+BREAK
+#IF
+ISONMAP EM300A
+#ACT
+MAPMOVE M101
+SENDMSG 7 夫妻生存考验失败！
+BREAK
+#IF
+ISONMAP EM300B
+#ACT
+MAPMOVE M101
+SENDMSG 7 夫妻生存考验失败！
+BREAK

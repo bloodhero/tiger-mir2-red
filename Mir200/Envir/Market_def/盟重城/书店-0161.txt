@@ -1,0 +1,1030 @@
+(@buy @sell )
+%100
++3
++4
+[@main]
+欢迎，你想买些修炼的书吗？\ \
+<领取玛法见证/@领取玛法见证>                 <使用英雄圣水/@使用英雄圣水>\
+<买/@buy>  书\
+<卖/@sell>  书\
+<询问/@询问武技> 各种武技的细节\
+<我来打听新技能的消息/@新技能>\
+<退出/@exit>
+[@buy]
+请选择你想要买的书。\
+\ \
+\ \
+<返回/@main>
+[@sell]
+给我看看你的书。\
+\ \
+\ \
+<返回/@main>
+
+[@领取玛法见证]
+国王想奖赏老兵这些年来为玛法所做的贡献。\ 
+但老兵不愿意接受，你愿意帮忙收集大家的签名吗？\ 
+有了大家的签名，老兵就可以安心领取国王的奖励。\ 
+<好的，我这就去，请告诉我先去找谁吧/@先找谁>\ 
+\ \ 
+<找不到签名的人了，我不干了/@我不干了> 
+[@先找谁]
+#IF 
+checkitem 玛法见证 1 
+check [331] 1 
+#ACT 
+break 
+#SAY 
+拿着玛法见证，去找一下白日门的<天尊>\ 
+他就在白日门，通常他都在中间的空地上晒太阳。 
+#IF 
+checkitem 玛法见证 1 
+check [332] 1 
+#ACT 
+break 
+#SAY 
+拿着玛法见证，去找一下 比奇 <海边老兵>\ 
+你知道他在哪吗？\ 
+在比奇郊外西南方的一个小木屋那，你能找到他。 
+#IF 
+checkitem 玛法见证 1 
+check [333] 1 
+#ACT 
+break 
+#SAY 
+拿着玛法见证，去找一下<边界村小店老板>\ 
+不用我多说了，边界村你应该知道在哪吧。 
+#IF 
+check [331] 0 
+random 3 
+#act 
+set [331] 1 
+give 玛法见证 1 
+break 
+#SAY 
+拿着玛法见证，去找一下白日门的<天尊>\ 
+他就在白日门，通常他都在中间的空地上晒太阳。 
+#IF 
+check [332] 0 
+random 2 
+#act 
+set [332] 1 
+give 玛法见证 1 
+break 
+#SAY 
+拿着玛法见证，去找一下 比奇 <海边老兵>\ 
+你知道他在哪吗？\ 
+在比奇郊外西南方的一个小木屋那，你能找到他。 
+#IF 
+check [333] 0 
+#act 
+set [333] 1 
+give 玛法见证 1 
+break 
+#SAY 
+拿着玛法见证，去找一下<边界村小店老板>\ 
+不用我多说了，边界村你应该知道在哪吧。 
+[@我不干了] 
+年轻人，做事有始有终才能获得上天眷\ 
+哎……你确定要放弃吗？\ 
+<是的/@确定放弃>\ 
+\ \ 
+<返回/@main> 
+[@确定放弃] 
+#ACT 
+TAKE 玛法见证 46 
+reset [331] 6 
+#SAY 
+你已经放弃了一次让玛法人民感谢你的机会！\ 
+如果你想通了，可以再回来找我！ 
+
+[@使用英雄圣水]
+#IF
+#ACT
+MOV S60
+MOV S61
+MOV S62
+MOV S63
+MOV S64
+MOV S65
+MOV S66
+MOV S67
+MOV S68
+MOV S69
+MOV S70
+MOV S71
+MOV S72
+MOV S73
+MOV S74
+MOV S75
+MOV S76
+MOV S77
+MOV S78
+MOV S79
+MOV S80
+MOV S81
+#SAY
+据说老兵有些神奇的药剂叫“英雄圣水”，\
+如果你把签名过的“玛法见证”给老兵，他会送你些“英雄圣水”\
+这英雄圣水虽然能喝，但想必你不会奢侈得用来解渴吧\
+拿来给我，我会帮助你用英雄圣水提升英雄的技能经验。\
+ <我有英雄圣水，帮我提升英雄等级吧/@OPENZXMFJZ>\
+ <返回/@main>
+
+[@OPENZXMFJZ]
+#IF
+CHECKITEM 英雄圣水 1
+#ACT
+GOTO @HSAJHSJKAHDK
+BREAK
+#ELSESAY
+你没有英雄圣水
+
+[@HSAJHSJKAHDK]
+#IF
+HaveHero
+CheckHeroOnline
+#ACT
+GOTO @JAMNIKE-BY
+BREAK
+#ELSESAY
+你的英雄在哪啊？你都没有英雄或者是没召唤出英雄\
+
+[@JAMNIKE-BY]
+#IF
+CheckHeroJob WARRIOR
+#ACT
+GOTO @ZHANSHIJIANCR
+Break
+
+#IF
+CheckHeroJob WIZARD
+#ACT
+GOTO @FASHIJIANCR
+Break
+
+#IF
+CheckHeroJob TAOIST
+#ACT
+GOTO @DAOSHIJIANCR
+Break
+
+[@ZHANSHIJIANCR]
+#IF
+H.CHECKSKILL 白日门剑术 < 3
+#ACT
+INC S60 <白日门剑术/@白日门剑术>
+#ELSEACT
+INC S60 白日门剑术
+#IF
+H.CHECKSKILL 白日门攻杀 < 3
+#ACT
+INC S61 <白日门攻杀/@白日门攻杀>
+#ELSEACT
+INC S61 白日门攻杀
+#IF
+H.CHECKSKILL 白日门刺杀 < 3
+#ACT
+INC S62 <白日门刺杀/@白日门刺杀>
+#ELSEACT
+INC S62 白日门刺杀
+#IF
+H.CHECKSKILL 白日门半月 < 3
+#ACT
+INC S63 <白日门半月/@白日门半月>
+#ELSEACT
+INC S63 白日门半月
+#IF
+H.CHECKSKILL 白日门野蛮 < 3
+#ACT
+INC S64 <白日门野蛮/@白日门野蛮>
+#ELSEACT
+INC S64 白日门野蛮
+#IF
+H.CHECKSKILL 白日门烈火 < 3
+#ACT
+INC S65 <白日门烈火/@白日门烈火>
+#ELSEACT
+INC S65 白日门烈火
+#IF
+H.CHECKSKILL 白日门狮子吼 < 3
+#ACT
+INC S66 <白日门狮子吼/@白日门狮子吼>
+#ELSEACT
+INC S66 白日门狮子吼
+#IF
+H.CHECKSKILL 开天斩 < 3
+#ACT
+INC S67 <开天斩/@开天斩>
+#ELSEACT
+INC S67 开天斩
+#IF
+H.CHECKSKILL 白日门逐日 < 3
+#ACT
+INC S68 <白日门逐日/@白日门逐日>
+#ELSEACT
+INC S68 白日门逐日
+#IF
+#ACT
+#SAY
+您的英雄当前可以获得技能经验的技能为:\
+<白色技能为已满级或未学习的英雄技能>\
+<$STR(S60)>     <$STR(S61)>     <$STR(S62)>     <$STR(S63)>\
+<$STR(S64)>     <$STR(S65)>     <$STR(S66)>   <$STR(S67)>\
+<$STR(S68)>\ \
+<返回首页/@main>
+[@FASHIJIANCR]
+#IF
+H.CHECKSKILL 白日门火球术 < 3
+#ACT
+INC S60 <白日门火球术/@白日门火球术>
+#ELSEACT
+INC S60 白日门火球术
+#IF
+H.CHECKSKILL 白日门抗拒 < 3
+#ACT
+INC S61 <白日门抗拒/@白日门抗拒>
+#ELSEACT
+INC S61 白日门抗拒
+#IF
+H.CHECKSKILL 白日门诱惑术 < 3
+#ACT
+INC S62 <白日门诱惑术/@白日门诱惑术>
+#ELSEACT
+INC S62 白日门诱惑术
+#IF
+H.CHECKSKILL 白日门地狱火 < 3
+#ACT
+INC S63 <白日门地狱火/@白日门地狱火>
+#ELSEACT
+INC S63 白日门地狱火
+#IF
+H.CHECKSKILL 白日门雷电术 < 3
+#ACT
+INC S64 <白日门雷电术/@白日门雷电术>
+#ELSEACT
+INC S64 白日门雷电术
+#IF
+H.CHECKSKILL 白日门瞬移 < 3
+#ACT
+INC S65 <白日门瞬移/@白日门瞬移>
+#ELSEACT
+INC S65 白日门瞬移
+#IF
+H.CHECKSKILL 白日门大火球 < 3
+#ACT
+INC S66 <白日门大火球/@白日门大火球>
+#ELSEACT
+INC S66 白日门大火球
+#IF
+H.CHECKSKILL 白日门爆裂 < 3
+#ACT
+INC S67 <白日门爆裂/@白日门爆裂>
+#ELSEACT
+INC S67 白日门爆裂
+#IF
+H.CHECKSKILL 白日门火墙 < 3
+#ACT
+INC S68 <白日门火墙/@白日门火墙>
+#ELSEACT
+INC S68 白日门火墙
+#IF
+H.CHECKSKILL 白日门疾光 < 3
+#ACT
+INC S69 <白日门疾光/@白日门疾光>
+#ELSEACT
+INC S69 白日门疾光
+#IF
+H.CHECKSKILL 白日门雷光 < 3
+#ACT
+INC S70 <白日门雷光/@白日门雷光>
+#ELSEACT
+INC S70 白日门雷光
+#IF
+H.CHECKSKILL 白日门魔法盾 < 3
+#ACT
+INC S71 <白日门魔法盾/@白日门魔法盾>
+#ELSEACT
+INC S71 白日门魔法盾
+#IF
+H.CHECKSKILL 白日门圣言术 < 3
+#ACT
+INC S72 <白日门圣言术/@白日门圣言术>
+#ELSEACT
+INC S72 白日门圣言术
+#IF
+H.CHECKSKILL 白日门冰咆哮 < 3
+#ACT
+INC S73 <白日门冰咆哮/@白日门冰咆哮>
+#ELSEACT
+INC S73 白日门冰咆哮
+#IF
+H.CHECKSKILL 白日门寒冰掌 < 3
+#ACT
+INC S74 <白日门寒冰掌/@白日门寒冰掌>
+#ELSEACT
+INC S74 白日门寒冰掌
+#IF
+H.CHECKSKILL 白日门灭天火 < 3
+#ACT
+INC S75 <白日门灭天火/@白日门灭天火>
+#ELSEACT
+INC S75 白日门灭天火
+#IF
+H.CHECKSKILL 分身术 < 3
+#ACT
+INC S76 <分身术/@分身术>
+#ELSEACT
+INC S76 分身术
+#IF
+H.CHECKSKILL 白日门火雨 < 3
+#ACT
+INC S77 <白日门火雨/@白日门火雨>
+#ELSEACT
+INC S77 白日门火雨
+#IF
+H.CHECKSKILL 白日门四级盾 < 3
+#ACT
+INC S78 <白日门四级盾/@白日门四级盾>
+#ELSEACT
+INC S78 白日门四级盾
+#IF
+#ACT
+#SAY
+您的英雄当前可以获得技能经验的技能为:\
+<白色技能为已满级或未学习的英雄技能>\
+<$STR(S60)>   <$STR(S61)>     <$STR(S62)>   <$STR(S63)>\
+<$STR(S64)>   <$STR(S65)>     <$STR(S66)>   <$STR(S67)>\
+<$STR(S68)>     <$STR(S69)>     <$STR(S70)>     <$STR(S71)>\
+<$STR(S72)>   <$STR(S73)>   <$STR(S74)>   <$STR(S75)>\
+<$STR(S76)>         <$STR(S77)>     <$STR(S78)>\ \
+<返回首页/@main>
+[@DAOSHIJIANCR]
+#IF
+H.CHECKSKILL 白日门治愈术 < 3
+#ACT
+INC S60 <白日门治愈术/@白日门治愈术>
+#ELSEACT
+INC S60 白日门治愈术
+#IF
+H.CHECKSKILL 白日门战法 < 3
+#ACT
+INC S61 <白日门战法/@白日门战法>
+#ELSEACT
+INC S61 白日门战法
+#IF
+H.CHECKSKILL 白日门施毒术 < 3
+#ACT
+INC S62 <白日门施毒术/@白日门施毒术>
+#ELSEACT
+INC S62 白日门施毒术
+#IF
+H.CHECKSKILL 白日门火符 < 3
+#ACT
+INC S63 <白日门火符/@白日门火符>
+#ELSEACT
+INC S63 白日门火符
+#IF
+H.CHECKSKILL 白日门骷髅术 < 3
+#ACT
+INC S64 <白日门骷髅术/@白日门骷髅术>
+#ELSEACT
+INC S64 白日门骷髅术
+#IF
+H.CHECKSKILL 白日门隐身 < 3
+#ACT
+INC S65 <白日门隐身/@白日门隐身>
+#ELSEACT
+INC S65 白日门隐身
+#IF
+H.CHECKSKILL 白日门群隐 < 3
+#ACT
+INC S66 <白日门群隐/@白日门群隐>
+#ELSEACT
+INC S66 白日门群隐
+#IF
+H.CHECKSKILL 白日门幽灵盾 < 3
+#ACT
+INC S67 <白日门幽灵盾/@白日门幽灵盾>
+#ELSEACT
+INC S67 白日门幽灵盾
+#IF
+H.CHECKSKILL 白日门战甲术 < 3
+#ACT
+INC S68 <白日门战甲术/@白日门战甲术>
+#ELSEACT
+INC S68 白日门战甲术
+#IF
+H.CHECKSKILL 白日门启示 < 3
+#ACT
+INC S69 <白日门启示/@白日门启示>
+#ELSEACT
+INC S69 白日门启示
+#IF
+H.CHECKSKILL 白日门困魔咒 < 3
+#ACT
+INC S70 <白日门困魔咒/@白日门困魔咒>
+#ELSEACT
+INC S70 白日门困魔咒
+#IF
+H.CHECKSKILL 白日门气功波 < 3
+#ACT
+INC S71 <白日门气功波/@白日门气功波>
+#ELSEACT
+INC S71 白日门气功波
+#IF
+H.CHECKSKILL 白日门群疗 < 3
+#ACT
+INC S72 <白日门群疗/@白日门群疗>
+#ELSEACT
+INC S72 白日门群疗
+#IF
+H.CHECKSKILL 白日门神兽术 < 3
+#ACT
+INC S73 <白日门神兽术/@白日门神兽术>
+#ELSEACT
+INC S73 白日门神兽术
+#IF
+H.CHECKSKILL 白日门真气 < 3
+#ACT
+INC S74 <白日门真气/@白日门真气>
+#ELSEACT
+INC S74 白日门真气
+#IF
+H.CHECKSKILL 召唤月灵 < 3
+#ACT
+INC S75 <召唤月灵/@召唤月灵>
+#ELSEACT
+INC S75 召唤月灵
+#IF
+H.CHECKSKILL 白日门噬血术 < 3
+#ACT
+INC S76 <白日门噬血术/@白日门噬血术>
+#ELSEACT
+INC S76 白日门噬血术
+#IF
+#ACT
+#SAY
+您的英雄当前可以获得技能经验的技能为:\
+<白色技能为已满级或未学习的英雄技能>\
+<$STR(S60)>   <$STR(S61)>     <$STR(S62)>   <$STR(S63)>\
+<$STR(S64)>   <$STR(S65)>     <$STR(S66)>     <$STR(S67)>\
+<$STR(S68)>   <$STR(S69)>     <$STR(S70)>   <$STR(S71)>\
+<$STR(S72)>     <$STR(S73)>   <$STR(S74)>     <$STR(S75)>\
+<$STR(S76)>\ \
+<返回首页/@main>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[@白日门剑术]
+#ACT
+MOV S81 白日门剑术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门攻杀]
+#ACT
+MOV S81 白日门攻杀
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门刺杀]
+#ACT
+MOV S81 白日门刺杀
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门半月]
+#ACT
+MOV S81 白日门半月
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门野蛮]
+#ACT
+MOV S81 白日门野蛮
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门烈火]
+#ACT
+MOV S81 白日门烈火
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门狮子吼]
+#ACT
+MOV S81 白日门狮子吼
+GOTO @KAITIAOZHENG
+BREAK
+
+[@开天斩]
+#ACT
+MOV S81 开天斩
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门逐日]
+#ACT
+MOV S81 白日门逐日
+GOTO @KAITIAOZHENG
+BREAK
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[@白日门火球术]
+#ACT
+MOV S81 白日门火球术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门抗拒]
+#ACT
+MOV S81 白日门抗拒
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门诱惑术]
+#ACT
+MOV S81 白日门诱惑术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门地狱火]
+#ACT
+MOV S81 白日门地狱火
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门雷电术]
+#ACT
+MOV S81 白日门雷电术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门瞬移]
+#ACT
+MOV S81 白日门瞬移
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门大火球]
+#ACT
+MOV S81 白日门大火球
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门爆裂]
+#ACT
+MOV S81 白日门爆裂
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门火墙]
+#ACT
+MOV S81 白日门火墙
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门疾光]
+#ACT
+MOV S81 白日门疾光
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门雷光]
+#ACT
+MOV S81 白日门雷光
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门魔法盾]
+#ACT
+MOV S81 白日门魔法盾
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门圣言术]
+#ACT
+MOV S81 白日门圣言术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门冰咆哮]
+#ACT
+MOV S81 白日门冰咆哮
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门寒冰掌]
+#ACT
+MOV S81 白日门寒冰掌
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门灭天火]
+#ACT
+MOV S81 白日门灭天火
+GOTO @KAITIAOZHENG
+BREAK
+
+[@分身术]
+#ACT
+MOV S81 分身术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门火雨]
+#ACT
+MOV S81 白日门火雨
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门四级盾]
+#ACT
+MOV S81 白日门四级盾
+GOTO @KAITIAOZHENG
+BREAK
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[@白日门治愈术]
+#ACT
+MOV S81 白日门治愈术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门战法]
+#ACT
+MOV S81 白日门战法
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门施毒术]
+#ACT
+MOV S81 白日门施毒术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门火符]
+#ACT
+MOV S81 白日门火符
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门骷髅术]
+#ACT
+MOV S81 白日门骷髅术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门隐身]
+#ACT
+MOV S81 白日门隐身
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门群隐]
+#ACT
+MOV S81 白日门群隐
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门幽灵盾]
+#ACT
+MOV S81 白日门幽灵盾
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门战甲术]
+#ACT
+MOV S81 白日门战甲术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门启示]
+#ACT
+MOV S81 白日门启示
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门困魔咒]
+#ACT
+MOV S81 白日门困魔咒
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门气功波]
+#ACT
+MOV S81 白日门气功波
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门群疗]
+#ACT
+MOV S81 白日门群疗
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门神兽术]
+#ACT
+MOV S81 白日门神兽术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门真气]
+#ACT
+MOV S81 白日门真气
+GOTO @KAITIAOZHENG
+BREAK
+
+[@召唤月灵]
+#ACT
+MOV S81 召唤月灵
+GOTO @KAITIAOZHENG
+BREAK
+
+[@白日门噬血术]
+#ACT
+MOV S81 白日门噬血术
+GOTO @KAITIAOZHENG
+BREAK
+
+[@KAITIAOZHENG]
+#IF
+CheckHeroOnline
+CHECKITEM 英雄圣水 1
+#ACT
+TAKE 英雄圣水 1
+H.CHANGETRANPOINT <$STR(S81)> + 100
+#SAY
+你的英雄技能获得了提升
+#ELSESAY
+你没召唤出英雄或你包裹里没有英雄圣水\
+
+[@询问武技]
+你对哪种书感兴趣？\
+\ \
+武士可以学<基本剑术/@基本剑术>和<攻杀剑术/@攻杀剑术>\
+魔法师可以学<火球术/@火球术>和<大火球/@大火球>,\
+道士可以学 <治愈术/@治愈术>、<精神力战法/@精神力战法>\
+<施毒术/@施毒术>\
+\ \
+<返回/@main>
+
+[@基本剑术]
+基本剑术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 7 级开始修炼\
+Lv.2 : 你可以在第 11 级开始修炼\
+Lv.3 : 你可以在第 16 级开始修炼\
+<返回/@询问武技>
+
+[@攻杀剑术]
+攻杀剑术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 19 级开始修炼\
+Lv.2 : 你可以在第 22 级开始修炼\
+Lv.3 : 你可以在第 24 级开始修炼\
+<返回/@询问武技>
+
+[@火球术]
+火球术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 7 级开始修炼\
+Lv.2 : 你可以在第 11 级开始修炼\
+Lv.3 : 你可以在第 16 级开始修炼\
+<返回/@询问武技>
+
+[@大火球]
+大火球你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 19 级开始修炼\
+Lv.2 : 你可以在第 23 级开始修炼\
+Lv.3 : 你可以在第 25 级开始修炼\
+<返回/@询问武技>
+
+[@治愈术]
+治愈术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 7 级开始修炼\
+Lv.2 : 你可以在第 11 级开始修炼\
+Lv.3 : 你可以在第 16 级开始修炼\
+<返回/@询问武技>
+
+[@精神力战法]
+精神力战法你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 9 级开始修炼\
+Lv.2 : 你可以在第 13 级开始修炼\
+Lv.3 : 你可以在第 19 级开始修炼\
+<返回/@询问武技>
+
+[@施毒术]
+施毒术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 14 级开始修炼\
+Lv.2 : 你可以在第 17 级开始修炼\
+Lv.3 : 你可以在第 20 级开始修炼\
+<返回/@询问武技>
+
+[@询问武技1]
+{
+你对哪种书感兴趣？\
+\ \
+武士可以学<基本剑术/@基本剑术>和<攻杀剑术/@攻杀剑术>\
+魔法师可以学<火球术/@火球术>和<大火球/@大火球>,\
+<爆烈火焰/@爆烈火焰>和<雷电术/@雷电术>,
+道士可以学 <治愈术/@治愈术>、<精神力战法/@精神力战法>\
+<施毒术/@施毒术>\
+\ \
+<返回/@main>
+
+[@基本剑术]
+基本剑术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 7 级开始修炼\
+Lv.2 : 你可以在第 11 级开始修炼\
+Lv.3 : 你可以在第 16 级开始修炼\
+<返回/@询问武技>
+
+[@攻杀剑术]
+攻杀剑术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 19 级开始修炼\
+Lv.2 : 你可以在第 22 级开始修炼\
+Lv.3 : 你可以在第 24 级开始修炼\
+<返回/@询问武技>
+
+[@火球术]
+火球术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 7 级开始修炼\
+Lv.2 : 你可以在第 11 级开始修炼\
+Lv.3 : 你可以在第 16 级开始修炼\
+<返回/@询问武技>
+
+[@大火球]
+大火球你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 19 级开始修炼\
+Lv.2 : 你可以在第 23 级开始修炼\
+Lv.3 : 你可以在第 25 级开始修炼\
+<返回/@询问武技>
+
+[@爆烈火焰]
+爆烈火焰你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 22 级开始修炼\
+Lv.2 : 你可以在第 27 级开始修炼\
+Lv.3 : 你可以在第 31 级开始修炼\
+<返回/@询问武技>
+
+[@雷电术]
+雷电术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 17 级开始修炼\
+Lv.2 : 你可以在第 20 级开始修炼\
+Lv.3 : 你可以在第 23 级开始修炼\
+<返回/@询问武技>
+
+[@治愈术]
+治愈术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 7 级开始修炼\
+Lv.2 : 你可以在第 11 级开始修炼\
+Lv.3 : 你可以在第 16 级开始修炼\
+<返回/@询问武技>
+
+[@精神力战法]
+精神力战法你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 9 级开始修炼\
+Lv.2 : 你可以在第 13 级开始修炼\
+Lv.3 : 你可以在第 19 级开始修炼\
+<返回/@询问武技>
+
+[@施毒术]
+施毒术你可以按如下步骤修炼：\
+Lv.1 : 你可以在第 14 级开始修炼\
+Lv.2 : 你可以在第 17 级开始修炼\
+Lv.3 : 你可以在第 20 级开始修炼\
+<返回/@询问武技>
+
+[@新技能]
+新技能，你是指...?\
+\ \
+<快说把，我想知道古战技的秘密/@古战技的秘密>　　　<我想请你解读古籍残片/@解读古籍残片>\
+<我想了解一下魔法师的四级魔法盾/@四级魔法盾>\
+<没事/@exit>
+[@古战技的秘密]
+嗯，看来在勇士们之间，任何事情都会传播得很快呀。\
+是这样的，前几天，酒神他老人家游历到酒馆，顺便来看了看我，\
+告诉我说他又见到了那种令人生畏的力量----三龙卫曾使用过的，\
+古武术中的战技。要知道...那些战技早就已经失传了，\
+我当时第一反映是问他：你确信没有看错吗？\
+\ \
+<酒神怎么说？/@酒神怎么说>
+[@酒神怎么说]
+“我是喜欢酒，可是也没有老眼昏花，连这个都看错的时候吧!”\
+他这样讲，那我只好认为他说的都是真的了。\
+“你不相信是吗？你看这个。”他还交给我一方碎布，上面...\
+上面真的是当面的古文字，而且，看来应该是与武术相关的东西，\
+由不得我不相信了。\
+\ \
+<那古武术是为何失传了呢？/@为何失传了呢>
+[@为何失传了呢]
+那些技巧强大而纷繁，当面无数勇士醉心于其中无法自拔，\
+但是正因为其力量之猛，在未有熟练运用之前，有许多人都因为\
+错误地运用力量而导致自身元气大损。最初悟出这些战技的\
+三龙卫，也没有想到出现这样悲剧的结果。于是，他们觉得，\
+不应该再将之流传开去，而是有选择性地让最强大、\
+而又心志无比坚定的人来学习。\
+\ \
+<那么后来.../@那么后来>
+[@那么后来]
+由于掌握的难度确实非常之高，所以...当雪山之役后，\
+灭有了三龙卫的亲传，掌握的人也越来越少了，\
+渐渐地就在舞者们的追寻中淡去。但是有关古武术的传说，\
+一直传了下来，虽然，平时很少有人提及。\
+也许，这也正是一个契机，\
+当与半兽人的战争越来越不可避免的时候...\
+\ \
+<你的意思是...我也可以试着学习吗？/@我也可以试着学习吗>
+[@我也可以试着学习吗]
+嗯...我想应该是的，不仅是你，你的战斗伙伴也在可以\
+试着学习并掌握强大的古战技。\
+如果我猜的没错，酒神给我的那方布，可能就是前人们留下的古武术\
+技巧的残片了。\
+\ \
+<酒神有提到古籍残片的来历吗？/@古籍残片的来历吗>
+[@古籍残片的来历吗]
+他隐约地透露过，不过却没有说详细的内容。\
+据我所知，酒馆里的鉴宝散人见多识广，但是好像\
+需要有人帮以下他的忙，不过每人每天只有一次机会。\
+如果你肯帮他，应该有可能有一些收获。\
+还有一种方法就是找我边上这个怪人打听了，\
+他口口声声说通过他的考验就可以。\
+\ \
+<好的，我知道了/@exit>　　　　　　　<返回/@main>
+
+[@解读古籍残片]
+你已经知道古武术的事情了吧，为了学习你对应职业的新技能，\
+我可以帮你解读你得到的古籍残片，你得到<古籍残片(大)>。\
+1个<古籍残片(大)>由5个<古籍残片(中)>拼接得到，\
+而1页<古籍残片(中)>则需要我解读10个<古籍残片(小)>才行。\
+\ \
+<解读古籍残片(小)/@古籍残片(小)>　　　　　　　　　<拼接古籍残片(中)/@古籍残片(中)>\
+<去哪里可以得到古籍残片？/@古籍残片的来历吗>　　　　　<我有一些多余的古籍残片/@多余的古籍残片>\
+\ \
+<没事/@exit>
+[@古籍残片(小)]
+#if
+checkitem 古籍残片(小) 10
+#ACT
+take 古籍残片(小) 10
+give 古籍残片(中) 1
+goto @main
+#elsesay
+你没有足够的残片啊！
+[@古籍残片(中)]
+#if
+checkitem 古籍残片(中) 5
+#ACT
+take 古籍残片(中) 5
+give 古籍残片(大) 1
+goto @main
+#elsesay
+你没有足够的残片啊！
+
+[@多余的古籍残片]
+如果你不想要你身上的古籍残片(小)，那就给我吧，\
+我对于这些散落的信息非常感兴趣，作为感谢，我给你1个火龙珠。\
+\ \
+<给你古籍残片(小)/@给你古籍残片(小)>\
+\ \
+<返回/@main>
+[@给你古籍残片(小)]
+#if
+checkitem 古籍残片(小) 1
+#ACT
+take 古籍残片(小) 1
+give 火龙珠 1
+goto @main
+#elsesay
+你没有足够的残片啊！
+
+[@四级魔法盾]
+四级魔法盾?我是听说过这个传闻，不过，\
+这和古战技关系不大，我也不太清楚了。\
+印象中，比奇高家魔法师之家的高级魔法师提起过\
+他对魔法盾的研究心得，你如果真想知道的话，\
+去找他吧。\
+\ \
+<谢谢，我知道了/@exit>
+
+[goods]
+基本剑术	50	10
+攻杀剑术	50	10
+刺杀剑术	50	10
+火球术		50	10
+抗拒火环	50	10
+诱惑之光	50	10
+地狱火		50	10
+雷电术		50	10
+大火球		50	10
+瞬息移动	50	10
+爆裂火焰	50	10
+火墙		50	10
+疾光电影	50	10
+治愈术		50	10
+精神力战法	50	10
+施毒术		50	10
+灵魂火符	50	10
+召唤骷髅	50	10
+隐身术		50	10
+集体隐身术	50	10
+幽灵盾		50	10
+神圣战甲术	50	10
+心灵启示	50	10

@@ -1,0 +1,34 @@
+[@main]
+#if
+CheckMapMonCount T1343A > 0 1
+#act
+break
+#SAY
+现在你还没有通过考验呢，继续努力吧！\ \
+<退出/@exit>
+#if
+CheckMapMonCount T1341B = 0 1
+CheckMapMonCount T1342A = 0 1
+CheckMapMonCount T1343A = 0 1
+#act
+break
+#SAY
+祝贺你，你成功通过了考验，\
+我现在送你去找白日门门主。\
+\ \
+<好的，带我去找他吧/@摆龙门阵>
+#ELSESAY
+前面两段英雄之路还有怪物没有消灭，\
+很可惜，你没有通过考验，\
+我现在送你返回盟重。\
+\ \
+<返回盟重/@返回盟重>
+[@摆龙门阵]
+#ACT
+set [60] 1
+CLEARDELAYGOTO
+MAPMOVE B354
+[@返回盟重]
+#act
+CLEARDELAYGOTO
+mapmove 3 333 333

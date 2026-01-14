@@ -1,0 +1,243 @@
+[@main]
+既然你拥有了祈福凭证，就可以到我这里接受考验，\
+我这里有三个骰子，使用不同数量的凭证可以使用不同数量的骰子，\
+1个凭证可以使用1个骰子，3个凭证可以用2个骰子，\
+5个凭证可以使用3个骰子，骰子越多，怪物越有可能携带伏魔令。\
+一切的命运就掌握在您自己手里了，好好把握吧，英雄！\
+您只有20分钟的时间，时间到，将会自动返回盟重。\
+<交一张凭证/@一张凭证>    <交三张凭证/@三张凭证>     <交五张凭证/@五张凭证>\
+\ \
+<返回盟重/@返回盟重>                       <关闭/@exit>
+[@返回盟重]
+#act
+mapmove 3 327 333
+[@一张凭证]
+#IF
+CheckRangeMonCount T318 14 15 10 > 0
+#ACT
+break
+#SAY
+怪物还没有消灭完，不能再次掷骰子。
+#IF
+checkitem 祈福凭证 1
+#ACT
+take 祈福凭证 1
+movr d0 6
+inc d0 1
+MOV D1 0
+MOV D2 0
+playdice 1 @出怪
+#SAY
+嗯，那我们<开始/@>了!
+#ELSESAY
+你好象没有足够的祈福凭证啊
+[@三张凭证]
+#IF
+checkitem 祈福凭证 3
+#ACT
+take 祈福凭证 3
+movr d0 6
+movr d1 6
+inc d0 1
+inc d1 1
+MOV D2 0
+playdice 2 @出怪
+#SAY
+嗯，那我们<开始/@>了!
+#ELSESAY
+你好象没有足够的祈福凭证啊
+[@五张凭证]
+#IF
+checkitem 祈福凭证 5
+#ACT
+take 祈福凭证 5
+movr d0 6
+movr d1 6
+movr d2 6
+inc d0 1
+inc d1 1
+inc d2 1
+playdice 3 @出怪
+#SAY
+嗯，那我们<开始/@>了!
+#ELSESAY
+你好象没有足够的祈福凭证啊
+[@出怪]
+#IF
+CheckLevelEx > 0
+#ACT
+mov D3 0
+inc D3 <$STR(D0)>
+inc D3 <$STR(D1)>
+inc D3 <$STR(D2)>
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士3 4 3
+#SAY
+骰子的点数是 <$STR(D3)> ，祝你好运！
+#IF
+equal D3 1
+random 18
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 2
+random 17
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 3
+random 16
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 4
+random 15
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 5
+random 14
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 6
+random 13
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 7
+random 12
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 8
+random 11
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 9
+random 10
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 10
+random 9
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 11
+random 8
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 12
+random 7
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 13
+random 6
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 14
+random 5
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 15
+random 4
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 16
+random 3
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 17
+random 2
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+break
+#IF
+equal D3 18
+#ACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士4 1 3
+#ELSEACT
+Param1 T318
+Param2 14
+Param3 15
+MonGen 魔龙力士3 1 3

@@ -1,0 +1,1175 @@
+[@MAIN]
+前方就是充满危险的恶魔之地，我镇守着这个唯一的入口。\
+只要你交给我一个卷轴，我就能带你和你的队伍去斩妖除魔！\
+前路将会异常凶险，最好不要孤身犯险……\
+听去过地下宫殿的勇士说，最进地下宫殿又有新的恶魔出现！\
+<我有卷轴，我要组队闯关/@组队闯关>             <我要解除封印/@解除封印>\
+<解救天工神剪/@天工神剪>                       <热血令任务/@热血令任务>\
+<洞察魔兽信息/@魔兽信息>                       <焰火屠魔/@焰火屠魔>\
+<让我再考虑考虑/@exit>                     <藏宝阁/@藏宝阁>\
+
+[@藏宝阁]
+玛法大陆，是一个神秘的国度，勇敢的玛法人一直以自己的聪明\
+才智抵抗着半兽人的侵略，为了保卫自己的家园，提高作战意识。\
+玛法国王听取智者的忠言建设了一个名为藏宝阁的地方，\
+其作用是为了让年轻的勇士们在藏宝阁内磨练心智，提升自身的\
+作战能力。若你也想去试一下的，我可以告诉你在哪儿。  \
+
+<能不能介绍一下玩这种游戏的规则/@游戏规则>\
+<好的，我现在就想试一下/@看个究竟>\
+
+[@游戏规则]
+藏宝阁分为60个房间，而每个房间会有突发事件发生，\
+每间房间里都会有一个守卫，他会要求你给他一定数量的\
+乾坤令，不用担心，每个房间里的守护兽身上就有乾坤令，\
+你只要将他们打倒，用灵符探索就可以\
+得到了，当你达到守卫的条件，他就会让你掷一个骰子,\
+根据1-6的数值使你前进数步到达下个房间。  \
+
+<还有呢？/@还有>
+
+
+[@还有]
+每个房间都将会带给你不同的感受！\
+在“13、23、33、43、53”号房间，骰子的数值会决定你是\
+前进还是后退。\
+而在“10、20、30、40、50”号房间，机关会给一些惊喜。  \ \
+
+<谢谢，我明白了/@明白了>
+
+[@明白了]
+等等!我还没有说完呢，当你第一次进入房间时，\
+你会从0号房间开始，任何时候，你都可以离开房间或者停止游戏，\
+也可以找我再送你到达上一次你离开的房间，你就可以继续了，\
+当你通过你的才智来到终点60房间的时候，将会得到一次掷3个\
+骰子的机会,凭借你的运气，将有机会得到玛法大陆失传多年的\
+<镇龙盔、镇魔盔、镇魂盔>，不要小看这三件头盔，\
+他们可是当年玛法勇士所梦寐所求的一件宝贝啊！\
+<镇龙盔、镇魔盔、镇魂盔，介绍/@头盔介绍>  \
+<乾坤令有什么用？/@有什么用>\
+
+[@有什么用]
+乾坤令 自然是你通往下个房间的凭证，在每个房间的\
+守护怪兽身上就有，你只要打败怪兽后用灵符搜索就会\
+找到乾坤令，对了乾坤令还能在看守人处直接兑换\
+相应的奖励！  \ \
+
+<好吧！我去试下，看个究竟/@看个究竟>
+
+[@头盔介绍]
+镇龙盔：防御5-6、魔御5-6、攻击0-5\
+镇魔盔：防御5-6、魔御5-6、魔法0-5\
+镇魂盔：防御5-6、魔御5-6、道术0-5  \ \
+
+<听说还能获得斗笠51号至斗笠53号？/@听说斗笠>\
+<我这就去试下，看个究竟/@看个究竟>\
+
+[@听说斗笠]
+你的消息好挺灵通的，好吧我就给你介绍下具体属性：\
+斗笠51号：防御0-3          斗笠52号：魔防0-3\
+斗笠53号：攻击0-3          斗笠54号：魔法0-3\
+斗笠55号：道术0-3  \ \
+
+<我这就去试下，看个究竟/@看个究竟>
+
+[@看个究竟]
+#act
+SENDMSG 0 %S进入了藏宝阁开始了寻找下落不明的12天书,如果你也想参加,请到盟重安全区找"镇魔守将"点"藏宝阁"进入!
+CLOSE
+mapmove CB00
+
+[@组队闯关]
+不同的卷轴通向不同的地牢，你们也将会遇到不同的恶魔。\
+首先你会进入一间试炼室,试炼室只能停留最多5分钟\
+在试炼中，只需点击试炼员即可进入下一层\
+对了，有个小秘密告诉,\
+在地牢最底层所出没的恶魔身上藏有藏宝图和稀世珍宝，\
+现在让我看看你有什么卷轴吧，我带你们去那里挑战群魔\
+<去矿洞组队除魔/@矿洞除魔>         <去神殿组队除魔/@神殿除魔>\
+<去邪窟组队除魔/@邪窟除魔>         <去地穴组队除魔/@地穴除魔>\
+<去石墓组队除魔/@石墓除魔>         <退出/@exit>\
+[@邪窟除魔]
+#IF
+checkhum 0111A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum D413A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum E404A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+ISGROUPMASTER
+checkitem 邪窟组队卷轴 1
+#ACT
+mov I1 0
+TAKE 邪窟组队卷轴 1
+CLEARMAPMON 0111A
+CLEARMAPMON D413A
+CLEARMAPMON E404A
+Param1 0111A
+Param2 9
+Param3 12
+MonGen 触龙神 1 3
+GROUPMOVE 0111A @邪窟试炼5
+break
+#IF
+checkitem 邪窟组队卷轴 1
+#SAY
+必须要组队，而且你要是组队才可以进入
+#ELSESAY
+您没有相应的卷轴，不能进入
+[@矿洞除魔]
+#IF
+checkhum 0111B 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum D411A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum D412A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+ISGROUPMASTER
+checkitem 矿洞组队卷轴 1
+#ACT
+mov I3 0
+TAKE 矿洞组队卷轴 1
+CLEARMAPMON 0111A
+CLEARMAPMON D411A
+CLEARMAPMON D412A
+Param1 0111B
+Param2 9
+Param3 12
+MonGen 触龙神 1 3
+GROUPMOVE 0111B @矿洞试炼5
+break
+#IF
+checkitem 矿洞组队卷轴 1
+#SAY
+必须要组队，而且你要是组队才可以进入
+#ELSESAY
+您没有相应的卷轴，不能进入
+[@地穴除魔]
+#IF
+checkhum 0111C 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum D613B 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum D617A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+ISGROUPMASTER
+checkitem 地穴组队卷轴 1
+#ACT
+mov I2 0
+TAKE 地穴组队卷轴 1
+CLEARMAPMON 0111C
+CLEARMAPMON D613B
+CLEARMAPMON D617A
+Param1 0111C
+Param2 9
+Param3 12
+MonGen 触龙神 1 3
+GROUPMOVE 0111C @地穴试炼5
+break
+#IF
+checkitem 地穴组队卷轴 1
+#SAY
+必须要组队，而且你要是组队才可以进入
+#ELSESAY
+您没有相应的卷轴，不能进入
+[@石墓除魔]
+#IF
+checkhum 0111D 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum E702A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum E703A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+ISGROUPMASTER
+checkitem 石墓组队卷轴 1
+#ACT
+mov I4 0
+TAKE 石墓组队卷轴 1
+CLEARMAPMON 0111D
+CLEARMAPMON E702A
+CLEARMAPMON E703A
+Param1 0111D
+Param2 9
+Param3 12
+MonGen 触龙神 1 3
+GROUPMOVE 0111D @石墓试炼5
+break
+#IF
+checkitem 石墓组队卷轴 1
+#SAY
+必须要组队，而且你要是组队才可以进入
+#ELSESAY
+您没有相应的卷轴，不能进入
+[@神殿除魔]
+#IF
+checkhum 0111E 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum D5072A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum 0157A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+ISGROUPMASTER
+checkitem 神殿组队卷轴 1
+#ACT
+mov I5 0
+TAKE 神殿组队卷轴 1
+CLEARMAPMON 0111E
+CLEARMAPMON D5072A
+CLEARMAPMON 0157A
+Param1 0111E
+Param2 9
+Param3 12
+MonGen 触龙神 1 3
+GROUPMOVE 0111E @神殿试炼5
+break
+#IF
+checkitem 神殿组队卷轴 1
+#SAY
+必须要组队，而且你要是组队才可以进入
+#ELSESAY
+您没有相应的卷轴，不能进入
+[@解除封印]
+年轻人，你要解除首饰的封印？\
+如果你拥有一支队伍精诚团结而且拥有强大力量的队伍\
+那解封路上的种种危险自然不能给你的队伍带来困难\
+如果你你要凭借一己之力单独前往，我也非常佩服你的勇气\
+那就让我助你一臂之力，祝你马到成功！\
+<了解更多解封信息/@解封信息>\
+<我和朋友一起去/@去解封路>           <我要单独前往/@单独前往>
+[@解封信息]
+可以解封的首饰：\
+雷泽项链(封印)        唤魔项链(封印)　　　　启源项链(封印)\
+雷泽手镯(封印)　　　　唤魔手镯(封印)　　　　启源手镯(封印)\
+雷泽戒指(封印)　　　　唤魔戒指(封印)　　　　启源戒指(封印)\
+圣战项链(封印)　　　　法神项链(封印)　　　　天尊项链(封印)\
+圣战手镯(封印)　　　　法神手镯(封印)　　　　天尊手镯(封印)\
+圣战戒指(封印)　　　　法神戒指(封印)　　　　天尊戒指(封印)\
+<返回/@解除封印>
+[@去解封路]
+#IF
+checkhum M100B 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum T340A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+ISGROUPMASTER
+#ACT
+mov I0 1
+CLEARMAPMON M100B
+CLEARMAPMON T340A
+PARAM1 M100B
+PARAM2 210
+PARAM3 205
+MONGEN 黑色恶蛆 5 70
+MONGEN 角蝇 2 50
+MONGEN 红野猪 5 70
+MONGEN 黑野猪 5 70
+MONGEN 楔蛾 5 70
+MONGEN 蝎蛇 5 70
+MONGEN 白野猪 2 60
+PARAM1 M100B
+PARAM2 100
+PARAM3 125
+MONGEN 黑色恶蛆 15 100
+MONGEN 角蝇 5 50
+MONGEN 红野猪 15 100
+MONGEN 黑野猪 15 100
+MONGEN 楔蛾 15 100
+MONGEN 蝎蛇 10 100
+MONGEN 白野猪 4 100
+MONGEN 虹魔猪卫 4 100
+GROUPMAPMOVE M100B 287 282 @组队解封一20
+#ELSESAY
+您不是所在队伍的队长，不能前往
+[@单独前往]
+#IF
+checkhum M100B 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum T340A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+CheckHeroOnline
+#ACT
+DelayGoto 1 @携带英雄
+#ELSESAY
+你没有英雄的陪伴，不能独自前往！
+
+[@携带英雄]
+#IF
+checkitem 雷泽项链(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 雷泽手镯(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 雷泽戒指(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 唤魔项链(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 唤魔手镯(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 唤魔戒指(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 启源项链(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 启源手镯(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 启源戒指(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 圣战项链(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 圣战手镯(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 圣战戒指(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 法神项链(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 法神手镯(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 法神戒指(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 天尊项链(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 天尊手镯(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+break
+#IF
+checkitem 天尊戒指(封印) 1
+#ACT
+DelayGoto 1 @传送解封
+#ELSESAY
+你没有需要解封的物品，不用来找我\ \
+<返回/@main>
+[@传送解封]
+#IF
+#ACT
+mov I6 1
+mov D0 0
+CLEARMAPMON M100B
+CLEARMAPMON T340A
+Param1 M100B
+Param2 155
+Param3 175
+MonGen 红野猪 6 120
+MonGen 黑野猪 4 120
+MonGen 黑色恶蛆 2 120
+MonGen 角蝇 2 120
+MonGen 楔蛾 5 120
+MonGen 蝎蛇 1 120
+MonGen 白野猪 1 120
+MAPMOVE M100B 287 282
+DELAYGOTO 12000000 @封印20回盟
+
+[@封印20回盟]
+#IF
+ISONMAP M100B
+#ACT
+mapmove 3 333 333
+[@天工神剪]
+只要你拥有矿洞组队卷轴、神殿组队卷轴、邪窟组队卷轴、\
+地穴组队卷轴、石墓组队卷轴这五种卷轴中的任意一件\
+我就可以送你前往地下迷宫，那里也有一个地下城守卫\
+他可以送你去宫殿长廊\
+<组队前往地下迷宫/@组队迷宫>\
+<单独前往地下迷宫/@单独迷宫>\
+<返回/@main>
+[@组队迷宫]
+#IF
+CheckLevelEx > 0
+#ACT
+MOV D0 0
+#IF
+equal D0 0
+checkitem 矿洞组队卷轴 1
+#ACT
+take 矿洞组队卷轴 1
+MOV D0 1
+#IF
+equal D0 0
+checkitem 神殿组队卷轴 1
+#ACT
+take 神殿组队卷轴 1
+MOV D0 1
+#IF
+equal D0 0
+checkitem 地穴组队卷轴 1
+#ACT
+take 地穴组队卷轴 1
+MOV D0 1
+#IF
+equal D0 0
+checkitem 石墓组队卷轴 1
+#ACT
+take 石墓组队卷轴 1
+MOV D0 1
+#IF
+equal D0 0
+checkitem 邪窟组队卷轴 1
+#ACT
+take 邪窟组队卷轴 1
+MOV D0 1
+#IF
+equal D0 1
+ISGROUPMASTER
+#ACT
+GROUPMOVE T1061B
+break
+#IF
+equal D0 0
+#say
+你没有任何组队卷轴，我不能送你去
+#ELSESAY
+您不是所在队伍的队长，不能前往
+[@单独迷宫]
+#IF
+CheckLevelEx > 0
+#ACT
+MOV D0 0
+#IF
+equal D0 0
+checkitem 矿洞组队卷轴 1
+#ACT
+take 矿洞组队卷轴 1
+MOV D0 1
+#IF
+equal D0 0
+checkitem 神殿组队卷轴 1
+#ACT
+take 神殿组队卷轴 1
+MOV D0 1
+#IF
+equal D0 0
+checkitem 地穴组队卷轴 1
+#ACT
+take 地穴组队卷轴 1
+MOV D0 1
+#IF
+equal D0 0
+checkitem 石墓组队卷轴 1
+#ACT
+take 石墓组队卷轴 1
+MOV D0 1
+#IF
+equal D0 0
+checkitem 邪窟组队卷轴 1
+#ACT
+take 邪窟组队卷轴 1
+MOV D0 1
+#IF
+equal D0 1
+#ACT
+MAP T1061B
+#ELSESAY
+你没有任何组队卷轴，我不能送你去
+[@热血令任务]
+热血令是通往英雄之路的通行密令。\
+英雄之路顾名思义只有英雄才可以挑战！\
+自古以来，英雄之路上白骨累累，无数英雄都为之望而却步。\
+如果你没有超人的实力，我还是劝你尽早返回。\
+切记，千万不要拿自己的生命开玩笑\
+<参与“英雄之路”/@进英雄路>\
+<了解更多/@了解更多>
+[@进英雄路]
+#IF
+CHECKITEM 热血令 1
+#ACT
+GOTO @英雄组队
+#ELSESAY
+你没有相应的地图卷轴，不能进入
+
+[@英雄组队]
+#IF
+ISGROUPMASTER
+#ACT
+GOTO @热血令人
+#ELSESAY
+你不是所在队伍的队长不能前往！
+
+[@热血令人]
+#IF
+CHECKMAPHUMANCOUNT TX02 = 0
+CHECKMAPHUMANCOUNT TX03 = 0
+#ACT
+TAKE 热血令 1
+GROUPMAPMOVE TX02 19 15
+CLOSE
+BREAK
+#ELSESAY
+有玩家正在挑战热血令任务！
+[@了解更多]
+必须组队才能挑战英雄之路！\
+在正式进入英雄之路挑战之前，你可以在试炼塔内修炼5分钟.\
+随后你面对的将是英雄之路中如潮水般涌来的怪物.\
+英雄之路分为2条，第一条英雄之即时40分钟.\
+必须在规定时间找到其中镇魔侍卫才能进入下一阶段.\
+即使你通过第一英雄之路也不要庆幸,\
+第二英雄之路中隐藏着苏醒的未知恶魔,其中就有可怕的魔神.\
+<返回/@热血令任务>
+[@魔兽信息]
+相传在玛法大陆的某些角落，有一批恶魔镇守着六件重装，\
+想要获得这些宝物，就必须首先要杀死这些恶魔，\
+无数的英雄为了获得这些宝物，不惜以自己的生命作为代价，\
+有些人成功了，更多的勇士则倒在了恶魔的脚下，\
+这位英雄您是否也想去发现这些魔兽的踪迹，\
+给我5万金币，我就能帮您去查看它们的踪影，\
+给我5颗金刚石，我就能送您去独闯魔穴。\
+<花5万金币，探查魔兽踪影/@探查魔踪>\
+<付5颗金刚石，前往除魔/@前往除魔>\
+[@探查魔踪]
+您想查询哪个魔域的恶魔信息呢？\
+<困惑殿堂/@困惑殿堂>\
+\ \
+<查询其它的恶魔信息/@其魔信息>\
+\ \
+<返回/@main>
+[@困惑殿堂]
+#if
+CheckRangeMonCount T118 14 15 10 < 1
+checkgold 50000
+#ACT
+take 金币 50000
+break
+#SAY
+让我掐指算算，\
+可惜，魔兽还没有出现。\
+#if
+CheckRangeMonCount T118 14 15 10 > 0
+checkgold 50000
+#ACT
+take 金币 50000
+break
+#SAY
+让我掐指算算，\
+糟糕，魔兽已经出现了。\
+#ELSESAY
+您好象没有50000金币啊，我也帮不了你了！
+[@其魔信息]
+您想查询哪里的恶魔信息，\
+虽然我能力有限，但我知道谁可以告诉你其中的秘密，\
+只要你告诉我你想知道的恶魔巢穴就可以了。\
+<钳虫巢穴/@去问白向>      <死亡神殿/@去问老兵>      <地狱烈焰/@去问老兵>\
+\ \
+<堕落坟场/@去问老兵>      <深渊魔域/@去问老兵>\
+\ \
+<返回/@main>
+[@去问白向]
+白日门的向导好象知道一些关于魔兽的事情，\
+要么您去找他问问看吧。\
+<关闭/@exit>
+[@去问老兵]
+比奇老兵好象知道一些关于魔兽的事情，\
+要么您去找他问问看吧。\
+<关闭/@exit>
+[@前往除魔]
+我只能送你去桃源之门，不过要给我5颗金刚石。\
+\ \
+<付5颗金刚石，前往除魔/@前往桃源>
+[@前往桃源]
+#if
+CHECKGAMEDIAMOND > 4
+#ACT
+GAMEDIAMOND - 5
+MAP R001
+#ELSESAY
+您连5颗金刚石也没有啊！
+[@焰火屠魔]
+屠魔战场的入口就在我身后，只是通常都不开启\
+焰火是有灵气的东西，我懂得如何发挥它的灵气并用它打开入口\
+给我三个相同的焰火，我就能帮您打开一次屠魔战场的入口\
+不同种类焰火能让您去到不同的屠魔战场、因为屠魔战场不止一个\
+但凡人在那逗留过久会渐染魔性，故每次进入您只有30分钟时间\
+<如果您有一个长空火舞或者如雾似梦包，也可以进入屠魔战场>\
+您带来了哪种焰火呢\
+<一心一意/@一心一意>         <心心相印/@心心相印>        <飞火流星/@飞火流星>　\
+<浪漫星雨/@浪漫星雨>         <绮梦幻想/@绮梦幻想>        <长空火舞/@长空火舞>        <如雾似梦/@如雾似梦>\
+
+[@一心一意]
+每种焰火都可以选择进入5个屠魔战场的任意一个\  \
+<一心一意(战场一)/@一心战场一>    <一心一意(战场二)/@一心战场二>    <一心一意(战场三)/@一心战场三>\  \
+<一心一意(战场四)/@一心战场四>    <一心一意(战场五)/@一心战场五>\ \
+<返回/@焰火屠魔>
+
+[@一心战场一]
+#IF
+checkitem 一心一意 3
+#ACT
+take 一心一意 3
+map R001A
+;ChangeMapDesc 一心一意(战场一) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重1
+#ELSESAY
+你好象没有必须的焰火啊！
+[@一心战场二]
+#IF
+checkitem 一心一意 3
+#ACT
+take 一心一意 3
+map R001A
+;ChangeMapDesc 一心一意(战场二) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重1
+#ELSESAY
+你好象没有必须的焰火啊！
+[@一心战场三]
+#IF
+checkitem 一心一意 3
+#ACT
+take 一心一意 3
+map R001A
+;ChangeMapDesc 一心一意(战场三) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重1
+#ELSESAY
+你好象没有必须的焰火啊！
+[@一心战场四]
+#IF
+checkitem 一心一意 3
+#ACT
+take 一心一意 3
+map R001A
+;ChangeMapDesc 一心一意(战场四) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重1
+#ELSESAY
+你好象没有必须的焰火啊！
+[@一心战场五]
+#IF
+checkitem 一心一意 3
+#ACT
+take 一心一意 3
+map R001A
+;ChangeMapDesc 一心一意(战场五) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重1
+#ELSESAY
+你好象没有必须的焰火啊！
+
+[@心心相印]
+每种焰火都可以选择进入5个屠魔战场的任意一个\  \
+<心心相印(战场一)/@相印战场一>    <心心相印(战场二)/@相印战场二>    <心心相印(战场三)/@相印战场三>\  \
+<心心相印(战场四)/@相印战场四>    <心心相印(战场五)/@相印战场五>\ \
+<返回/@焰火屠魔>
+
+[@相印战场一]
+#IF
+checkitem 心心相印 3
+#ACT
+take 心心相印 3
+map D2013A
+;ChangeMapDesc 心心相印(战场一) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重2
+#ELSESAY
+你好象没有必须的焰火啊！
+[@相印战场二]
+#IF
+checkitem 心心相印 3
+#ACT
+take 心心相印 3
+map D2013A
+;ChangeMapDesc 心心相印(战场二) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重2
+#ELSESAY
+你好象没有必须的焰火啊！
+[@相印战场三]
+#IF
+checkitem 心心相印 3
+#ACT
+take 心心相印 3
+map D2013A
+;ChangeMapDesc 心心相印(战场三) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重2
+#ELSESAY
+你好象没有必须的焰火啊！
+[@相印战场四]
+#IF
+checkitem 心心相印 3
+#ACT
+take 心心相印 3
+map D2013A
+;ChangeMapDesc 心心相印(战场四) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重2
+#ELSESAY
+你好象没有必须的焰火啊！
+[@相印战场五]
+#IF
+checkitem 心心相印 3
+#ACT
+take 心心相印 3
+map D2013A
+;ChangeMapDesc 心心相印(战场五) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重2
+#ELSESAY
+你好象没有必须的焰火啊！
+
+[@飞火流星]
+每种焰火都可以选择进入5个屠魔战场的任意一个\  \
+<飞火流星(战场一)/@流星战场一>    <飞火流星(战场二)/@流星战场二>    <飞火流星(战场三)/@流星战场三>\  \
+<飞火流星(战场四)/@流星战场四>    <飞火流星(战场五)/@流星战场五>\ \
+<返回/@焰火屠魔>
+
+[@流星战场一]
+#IF
+checkitem 飞火流星 3
+#ACT
+take 飞火流星 3
+map D717A
+;ChangeMapDesc 飞火流星(战场一) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重3
+#ELSESAY
+你好象没有必须的焰火啊！
+[@流星战场二]
+#IF
+checkitem 飞火流星 3
+#ACT
+take 飞火流星 3
+map D717A
+;ChangeMapDesc 飞火流星(战场二) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重3
+#ELSESAY
+你好象没有必须的焰火啊！
+[@流星战场三]
+#IF
+checkitem 飞火流星 3
+#ACT
+take 飞火流星 3
+map D717A
+;ChangeMapDesc 飞火流星(战场三) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重3
+#ELSESAY
+你好象没有必须的焰火啊！
+[@流星战场四]
+#IF
+checkitem 飞火流星 3
+#ACT
+take 飞火流星 3
+map D717A
+;ChangeMapDesc 飞火流星(战场四) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重3
+#ELSESAY
+你好象没有必须的焰火啊！
+[@流星战场五]
+#IF
+checkitem 飞火流星 3
+#ACT
+take 飞火流星 3
+map D717A
+;ChangeMapDesc 飞火流星(战场五) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重3
+#ELSESAY
+你好象没有必须的焰火啊！
+
+[@浪漫星雨]
+每种焰火都可以选择进入5个屠魔战场的任意一个\  \
+<浪漫星雨(战场一)/@星雨战场一>    <浪漫星雨(战场二)/@星雨战场二>    <浪漫星雨(战场三)/@星雨战场三>\  \
+<浪漫星雨(战场四)/@星雨战场四>    <浪漫星雨(战场五)/@星雨战场五>\ \
+<返回/@焰火屠魔>
+
+[@星雨战场一]
+#IF
+checkitem 浪漫星雨 3
+#ACT
+take 浪漫星雨 3
+map D024A
+;ChangeMapDesc 浪漫星雨(战场一) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重4
+#ELSESAY
+你好象没有必须的焰火啊！
+[@星雨战场二]
+#IF
+checkitem 浪漫星雨 3
+#ACT
+take 浪漫星雨 3
+map D024A
+;ChangeMapDesc 浪漫星雨(战场二) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重4
+#ELSESAY
+你好象没有必须的焰火啊！
+[@星雨战场三]
+#IF
+checkitem 浪漫星雨 3
+#ACT
+take 浪漫星雨 3
+map D024A
+;ChangeMapDesc 浪漫星雨(战场三) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重4
+#ELSESAY
+你好象没有必须的焰火啊！
+[@星雨战场四]
+#IF
+checkitem 浪漫星雨 3
+#ACT
+take 浪漫星雨 3
+map D024A
+;ChangeMapDesc 浪漫星雨(战场四) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重4
+#ELSESAY
+你好象没有必须的焰火啊！
+[@星雨战场五]
+#IF
+checkitem 浪漫星雨 3
+#ACT
+take 浪漫星雨 3
+map D024A
+;ChangeMapDesc 浪漫星雨(战场五) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重4
+#ELSESAY
+你好象没有必须的焰火啊！
+
+[@绮梦幻想]
+每种焰火都可以选择进入5个屠魔战场的任意一个\  \
+<绮梦幻想(战场一)/@幻想战场一>    <绮梦幻想(战场二)/@幻想战场二>    <绮梦幻想(战场三)/@幻想战场三>\  \
+<绮梦幻想(战场四)/@幻想战场四>    <绮梦幻想(战场五)/@幻想战场五>\ \
+<返回/@焰火屠魔>
+
+[@幻想战场一]
+#IF
+checkitem 绮梦幻想 3
+#ACT
+take 绮梦幻想 3
+map D2079A
+;ChangeMapDesc 绮梦幻想(战场一) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重5
+#ELSESAY
+你好象没有必须的焰火啊！
+[@幻想战场二]
+#IF
+checkitem 绮梦幻想 3
+#ACT
+take 绮梦幻想 3
+map D2079A
+;ChangeMapDesc 绮梦幻想(战场二) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重5
+#ELSESAY
+你好象没有必须的焰火啊！
+[@幻想战场三]
+#IF
+checkitem 绮梦幻想 3
+#ACT
+take 绮梦幻想 3
+map D2079A
+;ChangeMapDesc 绮梦幻想(战场三) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重5
+#ELSESAY
+你好象没有必须的焰火啊！
+[@幻想战场四]
+#IF
+checkitem 绮梦幻想 3
+#ACT
+take 绮梦幻想 3
+map D2079A
+;ChangeMapDesc 绮梦幻想(战场四) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重5
+#ELSESAY
+你好象没有必须的焰火啊！
+[@幻想战场五]
+#IF
+checkitem 绮梦幻想 3
+#ACT
+take 绮梦幻想 3
+map D2079A
+;ChangeMapDesc 绮梦幻想(战场五) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重5
+#ELSESAY
+你好象没有必须的焰火啊！
+
+[@长空火舞]
+每种焰火都可以选择进入5个屠魔战场的任意一个\  \
+<长空火舞(战场一)/@火舞战场一>    <长空火舞(战场二)/@火舞战场二>    <长空火舞(战场三)/@火舞战场三>\  \
+<长空火舞(战场四)/@火舞战场四>    <长空火舞(战场五)/@火舞战场五>\ \
+<返回/@焰火屠魔>
+
+[@火舞战场一]
+#IF
+checkitem 长空火舞包 1
+#ACT
+take 长空火舞包 1
+map D5071B
+;ChangeMapDesc 长空火舞(战场一) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重6
+#ELSESAY
+你好象没有必须的焰火啊！
+[@火舞战场二]
+#IF
+checkitem 长空火舞包 1
+#ACT
+take 长空火舞包 1
+map D5071B
+;ChangeMapDesc 长空火舞(战场二) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重6
+#ELSESAY
+你好象没有必须的焰火啊！
+[@火舞战场三]
+#IF
+checkitem 长空火舞包 1
+#ACT
+take 长空火舞包 1
+map D5071B
+;ChangeMapDesc 长空火舞(战场三) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重6
+#ELSESAY
+你好象没有必须的焰火啊！
+[@火舞战场四]
+#IF
+checkitem 长空火舞包 1
+#ACT
+take 长空火舞包 1
+map D5071B
+;ChangeMapDesc 长空火舞(战场四) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重6
+#ELSESAY
+你好象没有必须的焰火啊！
+[@火舞战场五]
+#IF
+checkitem 长空火舞包 1
+#ACT
+take 长空火舞包 1
+map D5071B
+;ChangeMapDesc 长空火舞(战场五) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重6
+#ELSESAY
+你好象没有必须的焰火啊！
+
+[@如雾似梦]
+每种焰火都可以选择进入5个屠魔战场的任意一个\  \
+<如雾似梦(战场一)/@如雾战场一>    <如雾似梦(战场二)/@如雾战场二>    <如雾似梦(战场三)/@如雾战场三>\  \
+<如雾似梦(战场四)/@如雾战场四>    <如雾似梦(战场五)/@如雾战场五>\ \
+<返回/@焰火屠魔>
+
+[@如雾战场一]
+#IF
+checkitem 如雾似梦包 1
+#ACT
+take 如雾似梦包 1
+map D5071C
+;ChangeMapDesc 如雾似梦(战场一) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重7
+#ELSESAY
+你好象没有必须的焰火啊！ 
+[@如雾战场二]
+#IF
+checkitem 如雾似梦包 1
+#ACT
+take 如雾似梦包 1
+map D5071C
+;ChangeMapDesc 如雾似梦(战场二) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重7
+#ELSESAY
+你好象没有必须的焰火啊！ 
+[@如雾战场三]
+#IF
+checkitem 如雾似梦包 1
+#ACT
+take 如雾似梦包 1
+map D5071C
+;ChangeMapDesc 如雾似梦(战场三) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重7
+#ELSESAY
+你好象没有必须的焰火啊！ 
+[@如雾战场四]
+#IF
+checkitem 如雾似梦包 1
+#ACT
+take 如雾似梦包 1
+map D5071C
+;ChangeMapDesc 如雾似梦(战场四) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重7
+#ELSESAY
+你好象没有必须的焰火啊！ 
+[@如雾战场五]
+#IF
+checkitem 如雾似梦包 1
+#ACT
+take 如雾似梦包 1
+map D5071C
+;ChangeMapDesc 如雾似梦(战场五) 0
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @返回盟重7
+#ELSESAY
+你好象没有必须的焰火啊！ 
+
+[@返回盟重1]
+#IF
+ISONMAP R001A
+#ACT
+mapmove 3 333 333
+[@返回盟重2]
+#IF
+ISONMAP D2013A
+#ACT
+mapmove 3 333 333
+[@返回盟重3]
+#IF
+ISONMAP D717A
+#ACT
+mapmove 3 333 333
+[@返回盟重4]
+#IF
+ISONMAP D024A
+#ACT
+mapmove 3 333 333
+[@返回盟重5]
+#IF
+ISONMAP D2079A
+#ACT
+mapmove 3 333 333
+[@返回盟重6]
+#IF
+ISONMAP D5071B
+#ACT
+mapmove 3 333 333
+[@返回盟重7]
+#IF
+ISONMAP D5071C
+#ACT
+mapmove 3 333 333

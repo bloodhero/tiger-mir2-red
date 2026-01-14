@@ -1,0 +1,855 @@
+[@main] 
+#IF 
+#SAY 
+这里就是盘丝洞,准备好的话，就开始吧！\ 
+给你3分钟的时间,你要在保证生存的前提下,\ 
+#IF 
+check [86] 0 
+#SAY 
+让地图内的爆裂蜘蛛的数量在120个以上\ 
+#IF 
+check [86] 1 
+#SAY 
+让地图内的爆裂蜘蛛的数量在60个以上\ 
+#iF 
+#SAY 
+3分钟后，如果任务完成，千年蛛丝就是你的了\ 
+无论是否成功，我都送你返回地下宫殿\ 
+<好的，我要开始任务/@开始任务>\ 
+<离开/@exit> 
+[@开始任务] 
+#IF 
+check [85] 1 
+#ACT 
+break 
+#SAY 
+你已经开始挑战了，不能重新开始了 
+#IF 
+check [85] 0 
+#ACT 
+set [85] 1 
+mov D0 0 
+mov D1 0 
+Param1 D2070A 
+Param2 25 
+Param3 25 
+MonGen 幻影蜘蛛 1 10 
+CLEARDELAYGOTO 
+DELAYGOTO 20000 @刷怪 
+close 
+[@刷怪] 
+#IF 
+large D0 6 
+ISONMAP D2070A 
+#ACT 
+goto @检测怪数 
+GOTO @时间到 
+break 
+#IF 
+ISONMAP D2070A 
+#ACT 
+inc D0 1 
+Param1 D2070A 
+Param2 25 
+Param3 25 
+MonGen 幻影蜘蛛 1 10 
+goto @检测怪数 
+DELAYGOTO 20000 @刷怪 
+#IF 
+large D1 150 
+ISONMAP D2070A 
+#ACT 
+SENDMSG 5 20秒后将有新的怪物刷出，现在地图上怪物大于150个 
+break 
+#IF 
+ISONMAP D2070A 
+#ACT 
+SENDMSG 5 20秒后将有新的怪物刷出，现在地图上怪物有<$STR(D1)>个 
+#ELSEACT 
+CLEARMAPMON D2070A 
+[@时间到] 
+#IF 
+check [86] 1
+large D1 59
+#ACT 
+close
+SET [86] 0
+map DM002A
+give 千年蛛丝 1 
+SENDMSG 5 你本次的成绩是<$STR(D1)>个怪物，恭喜你，闯关成功 
+break 
+#IF 
+check [86] 0 
+large D1 119 
+#ACT 
+close 
+map DM002A 
+give 千年蛛丝 1 
+SENDMSG 5 你本次的成绩是<$STR(D1)>个怪物，恭喜你，闯关成功 
+break 
+#if 
+#act 
+close 
+map DM002A 
+SENDMSG 5 你本次的成绩是<$STR(D1)>个怪物，很可惜，闯关失败 
+[@检测怪数] 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 0 
+#ACT 
+MOV D1 0 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 1 
+#ACT 
+MOV D1 1 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 2 
+#ACT 
+MOV D1 2 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 3 
+#ACT 
+MOV D1 3 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 4 
+#ACT 
+MOV D1 4 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 5 
+#ACT 
+MOV D1 5 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 6 
+#ACT 
+MOV D1 6 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 7 
+#ACT 
+MOV D1 7 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 8 
+#ACT 
+MOV D1 8 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 9 
+#ACT 
+MOV D1 9 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 10 
+#ACT 
+MOV D1 10 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 11 
+#ACT 
+MOV D1 11 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 12 
+#ACT 
+MOV D1 12 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 13 
+#ACT 
+MOV D1 13 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 14 
+#ACT 
+MOV D1 14 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 15 
+#ACT 
+MOV D1 15 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 16 
+#ACT 
+MOV D1 16 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 17 
+#ACT 
+MOV D1 17 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 18 
+#ACT 
+MOV D1 18 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 19 
+#ACT 
+MOV D1 19 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 20 
+#ACT 
+MOV D1 20 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 21 
+#ACT 
+MOV D1 21 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 22 
+#ACT 
+MOV D1 22 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 23 
+#ACT 
+MOV D1 23 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 24 
+#ACT 
+MOV D1 24 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 25 
+#ACT 
+MOV D1 25 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 26 
+#ACT 
+MOV D1 26 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 27 
+#ACT 
+MOV D1 27 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 28 
+#ACT 
+MOV D1 28 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 29 
+#ACT 
+MOV D1 29 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 30 
+#ACT 
+MOV D1 30 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 31 
+#ACT 
+MOV D1 31 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 32 
+#ACT 
+MOV D1 32 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 33 
+#ACT 
+MOV D1 33 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 34 
+#ACT 
+MOV D1 34 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 35 
+#ACT 
+MOV D1 35 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 36 
+#ACT 
+MOV D1 36 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 37 
+#ACT 
+MOV D1 37 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 38 
+#ACT 
+MOV D1 38 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 39 
+#ACT 
+MOV D1 39 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 40 
+#ACT 
+MOV D1 40 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 41 
+#ACT 
+MOV D1 41 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 42 
+#ACT 
+MOV D1 42 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 43 
+#ACT 
+MOV D1 43 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 44 
+#ACT 
+MOV D1 44 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 45 
+#ACT 
+MOV D1 45 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 46 
+#ACT 
+MOV D1 46 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 47 
+#ACT 
+MOV D1 47 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 48 
+#ACT 
+MOV D1 48 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 49 
+#ACT 
+MOV D1 49 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 50 
+#ACT 
+MOV D1 50 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 51 
+#ACT 
+MOV D1 51 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 52 
+#ACT 
+MOV D1 52 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 53 
+#ACT 
+MOV D1 53 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 54 
+#ACT 
+MOV D1 54 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 55 
+#ACT 
+MOV D1 55 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 56 
+#ACT 
+MOV D1 56 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 57 
+#ACT 
+MOV D1 57 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 58 
+#ACT 
+MOV D1 58 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 59 
+#ACT 
+MOV D1 59 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 60 
+#ACT 
+MOV D1 60 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 61 
+#ACT 
+MOV D1 61 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 62 
+#ACT 
+MOV D1 62 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 63 
+#ACT 
+MOV D1 63 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 64 
+#ACT 
+MOV D1 64 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 65 
+#ACT 
+MOV D1 65 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 66 
+#ACT 
+MOV D1 66 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 67 
+#ACT 
+MOV D1 67 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 68 
+#ACT 
+MOV D1 68 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 69 
+#ACT 
+MOV D1 69 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 70 
+#ACT 
+MOV D1 70 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 71 
+#ACT 
+MOV D1 71 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 72 
+#ACT 
+MOV D1 72 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 73 
+#ACT 
+MOV D1 73 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 74 
+#ACT 
+MOV D1 74 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 75 
+#ACT 
+MOV D1 75 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 76 
+#ACT 
+MOV D1 76 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 77 
+#ACT 
+MOV D1 77 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 78 
+#ACT 
+MOV D1 78 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 79 
+#ACT 
+MOV D1 79 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 80 
+#ACT 
+MOV D1 80 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 81 
+#ACT 
+MOV D1 81 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 82 
+#ACT 
+MOV D1 82 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 83 
+#ACT 
+MOV D1 83 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 84 
+#ACT 
+MOV D1 84 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 85 
+#ACT 
+MOV D1 85 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 86 
+#ACT 
+MOV D1 86 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 87 
+#ACT 
+MOV D1 87 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 88 
+#ACT 
+MOV D1 88 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 89 
+#ACT 
+MOV D1 89 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 90 
+#ACT 
+MOV D1 90 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 91 
+#ACT 
+MOV D1 91 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 92 
+#ACT 
+MOV D1 92 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 93 
+#ACT 
+MOV D1 93 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 94 
+#ACT 
+MOV D1 94 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 95 
+#ACT 
+MOV D1 95 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 96 
+#ACT 
+MOV D1 96 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 97 
+#ACT 
+MOV D1 97 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 98 
+#ACT 
+MOV D1 98 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 99 
+#ACT 
+MOV D1 99 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 100 
+#ACT 
+MOV D1 100 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 101 
+#ACT 
+MOV D1 101 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 102 
+#ACT 
+MOV D1 102 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 103 
+#ACT 
+MOV D1 103 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 104 
+#ACT 
+MOV D1 104 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 105 
+#ACT 
+MOV D1 105 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 106 
+#ACT 
+MOV D1 106 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 107 
+#ACT 
+MOV D1 107 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 108 
+#ACT 
+MOV D1 108 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 109 
+#ACT 
+MOV D1 109 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 110 
+#ACT 
+MOV D1 110 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 111 
+#ACT 
+MOV D1 111 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 112 
+#ACT 
+MOV D1 112 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 113 
+#ACT 
+MOV D1 113 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 114 
+#ACT 
+MOV D1 114 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 115 
+#ACT 
+MOV D1 115 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 116 
+#ACT 
+MOV D1 116 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 117 
+#ACT 
+MOV D1 117 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 118 
+#ACT 
+MOV D1 118 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 119 
+#ACT 
+MOV D1 119 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 120 
+#ACT 
+MOV D1 120 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 121 
+#ACT 
+MOV D1 121 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 122 
+#ACT 
+MOV D1 122 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 123 
+#ACT 
+MOV D1 123 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 124 
+#ACT 
+MOV D1 124 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 125 
+#ACT 
+MOV D1 125 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 126 
+#ACT 
+MOV D1 126 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 127 
+#ACT 
+MOV D1 127 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 128 
+#ACT 
+MOV D1 128 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 129 
+#ACT 
+MOV D1 129 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 130 
+#ACT 
+MOV D1 130 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 131 
+#ACT 
+MOV D1 131 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 132 
+#ACT 
+MOV D1 132 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 133 
+#ACT 
+MOV D1 133 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 134 
+#ACT 
+MOV D1 134 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 135 
+#ACT 
+MOV D1 135 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 136 
+#ACT 
+MOV D1 136 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 137 
+#ACT 
+MOV D1 137 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 138 
+#ACT 
+MOV D1 138 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 139 
+#ACT 
+MOV D1 139 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 140 
+#ACT 
+MOV D1 140 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 141 
+#ACT 
+MOV D1 141 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 142 
+#ACT 
+MOV D1 142 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 143 
+#ACT 
+MOV D1 143 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 144 
+#ACT 
+MOV D1 144 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 145 
+#ACT 
+MOV D1 145 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 146 
+#ACT 
+MOV D1 146 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 147 
+#ACT 
+MOV D1 147 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 148 
+#ACT 
+MOV D1 148 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 149 
+#ACT 
+MOV D1 149 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 = 150 
+#ACT 
+MOV D1 150 
+break 
+#IF 
+CheckRangeMonCount D2070A 25 25 25 > 150 
+#ACT 
+MOV D1 151 
+break

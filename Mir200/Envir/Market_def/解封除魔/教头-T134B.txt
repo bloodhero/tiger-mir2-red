@@ -1,0 +1,34 @@
+[@MAIN]
+我可以送你去下一层，只要你们把怪物都消灭\ \
+<去下一层/@QXYC>\
+<返回盟重/@FHMZ>\
+
+[@FHMZ]
+#IF
+#ACT
+MAPMOVE 3 333 333
+break
+
+[@QXYC]
+#IF
+CheckMapMonCount T134B = 0 1
+#ACT
+GOTO @TUNB
+break
+#ELSESAY
+清除此地图所有怪物，我才能送你到下一层
+
+[@TUNB]
+#IF
+CheckMapMonCount T134A = 0 1
+#ACT
+GOTO @ZUBA
+break
+#ELSESAY
+您的师傅还没有完全清除怪物！请等待....
+
+[@ZUBA]
+#IF
+#SAY
+您的师傅正在抉择是否进入下一关！\
+请等待.....\

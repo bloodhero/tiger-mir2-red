@@ -1,0 +1,163 @@
+(@@InPutInteger @@InPutString)
+[@Main]
+#ACT
+MOV D0 0
+#SAY
+在进入天关通道的瞬间，使用1张灵符将可以隐身遁形。\
+此时，天关通道内的怪物将无法看到你，\
+你就可以直接穿越通道，闯入天关！\
+通过我，我可以将您的元宝兑换成灵符\
+进入庄园后，等待一分钟后就可以兑换灵符\
+<前往天庭闯天关/@前往天庭>\
+<查询灵符数量/@查询灵符>\
+<了解闯天关的规则/@天关规则>           <使用元宝兑换灵符/@元宝换灵符>\
+<去周围看看/@去周围>                 <离开/@exit>
+[@去周围]
+#IF
+random 5
+#act
+mapmove GA0 62 72
+break
+#IF
+random 4
+#act
+goto @MOVEGAO
+break
+#IF
+random 3
+#act
+mapmove GA0 73 69
+break
+#IF
+random 2
+#act
+mapmove GA0 73 64
+#ELSEACT
+mapmove GA0 61 64
+[@前往天庭]
+#act
+map 0122A
+[@查询灵符]
+你当前的灵符总数是：<$GAMEGIRD>
+[@天关规则]
+<为什么提示我“天关通道已经满员，请稍后再试”/@满员提示>\
+<天关通道是否就是天关/@天关通道>\
+\ \
+<返回/@main>
+[@满员提示]
+如果玩家对自己的实力有信心，可以[选择消灭怪物]
+在没有灵符的保护下进入天关通道\
+玩家必须只身消灭完天关通道里的所有怪物，才能进入天关夺宝\
+这里的通道一共有5条\
+如果满员就会提示：“天关通道已经满员，请稍后再试”\
+\ \
+<返回上一页/@天关规则>
+[@天关通道]
+天关通道并不是天关，只是天庭通往天关的通道\
+天关通道里没有宝藏，真正的宝藏是隐藏在天关里的\
+\ \
+\ \
+<返回上一页/@天关规则>
+[@元宝换灵符]
+#IF
+small D0 0
+#ACT
+mov D0 0
+#IF
+#SAY
+兑换标准：1个元宝可以用以兑换1张灵符，\
+如果您进行灵符的兑换，则视您已经同意以上兑换规则。\
+<查询灵符数量/@查询灵符>\
+#IF
+equal D0 0
+#SAY
+你还没有灵符。\
+#IF
+large D0 0
+#SAY
+你打算兑换 <$STR(D0)> 张灵符。\
+#IF
+#SAY
+<加一张/@加一张> <加五张/@加五张> <加十张/@加十张>        <减一张/@减一张> <减五张/@减五张> <减十张/@减十张>\
+<确定使用元宝兑换/@确定兑换>　　　　　　<任意兑换灵符/@@InPutInteger12>
+[@加一张]
+#ACT
+inc D0 1
+goto @元宝换灵符
+[@加五张]
+#ACT
+inc D0 5
+goto @元宝换灵符
+[@加十张]
+#ACT
+inc D0 10
+goto @元宝换灵符
+[@减一张]
+#ACT
+dec D0 1
+goto @元宝换灵符
+[@减五张]
+#ACT
+dec D0 5
+goto @元宝换灵符
+[@减十张]
+#ACT
+dec D0 10
+goto @元宝换灵符
+[@确定兑换]
+#if
+small D0 1
+#ACT
+break
+#SAY
+兑换灵符只能在1至1000之间
+#if
+large D0 1000
+#ACT
+break
+#SAY
+兑换灵符只能在1至1000之间
+#IF
+CHECKGAMEGOLD < <$STR(D0)>
+#ACT
+break
+#SAY
+请先进行元宝充值。\
+\ \
+<离开/@exit>
+#IF
+random 1
+#ACT
+GameGold - <$STR(D0)>
+GAMEGIRD + <$STR(D0)>
+#SAY
+元宝兑换成功！
+[@InPutInteger12]
+#IF
+SMALL N12 1
+#ACT
+break
+#SAY
+对不起！不能输入小于1的数字！\
+\ \
+<返回/@元宝换灵符>
+#IF
+large N12 10000
+#ACT
+break
+#SAY
+每次兑换不能超过1000张。\
+\ \
+<返回/@元宝换灵符>
+#IF
+CHECKGAMEGOLD < <$STR(N12)>
+#ACT
+break
+#SAY
+你身上没有那么的元宝。
+#IF
+random 1
+#ACT
+GAMEGOLD - <$STR(N12)>
+GAMEGIRD + <$STR(N12)>
+SendMSG 6 你获得了<$STR(N12)>张灵符

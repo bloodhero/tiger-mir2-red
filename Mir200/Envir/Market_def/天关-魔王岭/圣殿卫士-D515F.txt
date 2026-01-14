@@ -1,0 +1,649 @@
+[@main]
+这里是天关中的圣殿，蕴藏着无尽的稀世珍宝。\
+只要你连续地把圣殿灵符给我，就可以不断获得宝藏，\
+给我的圣殿灵符越多，得到的宝物就越珍奇！\
+宝物珍贵，请预留六个包裹空间。\
+\ \
+<兑换1张/@兑换1张>          <兑换10张/@兑换10张>          <兑换100张/@兑换100张>\
+\ \
+\ \
+<返回天庭/@返回天庭>         <查询圣殿灵符数量/@查圣殿符>
+[@返回天庭]
+#act
+MAP 0122A
+[@查圣殿符]
+您现在拥有圣殿灵符：<$HUMAN(圣殿灵符)>\
+\ \
+<返回/@main>
+[@兑换100张]
+#IF
+checkbagsize 6
+#ELSEACT
+break
+#ELSESAY
+好像你的包裹已经满了，我怎么把圣殿中的宝藏给你呢？\
+还是先整理一下包裹再来找我吧。
+#IF
+CHECKVAR HUMAN 圣殿灵符 > 99
+#ACT
+Calcvar HUMAN 圣殿灵符 - 100
+SAVEVAR HUMAN 圣殿灵符 ..\QuestDiary\数据文件\圣殿灵符.txt
+goto @main
+MOV D0 3
+goto @圣殿奖励
+#ELSESAY
+你没有足够的圣殿灵符来领取宝藏。
+[@兑换10张]
+#IF
+checkbagsize 6
+#ELSEACT
+break
+#ELSESAY
+好像你的包裹已经满了，我怎么把圣殿中的宝藏给你呢？\
+还是先整理一下包裹再来找我吧。
+#IF
+CHECKVAR HUMAN 圣殿灵符 > 9
+#ACT
+Calcvar HUMAN 圣殿灵符 - 10
+SAVEVAR HUMAN 圣殿灵符 ..\QuestDiary\数据文件\圣殿灵符.txt
+goto @main
+MOV D0 2
+goto @圣殿奖励
+#ELSESAY
+你没有足够的圣殿灵符来领取宝藏。
+[@兑换1张]
+#IF
+checkbagsize 6
+#ELSEACT
+break
+#ELSESAY
+好像你的包裹已经满了，我怎么把圣殿中的宝藏给你呢？\
+还是先整理一下包裹再来找我吧。
+#IF
+CHECKVAR HUMAN 圣殿灵符 > 0
+#ACT
+Calcvar HUMAN 圣殿灵符 - 1
+SAVEVAR HUMAN 圣殿灵符 ..\QuestDiary\数据文件\圣殿灵符.txt
+goto @main
+MOV D0 1
+goto @圣殿奖励
+#ELSESAY
+你没有足够的圣殿灵符来领取宝藏。
+
+[@圣殿奖励]
+#IF
+equal D0 1
+#ACT
+mov M55 0
+GOTO @1张
+break
+#IF
+equal D0 2
+#ACT
+mov M55 0
+GOTO @10张
+break
+#IF
+equal D0 3
+#ACT
+mov M55 0
+GOTO @100张
+break
+[@1张]
+#IF
+random 7000
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿07奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 6000
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿06奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 5000
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿05奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 4000
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿04奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 3000
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿03奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 2000
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿02奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 1000
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿01奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#ELSEACT
+goto @1低级
+GOTO @给予
+[@1低级]
+#IF
+random 3
+#ACT
+mov S51 经验
+mov S52 400
+break
+#IF
+random 10
+#ACT
+mov S51 经验
+mov S52 500
+break
+#IF
+random 20
+#ACT
+mov S51 经验
+mov S52 600
+break
+#IF
+random 5
+#ACT
+mov S51 声望
+mov S52 1
+break
+#IF
+random 5
+#ACT
+mov S51 金刚石
+mov S52 1
+break
+#IF
+random 5
+#ACT
+mov S51 祝福油
+mov S52 1
+mov M55 1
+break
+#IF
+random 5
+#ACT
+mov S51 魔族指令书
+mov S52 1
+mov M55 1
+break
+#IF
+random 1
+#ACT
+mov S51 黑铁头盔(封印)
+mov S52 1
+mov M55 1
+break
+[@10张]
+#IF
+random 700
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿07奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 600
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿06奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 500
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿05奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 400
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿04奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 300
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿03奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 200
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿02奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 100
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿01奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#ELSEACT
+goto @10低级
+GOTO @给予
+[@10低级]
+#IF
+random 3
+#ACT
+mov S51 经验
+mov S52 4000
+break
+#IF
+random 10
+#ACT
+mov S51 经验
+mov S52 5000
+break
+#IF
+random 20
+#ACT
+mov S51 经验
+mov S52 6000
+break
+#IF
+random 5
+#ACT
+mov S51 声望
+mov S52 1
+break
+#IF
+random 10
+#ACT
+mov S51 声望
+mov S52 2
+break
+#IF
+random 20
+#ACT
+mov S51 声望
+mov S52 3
+break
+#IF
+random 5
+#ACT
+mov S51 金刚石
+mov S52 1
+break
+#IF
+random 10
+#ACT
+mov S51 金刚石
+mov S52 2
+break
+#IF
+random 20
+#ACT
+mov S51 金刚石
+mov S52 3
+break
+#IF
+random 5
+#ACT
+mov S51 祝福油
+mov S52 1
+mov M55 1
+break
+#IF
+random 10
+#ACT
+mov S51 祝福油
+mov S52 2
+mov M55 1
+break
+#IF
+random 20
+#ACT
+mov S51 祝福油
+mov S52 3
+mov M55 1
+break
+#IF
+random 5
+#ACT
+mov S51 魔族指令书
+mov S52 1
+mov M55 1
+break
+#IF
+random 10
+#ACT
+mov S51 魔族指令书
+mov S52 2
+mov M55 1
+break
+#IF
+random 20
+#ACT
+mov S51 魔族指令书
+mov S52 3
+mov M55 1
+break
+#IF
+random 5
+#ACT
+mov S51 黑铁头盔(封印)
+mov S52 1
+mov M55 1
+break
+#IF
+random 10
+#ACT
+mov S51 黑铁头盔(封印)
+mov S52 2
+mov M55 1
+break
+#IF
+random 20
+#ACT
+mov S51 黑铁头盔(封印)
+mov S52 3
+mov M55 1
+break
+[@100张]
+#IF
+random 70
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿07奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 60
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿06奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 50
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿05奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 40
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿04奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 30
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿03奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 20
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿02奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+break
+#IF
+random 10
+#act
+GetRandomText ..\英雄合击\挑战天关\圣殿01奖.txt S51
+mov S52 1
+mov M55 1
+GOTO @给予
+#ELSEACT
+goto @100低级
+GOTO @给予
+[@100低级]
+#IF
+random 3
+#ACT
+mov S51 经验
+mov S52 40000
+break
+#IF
+random 10
+#ACT
+mov S51 经验
+mov S52 50000
+break
+#IF
+random 20
+#ACT
+mov S51 经验
+mov S52 60000
+break
+#IF
+random 5
+#ACT
+mov S51 声望
+mov S52 10
+break
+#IF
+random 10
+#ACT
+mov S51 声望
+mov S52 20
+break
+#IF
+random 20
+#ACT
+mov S51 声望
+mov S52 30
+break
+#IF
+random 5
+#ACT
+mov S51 金刚石
+mov S52 10
+break
+#IF
+random 10
+#ACT
+mov S51 金刚石
+mov S52 20
+break
+#IF
+random 20
+#ACT
+mov S51 金刚石
+mov S52 30
+break
+#IF
+random 5
+#ACT
+mov S51 祝福油
+mov S52 2
+mov M55 1
+break
+#IF
+random 10
+#ACT
+mov S51 祝福油
+mov S52 4
+mov M55 1
+break
+#IF
+random 20
+#ACT
+mov S51 祝福油
+mov S52 6
+mov M55 1
+break
+#IF
+random 5
+#ACT
+mov S51 魔族指令书
+mov S52 2
+mov M55 1
+break
+#IF
+random 10
+#ACT
+mov S51 魔族指令书
+mov S52 4
+mov M55 1
+break
+#IF
+random 20
+#ACT
+mov S51 魔族指令书
+mov S52 6
+mov M55 1
+break
+#IF
+random 5
+#ACT
+mov S51 黑铁头盔(封印)
+mov S52 2
+mov M55 1
+break
+#IF
+random 10
+#ACT
+mov S51 黑铁头盔(封印)
+mov S52 4
+mov M55 1
+break
+#IF
+random 20
+#ACT
+mov S51 黑铁头盔(封印)
+mov S52 6
+mov M55 1
+break
+[@给予]
+#if
+equal S51 经验
+equal S52 400
+#ACT
+Changeexp + 400
+#if
+equal S51 经验
+equal S52 500
+#ACT
+Changeexp + 500
+#if
+equal S51 经验
+equal S52 600
+#ACT
+Changeexp + 600
+#if
+equal S51 经验
+equal S52 4000
+#ACT
+Changeexp + 4000
+#if
+equal S51 经验
+equal S52 5000
+#ACT
+Changeexp + 5000
+#if
+equal S51 经验
+equal S52 6000
+#ACT
+Changeexp + 6000
+#if
+equal S51 经验
+equal S52 40000
+#ACT
+Changeexp + 40000
+#if
+equal S51 经验
+equal S52 50000
+#ACT
+Changeexp + 50000
+#if
+equal S51 经验
+equal S52 60000
+#ACT
+Changeexp + 60000
+#if
+equal S51 金刚石
+#ACT
+GAMEDIAMOND + <$STR(S52)>
+SENDMSG 7 恭喜你获得了：<$STR(S51)>:<$STR(S52)>
+break
+#if
+equal S51 声望
+equal S52 1
+#ACT
+CreditPoint + 1
+#if
+equal S51 声望
+equal S52 2
+#ACT
+CreditPoint + 2
+#if
+equal S51 声望
+equal S52 3
+#ACT
+CreditPoint + 3
+#if
+equal S51 声望
+equal S52 10
+#ACT
+CreditPoint + 10
+#if
+equal S51 声望
+equal S52 20
+#ACT
+CreditPoint + 20
+#if
+equal S51 声望
+equal S52 30
+#ACT
+CreditPoint + 30
+SENDMSG 7 恭喜你获得了：<$STR(S51)>:<$STR(S52)>
+break
+#if
+equal M55 1
+#act
+mov M55 0
+give <$STR(S51)> <$STR(S52)>
+SENDMSG 7 恭喜你获得了：<$STR(S51)>:<$STR(S52)>
+SENDMSG 0 恭喜：%s在圣殿中获得了：<$STR(S51)>，如果您也想参加，可以与天庭守卫对话，点击[进入圣殿]即可！

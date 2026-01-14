@@ -1,0 +1,2293 @@
+[@main]
+#IF
+check [139] 1
+#SAY
+祝贺你成功通过考验，我现在就给你解封物品。\
+你就把需要解封的头盔交给我吧，一次只能解封一个。\
+#IF
+check [139] 0
+#SAY
+经过多年的修炼，我已经掌握了多项手艺，\
+除了解开头盔的封印和升级黄金头盔外，\
+#IF
+#SAY
+最近我又掌握了火云石的淬炼。\
+请问你找我有什么事？\
+<升级黄金头盔/@升黄金盔>                  <交换魔族指令书/@换魔指书>\
+<鉴定黑铁头盔(封印)/@鉴定黑头>\
+<解开头盔封印/@解开头封>　　　　　　　　　<火云石以及碎片的淬炼/@火云石>\
+[@升黄金盔]
+只有<黑铁头盔(极品)>才能升级成黄金头盔。\
+黑铁头盔(极品)升级成黄金头盔还需要你提供一些材料：\
+天工之锤、真视秘籍、地苦胆、四叶参和有黄金成分的首饰。\
+关于何处可以得到这些材料，我也有一些经验，可以让你参考，\
+一旦开始升级，你包裹里的所有首饰和材料我都会收取作为原料。\
+<我确认使用原有材料升级黄金头盔/@原有升级>           <关于材料的出处/@材料出处>\
+<使用绿宝石矿、紫水晶矿升级黄金头盔/@绿紫升黄>\
+<使用勋章之心、祈福项链升级黄金头盔/@勋祈升黄>\
+<返回/@main>
+[@原有升级]
+#IF
+#ACT
+MOV D0 0
+#IF
+checkitem 金戒指 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 金项链 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 降妖除魔戒指 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 金手镯 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 思贝儿手镯 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 记忆项链 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 三眼手镯 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 求魂戒指 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 灵魂项链 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 记忆手镯 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 记忆戒指 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 真魂戒指 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 战神戒指 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 龙之戒指 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 红宝石戒指 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 恶魔铃铛 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#IF
+checkitem 骑士手镯 1
+#ACT
+mov D0 1
+goto @原升检测
+break
+#ELSESAY
+您的基本配方材料不足，无法升级！
+[@原升检测]
+#IF
+equal D0 1
+checkitem 黑铁头盔(极品) 1
+checkitem 天工之锤 1
+checkitem 真视秘籍 1
+checkitem 地苦胆 1
+checkitem 四叶参 1
+random 10
+#ACT
+take 黑铁头盔(极品) 1
+take 天工之锤 46
+take 真视秘籍 46
+take 地苦胆 46
+take 四叶参 46
+take 金戒指 46
+take 金项链 46
+take 金手镯 46
+take 记忆项链 46
+take 记忆手镯 46
+take 记忆戒指 46
+take 求婚戒指 46
+take 三眼手镯 46
+take 灵魂项链 46
+take 思贝儿手镯 46
+take 降妖除魔戒指 46
+take 真魂戒指 46
+take 战神戒指 46
+take 龙之戒指 46
+take 骑士手镯 46
+take 红宝石戒指 46
+take 恶魔铃铛 46
+give 黄金头盔 1
+break
+#SAY
+祝贺你！你的黑铁头盔(极品)升级成功！
+#IF
+equal D0 1
+checkitem 黑铁头盔(极品) 1
+checkitem 天工之锤 1
+checkitem 真视秘籍 1
+checkitem 地苦胆 1
+checkitem 四叶参 1
+#ACT
+take 黑铁头盔(极品) 1
+take 天工之锤 46
+take 真视秘籍 46
+take 地苦胆 46
+take 四叶参 46
+take 金戒指 46
+take 金项链 46
+take 金手镯 46
+take 记忆项链 46
+take 记忆手镯 46
+take 记忆戒指 46
+take 求婚戒指 46
+take 三眼手镯 46
+take 灵魂项链 46
+take 思贝儿手镯 46
+take 降妖除魔戒指 46
+take 真魂戒指 46
+take 战神戒指 46
+take 龙之戒指 46
+take 骑士手镯 46
+take 红宝石戒指 46
+take 恶魔铃铛 46
+break
+#SAY
+很遗憾，升级失败，所有材料均被消耗！
+#ELSESAY
+您的基本配方材料不足，无法升级！
+[@材料出处]
+<天工之锤>在焰火屠魔里可以得到，为了防止失手，必须给我2个以上。\
+<真视秘籍>在传奇商铺中可以得到，它可以让我更好的掌握火候。\
+<地苦胆>、<四叶参>分别在沃玛教主和祖玛教主身上可以得到。\
+还需要给我一些<含有黄金成分的沃玛和祖玛首饰>，\
+通常在<焰火屠魔>和<暗之教主>身上，可以得到这些首饰。\
+这些首饰的数量决定升级的成功率，具体数量我也不是很有把握。\
+所以升级之时，我会拿掉你<包裹中所有的首饰作为材料>。\
+如果你包裹里有我看得上眼的头盔的话，我就拿去作为报酬了哦。\
+<返回/@main>
+[@绿紫升黄]
+如果你有绿宝石矿、紫水晶矿，\
+也可以单独用来升级黄金头盔，\
+如果使用这些材料升级，一旦升失败，所有的材料都将被回收。\
+你确认要开始升级黄金头盔吗？\
+<开始/@绿紫升黄1>升级黄金头盔\
+\ \
+<返回/@main>
+[@绿紫升黄1]
+#IF
+checkitem 黑铁头盔(极品) 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 50
+#ACT
+TAKE 黑铁头盔(极品) 46
+TAKE 绿宝石矿 46
+TAKE 紫水晶矿 46
+GIVE 黄金头盔 1
+break
+#SAY
+祝贺你！你的黑铁头盔(极品)升级成功！
+#IF
+checkitem 黑铁头盔(极品) 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+TAKE 黑铁头盔(极品) 46
+TAKE 绿宝石矿 46
+TAKE 紫水晶矿 46
+break
+#SAY
+很遗憾，升级失败，所有材料均被消耗！
+#ELSESAY
+您好象没有必要的物品啊，我不能帮你合成。
+[@勋祈升黄]
+如果你有勋章之心、祈福项链，\
+也可以单独用来升级黄金头盔，\
+如果使用这些材料升级，一旦升失败，所有的材料都将被回收。\
+你确认要开始升级黄金头盔吗？\
+<开始/@勋祈升黄1>升级黄金头盔\
+\ \
+<返回/@main>
+[@勋祈升黄1]
+#IF
+checkitem 黑铁头盔(极品) 1
+checkitem 勋章之心 1
+checkitem 祈福项链 1
+random 50
+#ACT
+TAKE 黑铁头盔(极品) 46
+TAKE 勋章之心 46
+TAKE 祈福项链 46
+GIVE 黄金头盔 1
+break
+#SAY
+祝贺你！你的黑铁头盔(极品)升级成功！
+#IF
+checkitem 黑铁头盔(极品) 1
+checkitem 勋章之心 1
+checkitem 祈福项链 1
+#ACT
+TAKE 黑铁头盔(极品) 46
+TAKE 勋章之心 46
+TAKE 祈福项链 46
+break
+#SAY
+很遗憾，升级失败，所有材料均被消耗！
+#ELSESAY
+您好象没有必要的物品啊，我不能帮你合成。
+[@鉴定黑头]
+我可以很负责的说，只有<黑铁头盔(极品)>才能升级成黄金头盔。\
+<黑铁头盔(封印)>中，有不少<黑铁头盔(极品)>，可惜无人知晓。\
+给我<黑铁头盔(封印)>和<组队任务卷轴>，我就可以帮你鉴定。\
+如果给我<紫水晶矿>、<绿宝石矿>、或者<勋章之心>、<祈福项链>，\
+我也可以同时帮你鉴定，但是一旦失败，原材料就将被回收。\
+<使用组队卷轴来鉴定/@组卷鉴定>\
+<使用紫水晶矿和绿宝石矿来鉴定/@紫绿鉴定>\
+<使用勋章之心和祈福项链来鉴定/@勋祈鉴定>\
+<返回/@main>
+[@组卷鉴定]
+你想要使用哪个组队卷轴来鉴定呢？\
+\ \
+<矿洞组队卷轴/@矿洞卷轴>          <神殿组队卷轴/@神殿卷轴>          <邪窟组队卷轴/@邪窟卷轴>\
+<地穴组队卷轴/@地穴卷轴>          <石墓组队卷轴/@石墓卷轴>\
+<返回/@main>
+[@石墓卷轴]
+#IF
+random 30
+checkitem 黑铁头盔(封印) 1
+checkitem 石墓组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 石墓组队卷轴 1
+give 黑铁头盔(极品) 1
+break
+#SAY
+看来您的运气不错，竟然是个黑铁头盔(极品)啊！\
+黑铁头盔(极品)升级成黄金头盔还需要你提供一些材料;\
+天工之锤、真视秘籍、地苦胆、四叶参和有黄金成分的首饰。\
+关于何处可以得到这些材料，我也有一些经验，可以让你参考。\
+<关于材料出处/@材料出处>\
+<返回/@main>
+#IF
+random 5
+checkitem 黑铁头盔(封印) 1
+checkitem 石墓组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 石墓组队卷轴 1
+give 黑铁头盔 1
+break
+#SAY
+可惜，解封普普通通，只是个黑铁头盔\
+\ \
+<返回/@main>
+#IF
+checkitem 黑铁头盔(封印) 1
+checkitem 石墓组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 石墓组队卷轴 1
+#SAY
+很可惜，失败了，这个不是黑铁头盔(极品)！\
+\ \
+<返回/@main>
+#ELSESAY
+你好象没有黑铁头盔(封印)或组队卷轴呀。\
+是不是看错了？\
+<返回/@鉴定黑头>
+[@地穴卷轴]
+#IF
+random 30
+checkitem 黑铁头盔(封印) 1
+checkitem 地穴组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 地穴组队卷轴 1
+give 黑铁头盔(极品) 1
+break
+#SAY
+看来您的运气不错，竟然是个黑铁头盔(极品)啊！\
+黑铁头盔(极品)升级成黄金头盔还需要你提供一些材料;\
+天工之锤、真视秘籍、地苦胆、四叶参和有黄金成分的首饰。\
+关于何处可以得到这些材料，我也有一些经验，可以让你参考。\
+<关于材料出处/@材料出处>\
+<返回/@main>
+#IF
+random 5
+checkitem 黑铁头盔(封印) 1
+checkitem 地穴组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 地穴组队卷轴 1
+give 黑铁头盔 1
+break
+#SAY
+可惜，解封普普通通，只是个黑铁头盔\
+\ \
+<返回/@main>
+#IF
+checkitem 黑铁头盔(封印) 1
+checkitem 地穴组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 地穴组队卷轴 1
+#SAY
+很可惜，失败了，这个不是黑铁头盔(极品)！\
+\ \
+<返回/@main>
+#ELSESAY
+你好象没有黑铁头盔(封印)或组队卷轴呀。\
+是不是看错了？\
+<返回/@鉴定黑头>
+[@邪窟卷轴]
+#IF
+random 30
+checkitem 黑铁头盔(封印) 1
+checkitem 邪窟组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 邪窟组队卷轴 1
+give 黑铁头盔(极品) 1
+break
+#SAY
+看来您的运气不错，竟然是个黑铁头盔(极品)啊！\
+黑铁头盔(极品)升级成黄金头盔还需要你提供一些材料;\
+天工之锤、真视秘籍、地苦胆、四叶参和有黄金成分的首饰。\
+关于何处可以得到这些材料，我也有一些经验，可以让你参考。\
+<关于材料出处/@材料出处>\
+<返回/@main>
+#IF
+random 5
+checkitem 黑铁头盔(封印) 1
+checkitem 邪窟组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 邪窟组队卷轴 1
+give 黑铁头盔 1
+break
+#SAY
+可惜，解封普普通通，只是个黑铁头盔\
+\ \
+<返回/@main>
+#IF
+checkitem 黑铁头盔(封印) 1
+checkitem 邪窟组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 邪窟组队卷轴 1
+#SAY
+很可惜，失败了，这个不是黑铁头盔(极品)！\
+\ \
+<返回/@main>
+#ELSESAY
+你好象没有黑铁头盔(封印)或组队卷轴呀。\
+是不是看错了？\
+<返回/@鉴定黑头>
+[@神殿卷轴]
+#IF
+random 30
+checkitem 黑铁头盔(封印) 1
+checkitem 神殿组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 神殿组队卷轴 1
+give 黑铁头盔(极品) 1
+break
+#SAY
+看来您的运气不错，竟然是个黑铁头盔(极品)啊！\
+黑铁头盔(极品)升级成黄金头盔还需要你提供一些材料;\
+天工之锤、真视秘籍、地苦胆、四叶参和有黄金成分的首饰。\
+关于何处可以得到这些材料，我也有一些经验，可以让你参考。\
+<关于材料出处/@材料出处>\
+<返回/@main>
+#IF
+random 5
+checkitem 黑铁头盔(封印) 1
+checkitem 神殿组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 神殿组队卷轴 1
+give 黑铁头盔 1
+break
+#SAY
+可惜，解封普普通通，只是个黑铁头盔\
+\ \
+<返回/@main>
+#IF
+checkitem 黑铁头盔(封印) 1
+checkitem 神殿组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 神殿组队卷轴 1
+#SAY
+很可惜，失败了，这个不是黑铁头盔(极品)！\
+\ \
+<返回/@main>
+#ELSESAY
+你好象没有黑铁头盔(封印)或组队卷轴呀。\
+是不是看错了？\
+<返回/@鉴定黑头>
+[@矿洞卷轴]
+#IF
+random 30
+checkitem 黑铁头盔(封印) 1
+checkitem 矿洞组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 矿洞组队卷轴 1
+give 黑铁头盔(极品) 1
+break
+#SAY
+看来您的运气不错，竟然是个黑铁头盔(极品)啊！\
+黑铁头盔(极品)升级成黄金头盔还需要你提供一些材料;\
+天工之锤、真视秘籍、地苦胆、四叶参和有黄金成分的首饰。\
+关于何处可以得到这些材料，我也有一些经验，可以让你参考。\
+<关于材料出处/@材料出处>\
+<返回/@main>
+#IF
+random 5
+checkitem 黑铁头盔(封印) 1
+checkitem 矿洞组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 矿洞组队卷轴 1
+give 黑铁头盔 1
+break
+#SAY
+可惜，解封普普通通，只是个黑铁头盔\
+\ \
+<返回/@main>
+#IF
+checkitem 黑铁头盔(封印) 1
+checkitem 矿洞组队卷轴 1
+#ACT
+take 黑铁头盔(封印) 1
+take 矿洞组队卷轴 1
+#SAY
+很可惜，失败了，这个不是黑铁头盔(极品)！\
+\ \
+<返回/@main>
+#ELSESAY
+你好象没有黑铁头盔(封印)或组队卷轴呀。\
+是不是看错了？\
+<返回/@鉴定黑头>
+[@紫绿鉴定]
+#IF
+random 30
+checkitem 黑铁头盔(封印) 1
+checkitem 紫水晶矿 1
+checkitem 绿宝石矿 1
+#ACT
+take 黑铁头盔(封印) 1
+take 紫水晶矿 1
+take 绿宝石矿 1
+give 黑铁头盔(极品) 1
+break
+#SAY
+看来您的运气不错，竟然是个黑铁头盔(极品)啊！\
+黑铁头盔(极品)升级成黄金头盔还需要你提供一些材料;\
+天工之锤、真视秘籍、地苦胆、四叶参和有黄金成分的首饰。\
+关于何处可以得到这些材料，我也有一些经验，可以让你参考。\
+<关于材料出处/@材料出处>\
+<返回/@main>
+#IF
+random 5
+checkitem 黑铁头盔(封印) 1
+checkitem 紫水晶矿 1
+checkitem 绿宝石矿 1
+#ACT
+take 黑铁头盔(封印) 1
+take 紫水晶矿 1
+take 绿宝石矿 1
+give 黑铁头盔 1
+break
+#SAY
+可惜，解封普普通通，只是个黑铁头盔\
+\ \
+<返回/@main>
+#IF
+checkitem 黑铁头盔(封印) 1
+checkitem 紫水晶矿 1
+checkitem 绿宝石矿 1
+#ACT
+take 黑铁头盔(封印) 1
+take 紫水晶矿 1
+take 绿宝石矿 1
+#SAY
+很可惜，失败了，这个不是黑铁头盔(极品)！\
+\ \
+<返回/@main>
+#ELSESAY
+你好象没有足够的物品，我不能帮你鉴定。
+[@勋祈鉴定]
+#IF
+random 30
+checkitem 黑铁头盔(封印) 1
+checkitem 勋章之心 1
+checkitem 祈福项链 1
+#ACT
+take 黑铁头盔(封印) 1
+take 勋章之心 1
+take 祈福项链 1
+give 黑铁头盔(极品) 1
+break
+#SAY
+看来您的运气不错，竟然是个黑铁头盔(极品)啊！\
+黑铁头盔(极品)升级成黄金头盔还需要你提供一些材料;\
+天工之锤、真视秘籍、地苦胆、四叶参和有黄金成分的首饰。\
+关于何处可以得到这些材料，我也有一些经验，可以让你参考。\
+<关于材料出处/@材料出处>\
+<返回/@main>
+#IF
+random 5
+checkitem 黑铁头盔(封印) 1
+checkitem 勋章之心 1
+checkitem 祈福项链 1
+#ACT
+take 黑铁头盔(封印) 1
+take 勋章之心 1
+take 祈福项链 1
+give 黑铁头盔 1
+break
+#SAY
+可惜，解封普普通通，只是个黑铁头盔\
+\ \
+<返回/@main>
+#IF
+checkitem 黑铁头盔(封印) 1
+checkitem 勋章之心 1
+checkitem 祈福项链 1
+#ACT
+take 黑铁头盔(封印) 1
+take 勋章之心 1
+take 祈福项链 1
+#SAY
+很可惜，失败了，这个不是黑铁头盔(极品)！\
+\ \
+<返回/@main>
+#ELSESAY
+你好象没有足够的物品，我不能帮你鉴定。
+[@解开头封]
+#IF
+check [139] 1
+#SAY
+你想解开哪个头盔的封印呢？\
+把它交给我吧，让我看看吧。\
+<头盔解封可随机得天之和普通两种不同属性头盔>\
+<解封圣战头盔(封印)/@圣头封印>　　　　　　　<解封法神头盔(封印)/@法头封印>\
+<解封天尊头盔(封印)/@天头封印>　　　　　　　<解封黑铁头盔(封印)/@黑头封印>\
+<返回/@main>
+#ELSESAY
+你要解封头盔吗？不过首先要满足一个条件\
+你必须完成我一个任务，然后我才给你解封\
+我可以送你去一张地图，那里是魔神封印之地\
+会有很多地蛙出现,地蛙之下就是万劫不复的魔神之地\
+消灭完三批地蛙，你就可以到我这里解除头盔的封印\
+时间总共6分钟，时间到后将自动送回盟重\
+有没有听说过极品黑铁头盔和黄金头盔啊，这些可是不传的秘密\
+<前往考验/@解头考验>\
+<返回/@main>
+[@解头考验]
+#IF
+checkhum D2002A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkitem 圣战头盔(封印) 1
+#ACT
+mov d0 0
+CLEARMAPMON D2002A
+MAP D2002A
+break
+#IF
+checkitem 法神头盔(封印) 1
+#ACT
+mov d0 0
+CLEARMAPMON D2002A
+MAP D2002A
+break
+#IF
+checkitem 天尊头盔(封印) 1
+#ACT
+mov d0 0
+CLEARMAPMON D2002A
+MAP D2002A
+break
+#IF
+checkitem 黑铁头盔(封印) 1
+#ACT
+mov d0 0
+CLEARMAPMON D2002A
+MAP D2002A
+#ELSESAY
+你没有相应的头盔需要解封,还是到其他地方看看吧\
+提示：需要包裹里有圣战头盔(封印)、法神头盔(封印)、\
+天尊头盔(封印)或黑铁头盔(封印)的任意一件\ \ 
+<返回/@解开头封>
+[@圣头封印]
+#IF
+random 3
+checkitem 圣战头盔(封印) 1
+#SAY
+圣战头盔已经解封成功\
+\ \
+<返回/@main>
+#ACT
+set [139] 0
+take 圣战头盔(封印) 1
+give 天之圣战头盔 1
+break
+#IF
+checkitem 圣战头盔(封印) 1
+#SAY
+圣战头盔已经解封成功\
+\ \
+<返回/@main>
+#ACT
+set [139] 0
+take 圣战头盔(封印) 1
+give 圣战头盔 1
+#ELSESAY
+你没有相应的头盔需要解封,还是到其他地方看看吧
+[@法头封印]
+#IF
+random 3
+checkitem 法神头盔(封印) 1
+#SAY
+法神头盔已经解封成功\
+\ \
+<返回/@main>
+#ACT
+set [139] 0
+take 法神头盔(封印) 1
+give 天之法神头盔 1
+break
+#IF
+checkitem 法神头盔(封印) 1
+#SAY
+法神头盔已经解封成功\
+\ \
+<返回/@main>
+#ACT
+set [139] 0
+take 法神头盔(封印) 1
+give 法神头盔 1
+#ELSESAY
+你没有相应的头盔需要解封,还是到其他地方看看吧
+[@天头封印]
+#IF
+random 3
+checkitem 天尊头盔(封印) 1
+#SAY
+天尊头盔已经解封成功\
+\ \
+<返回/@main>
+#ACT
+set [139] 0
+take 天尊头盔(封印) 1
+give 天之天尊头盔 1
+break
+#IF
+checkitem 天尊头盔(封印) 1
+#SAY
+天尊头盔已经解封成功\
+\ \
+<返回/@main>
+#ACT
+set [139] 0
+take 天尊头盔(封印) 1
+give 天尊头盔 1
+#ELSESAY
+你没有相应的头盔需要解封,还是到其他地方看看吧
+[@黑头封印]
+#IF
+random 3
+checkitem 黑铁头盔(封印) 1
+#SAY
+黑铁头盔已经解封成功\
+\ \
+<返回/@main>
+#ACT
+set [139] 0
+take 黑铁头盔(封印) 1
+give 天之黑铁头盔 1
+break
+
+#IF
+checkitem 黑铁头盔(封印) 1
+#SAY
+黑铁头盔已经解封成功\
+\ \
+<返回/@main>
+#ACT
+set [139] 0
+take 黑铁头盔(封印) 1
+give 黑铁头盔 1
+#ELSESAY
+你没有相应的头盔需要解封,还是到其他地方看看吧
+
+[@换魔指书]
+每天我都会面朝雪山，向雪山背后的家方向祈福！\
+我这里的魔族指令书，本来也只有千年蛛丝才能交换，\
+这些天却不知为何，回家的愿望忽然变得强烈起来！\
+这样吧，如果你身上有祈福凭证的话，\
+我也可以帮你换成一本魔族指令书。\
+那么，你想用哪件物品进行交换呢？\
+<使用千年蛛丝交换/@千蛛换魔>\
+<使用祈福凭证交换/@祈凭换魔>\
+<返回/@main>
+[@千蛛换魔]
+#IF
+checkitem 千年蛛丝 1
+#ACT
+TAKE 千年蛛丝 1
+give 魔族指令书 1
+#say
+恭喜，给你一本魔族指令书。\
+\ \
+<返回/@换魔指书>                    <离开/@exit>
+#ELSESAY
+你好象没有千年蛛丝啊！
+[@祈凭换魔]
+#IF
+checkitem 祈福凭证 1
+#ACT
+TAKE 祈福凭证 1
+give 魔族指令书 1
+#say
+恭喜，给你一本魔族指令书。\
+\ \
+<返回/@换魔指书>                    <离开/@exit>
+#ELSESAY
+你好象没有祈福凭证啊！
+
+[@火云石]
+三龙卫的古籍中曾经记载着火云石的神秘之处，\
+好在我的祖辈已经掌握了如何运用火云石，如今代代相传。\
+传说，用火云石淬炼成的首饰可对黑暗生物产生致命的伤害，\
+兽人的进攻迫在眉睫，让我们并肩作战吧。\
+<开始淬炼/@如何使用火云石与碎片淬炼>\
+<了解火云石以及碎片淬炼的详细规则/@了解火云石>\ \ \
+<返回/@main>
+[@了解火云石]
+勇士，你想知道什么呢？\
+玛法大陆没有人比我更了解火云石了，\
+对你的问题，我将知无不言。\
+<火云石与火云石碎片的作用/@火云石与碎片作用>\
+<如何获得火云石与火云石碎片？/@如何获得火云石与碎片>\
+<如何使用火云石与火云石碎片进行淬炼？/@如何使用火云石>\
+<如何增加火云石的持久？/@如何增加火云石的持久>\ 
+<返回/@火云石>
+[@如何使用火云石]
+<淬炼奔雷、怒焰、太极系列物品/@淬炼奔雷1>（冰晶+弩牌+火云石碎片→奔雷系）\ \
+<淬炼雷霆、烈焰、光芒系列物品/@淬炼奔雷2>（封印饰+雷霆系+火云石→奔雷系）\ \
+<强化奔雷、怒焰、太极系列物品/@强化奔雷>（封印饰+奔雷系+火云石→奔雷系↑）\ \
+<返回/@了解火云石>
+[@如何使用火云石与碎片淬炼]
+<淬炼奔雷、怒焰、太极系列物品/@淬炼奔雷1>（冰晶+弩牌+火云石碎片→奔雷系）\ \
+<淬炼雷霆、烈焰、光芒系列物品/@淬炼奔雷2>（封印饰+雷霆系+火云石→奔雷系）\ \
+<强化奔雷、怒焰、太极系列物品/@强化奔雷>（封印饰+奔雷系+火云石→奔雷系↑）\ \
+<返回/@火云石>
+[@强化奔雷]
+强化魔龙首饰需要任意一件的<雷泽、启源、唤魔、封印首饰>,\
+借助封印物品，当火云石的力量对魔龙首饰进行升级时，\
+将会强化出传说中的远古神器:奔雷、怒焰、极光，\
+强化成功后的奔雷、怒焰、极光系列首饰将拥有相当于神秘的属性，\
+如果强化失败，由于他们三者的力量过于强大，\
+强化奔雷、怒焰、极光首饰也将可能无法承受如此强大的力量而消失。\
+无论成功与否，火云石与<封印首饰>都将会破碎。\
+<提示：请勿将非强化封印首饰放在包裹，以免强化时检测错误！>\
+<开始强化/@开始强化奔雷>             <返回/@如何使用火云石与碎片淬炼>\
+
+[@淬炼奔雷1]
+结合<魔龙冰晶>和<弩牌>，当天地之灵气合而为一时，\
+<魔龙冰晶>将会被淬炼成奔雷、怒焰、极光系列首饰中的一件，\
+因为火云石碎片的力量过于强大，我无法控制淬炼的结果。\
+无论成功与否，火云石碎片和弩牌也会消失。\
+如果失败的话，<魔龙冰晶>也有可能会烟消云散。\
+<开始淬炼/@开始淬炼奔雷1>                   <如何获得魔龙冰晶/@如何获得冰晶>\
+<返回/@如何使用火云石与碎片淬炼>
+
+[@淬炼奔雷2]
+淬炼魔龙首饰需要任意一件的<雷泽、启源、唤魔、封印首饰>,\
+借助封印物品，当火云石的力量对魔龙首饰进行升级时，\
+将会强化出传说中的远古神器:奔雷、怒焰、极光，\
+强化成功后的奔雷、怒焰、极光系列首饰将拥有相当于神秘的属性，\
+如果强化失败，由于他们三者的力量过于强大，\
+强化雷霆、烈焰、光芒首饰也将可能无法承受如此强大的力量而消失。\
+无论成功与否，火云石与<封印首饰>都将会破碎。\
+<提示：请勿将非淬炼封印首饰放在包裹，以免淬炼时检测错误！>\
+<开始淬炼/@开始淬炼奔雷2>             <返回/@如何使用火云石与碎片淬炼>\
+
+[@如何获得冰晶]
+拥有魔龙力量的罕见神品，产自魔龙岭北山寒冷之地，\
+商铺仙子曾不远千里从那里采集而来，\
+你可以去商铺中看个究竟。\ \
+<返回/@了解火云石>
+
+[@如何获得火云石与碎片]
+听说有人在屠魔战场和地下宫殿长廊里找到过火云石和火云石碎片，\
+你可以去那里找找，镇魔守将把守着通往那里的入口，\
+具体你可以去问问他。\
+<返回/@了解火云石>
+
+[@如何增加火云石的持久] 
+火云石的持久一旦消耗将很难修复，\ 
+但是天无绝人之路，\ 
+听说商铺仙子最近练成了一种火云晶石，\ 
+火云晶石是一种集天地之灵气而合一的罕见神品，\ 
+你只需要把火云石放在毒符位上，再将火云晶石放在其上，\ 
+火云石既可回复5点持久，\ 
+持久消耗低于5点的火云石无法使用火云晶石，\ 
+每次使用将哭为火云石修复5点持久，具体你可以去问问她。\ 
+<返回/@了解火云石>\
+
+[@火云石与碎片作用]
+<火云石碎片>的作用：\
+结合魔龙冰晶和弩牌可以进行淬炼，\
+如暗合天机，可淬炼出魔龙首饰，\
+至于是哪件魔龙首饰，就要看时运厚薄了。\
+<火云石>的作用：\
+结合任意的封印首饰，可以将魔龙首饰淬炼成奔雷、怒焰、极光，\
+淬炼成功后的奔雷、怒焰、极光首饰、将拥有特殊的神秘的属性，\
+如果对属性不满意，再次淬炼可以改变属性。\
+<返回/@了解火云石>\
+
+[@开始强化奔雷]
+#IF
+checkitem 雷泽戒指(封印) 1
+#ACT
+DELAYGOTO 1 @雷泽戒指强化奔雷
+break
+#IF
+checkitem 雷泽手镯(封印) 1
+#ACT
+DELAYGOTO 1 @雷泽手镯强化奔雷
+break
+#IF
+checkitem 雷泽项链(封印) 1
+#ACT
+DELAYGOTO 1 @雷泽项链强化奔雷
+break
+#IF
+checkitem 启源戒指(封印) 1
+#ACT
+DELAYGOTO 1 @启源戒指强化奔雷
+break
+#IF
+checkitem 启源手镯(封印) 1
+#ACT
+DELAYGOTO 1 @启源手镯强化奔雷
+break
+#IF
+checkitem 启源项链(封印) 1
+#ACT
+DELAYGOTO 1 @启源项链强化奔雷
+break
+#IF
+checkitem 唤魔戒指(封印) 1
+#ACT
+DELAYGOTO 1 @唤魔戒指强化奔雷
+break
+#IF
+checkitem 唤魔手镯(封印) 1
+#ACT
+DELAYGOTO 1 @唤魔手镯强化奔雷
+break
+#IF
+checkitem 唤魔项链(封印) 1
+#ACT
+DELAYGOTO 1 @唤魔项链强化奔雷
+break
+#ELSESAY
+你的基本配方不足！不能强化！
+[@唤魔戒指强化奔雷]
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 奔雷战戒 1
+checkitem 唤魔戒指(封印) 1
+#ACT
+take 唤魔戒指(封印) 1
+take 奔雷战戒 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 奔雷战戒 1
+checkitem 唤魔戒指(封印) 1
+#ACT
+take 唤魔戒指(封印) 1
+take 奔雷战戒 1
+;ChangeItemDura 9 - 100
+MOVR N60 3
+MOVR N61 3
+MOVR N62 7
+give 奔雷战戒 1 <$STR(N60)> <$STR(N61)> <$STR(N62)>
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 怒焰魔戒 1
+checkitem 唤魔戒指(封印) 1
+#ACT
+take 唤魔戒指(封印) 1
+take 怒焰魔戒 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 怒焰魔戒 1
+checkitem 唤魔戒指(封印) 1
+#ACT
+take 唤魔戒指(封印) 1
+take 怒焰魔戒 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 4
+give 怒焰魔戒 1 <$STR(N60)> <$STR(N61)> 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「怒焰魔戒」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 极光道戒 1
+checkitem 唤魔戒指(封印) 1
+#ACT
+take 唤魔戒指(封印) 1
+take 极光道戒 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 极光道戒 1
+checkitem 唤魔戒指(封印) 1
+#ACT
+take 极光道戒 1
+take 唤魔戒指(封印) 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 5
+give 极光道戒 1 <$STR(N60)> <$STR(N61)> 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「极光道戒」 
+break
+#ELSESAY
+你好象没有将火云石装备到身上或没有封印的首饰呀。\
+是不是看错了？\
+封印首饰：雷泽、启源、唤魔、首饰任意一种\
+魔龙首饰：奔雷、怒焰、极光、首饰任意一种\
+相应首饰搭配！\
+<返回/@强化奔雷>
+[@唤魔手镯强化奔雷]
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 奔雷护腕 1
+checkitem 唤魔手镯(封印) 1
+#ACT
+take 唤魔手镯(封印) 1
+take 奔雷护腕 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 奔雷护腕 1
+checkitem 唤魔手镯(封印) 1
+#ACT
+take 唤魔手镯(封印) 1
+take 奔雷护腕 1
+;ChangeItemDura 9 - 100
+MOVR N60 3
+MOVR N61 3
+MOVR N62 4
+give 奔雷护腕 1 <$STR(N60)> <$STR(N61)> <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「奔雷护腕」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 怒焰护腕 1
+checkitem 唤魔手镯(封印) 1
+#ACT
+take 唤魔手镯(封印) 1
+take 怒焰护腕 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 怒焰护腕 1
+checkitem 唤魔手镯(封印) 1
+#ACT
+take 唤魔手镯(封印) 1
+take 怒焰护腕 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 3
+give 怒焰护腕 1 <$STR(N60)> <$STR(N61)> 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「怒焰护腕」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 极光护腕 1
+checkitem 唤魔手镯(封印) 1
+#ACT
+take 唤魔手镯(封印) 1
+take 极光护腕 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitem 唤魔手镯(封印) 1
+checkitemw 火云石 1
+checkitem 极光护腕 1
+#ACT
+take 唤魔手镯(封印) 1
+take 极光护腕 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 3
+give 极光护腕 1 <$STR(N60)> <$STR(N61)> 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「极光护腕」 
+break
+#ELSESAY
+你好象没有将火云石装备到身上或没有封印的首饰呀。\
+是不是看错了？\
+封印首饰：雷泽、启源、唤魔、首饰任意一种\
+魔龙首饰：奔雷、怒焰、极光、首饰任意一种\
+相应首饰搭配！\
+<返回/@强化奔雷>
+[@唤魔项链强化奔雷]
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 奔雷项链 1
+checkitem 唤魔项链(封印) 1
+#ACT
+take 唤魔项链(封印) 1
+take 奔雷项链 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 奔雷项链 1
+checkitem 唤魔项链(封印) 1
+#ACT
+take 唤魔项链(封印) 1
+take 奔雷项链 1
+;ChangeItemDura 9 - 100
+MOVR N62 6
+give 奔雷项链 1 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「奔雷项链」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 怒焰项链 1
+checkitem 唤魔项链(封印) 1
+#ACT
+take 唤魔项链(封印) 1
+take 怒焰项链 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 怒焰项链 1
+checkitem 唤魔项链(封印) 1
+#ACT
+take 唤魔项链(封印) 1
+take 怒焰项链 1
+;ChangeItemDura 9 - 100
+MOVR N62 7
+give 怒焰项链 1 0 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「怒焰项链」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 极光项链 1
+checkitem 唤魔项链(封印) 1
+#ACT
+take 唤魔项链(封印) 1
+take 极光项链 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 极光项链 1
+checkitem 唤魔项链(封印) 1
+#ACT
+take 唤魔项链(封印) 1
+take 极光项链 1
+;ChangeItemDura 9 - 100
+MOVR N62 7
+give 极光项链 1 0 0 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「极光项链」 
+break
+#ELSESAY
+你好象没有将火云石装备到身上或没有封印的首饰呀。\
+是不是看错了？\
+封印首饰：雷泽、启源、唤魔、首饰任意一种\
+魔龙首饰：奔雷、怒焰、极光、首饰任意一种\
+相应首饰搭配！\
+<返回/@强化奔雷>
+[@启源戒指强化奔雷]
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 奔雷战戒 1
+checkitem 启源戒指(封印) 1
+#ACT
+take 启源戒指(封印) 1
+take 奔雷战戒 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 奔雷战戒 1
+checkitem 启源戒指(封印) 1
+#ACT
+take 启源戒指(封印) 1
+take 奔雷战戒 1
+;ChangeItemDura 9 - 100
+MOVR N60 3
+MOVR N61 3
+MOVR N62 7
+give 奔雷战戒 1 <$STR(N60)> <$STR(N61)> <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「奔雷战戒」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 怒焰魔戒 1
+checkitem 启源戒指(封印) 1
+#ACT
+take 启源戒指(封印) 1
+take 怒焰魔戒 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 怒焰魔戒 1
+checkitem 启源戒指(封印) 1
+#ACT
+take 启源戒指(封印) 1
+take 怒焰魔戒 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 4
+give 怒焰魔戒 1 <$STR(N60)> <$STR(N61)> 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「怒焰魔戒」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 极光道戒 1
+checkitem 启源戒指(封印) 1
+#ACT
+take 启源戒指(封印) 1
+take 极光道戒 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 极光道戒 1
+checkitem 启源戒指(封印) 1
+#ACT
+take 启源戒指(封印) 1
+take 极光道戒 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 5
+give 极光道戒 1 <$STR(N60)> <$STR(N61)> 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「极光道戒」 
+break
+#ELSESAY
+你好象没有将火云石装备到身上或没有封印的首饰呀。\
+是不是看错了？\
+封印首饰：雷泽、启源、唤魔、首饰任意一种\
+魔龙首饰：奔雷、怒焰、极光、首饰任意一种\
+相应首饰搭配！\
+<返回/@强化奔雷>
+[@启源手镯强化奔雷]
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 奔雷护腕 1
+checkitem 启源手镯(封印) 1
+#ACT
+take 启源手镯(封印) 1
+take 奔雷护腕 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 奔雷护腕 1
+checkitem 启源手镯(封印) 1
+#ACT
+take 启源手镯(封印) 1
+take 奔雷护腕 1
+;ChangeItemDura 9 - 100
+MOVR N60 3
+MOVR N61 3
+MOVR N62 4
+give 奔雷护腕 1 <$STR(N60)> <$STR(N61)> <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「奔雷护腕」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 怒焰护腕 1
+checkitem 启源手镯(封印) 1
+#ACT
+take 启源手镯(封印) 1
+take 怒焰护腕 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 怒焰护腕 1
+checkitem 启源手镯(封印) 1
+#ACT
+take 启源手镯(封印) 1
+take 怒焰护腕 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 3
+give 怒焰护腕 1 <$STR(N60)> <$STR(N61)> 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「怒焰护腕」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 极光护腕 1
+checkitem 启源手镯(封印) 1
+#ACT
+take 启源手镯(封印) 1
+take 极光护腕 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 极光护腕 1
+checkitem 启源手镯(封印) 1
+#ACT
+take 启源手镯(封印) 1
+take 极光护腕 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 3
+give 极光护腕 1 <$STR(N60)> <$STR(N61)> 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「极光护腕」 
+break
+#ELSESAY
+你好象没有将火云石装备到身上或没有封印的首饰呀。\
+是不是看错了？\
+封印首饰：雷泽、启源、唤魔、首饰任意一种\
+魔龙首饰：奔雷、怒焰、极光、首饰任意一种\
+相应首饰搭配！\
+<返回/@强化奔雷>
+[@启源项链强化奔雷]
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 奔雷项链 1
+checkitem 启源项链(封印) 1
+#ACT
+take 启源项链(封印) 1
+take 奔雷项链 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 奔雷项链 1
+checkitem 启源项链(封印) 1
+#ACT
+take 启源项链(封印) 1
+take 奔雷项链 1
+;ChangeItemDura 9 - 100
+MOVR N62 6
+give 奔雷项链 1 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「奔雷项链」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 怒焰项链 1
+checkitem 启源项链(封印) 1
+#ACT
+take 启源项链(封印) 1
+take 怒焰项链 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 怒焰项链 1
+checkitem 启源项链(封印) 1
+#ACT
+take 启源项链(封印) 1
+take 怒焰项链 1
+;ChangeItemDura 9 - 100
+MOVR N62 7
+give 怒焰项链 1 0 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「怒焰项链」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 极光项链 1
+checkitem 启源项链(封印) 1
+#ACT
+take 启源项链(封印) 1
+take 极光项链 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 极光项链 1
+checkitem 启源项链(封印) 1
+#ACT
+take 启源项链(封印) 1
+take 极光项链 1
+;ChangeItemDura 9 - 100
+MOVR N62 7
+give 极光项链 1 0 0 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「极光项链」 
+break
+#ELSESAY
+你好象没有将火云石装备到身上或没有封印的首饰呀。\
+是不是看错了？\
+封印首饰：雷泽、启源、唤魔、首饰任意一种\
+魔龙首饰：奔雷、怒焰、极光、首饰任意一种\
+相应首饰搭配！\
+<返回/@强化奔雷>
+[@雷泽戒指强化奔雷]
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 奔雷战戒 1
+checkitem 雷泽戒指(封印) 1
+#ACT
+take 雷泽戒指(封印) 1
+take 奔雷战戒 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 奔雷战戒 1
+checkitem 雷泽戒指(封印) 1
+#ACT
+take 雷泽戒指(封印) 1
+take 奔雷战戒 1
+;ChangeItemDura 9 - 100
+MOVR N60 3
+MOVR N61 3
+MOVR N62 7
+give 奔雷战戒 1 <$STR(N60)> <$STR(N61)> <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「奔雷战戒」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 怒焰魔戒 1
+checkitem 雷泽戒指(封印) 1
+#ACT
+take 雷泽戒指(封印) 1
+take 怒焰魔戒 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 怒焰魔戒 1
+checkitem 雷泽戒指(封印) 1
+#ACT
+take 雷泽戒指(封印) 1
+take 怒焰魔戒 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 4
+give 怒焰魔戒 1 <$STR(N60)> <$STR(N61)> 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「怒焰魔戒」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 极光道戒 1
+checkitem 雷泽戒指(封印) 1
+#ACT
+take 雷泽戒指(封印) 1
+take 极光道戒 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 极光道戒 1
+checkitem 雷泽戒指(封印) 1
+#ACT
+take 雷泽戒指(封印) 1
+take 极光道戒 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 5
+give 极光道戒 1 <$STR(N60)> <$STR(N61)> 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「极光道戒」 
+break
+#ELSESAY
+你好象没有将火云石装备到身上或没有封印的首饰呀。\
+是不是看错了？\
+封印首饰：雷泽、启源、唤魔、首饰任意一种\
+魔龙首饰：奔雷、怒焰、极光、首饰任意一种\
+相应首饰搭配！\
+<返回/@强化奔雷>
+[@雷泽手镯强化奔雷]
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 奔雷护腕 1
+checkitem 雷泽手镯(封印) 1
+#ACT
+take 雷泽手镯(封印) 1
+take 奔雷护腕 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 奔雷护腕 1
+checkitem 雷泽手镯(封印) 1
+#ACT
+take 雷泽手镯(封印) 1
+take 奔雷护腕 1
+;ChangeItemDura 9 - 100
+MOVR N60 3
+MOVR N61 3
+MOVR N62 4
+give 奔雷护腕 1 <$STR(N60)> <$STR(N61)> <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「奔雷护腕」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 怒焰护腕 1
+checkitem 雷泽手镯(封印) 1
+#ACT
+take 雷泽手镯(封印) 1
+take 怒焰护腕 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 怒焰护腕 1
+checkitem 雷泽手镯(封印) 1
+#ACT
+take 雷泽手镯(封印) 1
+take 怒焰护腕 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 3
+give 怒焰护腕 1 <$STR(N60)> <$STR(N61)> 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「怒焰护腕」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 极光护腕 1
+checkitem 雷泽手镯(封印) 1
+#ACT
+take 雷泽手镯(封印) 1
+take 极光护腕 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 极光护腕 1
+checkitem 雷泽手镯(封印) 1
+#ACT
+take 雷泽手镯(封印) 1
+take 极光护腕 1
+;ChangeItemDura 9 - 100
+MOVR N60 2
+MOVR N61 2
+MOVR N62 3
+give 极光护腕 1 <$STR(N60)> <$STR(N61)> 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「极光护腕」 
+break
+#ELSESAY
+你好象没有将火云石装备到身上或没有封印的首饰呀。\
+是不是看错了？\
+封印首饰：雷泽、启源、唤魔、首饰任意一种\
+魔龙首饰：奔雷、怒焰、极光、首饰任意一种\
+相应首饰搭配！\
+<返回/@强化奔雷>
+[@雷泽项链强化奔雷]
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 奔雷项链 1
+checkitem 雷泽项链(封印) 1
+#ACT
+take 雷泽项链(封印) 1
+take 奔雷项链 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 奔雷项链 1
+checkitem 雷泽项链(封印) 1
+#ACT
+take 雷泽项链(封印) 1
+take 奔雷项链 1
+;ChangeItemDura 9 - 100
+MOVR N62 6
+give 奔雷项链 1 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「奔雷项链」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 怒焰项链 1
+checkitem 雷泽项链(封印) 1
+#ACT
+take 雷泽项链(封印) 1
+take 怒焰项链 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 怒焰项链 1
+checkitem 雷泽项链(封印) 1
+#ACT
+take 雷泽项链(封印) 1
+take 怒焰项链 1
+;ChangeItemDura 9 - 100
+MOVR N62 7
+give 怒焰项链 1 0 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「怒焰项链」 
+break
+#IF
+random 3
+checkitemw 火云石 1
+checkitem 极光项链 1
+checkitem 雷泽项链(封印) 1
+#ACT
+take 雷泽项链(封印) 1
+take 极光项链 1
+;ChangeItemDura 9 - 100
+SENDMSG 5 可惜了：您的物品已经破碎！ 
+break
+#IF
+checkitemw 火云石 1
+checkitem 极光项链 1
+checkitem 雷泽项链(封印) 1
+#ACT
+take 雷泽项链(封印) 1
+take 极光项链 1
+;ChangeItemDura 9 - 100
+MOVR N62 7
+give 极光项链 1 0 0 0 0 <$STR(N62)>
+SENDMSG 5 恭喜你：您获得了「极光项链」 
+break
+#ELSESAY
+你好象没有将火云石装备到身上或没有封印的首饰呀。\
+是不是看错了？\
+封印首饰：雷泽、启源、唤魔、首饰任意一种\
+魔龙首饰：奔雷、怒焰、极光、首饰任意一种\
+相应首饰搭配！\
+<返回/@强化奔雷>
+
+[@开始淬炼奔雷1]
+#IF
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+DELAYGOTO 1 @开始魔龙淬炼1
+#ELSESAY
+你好象没有魔龙冰晶、火云石碎片、弩牌呀。\
+是不是看错了？\
+<返回/@淬炼奔雷1>
+[@开始魔龙淬炼1]
+#IF
+random 18
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+give 奔雷战戒 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「奔雷战戒」 
+break
+#IF
+random 17
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+give 怒焰魔戒 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「怒焰魔戒」 
+break
+#IF
+random 16
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+give 极光道戒 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「极光道戒」 
+break
+#IF
+random 15
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+SENDMSG 5 可惜了：此时不是天地灵气合二为一！您的物品都已经破碎！ 
+break
+#IF
+random 14
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+SENDMSG 5 可惜了：此时不是天地灵气合二为一！您的物品都已经破碎！ 
+break
+#IF
+random 13
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+SENDMSG 5 可惜了：此时不是天地灵气合二为一！您的物品都已经破碎！ 
+break
+#IF
+random 12
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+give 奔雷护腕 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「奔雷护腕」 
+break
+#IF
+random 11
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+give 怒焰护腕 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「怒焰护腕」 
+break
+#IF
+random 10
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+give 极光护腕 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「极光护腕」 
+break
+#IF
+random 9
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+SENDMSG 5 可惜了：此时不是天地灵气合二为一！您的物品都已经破碎！ 
+break
+#IF
+random 8
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+SENDMSG 5 可惜了：此时不是天地灵气合二为一！您的物品都已经破碎！ 
+break
+#IF
+random 7
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+SENDMSG 5 可惜了：此时不是天地灵气合二为一！您的物品都已经破碎！ 
+break
+#IF
+random 6
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+give 奔雷项链 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「奔雷项链」 
+break
+#IF
+random 5
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+give 怒焰项链 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「怒焰项链」 
+break
+#IF
+random 4
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+give 极光项链 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「极光项链」 
+break
+#IF
+random 3
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+SENDMSG 5 可惜了：此时不是天地灵气合二为一！您的物品都已经破碎！ 
+break
+#IF
+random 2
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+SENDMSG 5 可惜了：此时不是天地灵气合二为一！您的物品都已经破碎！ 
+break
+#IF
+checkitem 魔龙冰晶 1
+checkitem 火云石碎片 1
+checkitem 弩牌 1
+#ACT
+take 魔龙冰晶 1
+take 火云石碎片 1
+take 弩牌 1
+SENDMSG 5 可惜了：此时不是天地灵气合二为一！您的物品都已经破碎！ 
+#ELSESAY
+你好象没有魔龙冰晶、火云石碎片、弩牌呀。\
+是不是看错了？\
+<返回/@淬炼奔雷1>
+
+[@开始淬炼奔雷2]
+#IF
+#IF
+checkitem 雷泽戒指(封印) 1
+#ACT
+DELAYGOTO 1 @开始魔龙淬炼2
+break
+#IF
+checkitem 雷泽手镯(封印) 1
+#ACT
+DELAYGOTO 1 @开始魔龙淬炼2
+break
+#IF
+checkitem 雷泽项链(封印) 1
+#ACT
+DELAYGOTO 1 @开始魔龙淬炼2
+break
+#IF
+checkitem 启源戒指(封印) 1
+#ACT
+DELAYGOTO 1 @开始魔龙淬炼2
+break
+#IF
+checkitem 启源手镯(封印) 1
+#ACT
+DELAYGOTO 1 @开始魔龙淬炼2
+break
+#IF
+checkitem 启源项链(封印) 1
+#ACT
+DELAYGOTO 1 @开始魔龙淬炼2
+break
+#IF
+checkitem 唤魔戒指(封印) 1
+#ACT
+DELAYGOTO 1 @开始魔龙淬炼2
+break
+#IF
+checkitem 唤魔手镯(封印) 1
+#ACT
+DELAYGOTO 1 @开始魔龙淬炼2
+break
+#IF
+checkitem 唤魔项链(封印) 1
+#ACT
+DELAYGOTO 1 @开始魔龙淬炼2
+break
+#ELSESAY
+你的基本配方不足！不能淬炼！
+<返回/@淬炼奔雷2>
+[@开始魔龙淬炼2]
+#IF
+checkitemw 火云石 1
+checkitem 雷霆战戒 1
+checkitem 唤魔戒指(封印) 1
+#ACT
+take 唤魔戒指(封印) 1
+take 雷霆战戒 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 烈焰魔戒 1
+checkitem 唤魔戒指(封印) 1
+#ACT
+take 唤魔戒指(封印) 1
+take 烈焰魔戒 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 光芒道戒 1
+checkitem 唤魔戒指(封印) 1
+#ACT
+take 光芒道戒 1
+take 唤魔戒指(封印) 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 雷霆护腕 1
+checkitem 唤魔手镯(封印) 1
+#ACT
+take 唤魔手镯(封印) 1
+take 雷霆护腕 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 烈焰护腕 1
+checkitem 唤魔手镯(封印) 1
+#ACT
+take 唤魔手镯(封印) 1
+take 烈焰护腕 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitem 唤魔手镯(封印) 1
+checkitemw 火云石 1
+checkitem 光芒护腕 1
+#ACT
+take 唤魔手镯(封印) 1
+take 光芒护腕 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰 
+break
+#IF
+checkitemw 火云石 1
+checkitem 雷霆项链 1
+checkitem 唤魔项链(封印) 1
+#ACT
+take 唤魔项链(封印) 1
+take 雷霆项链 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 烈焰项链 1
+checkitem 唤魔项链(封印) 1
+#ACT
+take 唤魔项链(封印) 1
+take 烈焰项链 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 光芒项链 1
+checkitem 唤魔项链(封印) 1
+#ACT
+take 唤魔项链(封印) 1
+take 光芒项链 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰 
+break
+#IF
+checkitemw 火云石 1
+checkitem 雷霆战戒 1
+checkitem 启源戒指(封印) 1
+#ACT
+take 启源戒指(封印) 1
+take 雷霆战戒 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 烈焰魔戒 1
+checkitem 启源戒指(封印) 1
+#ACT
+take 启源戒指(封印) 1
+take 烈焰魔戒 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰 
+break
+#IF
+checkitemw 火云石 1
+checkitem 光芒道戒 1
+checkitem 启源戒指(封印) 1
+#ACT
+take 启源戒指(封印) 1
+take 光芒道戒 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 雷霆护腕 1
+checkitem 启源手镯(封印) 1
+#ACT
+take 启源手镯(封印) 1
+take 雷霆护腕 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 烈焰护腕 1
+checkitem 启源手镯(封印) 1
+#ACT
+take 启源手镯(封印) 1
+take 烈焰护腕 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 光芒护腕 1
+checkitem 启源手镯(封印) 1
+#ACT
+take 启源手镯(封印) 1
+take 光芒护腕 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 雷霆项链 1
+checkitem 启源项链(封印) 1
+#ACT
+take 启源项链(封印) 1
+take 雷霆项链 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 烈焰项链 1
+checkitem 启源项链(封印) 1
+#ACT
+take 启源项链(封印) 1
+take 烈焰项链 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 光芒项链 1
+checkitem 启源项链(封印) 1
+#ACT
+take 启源项链(封印) 1
+take 光芒项链 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 雷霆战戒 1
+checkitem 雷泽戒指(封印) 1
+#ACT
+take 雷泽戒指(封印) 1
+take 雷霆战戒 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 烈焰魔戒 1
+checkitem 雷泽戒指(封印) 1
+#ACT
+take 雷泽戒指(封印) 1
+take 烈焰魔戒 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 光芒道戒 1
+checkitem 雷泽戒指(封印) 1
+#ACT
+take 雷泽戒指(封印) 1
+take 光芒道戒 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 雷霆护腕 1
+checkitem 雷泽手镯(封印) 1
+#ACT
+take 雷泽手镯(封印) 1
+take 雷霆护腕 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 烈焰护腕 1
+checkitem 雷泽手镯(封印) 1
+#ACT
+take 雷泽手镯(封印) 1
+take 烈焰护腕 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 光芒护腕 1
+checkitem 雷泽手镯(封印) 1
+#ACT
+take 雷泽手镯(封印) 1
+take 光芒护腕 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 雷霆项链 1
+checkitem 雷泽项链(封印) 1
+#ACT
+take 雷泽项链(封印) 1
+take 雷霆项链 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#IF
+checkitemw 火云石 1
+checkitem 烈焰项链 1
+checkitem 雷泽项链(封印) 1
+#ACT
+take 雷泽项链(封印) 1
+take 烈焰项链 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰 
+break
+#IF
+checkitemw 火云石 1
+checkitem 光芒项链 1
+checkitem 雷泽项链(封印) 1
+#ACT
+take 雷泽项链(封印) 1
+take 光芒项链 1
+;ChangeItemDura 9 - 100
+DELAYGOTO 1 @获得淬炼首饰
+break
+#ELSESAY
+你好象没有将火云石装备到身上或没有封印的首饰呀。\
+是不是看错了？\
+封印首饰：雷泽、启源、唤魔、首饰任意一种\
+魔龙首饰：雷霆、烈焰、光芒、首饰任意一种\
+相应首饰搭配！\
+<返回/@淬炼奔雷2>
+[@获得淬炼首饰]
+#IF
+random 10
+#ACT
+SENDMSG 5 可惜了：此时不是天地灵气合二为一！您的物品都已经破碎！
+Break
+#IF
+random 9
+#ACT
+give 奔雷项链 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「奔雷项链」 
+Break
+#IF
+random 8
+#ACT
+give 奔雷护腕 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「奔雷护腕」 
+Break
+#IF
+random 7
+#ACT
+give 奔雷战戒 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「奔雷战戒」 
+Break
+#IF
+random 6
+#ACT
+give 怒焰项链 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「怒焰项链」 
+Break
+#IF
+random 5
+#ACT
+give 怒焰护腕 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「怒焰护腕」 
+Break
+#IF
+random 4
+#ACT
+give 怒焰魔戒 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「怒焰魔戒」 
+Break
+#IF
+random 3
+#ACT
+give 极光项链 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「极光项链」 
+Break
+#IF
+random 2
+#ACT
+give 极光护腕 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「极光护腕」 
+Break
+#IF
+#ACT
+give 极光道戒 1
+SENDMSG 5 恭喜你：此时正是天地灵气合二为一了！您获得了「极光道戒」 
+Break

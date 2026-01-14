@@ -1,0 +1,139 @@
+[@MAIN]
+#IF
+EQUAL G30 1
+CheckMapMonCount TX04 = 0 1
+#SAY
+这位英雄，您已经完成了斩妖除魔的重任，\
+祝贺您，现在我就可以送您出去\ \ \
+<返回盟重/@MOVE3>\
+#ACT
+BREAK
+
+#IF
+EQUAL G30 1
+#SAY
+这位英雄，你已经投掷过骰子并召唤出了恶魔\
+赶快抓紧时间消灭恶魔吧。\ \
+#ACT
+BREAK
+
+#IF
+EQUAL G30 0
+#SAY
+你们能到达这里说明你们已经非常强了。\
+不过在你们前面还将有最后一道挑战\
+挑战最后恶魔前先和我来玩一把骰子吧，掷出的点数\
+将直接影响到你所要挑战的恶魔强弱以及所携带的宝物！\ \
+<开始投掷骰子/@GO>\
+#ACT
+BREAK
+
+[@MOVE3]
+#ACT
+BreakTimeRecall
+MAPMOVE 3 330 330
+
+[@GO]
+#IF
+EQUAL G30 0
+#ACT
+MOVR D0 6
+INC D0 1
+SET [100] 1
+PLAYDICE 1 @cube_cds
+BREAK
+[@cube_cds]
+#IF
+CHECK [100] 0
+#SAY
+由于你使用外挂\
+严重违反游戏规则\ \
+<离开/@EXIT>\
+#ACT
+BREAK
+#IF
+CHECK [100] 1
+EQUAL D0 1
+EQUAL G30 0
+#ACT
+Param1 TX04
+Param2 24
+Param3 29
+MonGen 双头血魔2 1
+MOV G30 1
+SendMSG 4 双头血魔被召唤出来！
+CLOSE
+BREAK
+
+#IF
+EQUAL D0 2
+EQUAL G30 0
+#ACT
+Param1 TX04
+Param2 24
+Param3 29
+MonGen 双头金刚2 1
+MOV G30 1
+SendMSG 4 双头金刚被召唤出来！
+CLOSE
+BREAK
+
+#IF
+EQUAL D0 3
+EQUAL G30 0
+#ACT
+Param1 TX04
+Param2 24
+Param3 29
+MonGen 黄泉教主2 1
+MOV G30 1
+SendMSG 4 黄泉教主被召唤出来！
+CLOSE
+BREAK
+
+#IF
+EQUAL D0 4
+EQUAL G30 0
+#ACT
+Param1 TX04
+Param2 24
+Param3 29
+MonGen 虹魔教主2 1
+MOV G30 1
+SendMSG 4 虹魔教主被召唤出来！
+CLOSE
+BREAK
+
+#IF
+EQUAL D0 5
+EQUAL G30 0
+#ACT
+Param1 TX04
+Param2 24
+Param3 29
+MonGen 牛魔王2 1
+MOV G30 1
+SendMSG 4 牛魔王被召唤出来！
+CLOSE
+BREAK
+
+#IF
+EQUAL D0 6
+EQUAL G30 0
+#ACT
+Param1 TX04
+Param2 24
+Param3 29
+MonGen 魔龙教主2 1
+MOV G30 1
+SENDMSG 0 %s在热血令任务中召唤出了魔神！
+SendMSG 4 魔龙教主被召唤出来！
+CLOSE
+BREAK
+
+#IF
+EQUAL D0 0
+#ACT
+SendMSG 4 请不要使用命令跳转外挂！多次使用直接封号！
+CLOSE
+BREAK

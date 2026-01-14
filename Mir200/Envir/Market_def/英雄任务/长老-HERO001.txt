@@ -1,0 +1,134 @@
+(@@CreateHero)
+[@main]
+受伤的英雄经过我的治疗，大体已经康复。\
+新招募的英雄也刚好都在我这边休息。\
+他们都已经听说了你的事情，都非常愿意跟随你。\
+现在是时候，让这些英雄前往玛法大陆了。\
+<带领一个英雄/@@CreateHero>         <领取书页/@领取书页>         <删除当前英雄/@删除英雄>\ \
+<返回玛法大陆/@回盟重>
+[@回盟重]
+#ACT
+MAPMOVE 3 333 333
+[@领取书页]
+#IF
+check [56] 1
+check [58] 0
+#SAY
+跟随你的英雄都是白日门最优秀的精英，\
+他们都可以掌握白日门特有的各种魔法技能。\
+不过很多白日门的技能书都在一场灾难中被毁得残破不堪，\
+现在只剩下一些零散的书页，\
+而且其中的很多书页已经流散到玛法的各种很难凑齐。\
+我这里还有两片残留的书页，你拿去找白日门的龙人，\
+他也许能从残留的书页里找到一些技能秘籍。\
+<好的,我这去找他/@exit>
+#ELSESAY
+这把这些书页拿到白日门去找龙人，\
+他也许能从残留的书页里找到一些技能秘籍。\
+<好的,我这去找他/@exit>
+#ACT
+set [58] 1
+give 书页 2
+give 金元宝 5
+Break
+
+#IF
+check [58] 0
+#SAY
+跟随你的英雄都是白日门最优秀的精英，\
+他们都可以掌握白日门特有的各种魔法技能。\
+不过很多白日门的技能书都在一场灾难中被毁得残破不堪，\
+现在只剩下一些零散的书页，\
+而且其中的很多书页已经流散到玛法的各种很难凑齐。\
+我这里还有两片残留的书页，你拿去找白日门的龙人，\
+他也许能从残留的书页里找到一些技能秘籍。\
+<好的,我这去找他/@exit>
+#ELSESAY
+这把这些书页拿到白日门去找龙人，\
+他也许能从残留的书页里找到一些技能秘籍。\
+<好的,我这去找他/@exit>
+#ACT
+set [58] 1
+give 书页 2
+give 银元宝 1
+Break
+
+[@删除英雄]
+#if
+#SAY
+请先将设置英雄下线，删除英雄将无法恢复，\
+请再次确定你是否真的要删除你的英雄？\
+多次点击“确认删除”按钮英雄将被删除！\ \
+<确定删除/@DelMyHero>    <取消删除/@exit>
+
+[@CreateHero]
+恭喜您可以带领您的英雄去闯荡玛法大陆了，\
+您想带领哪位英雄呢？\
+\ \
+<英雄(男战士)/@CREATEHERO_WARR_MAN>      <英雄(男法师)/@CREATEHERO_WIZA_MAN>      <英雄(男道士)/@CREATEHERO_TAOS_MAN>\ \
+<英雄(女战士)/@CREATEHERO_WARR_WOM>      <英雄(女法师)/@CREATEHERO_WIZA_WOM>      <英雄(女道士)/@CREATEHERO_TAOS_WOM>\ \
+
+[@CREATEHERO_WARR_MAN]
+#ACT
+CREATEHERO 0 0
+DELAYgoto 1 @获得英雄
+[@CREATEHERO_WARR_WOM]
+#ACT
+CREATEHERO 0 1
+DELAYgoto 1 @获得英雄
+[@CREATEHERO_WIZA_MAN]
+#ACT
+CREATEHERO 1 0
+DELAYgoto 1 @获得英雄
+[@CREATEHERO_WIZA_WOM]
+#ACT
+CREATEHERO 1 1
+DELAYgoto 1 @获得英雄
+[@CREATEHERO_TAOS_MAN]
+#ACT
+CREATEHERO 2 0
+DELAYgoto 1 @获得英雄
+[@CREATEHERO_TAOS_WOM]
+#ACT
+CREATEHERO 2 1
+DELAYgoto 1 @获得英雄
+
+//返回消息
+[@CreateingHero]
+系统正在接受申请，请稍候……\
+提示：请小退一次，重新创建英雄！\ \
+<退出/@exit>
+
+[@HaveHero]
+你已经获得了英雄了！\
+受伤的英雄也已经康复，希望你能继承我们的理想，\
+去寻找我们自己的家园。\
+<退出/@exit>
+
+[@SetHeroName]
+请先给您的英雄取名字。\ \
+<退出/@exit>
+
+[@DelMyHero]
+#ACT
+DELETEHERO
+//返回消息
+
+[@NotHaveHero]
+你的英雄被删除，或你还没有创建英雄！！\ \
+<退出/@exit>
+
+[@LogOutHeroFirst]
+请将英雄设置下线！\ \
+<退出/@exit>
+
+[@DeleteHeroOK]
+删除英雄成功。\ \
+<退出/@exit>
+
+[@获得英雄]
+你已经获得了英雄了！\
+受伤的英雄也已经康复，希望你能继承我们的理想，\
+去寻找我们自己的家园。\
+提示：若英雄无法召唤，说明英雄名字过短或与他人重复！\ \
+<退出/@exit>

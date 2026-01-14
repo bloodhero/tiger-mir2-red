@@ -1,0 +1,119 @@
+[@main]
+这位英雄，您来接受斩妖除魔的重任啊，\
+好的，一切就掌握在您自己的手里了！\
+<开始挑战/@开始挑战>\
+\ \
+<返回盟重/@返回盟重>
+[@开始挑战]
+#IF
+equal I3 1
+#ACT
+break
+#SAY
+您已经开始挑战了，不能再次进行挑战
+#IF
+equal I3 0
+ISGROUPMASTER
+#ACT
+mov I3 1
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 牛魔侍卫 1 10
+MonGen 牛魔法师 1 10
+MonGen 牛魔祭司 1 10
+MonGen 牛魔将军 2 10
+movr D0 11
+GOTO @BOSS
+close
+break
+#IF
+ISGROUPMASTER
+#ELSESAY
+您不是所在队伍的队长，不能进行挑战
+[@返回盟重]
+#ACT
+mapmove 3 333 333
+[@BOSS]
+#IF
+equal D0 0
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 魔龙力士 1 5
+#IF
+equal D0 1
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 魔龙战将 1 5
+#IF
+equal D0 2
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 魔龙巨蛾 1 5
+#IF
+equal D0 3
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 双头金刚 1 5
+#IF
+equal D0 4
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 双头血魔 1 5
+#IF
+equal D0 5
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 赤月恶魔 1 5
+#IF
+equal D0 6
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 牛魔王 1 5
+#IF
+equal D0 7
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 邪恶毒蛇 2 5
+#IF
+equal D0 8
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 黄泉教主 1 5
+#IF
+equal D0 9
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 虹魔教主 1 5
+#IF
+equal D0 10
+#ACT
+Param1 D412A
+Param2 15
+Param3 65
+MonGen 魔龙教主 1 5
+#IF
+random 3
+#ACT
+movr D0 11
+GOTO @BOSS

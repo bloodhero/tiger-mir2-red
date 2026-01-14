@@ -1,0 +1,84 @@
+[@main]
+#IF
+check [45] 1
+#ACT
+break
+#say
+这位勇士，你大概找错人了吧！\ \
+<退出/@exit>
+#IF
+check [34] 1
+checkitem 西瓜 1
+#ACT
+break
+#SAY
+真是谢谢你替我把那些地蛙赶跑了，\
+这是送你的西瓜\ \
+<退出/@exit>
+
+#IF
+check [34] 1
+#ACT
+give 西瓜 1
+break
+#SAY
+真是谢谢你替我把那些地蛙赶跑了，\
+这是送你的西瓜\ \
+<退出/@exit>
+#IF
+check [33] 1
+#SAY
+这段时间是西瓜成熟的时节，引来了很多地蛙\
+而且数量较以前多了很多，我赶了很多次都没有赶完\
+你能帮我把地蛙赶走吗?\
+我可以送你个西瓜\
+<好的/@摆龙门阵>
+#ELSESAY
+谁能帮我赶走讨厌的地蛙\
+\ \
+<有空我一定过来帮你/@exit>
+[@摆龙门阵]
+啊，真是太感谢了\
+没想到你是一个热心的小伙子\
+等会去了瓜地里面，尽快的将他们赶跑，时间长了\
+他们会不断的发出怪叫，吸引其他地方的地蛙过来\
+要注意，千万别踩到地蛙的洞\
+<知道了，送我去吧/@摆龙门阵1>
+[@摆龙门阵1]
+#IF
+checkhum 01132A 1
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#ELSEACT
+mov D0 0
+CLEARMAPMON 01132A
+Param1 01132A
+Param2 20
+Param3 20
+MonGen 地蛙 5 5
+MAP 01132A
+CLEARDELAYGOTO
+DELAYGOTO 20000 @刷怪
+[@回来]
+#IF
+ISONMAP 01132A
+#ACT
+MAPMOVE 0 614 505
+[@刷怪]
+#act
+Param1 01132A
+Param2 20
+Param3 20
+MonGen 地蛙 5 5
+SendMSG 7 又有地蛙出现了
+DELAYGOTO 20000 @刷怪1
+[@刷怪1]
+#ACT
+mov D0 1
+Param1 01132A
+Param2 20
+Param3 20
+MonGen 地蛙 5 5
+SendMSG 7 又有地蛙出现了
+SET [34] 1
+DELAYGOTO 20000 @回来

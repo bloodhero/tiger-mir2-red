@@ -1,0 +1,4664 @@
+(@@InPutString)
+[@main]　
+奉国王使命，在这里负责奖赏最出色的玛法勇士。　\
+无论你是“王师教头”或者“王师弟子”、金牌账号，　\
+还是传说中的“热血勇士”都可以在我这里领取丰厚的奖赏。　\
+你的奖赏一定会特别丰厚！　\
+<获取“王师教头”资格/@王师资格>(单机无用)\
+<领取“王师奖励”/@王师奖励>(单机无用)    <查询“王师奖励”的物品/@查询王师奖励>(单机无用)\
+<领取热血勇士奖励/@热血勇士>              <查询“热血勇士”奖励/@查询热血勇士奖励>　\
+<领取金牌帐号奖励/@金牌帐号>              <查询“金牌帐号”奖励/@查询金牌帐号奖品>\
+<分红系统领取奖励/@分红系统>(单机无用)    <推广员分红系统介绍/@分红系统介绍>(单机无用)\
+
+[@分红系统介绍]　
+<推广员的报酬/@报酬>　\ \
+<热血传奇分红规则/@规则>　\ \
+<如何成为推广员/@成为推广员>　\ \
+<我被推广员推荐/@推荐玩家>\ \
+<返回/@main>
+
+[@推荐玩家]
+对不起！该玩家没有加入推广员
+
+[@报酬]　
+盛大推广员每推荐一个新玩家，\
+盛大公司将根据新玩家在游戏中的消费记录，\
+每次给推广员50%的分红。\ \ \
+<返回/@分红系统介绍>
+
+[@规则]　
+被推广的玩家出元宝交易之外的所有元宝消费都将分红。\
+包括元宝哾换灵符；元宝购买商铺等道具。\
+被推广的新玩家可以获得丰厚的新手奖励。\ \
+<返回/@分红系统介绍>
+
+[@成为推广员]　
+你不是推广员
+
+[@王师奖励]
+在这片大陆上，有些人注定不是平凡的人。\
+边境的战鼓已经擂响！玛法大陆风云再起！\
+准备为人类的尊严和命运而战吧！勇士！\
+<领取王师弟子奖品/@弟子奖励>\
+    \
+<领取王师教头奖品/@教头奖励>\
+    \
+<返回/@main>\
+
+[@弟子奖励]
+请确认有足够的包裹空间放置奖品,否则不能正常领取\
+如因包裹空间不足,导致不能正常领取,责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间,<确认领取/@弟子奖励1>\
+    \
+<返回/@main>                    <离开/@exit>\
+
+[@弟子奖励1]
+你还没有成为王师弟子，不能领取奖励物品\
+
+[@教头奖励]
+请确认有足够的包裹空间放置奖品,否则不能正常领取\
+如因包裹空间不足,导致不能正常领取,责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间,<确认领取/@教头奖励1>\
+    \
+<返回/@main>                    <离开/@exit>\
+
+[@教头奖励1]
+你还没有成为王师教头，不能领取奖励物品\
+
+[@查询王师奖励]
+如果你在获得“王师教头”的资格后，所带领的徒弟达到47-50级，\
+而且你自身等级在50级以上，你就可以在我这里领取奖励。\
+“王师弟子”在47-50级，你不仅可以总共领取四次奖励，\
+还可以获得国王额外给予的经验赏赐。\
+如果你为“王师弟子”，均可在相应等级领取相应的奖品。\
+<查询“王师教头”的奖励物品/@查询王师教头>\
+<查询“王师弟子”的奖励物品/@查询王师弟子>\
+<返回/@main>\
+
+[@查询王师教头]
+当你任何一个王师弟子在47级以后，到50级这个阶段内，\
+每升一级，你就可以获得以下物品中的一件：\
+雷霆战戒、雷霆护腕、雷霆项链、雷霆腰带、雷霆战靴\
+光芒道戒、光芒护腕、光芒项链、光芒腰带、光芒道靴\
+烈焰魔戒、烈焰护腕、烈焰项链、烈焰腰带、烈焰魔靴\
+此外，你还可以额外得到你<每一个>弟子在35级到46级修炼过程中\
+所获得<经验中5%>作为奖赏。\
+<返回/@查询王师奖励>                    <关闭/@exit>\
+
+[@查询王师弟子]
+但凡“王师弟子”，均可在相应等级领取相应的奖品：\
+1级：获得双倍宝典、魔血石(大)各1个\
+10级：获得双倍宝典、比奇传送石各1个\
+15级：获得双倍宝典1个，玄紫、玄绿、玄褐随机1个\
+20级：随机获得紫碧螺、泰坦戒指、力量戒指的任意1件\
+同时还可以获得双倍宝典、魔血石(大)各1个\
+25级：随机获得井中月、魔杖、无极棍中的任意1件\
+同时还可以获得双倍宝典、太阳水捆药绳各1个\
+<查看下一页/@查询王师弟子1>             <返回/@查询王师奖励>\
+
+[@查询王师弟子1]
+28、32、34级：均可以获得双倍宝典、魔血石(大)各1个\
+30级：获得双倍宝典、盟重传送石各1个\
+33级：获得双倍宝典1个，玄紫、玄绿、玄褐其中随机1个\
+35级：获得圣战戒指、天尊戒指、法神戒指中的任意1件\
+同时还可以获得双倍宝典和个性发型各1个\
+40级：随机获得裁决之杖、骨玉权杖、龙纹剑中的任意1件\
+42级：随机获得天魔神甲、圣战宝甲、天尊道袍、天师长袍、\
+霓裳羽衣、法神披风，这六件40级重装中的任意1件\
+<查看下一页/@查询王师弟子2>         <查看上一页/@查询王师弟子>         <返回/@查询王师奖励>
+
+[@查询王师弟子2]
+44级:随机获得三职业1.8版新技能：灭天火、寒冰掌、\
+气功波、无极真气、狮子吼中的任意1本\
+47、48、49级:均可在以下物品中随机领取一样物品\
+雷霆战戒、雷霆护腕、雷霆项链、雷霆腰带、雷霆战靴\
+光芒道戒、光芒护腕、光芒项链、光芒腰带、光芒道靴\
+烈焰魔戒、烈焰护腕、烈焰项链、烈焰腰带、烈焰魔靴\
+<查看下一页/@查询王师弟子3>         <查看上一页/@查询王师弟子1>\
+<返回/@查询王师奖励>
+
+[@查询王师弟子3]
+50级:可以在以下物品中随机领取一样物品\
+战神手镯、战神戒指、战神项链\
+圣魔手镯、圣魔戒指、圣魔项链\
+真魂手镯、真魂戒指、真魂项链\
+    \
+<查看上一页/@查询王师弟子2>              <返回/@查询王师奖励>\
+
+[@王师资格]
+据我掌握的情报，半兽人暗中集结在比奇边境，密谋发动攻击，\
+比奇国王再次颁下诏书，号令天下英雄豪杰贡献自己的力量，\
+只要你等级在35级以上，就可获得“王师教头”，\
+担负起培养玛法年轻勇士的重任！\
+“王师教头”所收的徒弟，就将成为“王师弟子”，\
+“王师弟子”将受到最完善培养和最优厚待遇。\
+<关闭/@exit>\
+
+[@热血勇士]
+如果你有30个热血积分，交给我，我回给你一个热血凭证\
+双击热血凭证后，你就可以成为热血勇士\
+热血勇士与白金功能设置都没有冲突，\
+从46级到55级，每个级别均可领取相应的丰厚奖励\
+领奖之前，请保留10个以上的包裹空间，否则不能正常领取\
+<领取奖品/@热血勇士领奖>                           <查询奖品设置/@查询热血勇士奖励>\
+<使用热血积分获得热血凭证/@获得热血凭证>           <捆热血积分/@捆热血积分>\
+<返回/@main>                               <离开/@exit>\
+
+[@热血勇士领奖]
+#if
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+DELAYGOTO 1 @热血勇士领奖1
+#ELSESAY
+你还没有成为热血勇士，不能领取奖励物品\
+
+[@热血勇士领奖1]
+#IF
+CHECKLEVELEX > 55
+#SAY
+恭喜哦！你已经是55级以上的人物了！目前热血勇士奖励只开放在\
+55级以下！请多留意哦！说不定以后还会开放55级以上的高级奖励\
+<离开/@exit>\
+#ACT
+break
+
+#IF
+CHECKLEVELEX < 56
+CHECKLEVELEX > 45
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+DELAYGOTO 1 @确认热血成功
+break
+
+#IF
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#SAY
+您是热血勇士，但你目前的等级无法领取热血勇士的奖励！
+#ELSESAY
+您不是热血勇士，不能到我这里领取奖励！
+
+[@确认热血成功]
+#IF
+CHECKLEVELEX > 54
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取46级奖励/@确认勇士46级成功>    <确认领取47级奖励/@确认勇士47级成功>\
+<确认领取48级奖励/@确认勇士48级成功>    <确认领取49级奖励/@确认勇士49级成功>\
+<确认领取50级奖励/@确认勇士50级成功>    <确认领取51级奖励/@确认勇士51级成功>\
+<确认领取52级奖励/@确认勇士52级成功>    <确认领取53级奖励/@确认勇士53级成功>\
+<确认领取54级奖励/@确认勇士54级成功>    <确认领取55级奖励/@确认勇士55级成功>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 53
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取46级奖励/@确认勇士46级成功>    <确认领取47级奖励/@确认勇士47级成功>\
+<确认领取48级奖励/@确认勇士48级成功>    <确认领取49级奖励/@确认勇士49级成功>\
+<确认领取50级奖励/@确认勇士50级成功>    <确认领取51级奖励/@确认勇士51级成功>\
+<确认领取52级奖励/@确认勇士52级成功>    <确认领取53级奖励/@确认勇士53级成功>\
+<确认领取54级奖励/@确认勇士59级成功>    <确认领取55级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 52
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取46级奖励/@确认勇士46级成功>    <确认领取47级奖励/@确认勇士47级成功>\
+<确认领取48级奖励/@确认勇士48级成功>    <确认领取49级奖励/@确认勇士49级成功>\
+<确认领取50级奖励/@确认勇士50级成功>    <确认领取51级奖励/@确认勇士51级成功>\
+<确认领取52级奖励/@确认勇士52级成功>    <确认领取53级奖励/@确认勇士53级成功>\
+<确认领取54级奖励>    <确认领取55级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 51
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取46级奖励/@确认勇士46级成功>    <确认领取47级奖励/@确认勇士47级成功>\
+<确认领取48级奖励/@确认勇士48级成功>    <确认领取49级奖励/@确认勇士49级成功>\
+<确认领取50级奖励/@确认勇士50级成功>    <确认领取51级奖励/@确认勇士51级成功>\
+<确认领取52级奖励/@确认勇士52级成功>    <确认领取53级奖励>\
+<确认领取54级奖励>    <确认领取55级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 50
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取46级奖励/@确认勇士46级成功>    <确认领取47级奖励/@确认勇士47级成功>\
+<确认领取48级奖励/@确认勇士48级成功>    <确认领取49级奖励/@确认勇士49级成功>\
+<确认领取50级奖励/@确认勇士50级成功>    <确认领取51级奖励/@确认勇士51级成功>\
+<确认领取52级奖励>    <确认领取53级奖励>\
+<确认领取54级奖励>    <确认领取55级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 49
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取46级奖励/@确认勇士46级成功>    <确认领取47级奖励/@确认勇士47级成功>\
+<确认领取48级奖励/@确认勇士48级成功>    <确认领取49级奖励/@确认勇士49级成功>\
+<确认领取50级奖励/@确认勇士50级成功>    <确认领取51级奖励>\
+<确认领取52级奖励>    <确认领取53级奖励>\
+<确认领取54级奖励>    <确认领取55级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 48
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取46级奖励/@确认勇士46级成功>    <确认领取47级奖励/@确认勇士47级成功>\
+<确认领取48级奖励/@确认勇士48级成功>    <确认领取49级奖励/@确认勇士49级成功>\
+<确认领取50级奖励>    <确认领取51级奖励>\
+<确认领取52级奖励>    <确认领取53级奖励>\
+<确认领取54级奖励>    <确认领取55级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 47
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取46级奖励/@确认勇士46级成功>    <确认领取47级奖励/@确认勇士47级成功>\
+<确认领取48级奖励/@确认勇士48级成功>    <确认领取49级奖励>\
+<确认领取50级奖励>    <确认领取51级奖励>\
+<确认领取52级奖励>    <确认领取53级奖励>\
+<确认领取54级奖励>    <确认领取55级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 46
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取46级奖励/@确认勇士46级成功>    <确认领取47级奖励/@确认勇士47级成功>\
+<确认领取53级奖励>    <确认领取54级奖励>\
+<确认领取55级奖励>    <确认领取56级奖励>\
+<确认领取57级奖励>    <确认领取58级奖励>\
+<确认领取59级奖励>    <确认领取60级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 45
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间，<确认领取/@确认勇士46级成功>\
+<返回/@main>                   <离开/@exit>\
+
+
+[@确认勇士46级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\热46名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 45
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+movr d0 6
+set [100] 1
+DELAYGOTO 1 @勇士46级领奖
+#ELSESAY
+你没有达到46级、现在不能领取！
+
+[@勇士46级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 天魔神甲 1
+AddNameList ..\QuestDiary\数据文件\热46名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「天魔神甲」! 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 天尊道袍 1
+AddNameList ..\QuestDiary\数据文件\热46名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「天尊道袍」! 
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 法神披风 1
+AddNameList ..\QuestDiary\数据文件\热46名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「法神披风」! 
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 圣战宝甲 1
+AddNameList ..\QuestDiary\数据文件\热46名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣战宝甲」! 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 天师长袍 1
+AddNameList ..\QuestDiary\数据文件\热46名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「天师长袍」! 
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 霓裳羽衣 1
+AddNameList ..\QuestDiary\数据文件\热46名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「霓裳羽衣」! 
+break
+#ELSESAY
+该帐号不是热血勇士！
+
+[@确认勇士47级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\热47名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 46
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+movr d0 15
+set [100] 1
+DELAYGOTO 1 @勇士47级领奖
+#ELSESAY
+你没有达到47级、现在不能领取！
+
+[@勇士47级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战戒」 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔戒」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道戒」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆护腕」 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰护腕」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒护腕」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆项链」 
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰项链」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒项链」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆腰带」 
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰腰带」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战靴」 
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔靴」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴 1
+AddNameList ..\QuestDiary\数据文件\热47名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道靴」
+break
+#ELSESAY
+该角色不是热血勇士！
+
+[@确认勇士48级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\热48名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 47
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+movr d0 15
+set [100] 1
+DELAYGOTO 1 @勇士48级领奖
+#ELSESAY
+你没有达到48级、现在不能领取！
+
+[@勇士48级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战戒」 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔戒」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道戒」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆护腕」 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰护腕」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒护腕」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆项链」 
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰项链」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒项链」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆腰带」 
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰腰带」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战靴」 
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔靴」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴 1
+AddNameList ..\QuestDiary\数据文件\热48名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道靴」
+break
+#ELSESAY
+该角色不是热血勇士！
+
+[@确认勇士49级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\热49名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 48
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+movr d0 15
+set [100] 1
+DELAYGOTO 1 @勇士49级领奖
+#ELSESAY
+你没有达到49级、现在不能领取！
+
+[@勇士49级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战戒」 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔戒」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道戒」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆护腕」 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰护腕」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒护腕」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆项链」 
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰项链」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒项链」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆腰带」 
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰腰带」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战靴」 
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔靴」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴 1
+AddNameList ..\QuestDiary\数据文件\热49名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道靴」
+break
+#ELSESAY
+该角色不是热血勇士！
+
+[@确认勇士50级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\热50名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 49
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+movr d0 54
+set [100] 1
+DELAYGOTO 1 @勇士50级领奖
+#ELSESAY
+你没有达到50级、现在不能领取！
+
+[@勇士50级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战戒」 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔戒」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道戒」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆护腕」 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰护腕」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒护腕」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆项链」 
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰项链」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒项链」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆腰带」 
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰腰带」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战靴」 
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔靴」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道靴」
+break
+#IF
+equal d0 15
+#ACT
+mov d1 0
+set [100] 0
+give 狂战戒指 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战戒指」
+break
+#IF
+equal d0 16
+#ACT
+mov d1 0
+set [100] 0
+give 太极戒指 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极戒指」
+break
+#IF
+equal d0 17
+#ACT
+mov d1 0
+set [100] 0
+give 混世戒指 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世戒指」
+break
+#IF
+equal d0 18
+#ACT
+mov d1 0
+set [100] 0
+give 狂战手镯 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战手镯」
+break
+#IF
+equal d0 19
+#ACT
+mov d1 0
+set [100] 0
+give 太极手镯 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极手镯」
+break
+#IF
+equal d0 20
+#ACT
+mov d1 0
+set [100] 0
+give 混世手镯 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世手镯」
+break
+#IF
+equal d0 21
+#ACT
+mov d1 0
+set [100] 0
+give 战神戒指 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神戒指」 
+break
+#IF
+equal d0 22
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔戒指 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔戒指」
+break
+#IF
+equal d0 23
+#ACT
+mov d1 0
+set [100] 0
+give 真魂戒指 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂戒指」
+break
+#IF
+equal d0 24
+#ACT
+mov d1 0
+set [100] 0
+give 战神手镯 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神手镯」 
+break
+#IF
+equal d0 25
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔手镯 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔手镯」
+break
+#IF
+equal d0 26
+#ACT
+mov d1 0
+set [100] 0
+give 真魂手镯 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂手镯」
+break
+#IF
+equal d0 27
+#ACT
+mov d1 0
+set [100] 0
+give 战神项链 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神项链」 
+break
+#IF
+equal d0 28
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔项链 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔项链」
+break
+#IF
+equal d0 29
+#ACT
+mov d1 0
+set [100] 0
+give 真魂项链 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂项链」
+break
+#IF
+equal d0 30
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(战)」 
+break
+#IF
+equal d0 31
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(道)」 
+break
+#IF
+equal d0 32
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(法)」 
+break
+#IF
+equal d0 33
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(战) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(战)」
+break
+#IF
+equal d0 34
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(道) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(道)」
+break
+#IF
+equal d0 35
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(法) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(法)」
+break
+#IF
+equal d0 36
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(战) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(战)」
+break
+#IF
+equal d0 37
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(道) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(道)」
+break
+#IF
+equal d0 38
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(法) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(法)」
+break
+#IF
+equal d0 39
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(战) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(战)」
+break
+#IF
+equal d0 40
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(道) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(道)」
+break
+#IF
+equal d0 41
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(法) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(法)」
+break
+#IF
+equal d0 42
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(战) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(战)」
+break
+#IF
+equal d0 43
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(道) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(道)」
+break
+#IF
+equal d0 44
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(法) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(法)」
+break
+#IF
+equal d0 45
+#ACT
+mov d1 0
+set [100] 0
+give 星王战靴 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战靴」
+break
+#IF
+equal d0 46
+#ACT
+mov d1 0
+set [100] 0
+give 星王道靴 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道靴」
+break
+#IF
+equal d0 47
+#ACT
+mov d1 0
+set [100] 0
+give 星王法靴 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法靴」
+break
+#IF
+equal d0 48
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(战)」
+break
+#IF
+equal d0 49
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(道)」
+break
+#IF
+equal d0 50
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(法)」
+break
+#IF
+equal d0 51
+#ACT
+mov d1 0
+set [100] 0
+give 星王战盔 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战盔」
+break
+#IF
+equal d0 52
+#ACT
+mov d1 0
+set [100] 0
+give 星王道盔 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道盔」
+break
+#IF
+equal d0 53
+#ACT
+mov d1 0
+set [100] 0
+give 星王法冠 1
+AddNameList ..\QuestDiary\数据文件\热50名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法冠」
+break
+#ELSESAY
+该角色不是热血勇士！
+
+[@确认勇士51级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\热51名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 50
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+movr d0 54
+set [100] 1
+DELAYGOTO 1 @勇士51级领奖
+#ELSESAY
+你没有达到51级、现在不能领取！
+
+[@勇士51级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战戒」 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔戒」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道戒」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆护腕」 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰护腕」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒护腕」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆项链」 
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰项链」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒项链」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆腰带」 
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰腰带」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战靴」 
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔靴」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道靴」
+break
+#IF
+equal d0 15
+#ACT
+mov d1 0
+set [100] 0
+give 狂战戒指 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战戒指」
+break
+#IF
+equal d0 16
+#ACT
+mov d1 0
+set [100] 0
+give 太极戒指 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极戒指」
+break
+#IF
+equal d0 17
+#ACT
+mov d1 0
+set [100] 0
+give 混世戒指 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世戒指」
+break
+#IF
+equal d0 18
+#ACT
+mov d1 0
+set [100] 0
+give 狂战手镯 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战手镯」
+break
+#IF
+equal d0 19
+#ACT
+mov d1 0
+set [100] 0
+give 太极手镯 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极手镯」
+break
+#IF
+equal d0 20
+#ACT
+mov d1 0
+set [100] 0
+give 混世手镯 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世手镯」
+break
+#IF
+equal d0 21
+#ACT
+mov d1 0
+set [100] 0
+give 战神戒指 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神戒指」 
+break
+#IF
+equal d0 22
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔戒指 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔戒指」
+break
+#IF
+equal d0 23
+#ACT
+mov d1 0
+set [100] 0
+give 真魂戒指 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂戒指」
+break
+#IF
+equal d0 24
+#ACT
+mov d1 0
+set [100] 0
+give 战神手镯 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神手镯」 
+break
+#IF
+equal d0 25
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔手镯 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔手镯」
+break
+#IF
+equal d0 26
+#ACT
+mov d1 0
+set [100] 0
+give 真魂手镯 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂手镯」
+break
+#IF
+equal d0 27
+#ACT
+mov d1 0
+set [100] 0
+give 战神项链 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神项链」 
+break
+#IF
+equal d0 28
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔项链 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔项链」
+break
+#IF
+equal d0 29
+#ACT
+mov d1 0
+set [100] 0
+give 真魂项链 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂项链」
+break
+#IF
+equal d0 30
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(战)」 
+break
+#IF
+equal d0 31
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(道)」 
+break
+#IF
+equal d0 32
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(法)」 
+break
+#IF
+equal d0 33
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(战) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(战)」
+break
+#IF
+equal d0 34
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(道) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(道)」
+break
+#IF
+equal d0 35
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(法) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(法)」
+break
+#IF
+equal d0 36
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(战) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(战)」
+break
+#IF
+equal d0 37
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(道) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(道)」
+break
+#IF
+equal d0 38
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(法) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(法)」
+break
+#IF
+equal d0 39
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(战) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(战)」
+break
+#IF
+equal d0 40
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(道) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(道)」
+break
+#IF
+equal d0 41
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(法) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(法)」
+break
+#IF
+equal d0 42
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(战) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(战)」
+break
+#IF
+equal d0 43
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(道) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(道)」
+break
+#IF
+equal d0 44
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(法) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(法)」
+break
+#IF
+equal d0 45
+#ACT
+mov d1 0
+set [100] 0
+give 星王战靴 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战靴」
+break
+#IF
+equal d0 46
+#ACT
+mov d1 0
+set [100] 0
+give 星王道靴 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道靴」
+break
+#IF
+equal d0 47
+#ACT
+mov d1 0
+set [100] 0
+give 星王法靴 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法靴」
+break
+#IF
+equal d0 48
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(战)」
+break
+#IF
+equal d0 49
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(道)」
+break
+#IF
+equal d0 50
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(法)」
+break
+#IF
+equal d0 51
+#ACT
+mov d1 0
+set [100] 0
+give 星王战盔 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战盔」
+break
+#IF
+equal d0 52
+#ACT
+mov d1 0
+set [100] 0
+give 星王道盔 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道盔」
+break
+#IF
+equal d0 53
+#ACT
+mov d1 0
+set [100] 0
+give 星王法冠 1
+AddNameList ..\QuestDiary\数据文件\热51名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法冠」
+break
+#ELSESAY
+该角色不是热血勇士！
+
+[@确认勇士52级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\热52名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 51
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+movr d0 54
+set [100] 1
+DELAYGOTO 1 @勇士52级领奖
+#ELSESAY
+你没有达到52级、现在不能领取！
+
+[@勇士52级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战戒」 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔戒」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道戒」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆护腕」 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰护腕」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒护腕」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆项链」 
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰项链」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒项链」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆腰带」 
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰腰带」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战靴」 
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔靴」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道靴」
+break
+#IF
+equal d0 15
+#ACT
+mov d1 0
+set [100] 0
+give 狂战戒指 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战戒指」
+break
+#IF
+equal d0 16
+#ACT
+mov d1 0
+set [100] 0
+give 太极戒指 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极戒指」
+break
+#IF
+equal d0 17
+#ACT
+mov d1 0
+set [100] 0
+give 混世戒指 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世戒指」
+break
+#IF
+equal d0 18
+#ACT
+mov d1 0
+set [100] 0
+give 狂战手镯 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战手镯」
+break
+#IF
+equal d0 19
+#ACT
+mov d1 0
+set [100] 0
+give 太极手镯 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极手镯」
+break
+#IF
+equal d0 20
+#ACT
+mov d1 0
+set [100] 0
+give 混世手镯 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世手镯」
+break
+#IF
+equal d0 21
+#ACT
+mov d1 0
+set [100] 0
+give 战神戒指 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神戒指」 
+break
+#IF
+equal d0 22
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔戒指 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔戒指」
+break
+#IF
+equal d0 23
+#ACT
+mov d1 0
+set [100] 0
+give 真魂戒指 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂戒指」
+break
+#IF
+equal d0 24
+#ACT
+mov d1 0
+set [100] 0
+give 战神手镯 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神手镯」 
+break
+#IF
+equal d0 25
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔手镯 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔手镯」
+break
+#IF
+equal d0 26
+#ACT
+mov d1 0
+set [100] 0
+give 真魂手镯 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂手镯」
+break
+#IF
+equal d0 27
+#ACT
+mov d1 0
+set [100] 0
+give 战神项链 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神项链」 
+break
+#IF
+equal d0 28
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔项链 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔项链」
+break
+#IF
+equal d0 29
+#ACT
+mov d1 0
+set [100] 0
+give 真魂项链 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂项链」
+break
+#IF
+equal d0 30
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(战)」 
+break
+#IF
+equal d0 31
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(道)」 
+break
+#IF
+equal d0 32
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(法)」 
+break
+#IF
+equal d0 33
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(战) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(战)」
+break
+#IF
+equal d0 34
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(道) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(道)」
+break
+#IF
+equal d0 35
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(法) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(法)」
+break
+#IF
+equal d0 36
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(战) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(战)」
+break
+#IF
+equal d0 37
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(道) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(道)」
+break
+#IF
+equal d0 38
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(法) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(法)」
+break
+#IF
+equal d0 39
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(战) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(战)」
+break
+#IF
+equal d0 40
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(道) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(道)」
+break
+#IF
+equal d0 41
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(法) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(法)」
+break
+#IF
+equal d0 42
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(战) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(战)」
+break
+#IF
+equal d0 43
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(道) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(道)」
+break
+#IF
+equal d0 44
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(法) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(法)」
+break
+#IF
+equal d0 45
+#ACT
+mov d1 0
+set [100] 0
+give 星王战靴 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战靴」
+break
+#IF
+equal d0 46
+#ACT
+mov d1 0
+set [100] 0
+give 星王道靴 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道靴」
+break
+#IF
+equal d0 47
+#ACT
+mov d1 0
+set [100] 0
+give 星王法靴 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法靴」
+break
+#IF
+equal d0 48
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(战)」
+break
+#IF
+equal d0 49
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(道)」
+break
+#IF
+equal d0 50
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(法)」
+break
+#IF
+equal d0 51
+#ACT
+mov d1 0
+set [100] 0
+give 星王战盔 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战盔」
+break
+#IF
+equal d0 52
+#ACT
+mov d1 0
+set [100] 0
+give 星王道盔 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道盔」
+break
+#IF
+equal d0 53
+#ACT
+mov d1 0
+set [100] 0
+give 星王法冠 1
+AddNameList ..\QuestDiary\数据文件\热52名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法冠」
+break
+#ELSESAY
+该角色不是热血勇士！
+
+[@确认勇士53级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\热53名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 52
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+movr d0 54
+set [100] 1
+DELAYGOTO 1 @勇士53级领奖
+#ELSESAY
+你没有达到53级、现在不能领取！
+
+[@勇士53级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战戒」 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔戒」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道戒」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆护腕」 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰护腕」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒护腕」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆项链」 
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰项链」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒项链」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆腰带」 
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰腰带」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战靴」 
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔靴」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道靴」
+break
+#IF
+equal d0 15
+#ACT
+mov d1 0
+set [100] 0
+give 狂战戒指 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战戒指」
+break
+#IF
+equal d0 16
+#ACT
+mov d1 0
+set [100] 0
+give 太极戒指 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极戒指」
+break
+#IF
+equal d0 17
+#ACT
+mov d1 0
+set [100] 0
+give 混世戒指 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世戒指」
+break
+#IF
+equal d0 18
+#ACT
+mov d1 0
+set [100] 0
+give 狂战手镯 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战手镯」
+break
+#IF
+equal d0 19
+#ACT
+mov d1 0
+set [100] 0
+give 太极手镯 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极手镯」
+break
+#IF
+equal d0 20
+#ACT
+mov d1 0
+set [100] 0
+give 混世手镯 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世手镯」
+break
+#IF
+equal d0 21
+#ACT
+mov d1 0
+set [100] 0
+give 战神戒指 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神戒指」 
+break
+#IF
+equal d0 22
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔戒指 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔戒指」
+break
+#IF
+equal d0 23
+#ACT
+mov d1 0
+set [100] 0
+give 真魂戒指 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂戒指」
+break
+#IF
+equal d0 24
+#ACT
+mov d1 0
+set [100] 0
+give 战神手镯 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神手镯」 
+break
+#IF
+equal d0 25
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔手镯 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔手镯」
+break
+#IF
+equal d0 26
+#ACT
+mov d1 0
+set [100] 0
+give 真魂手镯 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂手镯」
+break
+#IF
+equal d0 27
+#ACT
+mov d1 0
+set [100] 0
+give 战神项链 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神项链」 
+break
+#IF
+equal d0 28
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔项链 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔项链」
+break
+#IF
+equal d0 29
+#ACT
+mov d1 0
+set [100] 0
+give 真魂项链 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂项链」
+break
+#IF
+equal d0 30
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(战)」 
+break
+#IF
+equal d0 31
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(道)」 
+break
+#IF
+equal d0 32
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(法)」 
+break
+#IF
+equal d0 33
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(战) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(战)」
+break
+#IF
+equal d0 34
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(道) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(道)」
+break
+#IF
+equal d0 35
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(法) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(法)」
+break
+#IF
+equal d0 36
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(战) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(战)」
+break
+#IF
+equal d0 37
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(道) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(道)」
+break
+#IF
+equal d0 38
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(法) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(法)」
+break
+#IF
+equal d0 39
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(战) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(战)」
+break
+#IF
+equal d0 40
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(道) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(道)」
+break
+#IF
+equal d0 41
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(法) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(法)」
+break
+#IF
+equal d0 42
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(战) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(战)」
+break
+#IF
+equal d0 43
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(道) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(道)」
+break
+#IF
+equal d0 44
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(法) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(法)」
+break
+#IF
+equal d0 45
+#ACT
+mov d1 0
+set [100] 0
+give 星王战靴 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战靴」
+break
+#IF
+equal d0 46
+#ACT
+mov d1 0
+set [100] 0
+give 星王道靴 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道靴」
+break
+#IF
+equal d0 47
+#ACT
+mov d1 0
+set [100] 0
+give 星王法靴 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法靴」
+break
+#IF
+equal d0 48
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(战)」
+break
+#IF
+equal d0 49
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(道)」
+break
+#IF
+equal d0 50
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(法)」
+break
+#IF
+equal d0 51
+#ACT
+mov d1 0
+set [100] 0
+give 星王战盔 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战盔」
+break
+#IF
+equal d0 52
+#ACT
+mov d1 0
+set [100] 0
+give 星王道盔 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道盔」
+break
+#IF
+equal d0 53
+#ACT
+mov d1 0
+set [100] 0
+give 星王法冠 1
+AddNameList ..\QuestDiary\数据文件\热53名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法冠」
+break
+#ELSESAY
+该角色不是热血勇士！
+
+[@确认勇士54级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\热54名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 53
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+movr d0 54
+set [100] 1
+DELAYGOTO 1 @勇士54级领奖
+#ELSESAY
+你没有达到54级、现在不能领取！
+
+[@勇士54级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战戒」 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔戒」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道戒」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆护腕」 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰护腕」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒护腕」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆项链」 
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰项链」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒项链」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆腰带」 
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰腰带」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战靴」 
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔靴」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道靴」
+break
+#IF
+equal d0 15
+#ACT
+mov d1 0
+set [100] 0
+give 狂战戒指 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战戒指」
+break
+#IF
+equal d0 16
+#ACT
+mov d1 0
+set [100] 0
+give 太极戒指 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极戒指」
+break
+#IF
+equal d0 17
+#ACT
+mov d1 0
+set [100] 0
+give 混世戒指 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世戒指」
+break
+#IF
+equal d0 18
+#ACT
+mov d1 0
+set [100] 0
+give 狂战手镯 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战手镯」
+break
+#IF
+equal d0 19
+#ACT
+mov d1 0
+set [100] 0
+give 太极手镯 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极手镯」
+break
+#IF
+equal d0 20
+#ACT
+mov d1 0
+set [100] 0
+give 混世手镯 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世手镯」
+break
+#IF
+equal d0 21
+#ACT
+mov d1 0
+set [100] 0
+give 战神戒指 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神戒指」 
+break
+#IF
+equal d0 22
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔戒指 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔戒指」
+break
+#IF
+equal d0 23
+#ACT
+mov d1 0
+set [100] 0
+give 真魂戒指 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂戒指」
+break
+#IF
+equal d0 24
+#ACT
+mov d1 0
+set [100] 0
+give 战神手镯 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神手镯」 
+break
+#IF
+equal d0 25
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔手镯 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔手镯」
+break
+#IF
+equal d0 26
+#ACT
+mov d1 0
+set [100] 0
+give 真魂手镯 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂手镯」
+break
+#IF
+equal d0 27
+#ACT
+mov d1 0
+set [100] 0
+give 战神项链 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神项链」 
+break
+#IF
+equal d0 28
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔项链 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔项链」
+break
+#IF
+equal d0 29
+#ACT
+mov d1 0
+set [100] 0
+give 真魂项链 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂项链」
+break
+#IF
+equal d0 30
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(战)」 
+break
+#IF
+equal d0 31
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(道)」 
+break
+#IF
+equal d0 32
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(法)」 
+break
+#IF
+equal d0 33
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(战) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(战)」
+break
+#IF
+equal d0 34
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(道) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(道)」
+break
+#IF
+equal d0 35
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(法) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(法)」
+break
+#IF
+equal d0 36
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(战) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(战)」
+break
+#IF
+equal d0 37
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(道) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(道)」
+break
+#IF
+equal d0 38
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(法) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(法)」
+break
+#IF
+equal d0 39
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(战) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(战)」
+break
+#IF
+equal d0 40
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(道) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(道)」
+break
+#IF
+equal d0 41
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(法) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(法)」
+break
+#IF
+equal d0 42
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(战) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(战)」
+break
+#IF
+equal d0 43
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(道) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(道)」
+break
+#IF
+equal d0 44
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(法) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(法)」
+break
+#IF
+equal d0 45
+#ACT
+mov d1 0
+set [100] 0
+give 星王战靴 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战靴」
+break
+#IF
+equal d0 46
+#ACT
+mov d1 0
+set [100] 0
+give 星王道靴 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道靴」
+break
+#IF
+equal d0 47
+#ACT
+mov d1 0
+set [100] 0
+give 星王法靴 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法靴」
+break
+#IF
+equal d0 48
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(战)」
+break
+#IF
+equal d0 49
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(道)」
+break
+#IF
+equal d0 50
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(法)」
+break
+#IF
+equal d0 51
+#ACT
+mov d1 0
+set [100] 0
+give 星王战盔 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战盔」
+break
+#IF
+equal d0 52
+#ACT
+mov d1 0
+set [100] 0
+give 星王道盔 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道盔」
+break
+#IF
+equal d0 53
+#ACT
+mov d1 0
+set [100] 0
+give 星王法冠 1
+AddNameList ..\QuestDiary\数据文件\热54名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法冠」
+break
+#ELSESAY
+该角色不是热血勇士！
+
+[@确认勇士55级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\热55名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 54
+checknamelist ..\QuestDiary\数据文件\热血勇士.txt
+#ACT
+movr d0 54
+set [100] 1
+DELAYGOTO 1 @勇士55级领奖
+#ELSESAY
+你没有达到55级、现在不能领取！
+
+[@勇士55级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战戒」 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔戒」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道戒」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆护腕」 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰护腕」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒护腕」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆项链」 
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰项链」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒项链」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆腰带」 
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰腰带」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「雷霆战靴」 
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「烈焰魔靴」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「光芒道靴」
+break
+#IF
+equal d0 15
+#ACT
+mov d1 0
+set [100] 0
+give 狂战戒指 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战戒指」
+break
+#IF
+equal d0 16
+#ACT
+mov d1 0
+set [100] 0
+give 太极戒指 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极戒指」
+break
+#IF
+equal d0 17
+#ACT
+mov d1 0
+set [100] 0
+give 混世戒指 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世戒指」
+break
+#IF
+equal d0 18
+#ACT
+mov d1 0
+set [100] 0
+give 狂战手镯 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「狂战手镯」
+break
+#IF
+equal d0 19
+#ACT
+mov d1 0
+set [100] 0
+give 太极手镯 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「太极手镯」
+break
+#IF
+equal d0 20
+#ACT
+mov d1 0
+set [100] 0
+give 混世手镯 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「混世手镯」
+break
+#IF
+equal d0 21
+#ACT
+mov d1 0
+set [100] 0
+give 战神戒指 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神戒指」 
+break
+#IF
+equal d0 22
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔戒指 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔戒指」
+break
+#IF
+equal d0 23
+#ACT
+mov d1 0
+set [100] 0
+give 真魂戒指 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂戒指」
+break
+#IF
+equal d0 24
+#ACT
+mov d1 0
+set [100] 0
+give 战神手镯 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神手镯」 
+break
+#IF
+equal d0 25
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔手镯 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔手镯」
+break
+#IF
+equal d0 26
+#ACT
+mov d1 0
+set [100] 0
+give 真魂手镯 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂手镯」
+break
+#IF
+equal d0 27
+#ACT
+mov d1 0
+set [100] 0
+give 战神项链 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「战神项链」 
+break
+#IF
+equal d0 28
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔项链 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「圣魔项链」
+break
+#IF
+equal d0 29
+#ACT
+mov d1 0
+set [100] 0
+give 真魂项链 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「真魂项链」
+break
+#IF
+equal d0 30
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(战)」 
+break
+#IF
+equal d0 31
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(道)」 
+break
+#IF
+equal d0 32
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「誓言腰带(法)」 
+break
+#IF
+equal d0 33
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(战) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(战)」
+break
+#IF
+equal d0 34
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(道) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(道)」
+break
+#IF
+equal d0 35
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(法) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「预言头盔(法)」
+break
+#IF
+equal d0 36
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(战) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(战)」
+break
+#IF
+equal d0 37
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(道) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(道)」
+break
+#IF
+equal d0 38
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(法) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「传说魔靴(法)」
+break
+#IF
+equal d0 39
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(战) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(战)」
+break
+#IF
+equal d0 40
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(道) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(道)」
+break
+#IF
+equal d0 41
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(法) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「银星勋章(法)」
+break
+#IF
+equal d0 42
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(战) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(战)」
+break
+#IF
+equal d0 43
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(道) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(道)」
+break
+#IF
+equal d0 44
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(法) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「寂静之手(法)」
+break
+#IF
+equal d0 45
+#ACT
+mov d1 0
+set [100] 0
+give 星王战靴 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战靴」
+break
+#IF
+equal d0 46
+#ACT
+mov d1 0
+set [100] 0
+give 星王道靴 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道靴」
+break
+#IF
+equal d0 47
+#ACT
+mov d1 0
+set [100] 0
+give 星王法靴 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法靴」
+break
+#IF
+equal d0 48
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(战) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(战)」
+break
+#IF
+equal d0 49
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(道) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(道)」
+break
+#IF
+equal d0 50
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(法) 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王腰带(法)」
+break
+#IF
+equal d0 51
+#ACT
+mov d1 0
+set [100] 0
+give 星王战盔 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王战盔」
+break
+#IF
+equal d0 52
+#ACT
+mov d1 0
+set [100] 0
+give 星王道盔 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王道盔」
+break
+#IF
+equal d0 53
+#ACT
+mov d1 0
+set [100] 0
+give 星王法冠 1
+AddNameList ..\QuestDiary\数据文件\热55名单.txt
+SENDMSG 5 你是热血勇士，恭喜你获得「星王法冠」
+break
+#ELSESAY
+该角色不是热血勇士！
+
+[@获得热血凭证]
+#if
+checkitem 热血积分 30
+#ACT
+TAKE 热血积分 30
+give 热血凭证 1
+close
+#ELSESAY
+你好象没有足够的热血积分啊，\
+这个热血凭证我暂时不能给你。\
+请你继续努力吧！\
+
+[@查询热血勇士奖励]
+在46-55级，每个等级你都可以到我这里来领取一次奖励，\
+对于高等级的热血勇士，也可领取小于当前等级的所有奖品。\
+46级，可以获得<六件重装>中的任意一件，\
+47-49级，可以获得<雷霆、光芒、烈焰系列首饰>中的任意一件，\
+50-55级，将会在以下超级装备中抽取一件：\
+<魔龙、战神、真魂、圣魔系列，狂战、太极、混世系列，\
+誓言腰带、预言头盔、传说魔靴、银星勋章、静寂之手，\
+星王靴、星王腰带、星王冠>\
+<返回/@热血勇士>\
+
+[@捆热血积分]
+我可以帮你把6个热血积分捆为一个热血积分包，\
+不过每捆一次收费5000金币。\
+你想让我帮你捆热血积分吗？\
+   \
+<捆热血积分/@捆热血积分1>\
+    \
+<返回/@热血勇士>\
+
+[@捆热血积分1]
+#if
+checkitem 热血积分 6
+#ACT
+DELAYGOTO 1 @捆热血积分2
+#ELSESAY
+你没有足够的热血积分啊，没办法帮你捆成一包\
+请继续努力吧\
+    \
+<返回/@热血勇士>\
+
+[@捆热血积分2]
+#if
+checkgold 5000
+checkitem 热血积分 6
+#ACT
+TAKE 热血积分 6
+take 金币 5000
+give 热血积分包 1
+close
+#ELSESAY
+你没有足够的金币，我无法为你服务！\
+
+[@分红系统]
+「错误」：你不符合领奖条件\
+
+
+[@金牌帐号]
+只要你是金牌帐号，这里的奖品就有你一份！\
+在转变为金牌帐号之后，才能进行奖品的领取。\
+领取奖品之前，请保留足够的包裹空间，否则不能正常领取\
+<领取奖品/@金牌帐号领奖>                  <查询奖品设置/@查询金牌帐号奖品>\
+      \ \
+;<白金积分换取白金凭证/@换取白金凭证>\
+         \
+<返回/@main>                      <离开/@exit>\
+
+[@金牌帐号领奖]
+领取奖品之前，请保留足够的包裹空间，否则不能正常领取\
+对于高等级玩家，可领取小于当前等级的所有奖品\
+每个金牌帐号仅一个角色可领取奖品，且每件奖品只能领取1次\
+我回根据你当前的等级，给你相应的奖品\
+<领取奖品/@金牌帐号领奖1>        <查询奖品设置/@查询金牌帐号奖品>\
+<离开/@exit>\
+
+[@金牌帐号领奖1]
+请确认有足够的包裹空间放置奖品,否则不能正常领取\
+如因包裹空间不足,导致不能正常领取,责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+       \
+我有足够的空间,<确认领取/@金牌帐号领奖2>\
+       \
+<查询奖品设置/@查询金牌帐号奖品>              <离开/@exit>\
+
+
+[@金牌帐号领奖2]
+#if
+checknamelist ..\QuestDiary\数据文件\金牌帐号.txt
+#ACT
+DELAYGOTO 1 @金牌帐号领奖3
+#ELSESAY
+该帐号不是金牌帐号！\
+
+[@金牌帐号领奖3]
+您好、非常感谢你对传奇的支持！现在请领奖吧！\
+领取10级奖励、我有足够的空间，<确认领取/@确认金牌10级成功>\
+领取15级奖励、我有足够的空间，<确认领取/@确认金牌15级成功>\
+领取28级奖励、我有足够的空间，<确认领取/@确认金牌28级成功>\
+领取35级奖励、我有足够的空间，<确认领取/@确认金牌35级成功>\
+领取40级奖励、我有足够的空间，<确认领取/@确认金牌40级成功>\
+领取42级奖励、我有足够的空间，<确认领取/@确认金牌42级成功>\
+领取44级奖励、我有足够的空间，<确认领取/@确认金牌44级成功>\
+领取47级奖励、我有足够的空间，<确认领取/@确认金牌47级成功>\
+
+[@确认金牌10级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\金10名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 9
+checknamelist ..\QuestDiary\数据文件\金牌帐号.txt
+#ACT
+set [100] 1
+DELAYGOTO 1 @金10级领奖
+#ELSESAY
+您没有达到10级！不能领取奖励！
+
+[@金10级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+#ACT
+set [100] 0
+give 金币 100000
+AddNameList ..\QuestDiary\数据文件\金10名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「金币10万」! 
+break
+#ELSESAY
+该帐号不是金牌帐号！
+
+[@确认金牌15级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\金15名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 14
+checknamelist ..\QuestDiary\数据文件\金牌帐号.txt
+#ACT
+set [100] 1
+DELAYGOTO 1 @金15级领奖
+#ELSESAY
+您没有达到15级！不能领取奖励！
+
+[@金15级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+#ACT
+set [100] 0
+give 金条 1
+AddNameList ..\QuestDiary\数据文件\金15名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「金条1根」! 
+break
+#ELSESAY
+该帐号不是金牌帐号！
+
+[@确认金牌28级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\金28名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 27
+checknamelist ..\QuestDiary\数据文件\金牌帐号.txt
+#ACT
+movr d0 6
+set [100] 1
+DELAYGOTO 1 @金28级领奖
+#ELSESAY
+您没有达到28级！不能领取奖励！
+
+[@金28级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 井中月 1
+AddNameList ..\QuestDiary\数据文件\金28名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「井中月」! 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 魔杖 1
+AddNameList ..\QuestDiary\数据文件\金28名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「魔杖」! 
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 无极棍 1
+AddNameList ..\QuestDiary\数据文件\金28名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「无极棍」! 
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 红宝石戒指 1
+AddNameList ..\QuestDiary\数据文件\金28名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「红宝石戒指」! 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 铂金戒指 1
+AddNameList ..\QuestDiary\数据文件\金28名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「铂金戒指」! 
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 龙之戒指 1
+AddNameList ..\QuestDiary\数据文件\金28名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「龙之戒指」! 
+break
+#ELSESAY
+该帐号不是金牌帐号！
+
+[@确认金牌35级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\金35名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 34
+checknamelist ..\QuestDiary\数据文件\金牌帐号.txt
+#ACT
+movr d0 3
+set [100] 1
+DELAYGOTO 1 @金35级领奖
+#ELSESAY
+您没有达到35级！不能领取奖励！
+
+[@金35级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 力量戒指 1
+AddNameList ..\QuestDiary\数据文件\金35名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「力量戒指」! 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 泰坦戒指 1
+AddNameList ..\QuestDiary\数据文件\金35名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「泰坦戒指」! 
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 紫碧螺 1
+AddNameList ..\QuestDiary\数据文件\金35名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「紫碧螺」! 
+break
+#ELSESAY
+该帐号不是金牌帐号！
+
+[@确认金牌40级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\金40名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 39
+checknamelist ..\QuestDiary\数据文件\金牌帐号.txt
+#ACT
+movr d0 3
+set [100] 1
+DELAYGOTO 1 @金40级领奖
+#ELSESAY
+您没有达到40级！不能领取奖励！
+
+[@金40级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 裁决之杖 1
+AddNameList ..\QuestDiary\数据文件\金40名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「裁决之杖」! 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 龙纹剑 1
+AddNameList ..\QuestDiary\数据文件\金40名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「龙纹剑」! 
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 骨玉权杖 1
+AddNameList ..\QuestDiary\数据文件\金40名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「骨玉权杖」! 
+break
+#ELSESAY
+该帐号不是金牌帐号！
+
+[@确认金牌42级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\金42名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 41
+checknamelist ..\QuestDiary\数据文件\金牌帐号.txt
+#ACT
+movr d0 6
+set [100] 1
+DELAYGOTO 1 @金42级领奖
+#ELSESAY
+您没有达到42级！不能领取奖励！
+
+[@金42级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 圣战宝甲 1
+AddNameList ..\QuestDiary\数据文件\金42名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「圣战宝甲」一件! 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 霓裳羽衣 1
+AddNameList ..\QuestDiary\数据文件\金42名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「霓裳羽衣」一件! 
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 天师长袍 1
+AddNameList ..\QuestDiary\数据文件\金42名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「天师长袍」一件! 
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 天魔神甲 1
+AddNameList ..\QuestDiary\数据文件\金42名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「天魔神甲」一件! 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 法神披风 1
+AddNameList ..\QuestDiary\数据文件\金42名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「法神披风」一件! 
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 天尊道袍 1
+AddNameList ..\QuestDiary\数据文件\金42名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「天尊道袍」一件! 
+break
+#ELSESAY
+该帐号不是金牌帐号！
+
+[@确认金牌44级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\金44名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 43
+checknamelist ..\QuestDiary\数据文件\金牌帐号.txt
+#ACT
+movr d0 5
+set [100] 1
+DELAYGOTO 1 @金44级领奖
+#ELSESAY
+您没有达到44级！不能领取奖励！
+
+[@金44级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 灭天火 1
+AddNameList ..\QuestDiary\数据文件\金44名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「灭天火」一本! 
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 气功波 1
+AddNameList ..\QuestDiary\数据文件\金44名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「气功波」一本! 
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 狮子吼 1
+AddNameList ..\QuestDiary\数据文件\金44名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「狮子吼」一本! 
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 寒冰掌 1
+AddNameList ..\QuestDiary\数据文件\金44名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「寒冰掌」一本! 
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 无极真气 1
+AddNameList ..\QuestDiary\数据文件\金44名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「无极真气」一本! 
+break
+#ELSESAY
+该帐号不是金牌帐号！
+
+[@确认金牌47级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\金47名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 46
+checknamelist ..\QuestDiary\数据文件\金牌帐号.txt
+#ACT
+movr d0 15
+set [100] 1
+DELAYGOTO 1 @金47级领奖
+#ELSESAY
+您没有达到47级！不能领取奖励！
+
+[@金47级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「雷霆战戒」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「光芒道戒」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「烈焰魔戒」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「雷霆护腕」
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「光芒护腕」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「烈焰护腕」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「雷霆项链」
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「光芒项链」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「烈焰项链」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「雷霆腰带」
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「烈焰腰带」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「雷霆腰带」
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「光芒腰带」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带 1
+AddNameList ..\QuestDiary\数据文件\金47名单.txt
+SENDMSG 5 你是金牌帐号，恭喜你获得「烈焰腰带」
+break
+#ELSESAY
+该帐号不是金牌帐号！
+
+[@查询金牌帐号奖品]
+金牌帐号的奖品设置：在相应的等级可领取相应的奖品：\
+10级：游戏金币10万\
+15级：金条1根\
+28级：随机获得井中月、魔杖、无机棍、红宝石戒指、铂金\
+戒指、龙之戒指中的任意1件\
+35级：随机获得力量戒指、泰坦戒指、紫碧螺中的任意1件\
+40级：随机获得裁决之杖、骨玉权杖、龙纹剑中的任意1件\
+<查看下一页/@查询金牌帐号奖品1>             <返回/@金牌帐号>
+
+[@查询金牌帐号奖品1]
+42级:随机获得天魔神甲、圣战宝甲、天尊道袍、天师长袍、\
+霓裳羽衣、法神披风，这六件40级重装中的任意1件\
+44级:随机获得三职业1.8版新技能：灭天火、寒冰掌、\
+气功波、无极真气、狮子吼中的任意1本\
+47级:均可在以下物品中随机领取一样物品\
+雷霆战戒、雷霆护腕、雷霆项链、雷霆腰带、雷霆战靴\
+光芒道戒、光芒护腕、光芒项链、光芒腰带、光芒道靴\
+烈焰魔戒、烈焰护腕、烈焰项链、烈焰腰带、烈焰魔靴\
+        \
+<返回/@金牌帐号>\
+
+
+[@换取白金凭证]
+咳咳，你有白金积分吗？\
+我对白金积分非常感兴趣，据说它源自沙巴克的一个传说。\
+如果你把手头的白金积分给我，我会非常感谢你，\
+作为回报，我会给你白金凭证！\
+给我30个白金积分，我就送你一个白金凭证。\
+<给30个白金积分/@积分>换取白金凭证\
+<返回/@main>
+
+[@积分]
+#if
+checkitem 白金积分 30
+#ACT
+TAKE 白金积分 30
+give 白金凭证 1
+close
+#ELSESAY
+你好象没有足够的白金积分啊，\
+这个白金凭证我暂时不能给你。\
+请你继续努力吧！\

@@ -1,0 +1,19 @@
+[@main]
+#if
+checklevelex > 39
+CHECKCREDITPOINT > 9
+#act
+CREDITPOINT - 10
+OPENBOOK 0
+#elseSAY
+传送失败：\
+1.等级未满40级\
+2.没有10点声望\ \
+<友情提醒：>\
+声望可以去魔龙等地打赤月、魔龙装备\
+然后找装备回收员兑换声望...\
+
+[@HeroMap]
+#ACT
+close
+MAPMOVE HERO1 215 206

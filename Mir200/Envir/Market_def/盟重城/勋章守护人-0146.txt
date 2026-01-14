@@ -1,0 +1,1712 @@
+[@main]
+这里可以领取荣誉勋章,只要有足够的声望值,\
+等级越高的勋章需要越多的声望值。各级勋章所需条件如下：\
+一级勋章需要:声望值10点,兑换指定编号的一级勋章需要声望值40点\
+二级勋章需要:声望值20点,兑换指定编号的二级勋章需要声望值80点\
+三级勋章需要:声望值30点,兑换指定编号的三级勋章需要声望值120点\
+四级勋章需要:声望值40点,兑换指定编号的四级勋章需要声望值160点\
+<兑换荣誉勋章/@兑换荣誉勋章>                          <兑换五级荣誉勋章/@兑换五级荣誉勋章>\
+<升级荣誉勋章/@升级荣誉勋章>                          <升级五级荣誉勋章/@升级五级荣誉勋章>\
+<查询声望点数/@查询声望>\
+[@查询声望]
+声望值:<$CREDITPOINT>\
+[@升级荣誉勋章]
+勋章可成功升级的次数与勋章的等级一致,即1级勋章只能成功升级1次\
+首先请将需要升级的荣誉勋章佩带在身上而不是放在你的包裹内,\
+其次你需要在包裹内放好升级荣誉勋章的各种材料，\
+每次升级荣誉勋章都会收走你包裹内的所有原料,请保管好重要物品.\
+勋章升级分为两种，一种是常规升级，一种是“惊彩”升级。\
+<查看升级配方/@查看升级配方>\
+<查看升级次数/@查看升级次数>\
+<选择勋章常规升级/@常规升级>\
+<选择勋章惊彩升级/@惊彩升级>\
+<返回/@main>
+[@查看升级次数]
+勋章可以进行升级，各个等级的勋章每次成功升级后可增加1点上限属性。\
+不同等级的勋章升级次数各不相同。 \
+勋章等级   勋章编号    可成功升级次数 成功升级后的最高属性 \
+一级勋章  11－15号勋章      1次             0－2 \
+二级勋章  21－25号勋章      2次             0－4 \
+三级勋章  31－35号勋章      3次             1－5 \
+四级勋章  41－45号勋章      4次             1－7 \
+<返回/@升级荣誉勋章>
+[@查看升级配方]
+常规升级中,1级和2级勋章的配方中需要加入和属性属性对应的祖玛首饰,\
+3级和4级勋章的配方中需要加入圣战、法神、天尊三职业对应套装首饰,\
+防御和魔法防御类勋章的升级配方中需放入黑铁头盔,\
+每次升级必须具备5种物品:首饰,祈福项链,勋章之心,绿宝石矿,紫水晶矿\
+5种物品的数量需要你来配,这个我帮不了你,总之越接近配方成功率越高\
+勋章常规升级失败了勋章不会破碎，但失败后勋章的属性将恢复到初始化\
+惊彩升级中，你可以知道明确的配方，但是只有50%的成功机会，\
+失败的话勋章就会破碎，如果未符合配方要求的话也肯定会破碎的。\
+<返回上页/@升级荣誉勋章>
+[@惊彩升级]
+想要进行荣誉勋章的“惊彩”升级？\
+这个……\
+你还是等等再来吧！\
+<返回/@升级荣誉勋章>
+[@兑换荣誉勋章]
+想要领取荣誉勋章的话你必须要有足够的声望值，\
+指定兑换和随机兑换都可以声望进行兑换\
+<领取随机勋章/@领取随机勋章>\
+<领取指定勋章/@领取指定勋章>\
+<返回/@main>\
+[@常规升级]
+#IF
+#ACT
+MOV D0 0
+#IF
+CHECKITEMW 荣誉勋章11号
+#ACT
+goto @升荣誉勋章11号
+break
+#IF
+CHECKITEMW 荣誉勋章12号
+#ACT
+goto @升荣誉勋章12号
+break
+#IF
+CHECKITEMW 荣誉勋章13号
+#ACT
+goto @升荣誉勋章13号
+break
+#IF
+CHECKITEMW 荣誉勋章14号
+#ACT
+goto @升荣誉勋章14号
+break
+#IF
+CHECKITEMW 荣誉勋章15号
+#ACT
+goto @升荣誉勋章15号
+break
+#IF
+CHECKITEMW 荣誉勋章21号
+#ACT
+goto @升荣誉勋章21号
+break
+#IF
+CHECKITEMW 荣誉勋章22号
+#ACT
+goto @升荣誉勋章22号
+break
+#IF
+CHECKITEMW 荣誉勋章23号
+#ACT
+goto @升荣誉勋章23号
+break
+#IF
+CHECKITEMW 荣誉勋章24号
+#ACT
+goto @升荣誉勋章24号
+break
+#IF
+CHECKITEMW 荣誉勋章25号
+#ACT
+goto @升荣誉勋章25号
+break
+#IF
+CHECKITEMW 荣誉勋章31号
+#ACT
+goto @升荣誉勋章31号
+break
+#IF
+CHECKITEMW 荣誉勋章32号
+#ACT
+goto @升荣誉勋章32号
+break
+#IF
+CHECKITEMW 荣誉勋章33号
+#ACT
+goto @升荣誉勋章33号
+break
+#IF
+CHECKITEMW 荣誉勋章34号
+#ACT
+goto @升荣誉勋章34号
+break
+#IF
+CHECKITEMW 荣誉勋章35号
+#ACT
+goto @升荣誉勋章35号
+break
+#IF
+CHECKITEMW 荣誉勋章41号
+#ACT
+goto @升荣誉勋章41号
+break
+#IF
+CHECKITEMW 荣誉勋章42号
+#ACT
+goto @升荣誉勋章42号
+break
+#IF
+CHECKITEMW 荣誉勋章43号
+#ACT
+goto @升荣誉勋章43号
+break
+#IF
+CHECKITEMW 荣誉勋章44号
+#ACT
+goto @升荣誉勋章44号
+break
+#IF
+CHECKITEMW 荣誉勋章45号
+#ACT
+goto @升荣誉勋章45号
+break
+#ELSESAY
+请将想要升级的勋章佩戴到身上.
+[@升荣誉勋章11号]
+#IF
+CHECKITEMADDVALUE 2 0 > 0
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章11号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 0 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章21号]
+#IF
+CHECKITEMADDVALUE 2 0 > 1
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章21号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 0 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章31号]
+#IF
+CHECKITEMADDVALUE 2 0 > 2
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章31号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 0 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章41号]
+#IF
+CHECKITEMADDVALUE 2 0 > 3
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章41号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 0 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章12号]
+#IF
+CHECKITEMADDVALUE 2 1 > 0
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章12号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 1 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章22号]
+#IF
+CHECKITEMADDVALUE 2 1 > 1
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章22号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 1 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章32号]
+#IF
+CHECKITEMADDVALUE 2 1 > 2
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章32号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 1 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章42号]
+#IF
+CHECKITEMADDVALUE 2 1 > 3
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章42号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+checkitem 黑铁头盔 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 黑铁头盔 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 1 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章13号]
+#IF
+CHECKITEMADDVALUE 2 2 > 0
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 绿色项链 1
+#ACT
+mov D0 1
+#IF
+checkitem 骑士手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 力量戒指 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 绿色项链 46
+take 骑士手镯 46
+take 力量戒指 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章13号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 绿色项链 46
+take 骑士手镯 46
+take 力量戒指 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 2 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章23号]
+#IF
+CHECKITEMADDVALUE 2 2 > 1
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 绿色项链 1
+#ACT
+mov D0 1
+#IF
+checkitem 骑士手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 力量戒指 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 绿色项链 46
+take 骑士手镯 46
+take 力量戒指 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章23号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 绿色项链 46
+take 骑士手镯 46
+take 力量戒指 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 2 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章33号]
+#IF
+CHECKITEMADDVALUE 2 2 > 2
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 圣战项链 1
+#ACT
+mov D0 1
+#IF
+checkitem 圣战手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 圣战戒指 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 圣战项链 46
+take 圣战手镯 46
+take 圣战戒指 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章33号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 圣战项链 46
+take 圣战手镯 46
+take 圣战戒指 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 2 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章43号]
+#IF
+CHECKITEMADDVALUE 2 2 > 3
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 圣战项链 1
+#ACT
+mov D0 1
+#IF
+checkitem 圣战手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 圣战戒指 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 圣战项链 46
+take 圣战手镯 46
+take 圣战戒指 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章43号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 圣战项链 46
+take 圣战手镯 46
+take 圣战戒指 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 2 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章14号]
+#IF
+CHECKITEMADDVALUE 2 3 > 0
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 恶魔铃铛 1
+#ACT
+mov D0 1
+#IF
+checkitem 龙之手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 紫碧螺 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 恶魔铃铛 46
+take 龙之手镯 46
+take 紫碧螺 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章14号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 恶魔铃铛 46
+take 龙之手镯 46
+take 紫碧螺 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 3 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章24号]
+#IF
+CHECKITEMADDVALUE 2 3 > 1
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 恶魔铃铛 1
+#ACT
+mov D0 1
+#IF
+checkitem 龙之手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 紫碧螺 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 恶魔铃铛 46
+take 龙之手镯 46
+take 紫碧螺 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章24号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 恶魔铃铛 46
+take 龙之手镯 46
+take 紫碧螺 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 3 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章34号]
+#IF
+CHECKITEMADDVALUE 2 3 > 2
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 法神项链 1
+#ACT
+mov D0 1
+#IF
+checkitem 法神手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 法神戒指 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 法神项链 46
+take 法神手镯 46
+take 法神戒指 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章34号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 法神项链 46
+take 法神手镯 46
+take 法神戒指 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 3 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章44号]
+#IF
+CHECKITEMADDVALUE 2 3 > 3
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 法神项链 1
+#ACT
+mov D0 1
+#IF
+checkitem 法神手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 法神戒指 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 法神项链 46
+take 法神手镯 46
+take 法神戒指 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章44号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 法神项链 46
+take 法神手镯 46
+take 法神戒指 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 3 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章15号]
+#IF
+CHECKITEMADDVALUE 2 4 > 0
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 灵魂项链 1
+#ACT
+mov D0 1
+#IF
+checkitem 三眼手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 泰坦戒指 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 灵魂项链 46
+take 三眼手镯 46
+take 泰坦戒指 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章15号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 灵魂项链 46
+take 三眼手镯 46
+take 泰坦戒指 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 4 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章25号]
+#IF
+CHECKITEMADDVALUE 2 4 > 1
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 灵魂项链 1
+#ACT
+mov D0 1
+#IF
+checkitem 三眼手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 泰坦戒指 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 灵魂项链 46
+take 三眼手镯 46
+take 泰坦戒指 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章25号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 灵魂项链 46
+take 三眼手镯 46
+take 泰坦戒指 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 4 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章35号]
+#IF
+CHECKITEMADDVALUE 2 4 > 2
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 天尊项链 1
+#ACT
+mov D0 1
+#IF
+checkitem 天尊手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 天尊戒指 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 天尊项链 46
+take 天尊手镯 46
+take 天尊戒指 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章35号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 天尊项链 46
+take 天尊手镯 46
+take 天尊戒指 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 4 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@升荣誉勋章45号]
+#IF
+CHECKITEMADDVALUE 2 4 > 3
+#ACT
+break
+#SAY
+此勋章已经升为最高级，无法再进行升级了。
+#IF
+checkitem 天尊项链 1
+#ACT
+mov D0 1
+#IF
+checkitem 天尊手镯 1
+#ACT
+mov D0 1
+#IF
+checkitem 天尊戒指 1
+#ACT
+mov D0 1
+#IF
+equal D0 0
+#ACT
+break
+#SAY
+升级所需的材料不足！
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+random 3
+#ACT
+take 天尊项链 46
+take 天尊手镯 46
+take 天尊戒指 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+takew 荣誉勋章45号 1
+break
+#SAY
+很可惜，你的勋章升级失败了。
+#IF
+equal D0 1
+checkitem 祈福项链 1
+checkitem 勋章之心 1
+checkitem 绿宝石矿 1
+checkitem 紫水晶矿 1
+#ACT
+take 天尊项链 46
+take 天尊手镯 46
+take 天尊戒指 46
+take 祈福项链 46
+take 祈福项链 46
+take 勋章之心 46
+TAKE 绿宝石矿 46
+take 紫水晶矿 46
+UPGRADEITEMEX 2 4 0 1 0
+#SAY
+祝贺你，你的荣誉勋章升级成功了！
+#ELSESAY
+升级所需的材料不足！
+[@领取随机勋章]
+请选择需要领取的荣誉勋章，这里是随机领取的。\
+<随机领取11至15号荣誉勋章/@10hao>\
+<随机领取21至25号荣誉勋章/@20hao>\
+<随机领取31至35号荣誉勋章/@30hao>\
+<随机领取41至45号荣誉勋章/@40hao>\
+<返回/@兑换荣誉勋章>\
+;━━━━━━━━━━[荣誉勋章11号——至15号]━━━━━━━━━
+[@10hao]
+#IF
+CHECKCREDITPOINT > 9
+#ACT
+goto @声望换10hao
+#ELSESAY
+领取的种类非法或你的声望值不够！
+[@声望换10hao]
+#if
+CHECKCREDITPOINT < 10
+#act
+break
+#if
+#ACT
+CREDITPOINT - 10
+#SAY
+兑换成功！拿好了，别掉了。
+#IF
+random 5
+#act
+give 荣誉勋章11号 1
+break
+#if
+random 4
+#act
+give 荣誉勋章12号 1
+break
+#if
+random 3
+#act
+give 荣誉勋章13号 1
+break
+#if
+random 2
+#act
+give 荣誉勋章14号 1
+#ELSEACT
+give 荣誉勋章15号 1
+;━━━━━━━━━━[荣誉勋章21号——至25号]━━━━━━━━━
+[@20hao]
+#IF
+CHECKCREDITPOINT > 19
+#ACT
+goto @声望换20hao
+#ELSESAY
+领取的种类非法或你的声望值不够！
+[@声望换20hao]
+#if
+CHECKCREDITPOINT < 20
+#act
+break
+#if
+#ACT
+CREDITPOINT - 20
+#SAY
+兑换成功！拿好了，别掉了。
+#IF
+random 5
+#act
+give 荣誉勋章21号 1
+break
+#if
+random 4
+#act
+give 荣誉勋章22号 1
+break
+#if
+random 3
+#act
+give 荣誉勋章23号 1
+break
+#if
+random 2
+#act
+give 荣誉勋章24号 1
+#ELSEACT
+give 荣誉勋章25号 1
+;━━━━━━━━━━[荣誉勋章31号——至35号]━━━━━━━━━
+[@30hao]
+#IF
+CHECKCREDITPOINT > 29
+#ACT
+goto @声望换30hao
+#ELSESAY
+领取的种类非法或你的声望值不够！
+[@声望换30hao]
+#if
+CHECKCREDITPOINT < 30
+#act
+break
+#if
+#ACT
+CREDITPOINT - 30
+#SAY
+兑换成功！拿好了，别掉了。
+#IF
+random 5
+#act
+give 荣誉勋章31号 1
+break
+#if
+random 4
+#act
+give 荣誉勋章32号 1
+break
+#if
+random 3
+#act
+give 荣誉勋章33号 1
+break
+#if
+random 2
+#act
+give 荣誉勋章34号 1
+#ELSEACT
+give 荣誉勋章35号 1
+;━━━━━━━━━━[荣誉勋章41号——至45号]━━━━━━━━━
+[@40hao]
+#IF
+CHECKCREDITPOINT > 39
+#ACT
+goto @声望换40hao
+#ELSESAY
+领取的种类非法或你的声望值不够！
+[@声望换40hao]
+#if
+CHECKCREDITPOINT < 40
+#act
+break
+#if
+#ACT
+CREDITPOINT - 40
+#SAY
+兑换成功！拿好了，别掉了。
+#IF
+random 5
+#act
+give 荣誉勋章41号 1
+break
+#if
+random 4
+#act
+give 荣誉勋章42号 1
+break
+#if
+random 3
+#act
+give 荣誉勋章43号 1
+break
+#if
+random 2
+#act
+give 荣誉勋章44号 1
+#ELSEACT
+give 荣誉勋章45号 1
+[@领取指定勋章]
+这里你可以领取指定的荣誉勋章，\
+当然，你要付出更多的声望值。\
+<荣誉勋章11号/@荣誉勋章11号>  <荣誉勋章21号/@荣誉勋章21号>  <荣誉勋章31号/@荣誉勋章31号>  <荣誉勋章41号/@荣誉勋章41号>\
+<荣誉勋章12号/@荣誉勋章12号>  <荣誉勋章22号/@荣誉勋章22号>  <荣誉勋章32号/@荣誉勋章32号>  <荣誉勋章42号/@荣誉勋章42号>\
+<荣誉勋章13号/@荣誉勋章13号>  <荣誉勋章23号/@荣誉勋章23号>  <荣誉勋章33号/@荣誉勋章33号>  <荣誉勋章43号/@荣誉勋章43号>\
+<荣誉勋章14号/@荣誉勋章14号>  <荣誉勋章24号/@荣誉勋章24号>  <荣誉勋章34号/@荣誉勋章34号>  <荣誉勋章44号/@荣誉勋章44号>\
+<荣誉勋章15号/@荣誉勋章15号>  <荣誉勋章25号/@荣誉勋章25号>  <荣誉勋章35号/@荣誉勋章35号>  <荣誉勋章45号/@荣誉勋章45号>\
+<返回/@兑换荣誉勋章>\
+;━━━━━━━━━━[荣誉勋章11号——至15号]━━━━━━━━━
+[@荣誉勋章11号]
+#if
+CHECKCREDITPOINT > 39
+#act
+CREDITPOINT - 40
+give 荣誉勋章11号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章12号]
+#if
+CHECKCREDITPOINT > 39
+#act
+CREDITPOINT - 40
+give 荣誉勋章12号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章13号]
+#if
+CHECKCREDITPOINT > 39
+#act
+CREDITPOINT - 40
+give 荣誉勋章13号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章14号]
+#if
+CHECKCREDITPOINT > 39
+#act
+CREDITPOINT - 40
+give 荣誉勋章14号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章15号]
+#if
+CHECKCREDITPOINT > 39
+#act
+CREDITPOINT - 40
+give 荣誉勋章15号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+;━━━━━━━━━━[荣誉勋章21号——至25号]━━━━━━━━━
+[@荣誉勋章21号]
+#if
+CHECKCREDITPOINT > 79
+#act
+CREDITPOINT - 80
+give 荣誉勋章21号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章22号]
+#if
+CHECKCREDITPOINT > 79
+#act
+CREDITPOINT - 80
+give 荣誉勋章22号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章23号]
+#if
+CHECKCREDITPOINT > 79
+#act
+CREDITPOINT - 80
+give 荣誉勋章23号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章24号]
+#if
+CHECKCREDITPOINT > 79
+#act
+CREDITPOINT - 80
+give 荣誉勋章24号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章25号]
+#if
+CHECKCREDITPOINT > 79
+#act
+CREDITPOINT - 80
+give 荣誉勋章25号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+;━━━━━━━━━━[荣誉勋章31号——至35号]━━━━━━━━━
+[@荣誉勋章31号]
+#if
+CHECKCREDITPOINT > 119
+#act
+CREDITPOINT - 120
+give 荣誉勋章31号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章32号]
+#if
+CHECKCREDITPOINT > 119
+#act
+CREDITPOINT - 120
+give 荣誉勋章32号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章33号]
+#if
+CHECKCREDITPOINT > 119
+#act
+CREDITPOINT - 120
+give 荣誉勋章33号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章34号]
+#if
+CHECKCREDITPOINT > 119
+#act
+CREDITPOINT - 120
+give 荣誉勋章34号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章35号]
+#if
+CHECKCREDITPOINT > 119
+#act
+CREDITPOINT - 120
+give 荣誉勋章35号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+;━━━━━━━━━━[荣誉勋章41号——至45号]━━━━━━━━━
+[@荣誉勋章41号]
+#if
+CHECKCREDITPOINT > 159
+#act
+CREDITPOINT - 160
+give 荣誉勋章41号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章42号]
+#if
+CHECKCREDITPOINT > 159
+#act
+CREDITPOINT - 160
+give 荣誉勋章42号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章43号]
+#if
+CHECKCREDITPOINT > 159
+#act
+CREDITPOINT - 160
+give 荣誉勋章43号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章44号]
+#if
+CHECKCREDITPOINT > 159
+#act
+CREDITPOINT - 160
+give 荣誉勋章44号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@荣誉勋章45号]
+#if
+CHECKCREDITPOINT > 159
+#act
+CREDITPOINT - 160
+give 荣誉勋章45号 1
+#SAY
+兑换成功！拿好了，别掉了。
+#ELSESAY
+你的声望值不符合兑换条件！
+[@兑换五级荣誉勋章]
+五级勋章的领取将只能指定进行兑换，而不能随机进行兑换\
+指定兑换五级勋章将需要付出声望240点\
+\ \
+<领取指定五级勋章/@领取指定五级勋章>\
+<返回/@main>
+[@领取指定五级勋章]
+请选择需要领取的荣誉勋章,五级勋章是指定领取的\
+指定兑换需要付出240点声望\
+\ \
+<指定兑换荣誉勋章51号/@指定兑换51号>\
+<指定兑换荣誉勋章52号/@指定兑换52号>\
+<指定兑换荣誉勋章53号/@指定兑换53号>\
+<指定兑换荣誉勋章54号/@指定兑换54号>\
+<指定兑换荣誉勋章55号/@指定兑换55号>\
+[@指定兑换51号]
+#IF
+CHECKCREDITPOINT > 239
+#ACT
+CREDITPOINT - 240
+give 荣誉勋章51号 1
+#SAY
+荣誉勋章51号兑换成功！
+#ELSESAY
+你的声望值不够！
+[@指定兑换52号]
+#IF
+CHECKCREDITPOINT > 239
+#ACT
+CREDITPOINT - 240
+give 荣誉勋章52号 1
+#SAY
+荣誉勋章52号兑换成功！
+#ELSESAY
+你的声望值不够！
+[@指定兑换53号]
+#IF
+CHECKCREDITPOINT > 239
+#ACT
+CREDITPOINT - 240
+give 荣誉勋章53号 1
+#SAY
+荣誉勋章53号兑换成功！
+#ELSESAY
+你的声望值不够！
+[@指定兑换54号]
+#IF
+CHECKCREDITPOINT > 239
+#ACT
+CREDITPOINT - 240
+give 荣誉勋章54号 1
+#SAY
+荣誉勋章54号兑换成功！
+#ELSESAY
+你的声望值不够！
+[@指定兑换55号]
+#IF
+CHECKCREDITPOINT > 239
+#ACT
+CREDITPOINT - 240
+give 荣誉勋章55号 1
+#SAY
+荣誉勋章55号兑换成功！
+#ELSESAY
+你的声望值不够！
+[@升级五级荣誉勋章]
+五级荣誉勋章可不简单，要升级也没那么荣誉。\
+一但升级后，勋章的魔力就会释放，威力大的无法形容！\
+但是传说这个勋章同时也隐藏着惊人的秘密。\
+你知道这个秘密吗？\
+<我知道了/@我知道了>\
+<我不知道/@我不知道>
+[@我知道了]
+那就请你告诉我吧...\
+\ \
+<返回/@main>
+[@我不知道]
+既然不知道，那还有什么好说的？\
+你还是再去打听打听再来吧。\
+\ \
+<返回/@main>

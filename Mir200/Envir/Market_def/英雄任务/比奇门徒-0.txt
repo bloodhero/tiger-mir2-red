@@ -1,0 +1,99 @@
+[@main]
+#IF
+check [57] 1
+#ACT
+break
+#SAY
+少侠对我白日门的恩情在下铭记于心，
+#IF
+check [25] 1
+#ACT
+break
+#SAY
+感谢少侠救出我白日门的兄弟。
+#IF
+check [15] 1
+#ACT
+break
+#SAY
+上次你来了后\
+敌方将我的同门都秘密转移了\
+听在盟重的兄弟说，他们可能被转移到了沙巴克\
+你或许可以到沙巴克打听下消息吧\
+<嗯，好的/@exit>
+#IF
+check [13] 1
+checkitem 白日门令牌 1
+#ACT
+inc P0 1
+break
+#SAY
+这次可千万小心，别让人给逮了!\
+<放心了!/@出示令牌2>
+#IF
+check [12] 1
+checkitem 白日门令牌 1
+#SAY
+这位小兄弟找我何事\
+<出示令牌：朋友可识得此物!/@出示令牌>
+#ELSESAY
+朋友，看你最近一直在这里晃悠\
+想干吗啊，找东西吗?\
+要俺帮忙吗?\
+<呵呵，我在找个人/@exit>
+[@出示令牌]
+白日照浪?!\
+朋友竟然有我白日门的信物!\
+是不是门主他老人家让你来找我的，\
+<嘘，小声点，别那么大声啊!/@出示令牌1>\
+<我是受你们门主之托营救你们被抓的同门的/@出示令牌1>\
+<你是否有他们的消息/@出示令牌1>
+[@出示令牌1]
+原来是这样的...\
+不瞒您说，我现在就守着可以通向关押地的通道!\
+我这就送你去!\
+那边守卫很严，你千忘要小心行事啊!\
+他们很快就会察觉你的，要尽快行动!\
+<好的，送我过去吧/@出示令牌2>
+[@出示令牌2]
+#IF
+checkhum T1341A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkhum B342A 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#ELSEACT
+set [13] 1
+set [14] 0
+CLEARMAPMON T1341A
+CLEARMAPMON B342A
+CLEARMAPMON 0162
+Param1 T1341A
+Param2 20
+Param3 20
+MonGen 牢房守卫 6 5
+MAPMOVE T1341A 6 34
+CLEARDELAYGOTO
+DELAYGOTO 1800000 @30回比
+[@30回比]
+#IF
+ISONMAP T1341A
+#ACT
+map 0
+break
+#IF
+ISONMAP B342A
+#ACT
+map 0
+break
+#IF
+ISONMAP 0162
+#ACT
+map 0
+break

@@ -1,0 +1,131 @@
+[@main]
+#IF
+checkgold 5000
+#SAY
+欢迎来到庄园，大家可以先欣赏下这里的美丽景色，\
+目前庄园只有中庭开放元宝锻造和元宝交易功能，\
+其他的各种神秘功能将会逐渐开放，别忘了常来看看哦！\
+#ELSESAY
+是仓库管理员叫你来的吧，肯定是求我做花叶包鸡吧,\
+我已经求过我好几次了，不过我太忙，一直没答应他，\
+既然你来求我，我肯定要给你面子，我就抽空做一碗，\
+要做菜要材料，要麻烦你给我找一块纯度4以上的鸡肉就可以了\
+<我有材料，先交给你/@我有材料>\
+<好吧，我去找材料/@exit>
+[@我有材料]
+#IF
+checkduraeva 鸡肉 4
+#SAY
+你找到材料了啊，这只是第一而已哦\
+我最近迷上了猜拳游戏，你必须和我猜上一拳\
+如果你赢了我，我就马上给你做\
+不管输赢，材料我都要收了的哦\
+<好，开始猜拳/@开始猜拳>\
+\ \
+<让我想一会/@exit>
+#ELSESAY
+你没有足够的材料
+[@开始猜拳]
+#IF
+checkduraeva 鸡肉 4
+#say
+好，有勇气，来吧，看看谁的运气更好\
+不过事先说明了，打平也是你输哦，材料也会被收的哦\
+\ \
+<出剪刀/@出剪刀>       <出石头/@出石头>       <出布/@出布>\
+\ \
+<让我想一会/@eixt>
+#ELSESAY
+你的材料不够啊
+[@出剪刀]
+#ACT
+mov S0 剪刀
+#IF
+random 3
+#ACT
+mov S1 剪刀
+goto @平
+break
+#IF
+random 2
+#ACT
+mov S1 石头
+goto @输
+#ELSEACT
+mov S1 布
+goto @赢
+[@出石头]
+#ACT
+mov S0 石头
+#IF
+random 3
+#ACT
+mov S1 石头
+goto @平
+break
+#IF
+random 2
+#ACT
+mov S1 布
+goto @输
+#ELSEACT
+mov S1 剪刀
+goto @赢
+[@出布]
+#ACT
+mov S0 布
+#IF
+random 3
+#ACT
+mov S1 布
+goto @平
+break
+#IF
+random 2
+#ACT
+mov S1 剪刀
+goto @输
+#ELSEACT
+mov S1 石头
+goto @赢
+[@赢]
+#IF
+checkduraeva 鸡肉 4
+#SAY
+你出<$STR(S0)>……我出<$STR(S1)>……哎呀，我输了\
+你是不是现在就要花叶包鸡呢？\
+<给我东西吧/@给我东西>\
+<算了，还是下一次吧/@鸡肉用途>
+#ELSESAY
+你的材料不够啊
+[@平]
+#IF
+checkduraeva 鸡肉 4
+#ACT
+TAKE 鸡肉 46
+#SAY
+你出<$STR(S0)>……我也是<$STR(S1)>……打平,还是你输，呵呵
+#ELSESAY
+你的材料不够啊
+[@输]
+#IF
+checkduraeva 鸡肉 4
+#ACT
+TAKE 鸡肉 46
+#SAY
+你出的<$STR(S0)>……我出<$STR(S1)>……哈哈，你输了
+#ELSESAY
+你的材料不够啊
+[@给我东西]
+#IF
+checkduraeva 鸡肉 4
+#ACT
+take 鸡肉 46
+give 花叶包鸡 1
+#ELSESAY
+你的材料不够啊
+[@鸡肉用途]
+告诉你，庄园的花匠还知道鸡肉其它的用途，\
+不过他最近有事情，向比奇国王请假回家了，\
+他好象知道一些鸡肉的神秘用途，不过一直不肯说\
+<离开/@exit>

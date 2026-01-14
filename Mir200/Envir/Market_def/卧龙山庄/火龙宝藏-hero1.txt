@@ -1,0 +1,159 @@
+[@main]
+#IF
+equal I8 1
+#act
+goto @lingqbz
+#elsesay
+火龙宝藏还没有开启。\
+
+
+
+[@lingqbz]
+#IF
+equal I9 0
+#say
+只有真正的勇士，才能配得上宝藏的光环！\
+你既然在20分钟内就击败了所有的“宝藏守护者”，\
+证明你的确实力超群。\
+火龙宝藏，即将开启！！\
+#elsesay
+现在你可以领取宝箱中的宝藏了。\
+不过请先预留6个以上的包裹空间，\
+否则将可能不能正常领取。\\
+<领取宝藏/@lqbz>\
+[@lqbz]
+#if 
+large I7 30
+#SAY
+对不起，宝藏已经被取完
+#elseact
+goto @hlbz
+[@hlbz]
+#if
+random 6
+#ACT
+give 祝福油 3
+SENDMSG 0 %s从火龙宝藏中搜寻到了：祝福油:3
+INC I7 1
+break
+#if
+random 6
+#ACT
+GAMEDIAMOND + 30
+SENDMSG 0 %s从火龙宝藏中搜寻到了：金刚石:30
+INC I7 1
+break
+#if
+random 2
+#ACT
+give 火龙珠
+SENDMSG 0 %s从火龙宝藏中搜寻到了：火龙珠:1
+INC I7 1
+break
+#if
+random 10
+#ACT
+give 光芒项链
+SENDMSG 0 %s从火龙宝藏中搜寻到了：光芒项链:1
+INC I7 1
+break
+#if
+random 10
+#ACT
+give 雷霆项链
+SENDMSG 0 %s从火龙宝藏中搜寻到了：雷霆项链:1
+INC I7 1
+break
+#if
+random 10
+#ACT
+give 烈焰项链
+SENDMSG 0 %s从火龙宝藏中搜寻到了：烈焰项链:1
+INC I7 1
+break
+#if
+random 10
+#ACT
+give 光芒道戒
+SENDMSG 0 %s从火龙宝藏中搜寻到了：光芒道戒:1
+INC I7 1
+break
+#if
+random 10
+#ACT
+give 雷霆战戒
+SENDMSG 0 %s从火龙宝藏中搜寻到了：雷霆战戒:1
+INC I7 1
+break
+#if
+random 10
+#ACT
+give 烈焰魔戒
+SENDMSG 0 %s从火龙宝藏中搜寻到了：烈焰魔戒:1
+INC I7 1
+break
+#if
+random 10
+#ACT
+give 雷霆护腕
+SENDMSG 0 %s从火龙宝藏中搜寻到了：雷霆护腕:1
+INC I7 1
+break
+#if
+random 10
+#ACT
+give 光芒护腕
+SENDMSG 0 %s从火龙宝藏中搜寻到了：光芒护腕:1
+INC I7 1
+break
+#if
+random 10
+#ACT
+give 烈焰护腕
+SENDMSG 0 %s从火龙宝藏中搜寻到了：烈焰护腕:1
+INC I7 1
+break
+#if
+random 5
+#ACT
+give 雷霆战靴
+SENDMSG 0 %s从火龙宝藏中搜寻到了：雷霆战靴:1
+INC I7 1
+break
+#if
+random 5
+#ACT
+give 烈焰魔靴
+SENDMSG 0 %s从火龙宝藏中搜寻到了：烈焰魔靴:1
+INC I7 1
+break
+#IF
+random 5
+#ACT
+give 光芒道靴
+SENDMSG 0 %s从火龙宝藏中搜寻到了：光芒道靴:1
+INC I7 1
+break
+#IF
+random 5
+#ACT
+give 雷霆腰带
+SENDMSG 0 %s从火龙宝藏中搜寻到了：雷霆腰带:1
+INC I7 1
+break
+#IF
+random 5
+#ACT
+give 烈焰腰带
+SENDMSG 0 %s从火龙宝藏中搜寻到了：烈焰腰带:1
+INC I7 1
+break
+#IF
+random 5
+#ACT
+give 光芒腰带
+SENDMSG 0 %s从火龙宝藏中搜寻到了：光芒腰带:1
+INC I7 1
+#elsesay
+似乎搜到了什么，心一慌，手不由自主的缩了回来。\
+继续搜索一下吧，再试一次说不定就会得到其中的宝物了!\

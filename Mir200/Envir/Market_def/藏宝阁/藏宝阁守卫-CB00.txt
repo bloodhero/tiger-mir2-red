@@ -1,0 +1,1465 @@
+
+[@main]
+你好，<$USERNAME>，这里是藏宝阁0号，\
+你将获得一次的机会，前进。\
+另外，如果你有多余的乾坤令，可以在我这里捆绑。\
+5个乾坤令可以捆绑成一个乾坤令包。\
+
+<开始投骰子/@掷骰子>            <捆绑乾坤令/@捆绑乾坤>\  \              
+<兑换乾坤令/@兑换乾坤令>           <离开藏宝阁/@离开藏宝阁>
+
+[@兑换乾坤令]
+如果你不想要你身上的乾坤令，那就给我吧，\
+我对于这些散落的令牌非常感兴趣，\
+作为感谢，我给你些经验奖励。\ \
+<给你乾坤令/@兑换乾坤令1>\ \
+<返回/@main>\
+
+[@兑换乾坤令1]
+#IF
+CHECKITEM 乾坤令 1
+#ACT
+TAKE 乾坤令 1
+Changeexp + 20000
+#ELSESAY
+你没有足够的乾坤令啊！\
+<退出/@Exit>
+
+[@捆绑乾坤]
+#IF
+CHECKITEM 乾坤令 5
+#ACT
+TAKE 乾坤令 5
+give 乾坤令包 1
+#SAY
+解读成功
+#ELSESAY
+5个乾坤令可以捆绑成一个乾坤令包。\
+如果你已经带来了，就交给我吧！\
+
+[@掷骰子]
+#IF
+check [441] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁01>
+#ACT
+BREAK
+#IF
+check [442] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁02>
+#ACT
+BREAK
+#IF
+check [443] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁03>
+#ACT
+BREAK
+#IF
+check [444] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁04>
+#ACT
+BREAK
+#IF
+check [445] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁05>
+#ACT
+BREAK
+#IF
+check [446] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁06>
+#ACT
+BREAK
+#IF
+check [447] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁07>
+#ACT
+BREAK
+#IF
+check [448] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁08>
+#ACT
+BREAK
+#IF
+check [449] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁09>
+#ACT
+BREAK
+#IF
+check [450] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁10>
+#ACT
+BREAK
+#IF
+check [451] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁11>
+#ACT
+BREAK
+#IF
+check [452] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁12>
+#ACT
+BREAK
+#IF
+check [453] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁13>
+#ACT
+BREAK
+#IF
+check [454] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁14>
+#ACT
+BREAK
+#IF
+check [455] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁15>
+#ACT
+BREAK
+#IF
+check [456] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁16>
+#ACT
+BREAK
+#IF
+check [457] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁17>
+#ACT
+BREAK
+#IF
+check [458] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁18>
+#ACT
+BREAK
+#IF
+check [459] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁19>
+#ACT
+BREAK
+#IF
+check [460] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁20>
+#ACT
+BREAK
+#IF
+check [461] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁21>
+#ACT
+BREAK
+#IF
+check [462] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁22>
+#ACT
+BREAK
+#IF
+check [463] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁23>
+#ACT
+BREAK
+#IF
+check [464] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁24>
+#ACT
+BREAK
+#IF
+check [465] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁25>
+#ACT
+BREAK
+#IF
+check [466] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁26>
+#ACT
+BREAK
+#IF
+check [467] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁27>
+#ACT
+BREAK
+#IF
+check [468] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁28>
+#ACT
+BREAK
+#IF
+check [469] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁29>
+#ACT
+BREAK
+#IF
+check [470] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁30>
+#ACT
+BREAK
+#IF
+check [471] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁31>
+#ACT
+BREAK
+#IF
+check [472] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的密室。\ \
+
+<进入藏宝阁/@藏宝阁32>
+#ACT
+BREAK
+#IF
+check [473] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁33>
+#ACT
+BREAK
+#IF
+check [474] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁34>
+#ACT
+BREAK
+#IF
+check [475] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁35>
+#ACT
+BREAK
+#IF
+check [476] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁36>
+#ACT
+BREAK
+#IF
+check [477] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁37>
+#ACT
+BREAK
+#IF
+check [478] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁38>
+#ACT
+BREAK
+#IF
+check [479] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁39>
+#ACT
+BREAK
+#IF
+check [480] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁40>
+#ACT
+BREAK
+#IF
+check [481] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁41>
+#ACT
+BREAK
+#IF
+check [482] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁42>
+#ACT
+BREAK
+#IF
+check [483] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁43>
+#ACT
+BREAK
+#IF
+check [484] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁44>
+#ACT
+BREAK
+#IF
+check [485] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁45>
+#ACT
+BREAK
+#IF
+check [486] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁46>
+#ACT
+BREAK
+#IF
+check [487] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁47>
+#ACT
+BREAK
+#IF
+check [488] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁48>
+#ACT
+BREAK
+#IF
+check [489] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁49>
+#ACT
+BREAK
+#IF
+check [490] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁50>
+#ACT
+BREAK
+#IF
+check [491] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁51>
+#ACT
+BREAK
+#IF
+check [492] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁52>
+#ACT
+BREAK
+#IF
+check [493] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁53>
+#ACT
+BREAK
+#IF
+check [494] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁54>
+#ACT
+BREAK
+#IF
+check [495] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁55>
+#ACT
+BREAK
+#IF
+check [496] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁56>
+#ACT
+BREAK
+#IF
+check [497] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁57>
+#ACT
+BREAK
+#IF
+check [498] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁58>
+#ACT
+BREAK
+#IF
+check [499] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁59>
+#ACT
+BREAK
+#IF
+check [500] 1
+#SAY
+如果你之前没有完成考验而中途离开，\
+这次你将直接到达上次你离开时所在的藏宝阁。\ \
+
+<进入藏宝阁/@藏宝阁60>
+#ACT
+BREAK
+#IF
+check [441] 0
+check [442] 0
+check [443] 0
+check [444] 0
+check [445] 0
+check [446] 0
+check [447] 0
+check [448] 0
+check [449] 0
+check [450] 0
+check [451] 0
+check [452] 0
+check [453] 0
+check [454] 0
+check [455] 0
+check [456] 0
+check [457] 0
+check [458] 0
+check [459] 0
+check [460] 0
+check [461] 0
+check [462] 0
+check [463] 0
+check [464] 0
+check [465] 0
+check [466] 0
+check [467] 0
+check [468] 0
+check [469] 0
+check [470] 0
+check [471] 0
+check [472] 0
+check [473] 0
+check [474] 0
+check [475] 0
+check [476] 0
+check [477] 0
+check [478] 0
+check [479] 0
+check [480] 0
+check [481] 0
+check [482] 0
+check [483] 0
+check [484] 0
+check [485] 0
+check [486] 0
+check [487] 0
+check [488] 0
+check [489] 0
+check [490] 0
+check [491] 0
+check [492] 0
+check [493] 0
+check [494] 0
+check [495] 0
+check [496] 0
+check [497] 0
+check [498] 0
+check [499] 0
+check [500] 0
+#ACT
+movr d0 6 
+inc d0 1 
+playdice 1 @cube_cds-2
+BREAK
+
+[@cube_cds-2]
+#IF
+equal D0 1
+#SAY
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [441] 1
+break
+#IF
+equal D0 2
+#SAY
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [442] 1
+break
+#IF
+equal D0 3
+#SAY
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [443] 1
+break
+#IF
+equal D0 4
+#SAY
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [444] 1
+break
+#IF
+equal D0 5
+#SAY
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [445] 1
+break
+#IF
+equal D0 6
+#SAY
+骰子的点数 <$STR(D0)>\ 
+你可以前进 <$STR(D0)>\ \
+
+<移动/@cube_cds-3>
+#ACT
+SET [446] 1
+break
+
+[@cube_cds-3]
+#IF
+equal D0 1
+#ACT
+batchDelay 1
+addbatch CB01
+batchmove
+Param1 CB01
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB01 15 15 秘室守护兽1|1|242 2 1
+break
+#IF
+equal D0 2
+#ACT
+batchDelay 1
+addbatch CB01
+addbatch CB02
+batchmove
+Param1 CB02
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB02 15 15 秘室守护兽1|1|242 2 1
+break
+#IF
+equal D0 3
+#ACT
+batchDelay 1
+addbatch CB01
+addbatch CB02
+addbatch CB03
+batchmove
+Param1 CB03
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB03 15 15 秘室守护兽1|1|242 2 1
+break
+#IF
+equal D0 4
+#ACT
+batchDelay 1
+addbatch CB01
+addbatch CB02
+addbatch CB03
+addbatch CB04
+batchmove
+Param1 CB04
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB04 15 15 秘室守护兽1|1|242 2 1
+break
+#IF
+equal D0 5
+#ACT
+batchDelay 1
+addbatch CB01
+addbatch CB02
+addbatch CB03
+addbatch CB04
+addbatch CB05
+batchmove
+Param1 CB05
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB05 15 15 秘室守护兽1|1|242 2 1
+break
+#IF
+equal D0 6
+#ACT
+batchDelay 1
+addbatch CB01
+addbatch CB02
+addbatch CB03
+addbatch CB04
+addbatch CB05
+addbatch CB06
+batchmove
+Param1 CB06
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB06 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁01]
+#if
+#act
+mapmove CB01
+Param1 CB01
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB01 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁02]
+#if
+#act
+mapmove CB02
+Param1 CB02
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB02 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁03]
+#if
+#act
+mapmove CB03
+Param1 CB03
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB03 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁04]
+#if
+#act
+mapmove CB04
+Param1 CB04
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB04 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁05]
+#if
+#act
+mapmove CB05
+Param1 CB05
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB05 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁06]
+#if
+#act
+mapmove CB06
+Param1 CB06
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB06 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁07]
+#if
+#act
+mapmove CB07
+Param1 CB07
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB07 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁08]
+#if
+#act
+mapmove CB08
+Param1 CB08
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB08 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁09]
+#if
+#act
+mapmove CB09
+Param1 CB09
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB09 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁10]
+#if
+#act
+mapmove CB10
+Param1 CB10
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB10 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁11]
+#if
+#act
+mapmove CB11
+Param1 CB11
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB11 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁12]
+#if
+#act
+mapmove CB12
+Param1 CB12
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB12 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁13]
+#if
+#act
+mapmove CB13
+Param1 CB13
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB13 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁14]
+#if
+#act
+mapmove CB14
+Param1 CB14
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB14 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁15]
+#if
+#act
+mapmove CB15
+Param1 CB15
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB15 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁16]
+#if
+#act
+mapmove CB16
+Param1 CB16
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB16 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁17]
+#if
+#act
+mapmove CB17
+Param1 CB17
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB17 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁18]
+#if
+#act
+mapmove CB18
+Param1 CB18
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB18 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁19]
+#if
+#act
+mapmove CB19
+Param1 CB19
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB19 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁20]
+#if
+#act
+mapmove CB20
+Param1 CB20
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB20 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁21]
+#if
+#act
+mapmove CB21
+Param1 CB21
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB21 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁22]
+#if
+#act
+mapmove CB22
+Param1 CB22
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB22 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁23]
+#if
+#act
+mapmove CB23
+Param1 CB23
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB23 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁24]
+#if
+#act
+mapmove CB24
+Param1 CB24
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB24 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁25]
+#if
+#act
+mapmove CB25
+Param1 CB25
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB25 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁26]
+#if
+#act
+mapmove CB26
+Param1 CB26
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB26 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁27]
+#if
+#act
+mapmove CB27
+Param1 CB27
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB27 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁28]
+#if
+#act
+mapmove CB28
+Param1 CB28
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB28 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁29]
+#if
+#act
+mapmove CB29
+Param1 CB29
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB29 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁30]
+#if
+#act
+mapmove CB30
+Param1 CB30
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB30 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁31]
+#if
+#act
+mapmove CB31
+Param1 CB31
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB31 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁32]
+#if
+#act
+mapmove CB32
+Param1 CB32
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB32 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁33]
+#if
+#act
+mapmove CB33
+Param1 CB33
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB33 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁34]
+#if
+#act
+mapmove CB34
+Param1 CB34
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB34 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁35]
+#if
+#act
+mapmove CB35
+Param1 CB35
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB35 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁36]
+#if
+#act
+mapmove CB36
+Param1 CB36
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB36 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁37]
+#if
+#act
+mapmove CB37
+Param1 CB37
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB37 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁38]
+#if
+#act
+mapmove CB38
+Param1 CB38
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB38 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁39]
+#if
+#act
+mapmove CB39
+Param1 CB39
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB39 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁40]
+#if
+#act
+mapmove CB40
+Param1 CB40
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB40 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁41]
+#if
+#act
+mapmove CB41
+Param1 CB41
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB41 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁42]
+#if
+#act
+mapmove CB42
+Param1 CB42
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB42 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁43]
+#if
+#act
+mapmove CB43
+Param1 CB43
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB43 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁44]
+#if
+#act
+mapmove CB44
+Param1 CB44
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB44 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁45]
+#if
+#act
+mapmove CB45
+Param1 CB45
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB45 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁46]
+#if
+#act
+mapmove CB46
+Param1 CB46
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB46 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁47]
+#if
+#act
+mapmove CB47
+Param1 CB47
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB47 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁48]
+#if
+#act
+mapmove CB48
+Param1 CB48
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB48 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁49]
+#if
+#act
+mapmove CB49
+Param1 CB49
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB49 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁50]
+#if
+#act
+mapmove CB50
+Param1 CB50
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB50 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁51]
+#if
+#act
+mapmove CB51
+Param1 CB51
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB51 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁52]
+#if
+#act
+mapmove CB52
+Param1 CB52
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB52 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁53]
+#if
+#act
+mapmove CB53
+Param1 CB53
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB53 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁54]
+#if
+#act
+mapmove CB54
+Param1 CB54
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB54 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁55]
+#if
+#act
+mapmove CB55
+Param1 CB55
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB55 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁56]
+#if
+#act
+mapmove CB56
+Param1 CB56
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB56 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁57]
+#if
+#act
+mapmove CB57
+Param1 CB57
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB57 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁58]
+#if
+#act
+mapmove CB58
+Param1 CB58
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB58 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁59]
+#if
+#act
+mapmove CB59
+Param1 CB59
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB59 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@藏宝阁60]
+#if
+#act
+mapmove CB60
+Param1 CB60
+Param2 15
+Param3 15
+MonGen 秘室守护兽1 1 
+MONGENEX CB60 15 15 秘室守护兽1|1|242 2 1
+break
+
+[@离开藏宝阁]
+#IF
+#ACT
+mapmove 3 330 330
+break
+
+

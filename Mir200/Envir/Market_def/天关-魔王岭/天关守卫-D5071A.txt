@@ -1,0 +1,90 @@
+[@main]
+亲爱的<$USERNAME>：你好！看来你已经做好了进入天关的准备\
+我马上让你进入天关挑战自己，发现属于自己的宝藏\
+注意：从天关任何一个地点内小退重新上线您将返回天庭\
+<进入天关寻宝/@开始闯天关>\ \
+<关闭对话/@exit>                   <查询圣殿灵符/@查询圣殿灵符>\ 
+
+[@查询圣殿灵符]
+<查询圣殿灵符的数量/@灵符的数量> \       \
+<打听圣殿宝藏/@打听宝藏> \       \
+<返回/@main>
+
+[@灵符的数量]
+
+您现在拥有圣殿灵符：<$HUMAN(圣殿灵符)>\
+\ \
+<返回/@main>
+
+[@打听宝藏]
+传说天关之中除了大家众所周知的奇珍异宝之外，\
+其实还存在着圣殿，其中也隐藏着宝藏。\
+只有使用圣殿灵符才能进入天关中的圣殿，\
+寻找其中隐藏的宝藏。\
+<返回/@MAIN>
+
+[@开始闯天关]
+#if
+CHECKMAPHUMANCOUNT EM001 = 0
+#ACT
+mapmove EM001 18 25
+CLEARMAPMON EM001
+set [121] 0
+set [122] 0
+mov M0 0
+mov M1 0
+#ELSEACT
+goto @开始闯天关1
+
+[@开始闯天关1]
+#if
+CHECKMAPHUMANCOUNT EM002 = 0
+#ACT
+mapmove EM002 18 25
+CLEARMAPMON EM002
+set [121] 0
+set [122] 0
+mov M0 0
+mov M1 0
+#ELSEACT
+goto @开始闯天关2
+
+[@开始闯天关2]
+#if
+CHECKMAPHUMANCOUNT EM003 = 0
+#ACT
+mapmove EM003 18 25
+CLEARMAPMON EM003
+set [121] 0
+set [122] 0
+mov M0 0
+mov M1 0
+#ELSEACT
+goto @开始闯天关3
+
+[@开始闯天关3]
+#if
+CHECKMAPHUMANCOUNT EM004 = 0
+#ACT
+mapmove EM004 18 25
+CLEARMAPMON EM004
+set [121] 0
+set [122] 0
+mov M0 0
+mov M1 0
+#ELSEACT
+goto @开始闯天关4
+
+[@开始闯天关4]
+#if
+CHECKMAPHUMANCOUNT EM005 = 0
+#ACT
+mapmove EM005 18 25
+CLEARMAPMON EM005
+set [121] 0
+set [122] 0
+mov M0 0
+mov M1 0
+#ELSESAY
+天关满员，请继续点进入寻宝，抢位置，或者请稍等！
+<返回/@main>

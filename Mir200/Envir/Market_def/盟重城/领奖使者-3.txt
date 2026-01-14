@@ -1,0 +1,4280 @@
+[@main]
+天官赐福，财源广进。此话不假啊！\
+跟你透露一个消失吧，<白金帐号61级以上也可以领取奖励了>。\
+<白金帐号领奖/@白金帐号领奖>\
+<60级以上白金帐号奖励物品领奖/@60白金领奖>\
+\ \
+<解除领取物品的禁锢/@解除禁锢>               <领取魔王岭屠魔周赛奖励/@屠魔周赛奖励>\
+<使用祝福糕/@使祝福糕>                       <使用乾坤袋/@使乾坤袋> \
+<活动道具领奖/@活动道具领奖>
+
+[@屠魔周赛奖励]
+我这里的奖品都是国王为勇士而备的，\
+只有上周位列魔王岭屠魔赛前十命的勇士，才有资格领取。\
+只能在我这里领取上一周的奖励，如果你获奖了，请及时来领取。\
+每次将从奖励列表中随机抽取1件，所以先预留出6个包裹空间把。\
+我确认有足够包裹空间，<领取奖励/@屠魔领奖>\ \
+<查询屠魔赛可以获得的奖励/@查询可以获得的奖励>            <了解屠魔赛规则/@屠魔规则>\ \
+<返回/@main>
+
+
+[@屠魔领奖]
+年轻人，还要继续努力啊，\
+你似乎不在领奖名单上，我无法给你国王的奖赏\
+
+[@查询可以获得的奖励]
+<第1名奖励查询/@第一名>\ \
+<第2名奖励查询/@第二名>\ \
+<第3名奖励查询/@第三名>\ \
+<第4-6名奖励查询/@第四名>\ \
+<第7-10名奖励查询/@第七名>\ \
+
+[@第一名]
+第1名：<星王冠 星王腰带 星王靴/@>\
+       <战神、真魂、圣魔系列，狂战、混世、太极系列/@>\
+       <强化雷霆、强化光芒、强化烈焰系列/@>\
+       <斗笠、祝福糕、白金积分/@>\
+       <雷霆、光芒、烈焰系列/@>\ \
+<返回/@main>
+
+[@第二名]
+第2名：<战神、真魂、圣魔系列，狂战、混世、太极系列/@>\
+       <强化雷霆、强化光芒、强化烈焰系列/@>\
+       <斗笠、祝福糕、白金积分/@>\
+       <雷霆、光芒、烈焰系列/@>\ \
+<返回/@main>
+
+[@第三名]
+第3名：<狂战、混世、太极系列/@>\
+       <强化雷霆、强化光芒、强化烈焰系列/@>\
+       <斗笠、祝福糕、白金积分/@>\
+       <雷霆、光芒、烈焰系列/@>\ \
+<返回/@main>
+
+[@第四名]
+第4-6名：<强化雷霆、强化光芒、强化烈焰系列/@>\
+       <斗笠、祝福糕、白金积分/@>\
+       <雷霆、光芒、烈焰系列/@>\ \
+       <各类藏宝图/@>\ \
+<返回/@main>
+
+[@第七名]
+第7-10名：<斗笠、祝福糕、白金积分/@>\
+       <雷霆、光芒、烈焰系列/@>\
+       <各类藏宝图/@>\ \
+<返回/@main>
+
+[@屠魔规则]
+魔王岭的怪物异常强大，因此要获得奖赏可不是件容易的事情。\
+只有当你成功歼灭所有怪物时，方可记上一次战功。\
+当天的战绩可于第二天早上7点后，在屠魔赛上查询到。\
+每走，比奇国王都会根据勇士全歼怪物的次数,\
+给予战绩最显赫的前10名勇士，以丰厚的奖励！\
+全歼的次数越多，则战绩越显赫，获得的奖赏就越珍贵，\
+战绩位列首位者，还可获得神秘大奖!\
+全歼怪物次数的记录周期为：每周日早上7点至下周日早上7点。\
+<返回/@main>
+
+[@活动道具领奖]
+你是过来领奖的吧，我马上给你，\
+不过请你先预留30个包裹空间，
+否则，不能正常领取物品可不能怪我哦！\    \
+
+我确定有足够包裹空间，<领取奖励/@领取奖励> \        \
+
+<兑换欢乐礼包/@兑换欢乐礼包>               <解开命运之书/@解开命运之书>
+[@兑换欢乐礼包]
+只要你有欢乐礼包，我就可以给你一份礼物。\
+但是你如果想要这份礼物，还需要给我12颗金刚石，\
+兑奖之前请先预留5格以上包裹空间，否则可能无法正常领取。\ \
+<礼包兑奖/@礼包兑奖>
+
+[@解开命运之书]
+传说中命运之书隐藏着一些神秘地点提示，那些地点中藏有宝物\
+但知道这个传说人太多，所以命运之书也有了很多赝品\
+听说在商城中有很多命运之书，运气好就可能在哪里掏到真品\
+如果你带来的命运之书是真品，那么我就能给你很好的报酬\
+如果你带来的命运之书是赝品，......我多少还是会给你点意思意思的\
+要提醒你注意件事，报酬可能是数个，请你记得留下5个以上包裹空间\  \
+<看看我带来的命运之书吧/@看看命运之书>
+
+[@看看命运之书]
+#if
+  CHECKITEM 命运之书 1
+#act
+goto @有命运之书
+#elsesay
+你有命运之书吗？我怎么没有看见呢？
+
+[@有命运之书]
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 26
+#ACT
+  TAKE 命运之书 1
+  GIVE 心心相印包 1
+  GIVE 一心一意包 1
+  GIVE 飞火流星包 1
+  GIVE 比奇传送石 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 25
+#ACT
+  TAKE 命运之书 1
+  GIVE 心心相印包 1
+  GIVE 一心一意包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 24
+#ACT
+  TAKE 命运之书 1
+  GIVE 飞火流星包 1
+  GIVE 心心相印包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 23
+#ACT
+  TAKE 命运之书 1
+  GIVE 浪漫星雨包 1
+  GIVE 飞火流星包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 22
+#ACT
+  TAKE 命运之书 1
+  GIVE 浪漫星雨包 1
+  GIVE 绮梦幻想包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 21
+#ACT
+  TAKE 命运之书 1
+  GIVE 长空火舞包 1
+  GIVE 绮梦幻想包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 20
+#ACT
+  TAKE 命运之书 1
+  GIVE 长空火舞包 1
+  GIVE 如雾似梦包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 19
+#ACT
+  TAKE 命运之书 1
+  GIVE 乾坤袋 1
+  GIVE 如雾似梦包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 18
+#ACT
+  TAKE 命运之书 1
+  GIVE 比奇传送石 1
+  GIVE 乾坤袋 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 17
+#ACT
+  TAKE 命运之书 1
+  GIVE 盟重传送石 1
+  GIVE 比奇传送石 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 16
+#ACT
+  TAKE 命运之书 1
+  GIVE 随机传送石 1
+  GIVE 盟重传送石 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 15
+#ACT
+  TAKE 命运之书 1
+  GIVE 勋章之心 1
+  GIVE 随机传送石 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 14
+#ACT
+  TAKE 命运之书 1
+  GIVE 祈福项链 1
+  GIVE 勋章之心 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 13
+#ACT
+  TAKE 命运之书 1
+  GIVE 一心一意包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 12
+#ACT
+  TAKE 命运之书 1
+  GIVE 心心相印包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 11
+#ACT
+  TAKE 命运之书 1
+  GIVE 飞火流星包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 10
+#ACT
+  TAKE 命运之书 1
+  GIVE 浪漫星雨包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 9
+#ACT
+  TAKE 命运之书 1
+  GIVE 绮梦幻想包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 8
+#ACT
+  TAKE 命运之书 1
+  GIVE 长空火舞包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 7
+#ACT
+  TAKE 命运之书 1
+  GIVE 如雾似梦包 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 6
+#ACT
+  TAKE 命运之书 1
+  GIVE 乾坤袋 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 5
+#ACT
+  TAKE 命运之书 1
+  GIVE 比奇传送石 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 4
+#ACT
+  TAKE 命运之书 1
+  GIVE 盟重传送石 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 3
+#ACT
+  TAKE 命运之书 1
+  GIVE 随机传送石 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 2
+#ACT
+  TAKE 命运之书 1
+  GIVE 勋章之心 1
+  BREAK
+#IF
+  CHECKITEM 命运之书 1
+  RANDOM 1
+#ACT
+  TAKE 命运之书 1
+  GIVE 祈福项链 1
+  BREAK
+
+[@礼包兑奖]
+#IF
+checkitem 欢乐礼包 1
+CHECKGAMEDIAMOND > 11
+#act
+GAMEDIAMOND - 12
+TAKE 欢乐礼包 1
+GIVE 千里传音(大) 1
+GIVE 一心一意包 1
+GIVE 心心相印包 1
+GIVE 飞火流星包 1
+GIVE 浪漫星雨包 1
+GIVE 绮梦幻想包 1
+#elsesay
+你没有带来欢乐礼包，或金刚石数量不足啊！\ \
+<返回/@兑换欢乐礼包>
+[@领取奖励]
+对不起，你没有可以领取的活动道具
+
+[@60白金领奖]
+我已经准备好了61级以上的白金帐号奖励，你可以现在就来领取。\
+61级以上的白金帐号奖励包括;\
+61、62级：星王靴、星王腰带、星王冠中随机一件\
+63-65级：包含<星王首饰>在内的星王全套中任意一件\
+66级：包含<星王首饰>在内的星王全套中任意一件，\
+更有机会获得三把神器<开天、镇天、玄天>的其中一把\
+不过每次领取之前，都必须首先给我6个白金积分。\
+<领取奖励/@61上领奖>\
+<返回/@main>
+
+[@61上领奖]
+#IF
+CHECKLEVELEX > 60
+checkitem 白金积分 6
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+GOTO @领白金奖3
+break
+
+#IF
+CHECKLEVELEX > 60
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#SAY
+您是白金帐号，但需给我6个白金积分才可以进行领取！
+#ACT
+break
+
+#IF
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#SAY
+您是白金帐号，但需达到60级或以上才可以进行领取！
+#ELSESAY
+你不是白金帐号，不能到我这里领取奖励！
+
+[@领白金奖3]
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取61级奖励/@确认61级成功>    <确认领取62级奖励/@确认62级成功>\
+<确认领取63级奖励/@确认63级成功>    <确认领取64级奖励/@确认64级成功>\
+<确认领取65级奖励/@确认65级成功>    <确认领取66级奖励/@确认66级成功>\
+<返回/@main>    <离开/@exit>\
+
+[@确认61级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白61名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！\
+#act
+break
+#IF
+CHECKLEVELEX > 60
+checkitem 白金积分 6
+#ACT
+take 白金积分 6
+movr d0 3
+goto @61级奖品
+#SAY
+61级奖品领取成功！\
+
+[@确认62级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白62名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！\
+#act
+break
+#IF
+CHECKLEVELEX > 61
+checkitem 白金积分 6
+#ACT
+take 白金积分 6
+movr d0 3
+goto @62级奖品
+#SAY
+62级奖品领取成功！\
+
+[@确认63级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白63名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！\
+#act
+break
+#IF
+CHECKLEVELEX > 62
+checkitem 白金积分 6
+#ACT
+take 白金积分 6
+movr d0 5
+goto @63级奖品
+#SAY
+63级奖品领取成功！\
+
+[@确认64级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白64名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！\
+#act
+break
+#IF
+CHECKLEVELEX > 63
+checkitem 白金积分 6
+#ACT
+take 白金积分 6
+movr d0 5
+goto @64级奖品
+#SAY
+64级奖品领取成功！\
+
+[@确认65级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白65名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！\
+#act
+break
+#IF
+CHECKLEVELEX > 64
+checkitem 白金积分 6
+#ACT
+take 白金积分 6
+movr d0 5
+goto @65级奖品
+#SAY
+65级奖品领取成功！\
+
+[@确认66级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白66名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！\
+#act
+break
+#IF
+CHECKLEVELEX > 65
+checkitem 白金积分 6
+#ACT
+take 白金积分 6
+movr d0 3
+goto @66级奖品
+#SAY
+66级奖品领取成功！\
+#ELSESAY
+你已经领取了符合目前等级的相应奖品！
+
+[@61级奖品]
+#IF
+equal d0 0
+#ACT
+give 星王靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白61名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王靴(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+give 星王腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白61名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王腰带(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+give 星王冠(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白61名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王冠(禁锢)」
+break
+
+[@62级奖品]
+#IF
+equal d0 0
+#ACT
+give 星王靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白62名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王靴(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+give 星王腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白62名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王腰带(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+give 星王冠(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白62名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王冠(禁锢)」
+break
+
+[@63级奖品]
+#IF
+equal d0 0
+#ACT
+give 星王靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白63名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王靴(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+give 星王腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白63名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王腰带(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+give 星王冠(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白63名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王冠(禁锢)」
+break
+#IF
+equal d0 3
+#ACT
+give 星王项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白63名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王项链(禁锢)」
+break
+#IF
+equal d0 4
+#ACT
+give 星王护腕(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白63名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王护腕(禁锢)」
+break
+#IF
+equal d0 5
+#ACT
+give 星王戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白63名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王戒指(禁锢)」
+break
+
+[@64级奖品]
+#IF
+equal d0 0
+#ACT
+give 星王靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白64名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王靴(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+give 星王腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白64名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王腰带(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+give 星王冠(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白64名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王冠(禁锢)」
+break
+#IF
+equal d0 3
+#ACT
+give 星王项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白64名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王项链(禁锢)」
+break
+#IF
+equal d0 4
+#ACT
+give 星王护腕(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白64名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王护腕(禁锢)」
+break
+#IF
+equal d0 5
+#ACT
+give 星王戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白64名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王戒指(禁锢)」
+break
+
+[@65级奖品]
+#IF
+equal d0 0
+#ACT
+give 星王靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白65名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王靴(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+give 星王腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白65名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王腰带(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+give 星王冠(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白65名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王冠(禁锢)」
+break
+#IF
+equal d0 3
+#ACT
+give 星王项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白65名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王项链(禁锢)」
+break
+#IF
+equal d0 4
+#ACT
+give 星王护腕(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白65名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王护腕(禁锢)」
+break
+#IF
+equal d0 5
+#ACT
+give 星王戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白65名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王戒指(禁锢)」
+break
+
+[@66级奖品]
+#IF
+equal d0 0
+#ACT
+give 开天 1
+AddNameList ..\QuestDiary\数据文件\白66名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「开天」
+break
+#IF
+equal d0 1
+#ACT
+give 镇天 1
+AddNameList ..\QuestDiary\数据文件\白66名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「镇天」
+break
+#IF
+equal d0 2
+#ACT
+give 玄天 1
+AddNameList ..\QuestDiary\数据文件\白66名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「玄天」
+break
+#IF
+equal d0 3
+#ACT
+give 星王靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白66名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王靴(禁锢)」
+break
+#IF
+equal d0 4
+#ACT
+give 星王腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白66名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王腰带(禁锢)」
+break
+#IF
+equal d0 5
+#ACT
+give 星王冠(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白66名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王冠(禁锢)」
+break
+#IF
+equal d0 6
+#ACT
+give 星王项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白66名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王项链(禁锢)」
+break
+#IF
+equal d0 7
+#ACT
+give 星王护腕(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白66名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王护腕(禁锢)」
+break
+#IF
+equal d0 8
+#ACT
+give 星王戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白66名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王戒指(禁锢)」
+break
+
+[@白金帐号领奖]
+听说过白金令牌和伏魔令的传说了吧，我知道其中的一些秘密，\
+如果你有白金凭证，我可以帮你把它凝练，\
+我也知道去获取白金令牌和伏魔令的路径，我可以送你去，\
+通过白金令牌获得的物品，我可以帮你解除怪物的魔咒，还原它们。\
+<领取白金帐号奖励/@领白金奖>            <使用白金积分交换白金凭证/@积分换凭证>\
+<凝练白金令牌/@凝练白令>                <接受考验获取伏魔令/@获取伏魔令>\
+<了解白金令牌和伏魔令/@了白伏令>        <查看白金帐号奖励/@看白金奖>\
+<返回/@main>
+
+[@积分换凭证]
+咳咳，你是白金积分吗？\
+我对白金积分非常感兴趣，据说它源自沙巴克的一个传说。\
+如果你把手头的白金积分给我，我会非常感激你，\
+作为回报，我会给你白金凭证！\
+给我30个白金积分，我就送你一个白金凭证。\
+<给30个白金积分/@积分换凭证1>换取白金凭证\
+<返回/@main>
+[@积分换凭证1]
+#IF
+checkitem 白金积分 30
+#ACT
+TAKE 白金积分 30
+give 白金凭证 1
+#say
+这是给你的白金凭证！
+#ELSESAY
+你没有足够的白金积分啊\
+<退出/@exit>
+
+[@领白金奖]
+请确认有足够的包裹空间放置奖品,否则不能正常领取\
+而且您将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+有没有听说过<祝福糕>，这可是天上美味，我一直非常喜欢吃\
+但是这种糕点非常稀有和珍贵。如果有人可以给我一块的话\
+作为回报，我可以让他在领取白金奖励时有一定特权\
+可以根据自己的心愿得到梦寐以求的稀世珍宝。\
+<我的包裹有足够的空间,领取白金帐号奖励/@领白金奖1>\
+<查看白金帐号奖励/@看白金奖>\
+<返回/@main>                      <关闭/@exit>
+
+[@领白金奖1]
+#IF
+CHECKLEVELEX > 60
+#SAY
+恭喜哦！你已经是60级以上的人物了！目前白金帐号奖励只开放在\
+60级以下！请多留意哦！说不定以后还会开放60级以上的高级奖励\
+<提示：此NPC对话中，另一选项可领取60级以上奖励！>\
+<离开/@exit>\
+#ACT
+break
+
+#IF
+CHECKLEVELEX < 61
+CHECKLEVELEX > 50
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+GOTO @确认白金成功
+break
+
+#IF
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#SAY
+您是白金帐号，但你未达到51级无法领取白金帐号的奖励！
+#ELSESAY
+你不是白金帐号，不能到我这里领取奖励！
+
+[@确认白金成功]
+#IF
+CHECKLEVELEX > 59
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取51级奖励/@确认51级成功>    <确认领取52级奖励/@确认52级成功>\
+<确认领取53级奖励/@确认53级成功>    <确认领取54级奖励/@确认54级成功>\
+<确认领取55级奖励/@确认55级成功>    <确认领取56级奖励/@确认56级成功>\
+<确认领取57级奖励/@确认57级成功>    <确认领取58级奖励/@确认58级成功>\
+<确认领取59级奖励/@确认59级成功>    <确认领取60级奖励/@确认60级成功>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 58
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取51级奖励/@确认51级成功>    <确认领取52级奖励/@确认52级成功>\
+<确认领取53级奖励/@确认53级成功>    <确认领取54级奖励/@确认54级成功>\
+<确认领取55级奖励/@确认55级成功>    <确认领取56级奖励/@确认56级成功>\
+<确认领取57级奖励/@确认57级成功>    <确认领取58级奖励/@确认58级成功>\
+<确认领取59级奖励/@确认59级成功>    <确认领取60级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 57
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取51级奖励/@确认51级成功>    <确认领取52级奖励/@确认52级成功>\
+<确认领取53级奖励/@确认53级成功>    <确认领取54级奖励/@确认54级成功>\
+<确认领取55级奖励/@确认55级成功>    <确认领取56级奖励/@确认56级成功>\
+<确认领取57级奖励/@确认57级成功>    <确认领取58级奖励/@确认58级成功>\
+<确认领取59级奖励>    <确认领取60级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 56
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取51级奖励/@确认51级成功>    <确认领取52级奖励/@确认52级成功>\
+<确认领取53级奖励/@确认53级成功>    <确认领取54级奖励/@确认54级成功>\
+<确认领取55级奖励/@确认55级成功>    <确认领取56级奖励/@确认56级成功>\
+<确认领取57级奖励/@确认57级成功>    <确认领取58级奖励>\
+<确认领取59级奖励>    <确认领取60级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 55
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取51级奖励/@确认51级成功>    <确认领取52级奖励/@确认52级成功>\
+<确认领取53级奖励/@确认53级成功>    <确认领取54级奖励/@确认54级成功>\
+<确认领取55级奖励/@确认55级成功>    <确认领取56级奖励/@确认56级成功>\
+<确认领取57级奖励>    <确认领取58级奖励>\
+<确认领取59级奖励>    <确认领取60级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 54
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取51级奖励/@确认51级成功>    <确认领取52级奖励/@确认52级成功>\
+<确认领取53级奖励/@确认53级成功>    <确认领取54级奖励/@确认54级成功>\
+<确认领取55级奖励/@确认55级成功>    <确认领取56级奖励>\
+<确认领取57级奖励>    <确认领取58级奖励>\
+<确认领取59级奖励>    <确认领取60级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 53
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取51级奖励/@确认51级成功>    <确认领取52级奖励/@确认52级成功>\
+<确认领取53级奖励/@确认53级成功>    <确认领取54级奖励/@确认54级成功>\
+<确认领取55级奖励>    <确认领取56级奖励>\
+<确认领取57级奖励>    <确认领取58级奖励>\
+<确认领取59级奖励>    <确认领取60级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 52
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取51级奖励/@确认51级成功>    <确认领取52级奖励/@确认52级成功>\
+<确认领取53级奖励/@确认53级成功>    <确认领取54级奖励>\
+<确认领取55级奖励>    <确认领取56级奖励>\
+<确认领取57级奖励>    <确认领取58级奖励>\
+<确认领取59级奖励>    <确认领取60级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 51
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间:\
+<确认领取51级奖励/@确认51级成功>    <确认领取52级奖励/@确认52级成功>\
+<确认领取53级奖励>    <确认领取54级奖励>\
+<确认领取55级奖励>    <确认领取56级奖励>\
+<确认领取57级奖励>    <确认领取58级奖励>\
+<确认领取59级奖励>    <确认领取60级奖励>    <返回/@main>    <离开/@exit>\
+#act
+break
+#IF
+CHECKLEVELEX > 50
+#SAY
+请确认有足够的包裹空间放置奖品，否则不能正常领取\
+如因包裹空间不足，导致不能正常领取，责任由你承担\
+你将不再可以重新领取因包裹空间不足没有正常领取的奖品\
+我有足够的空间，<确认领取/@确认51级成功>\
+<返回/@main>                   <离开/@exit>\
+
+[@确认51级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白51名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 50
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+movr d0 3
+set [100] 1
+GOTO @51级领奖
+#ELSESAY
+你没有达到51级、现在不能领取！
+
+[@51级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白51名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「誓言腰带(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白51名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「预言头盔(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白51名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「传说魔靴(禁锢)」
+break
+#ELSESAY
+该角色不是白金帐号！
+
+[@确认52级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白52名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 51
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+movr d0 15
+set [100] 1
+GOTO @52级领奖
+#ELSESAY
+你没有达到52级、现在不能领取！
+
+[@52级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「雷霆战戒(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「烈焰魔戒(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「光芒道戒(禁锢)」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「雷霆护腕(禁锢)」
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「烈焰护腕(禁锢)」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「光芒护腕(禁锢)」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「雷霆项链(禁锢)」
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「烈焰项链(禁锢)」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「光芒项链(禁锢)」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「雷霆腰带(禁锢)」
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「烈焰腰带(禁锢)」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「光芒腰带(禁锢)」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「雷霆战靴(禁锢)」
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「烈焰魔靴(禁锢)」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白52名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「光芒道靴(禁锢)」
+break
+#ELSESAY
+该角色不是白金帐号！
+
+[@确认53级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白53名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 52
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+movr d0 3
+set [100] 1
+GOTO @53级领奖
+#ELSESAY
+你没有达到53级、现在不能领取！
+
+[@53级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 誓言腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白53名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「誓言腰带(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 预言头盔(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白53名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「预言头盔(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 传说魔靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白53名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「传说魔靴(禁锢)」
+break
+#ELSESAY
+该角色不是白金帐号！
+
+
+[@确认54级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白54名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 53
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+movr d0 15
+set [100] 1
+GOTO @54级领奖
+#ELSESAY
+你没有达到54级、现在不能领取！
+
+[@54级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战戒(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「雷霆战戒(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔戒(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「烈焰魔戒(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道戒(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「光芒道戒(禁锢)」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆护腕(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「雷霆护腕(禁锢)」
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰护腕(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「烈焰护腕(禁锢)」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 光芒护腕(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「光芒护腕(禁锢)」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「雷霆项链(禁锢)」
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「烈焰项链(禁锢)」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 光芒项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「光芒项链(禁锢)」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「雷霆腰带(禁锢)」
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「烈焰腰带(禁锢)」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 光芒腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「光芒腰带(禁锢)」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 雷霆战靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「雷霆战靴(禁锢)」
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 烈焰魔靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「烈焰魔靴(禁锢)」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 光芒道靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白54名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「光芒道靴(禁锢)」
+break
+#ELSESAY
+该角色不是白金帐号！
+
+[@确认55级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白55名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 54
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+movr d0 17
+set [100] 1
+GOTO @55级领奖
+#ELSESAY
+你没有达到55级、现在不能领取！
+
+[@55级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 狂战戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「狂战戒指(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 太极戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「太极戒指(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 混世戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「混世戒指(禁锢)」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 狂战手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「狂战手镯(禁锢)」
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 太极手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「太极手镯(禁锢)」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 混世手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「混世手镯(禁锢)」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 战神戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「战神戒指(禁锢)」
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「圣魔戒指(禁锢)」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 真魂戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「真魂戒指(禁锢)」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 战神手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「战神手镯(禁锢)」
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「圣魔手镯(禁锢)」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 真魂手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「真魂手镯(禁锢)」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 战神项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「战神项链(禁锢)」
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「圣魔项链(禁锢)」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 真魂项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白55名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「真魂项链(禁锢)」
+break
+#ELSESAY
+该角色不是白金帐号！
+
+
+[@确认56级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白56名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 55
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+movr d0 14
+set [100] 1
+GOTO @56级领奖
+#ELSESAY
+你没有达到56级、现在不能领取！
+
+[@56级领奖]
+
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 狂战戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「狂战戒指(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 太极戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「太极戒指(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 混世戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「混世戒指(禁锢)」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 狂战手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「狂战手镯(禁锢)」
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 太极手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「太极手镯(禁锢)」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 混世手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「混世手镯(禁锢)」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 战神戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「战神戒指(禁锢)」
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「圣魔戒指(禁锢)」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 真魂戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「真魂戒指(禁锢)」
+break
+#IF
+equal d0 9
+#ACT
+mov d1 0
+set [100] 0
+give 战神手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「战神手镯(禁锢)」
+break
+#IF
+equal d0 10
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「圣魔手镯(禁锢)」
+break
+#IF
+equal d0 11
+#ACT
+mov d1 0
+set [100] 0
+give 真魂手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「真魂手镯(禁锢)」
+break
+#IF
+equal d0 12
+#ACT
+mov d1 0
+set [100] 0
+give 战神项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「战神项链(禁锢)」
+break
+#IF
+equal d0 13
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「圣魔项链(禁锢)」
+break
+#IF
+equal d0 14
+#ACT
+mov d1 0
+set [100] 0
+give 真魂项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白56名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「真魂项链(禁锢)」
+break
+#ELSESAY
+该角色不是白金帐号！
+
+[@确认57级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白57名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 56
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+movr d0 9
+set [100] 1
+GOTO @57级领奖
+#ELSESAY
+你没有达到57级、现在不能领取！
+
+[@57级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 战神戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白57名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「战神戒指(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 真魂戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白57名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「真魂戒指(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔戒指(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白57名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「圣魔戒指(禁锢)」
+break
+#IF
+equal d0 3
+#ACT
+mov d1 0
+set [100] 0
+give 战神手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白57名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「战神手镯(禁锢)」
+break
+#IF
+equal d0 4
+#ACT
+mov d1 0
+set [100] 0
+give 真魂手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白57名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「真魂手镯(禁锢)」
+break
+#IF
+equal d0 5
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔手镯(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白57名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「圣魔手镯(禁锢)」
+break
+#IF
+equal d0 6
+#ACT
+mov d1 0
+set [100] 0
+give 战神项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白57名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「战神项链(禁锢)」
+break
+#IF
+equal d0 7
+#ACT
+mov d1 0
+set [100] 0
+give 真魂项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白57名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「真魂项链(禁锢)」
+break
+#IF
+equal d0 8
+#ACT
+mov d1 0
+set [100] 0
+give 圣魔项链(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白57名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「圣魔项链(禁锢)」
+break
+#ELSESAY
+该角色不是白金帐号！
+
+[@确认58级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白58名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 57
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+movr d0 2
+set [100] 1
+GOTO @58级领奖
+#ELSESAY
+你没有达到58级、现在不能领取！
+
+[@58级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白58名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「银星勋章(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白58名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「寂静之手(禁锢)」
+break
+#ELSESAY
+该角色不是白金帐号！
+
+[@确认59级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白59名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 58
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+movr d0 2
+set [100] 1
+GOTO @59级领奖
+#ELSESAY
+你没有达到59级、现在不能领取！
+
+[@59级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 银星勋章(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白59名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「银星勋章(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 寂静之手(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白59名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「寂静之手(禁锢)」
+break
+#ELSESAY
+该角色不是白金帐号！
+
+[@确认60级成功]
+#IF
+checknamelist ..\QuestDiary\数据文件\白60名单.txt
+#SAY
+你已经领过一次奖励了！不能再领了！
+#act
+break
+#IF
+CHECKLEVELEX > 59
+checknamelist ..\QuestDiary\数据文件\白金帐号.txt
+#ACT
+movr d0 3
+set [100] 1
+GOTO @60级领奖
+#ELSESAY
+你没有达到60级、现在不能领取！
+
+[@60级领奖]
+#IF
+Check [100] 0
+#act
+mapmove 0147
+break
+#IF
+equal d0 0
+#ACT
+mov d1 0
+set [100] 0
+give 星王靴(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白60名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王靴(禁锢)」
+break
+#IF
+equal d0 1
+#ACT
+mov d1 0
+set [100] 0
+give 星王腰带(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白60名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王腰带(禁锢)」
+break
+#IF
+equal d0 2
+#ACT
+mov d1 0
+set [100] 0
+give 星王冠(禁锢) 1
+AddNameList ..\QuestDiary\数据文件\白60名单.txt
+SENDMSG 5 你是白金帐号，恭喜你获得「星王冠(禁锢)」
+break
+#ELSESAY
+该角色不是白金帐号！
+
+[@看白金奖]
+白金帐号的奖品设置：在相应等级可以领取相应的奖品\
+由于受到恶魔的垂涎，这些物品都被恶魔禁锢了\
+51级、53级：誓言腰带、预言头盔、传说魔靴中随机一件\
+52级、54级：雷霆项链、雷霆腰带、雷霆护腕、雷霆战靴、雷霆战戒\
+烈焰项链、烈焰腰带、烈焰护腕、烈焰魔靴、烈焰魔戒、\
+光芒项链、光芒腰带、光芒护腕、光芒道靴、光芒道戒中随机一件\
+55级：狂战戒指、狂战手镯、混世戒指、混世手镯、\
+太极手镯、太极戒指中随机一件\
+<查看下一页/@看白金奖1>             <返回/@main>
+[@看白金奖1]
+56级：狂战戒指、狂战手镯、混世戒指、混世手镯、太极手镯、\
+太极戒指、圣魔项链、圣魔手镯、圣魔戒指、战神项链、战神手镯、\
+战神戒指、真魂项链、真魂手镯、真魂戒指随机一件\
+57级：战神项链、战神手镯、战神戒指、圣魔项链、圣魔手镯、\
+圣魔戒指、真魂项链、真魂手镯、真魂戒指随机一件\
+58级、59级：银星勋章、寂静之手中随机一件\
+60-62级：星王靴、星王腰带、星王冠随机一件\
+<查看上一页/@看白金奖>             <查看下一页/@看白金奖2>\
+<返回/@main>
+[@看白金奖2]
+63-65级：包含<星王首饰>在内的星王全套中任意一件\
+66级：包含<星王首饰>在内的星王全套中任意一件，\
+更有机会获得三把神器<开天、镇天、玄天>的其中一把\
+\ \
+<查看上一页/@看白金奖1>             <返回/@main>
+[@凝练白令]
+凝练白金令牌，需要一个白金凭证，\
+我就可以你把它变为白金令牌，\
+听说庄园的管家非常善于猜拳游戏，我也是其中高手，\
+要么和我猜上一拳，赢了我，我就马上给你凝练白金令牌。\
+不过话说回来，赌一拳可要50万金币哦，没钱可不行！\
+<好，开始猜拳/@开始猜拳>\
+\ \
+<返回/@main>
+[@开始猜拳]
+#IF
+checkitem 白金凭证 1
+checkgold 500000
+#ACT
+break
+#SAY
+好，有勇气，来吧，看看谁的运气更好\
+不过事先说明了，打平也是你输哦。\
+\ \
+<出剪刀/@出剪刀>       <出石头/@出石头>       <出布/@出布>\
+\ \
+<让我想一会/@eixt>
+#IF
+checkitem 白金凭证 1
+#ACT
+break
+#SAY
+你没有足够的金币，我也无能为力。\
+\ \
+<关闭/@exit>
+#IF
+checkgold 500000
+#SAY
+你没有白金凭证，我也无能为力。\
+\ \
+<关闭/@exit>
+#ELSESAY
+你没有足够的金币，我也无能为力。\
+\ \
+<关闭/@exit>
+[@出剪刀]
+#ACT
+mov S0 剪刀
+#IF
+random 3
+#ACT
+mov S1 剪刀
+goto @平
+break
+#IF
+random 2
+#ACT
+mov S1 石头
+goto @输
+#ELSEACT
+mov S1 布
+goto @赢
+[@出石头]
+#ACT
+mov S0 石头
+#IF
+random 3
+#ACT
+mov S1 石头
+goto @平
+break
+#IF
+random 2
+#ACT
+mov S1 布
+goto @输
+#ELSEACT
+mov S1 剪刀
+goto @赢
+[@出布]
+#ACT
+mov S0 布
+#IF
+random 3
+#ACT
+mov S1 布
+goto @平
+break
+#IF
+random 2
+#ACT
+mov S1 剪刀
+goto @输
+#ELSEACT
+mov S1 石头
+goto @赢
+[@赢]
+#IF
+checkitem 白金凭证 1
+checkgold 500000
+#act
+take 金币 500000
+take 白金凭证 1
+give 白金令牌 1
+#SAY
+你出<$STR(S0)>……我出<$STR(S1)>……哎呀，我输了\
+按照约定，这块白金令牌已经给你凝练好了。
+#ELSESAY
+你没有我要的东西，怎么？想蒙我？
+[@平]
+#IF
+checkitem 白金凭证 1
+checkgold 500000
+#act
+take 金币 500000
+#SAY
+你出<$STR(S0)>……我也是<$STR(S1)>……打平，呵呵
+#ELSESAY
+你没有我要的东西，怎么？想蒙我？
+[@输]
+#IF
+checkitem 白金凭证 1
+checkgold 500000
+#act
+take 金币 500000
+#SAY
+你出的<$STR(S0)>……我出<$STR(S1)>……哈哈，你输了
+#ELSESAY
+你没有我要的东西，怎么？想蒙我？
+[@获取伏魔令]
+只有祈福凭证，才能召唤出那些圣兽。\
+进入考验场以后，你只有消灭全部圣兽，才有可能获得伏魔令，\
+1个祈福凭证可以投1个骰子，3个祈福凭证可以投2个骰子，\
+5个祈福凭证可以投3个骰子，\
+使用的骰子越多，越有可能获得怪物携带的伏魔令。\
+你只有20分钟的时间去获得伏魔令\
+\ \
+<前往挑战获得伏魔令/@获取伏魔令1>              <返回/@main>
+[@获取伏魔令1]
+#IF
+checkhum T318 1
+#ACT
+break
+#SAY
+有人正在里面挑战，请你过会儿再来！
+#IF
+checkitem 祈福凭证 1
+#ACT
+CLEARMAPMON T318
+mapmove T318 15 12
+CLEARDELAYGOTO
+DELAYGOTO 1200000 @返回盟重
+#ELSESAY
+您好象没有祈福凭证，我也不能帮你啊！
+[@返回盟重]
+#IF
+ISONMAP T318
+#ACT
+mapmove 3 327 333
+[@了白伏令]
+传说得到白金令牌后,双击使用后，就可以变为白金帐号，\
+每当你达到一特定的等级,就可以获取神秘的装备,\
+听说这些装备都是上古战神留下的,具体是什么我们都无法得知。\
+不过这些上古物品由于受到诅咒，不能佩戴，\
+而伏魔令是解除咒语的重要秘笈之一，只有使用伏魔令，\
+被恶魔所诅咒的装备才能恢复它本来的面目,重新可以佩戴使用，\
+只要你带着神器和伏魔令，找我就可以了。\
+<返回/@main>
+[@活动领奖]
+您是前来领奖的吧，我马上给您，\
+不过请您先预留30个包裹空间，\
+否则，不能正常领取物品可不要怪我哦！\
+\ \
+<我确认有足够包裹空间，领取奖励/@活动领奖1>\
+<返回/@main>
+[@活动领奖1]
+[失败]：没有可以领取的物品。
+[@解除禁锢]
+传说这些稀世珍宝都是当年一个沙巴克城主找遍玛法大陆才发现的，\
+他把这些宝物都藏在了一个隐秘的地方，只有少数几个密友才知道，\
+不知为何，却被大陆上几大魔头之一的祖玛教主知晓了这个秘密，\
+它联合几大魔头，对这些宝物进行了禁锢，成为了没有属性的物品，\
+只有天尊使用过的伏魔令再加上一种神秘魔法，才能解除恶魔的禁锢,\
+幸好这种魔法没有失传，我也已经学会了，我可以解除禁锢，\
+如果你有伏魔令，那就把禁锢的物品交给我吧，我来帮你解除禁锢。\
+<解除白金物品的禁锢/@解除禁锢1>\
+<返回/@main>                     <关闭/@exit>
+[@解除禁锢1]
+您想解除哪个物品的禁锢呢？\
+<誓言腰带(禁锢)/@解誓言腰带>    <预言头盔(禁锢)/@解预言头盔>    <传说魔靴(禁锢)/@解传说魔靴>\
+<雷霆战戒(禁锢)/@解雷霆战戒>    <光芒道戒(禁锢)/@解光芒道戒>    <烈焰魔戒(禁锢)/@解烈焰魔戒>\
+<雷霆护腕(禁锢)/@解雷霆护腕>    <光芒护腕(禁锢)/@解光芒护腕>    <烈焰护腕(禁锢)/@解烈焰护腕>\
+<雷霆项链(禁锢)/@解雷霆项链>    <光芒项链(禁锢)/@解光芒项链>    <烈焰项链(禁锢)/@解烈焰项链>\
+<雷霆腰带(禁锢)/@解雷霆腰带>    <光芒腰带(禁锢)/@解光芒腰带>    <烈焰腰带(禁锢)/@解烈焰腰带>\
+<雷霆战靴(禁锢)/@解雷霆战靴>    <光芒道靴(禁锢)/@解光芒道靴>    <烈焰魔靴(禁锢)/@解烈焰魔靴>\
+\ \
+<下一页/@解除禁锢2>                    <返回/@main>
+[@解除禁锢2]
+您想解除哪个物品的禁锢呢？\
+<狂战戒指(禁锢)/@解狂战戒指>    <混世戒指(禁锢)/@解混世戒指>    <太极戒指(禁锢)/@解太极戒指>\
+<狂战手镯(禁锢)/@解狂战手镯>    <混世手镯(禁锢)/@解混世手镯>    <太极手镯(禁锢)/@解太极手镯>\
+<战神戒指(禁锢)/@解战神戒指>    <圣魔戒指(禁锢)/@解圣魔戒指>    <真魂戒指(禁锢)/@解真魂戒指>\
+<战神手镯(禁锢)/@解战神手镯>    <圣魔手镯(禁锢)/@解圣魔手镯>    <真魂手镯(禁锢)/@解真魂手镯>\
+<战神项链(禁锢)/@解战神项链>    <圣魔项链(禁锢)/@解圣魔项链>    <真魂项链(禁锢)/@真魂项链>\
+<银星勋章(禁锢)/@解银星勋章>    <寂静之手(禁锢)/@解寂静之手>\  \
+
+<下一页/@解除禁锢3>                  <上一页/@解除禁锢1>
+
+[@解除禁锢3]
+您想解除哪个物品的禁锢呢？\
+<星王腰带(禁锢)/@解星王腰带>    <星 王 靴(禁锢)/@解星王靴>    <星 王 冠(禁锢)/@解星王冠>\
+<星王护腕(禁锢)/@解星王护腕>    <星王项链(禁锢)/@解星王项链>    <星王戒指(禁锢)/@解星王戒指>\ \ \ \ \ \
+<返回/@main>                    <上一页/@解除禁锢2>
+
+
+[@解星王戒指]
+#IF
+checkitem 伏魔令 1
+checkitem 星王戒指(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 星王戒指(禁锢) 1
+give 星王战戒 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王戒指(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 星王戒指(禁锢) 1
+give 星王魔戒 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王戒指(禁锢) 1
+#ACT
+take 伏魔令 1
+take 星王戒指(禁锢) 1
+give 星王道戒 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+
+
+
+[@解星王项链]
+#IF
+checkitem 伏魔令 1
+checkitem 星王项链(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 星王项链(禁锢) 1
+give 星王项链(战) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王项链(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 星王项链(禁锢) 1
+give 星王项链(法) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王项链(禁锢) 1
+#ACT
+take 伏魔令 1
+take 星王项链(禁锢) 1
+give 星王项链(道) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+
+[@解星王护腕]
+#IF
+checkitem 伏魔令 1
+checkitem 星王护腕(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 星王护腕(禁锢) 1
+give 星王护腕(战) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王护腕(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 星王护腕(禁锢) 1
+give 星王护腕(法) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王护腕(禁锢) 1
+#ACT
+take 伏魔令 1
+take 星王护腕(禁锢) 1
+give 星王护腕(道) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+
+
+[@解誓言腰带]
+#IF
+checkitem 伏魔令 1
+checkitem 誓言腰带(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 誓言腰带(禁锢) 1
+give 誓言腰带(战) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 誓言腰带(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 誓言腰带(禁锢) 1
+give 誓言腰带(法) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 誓言腰带(禁锢) 1
+#ACT
+take 伏魔令 1
+take 誓言腰带(禁锢) 1
+give 誓言腰带(道) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解预言头盔]
+#IF
+checkitem 伏魔令 1
+checkitem 预言头盔(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 预言头盔(禁锢) 1
+give 预言头盔(战) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 预言头盔(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 预言头盔(禁锢) 1
+give 预言头盔(法) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 预言头盔(禁锢) 1
+#ACT
+take 伏魔令 1
+take 预言头盔(禁锢) 1
+give 预言头盔(道) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解传说魔靴]
+#IF
+checkitem 伏魔令 1
+checkitem 传说魔靴(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 传说魔靴(禁锢) 1
+give 传说魔靴(战) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 传说魔靴(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 传说魔靴(禁锢) 1
+give 传说魔靴(法) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 传说魔靴(禁锢) 1
+#ACT
+take 伏魔令 1
+take 传说魔靴(禁锢) 1
+give 传说魔靴(道) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解雷霆战戒]
+#IF
+checkitem 伏魔令 1
+checkitem 雷霆战戒(禁锢) 1
+#ACT
+take 伏魔令 1
+take 雷霆战戒(禁锢) 1
+give 雷霆战戒 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解雷霆护腕]
+#IF
+checkitem 伏魔令 1
+checkitem 雷霆护腕(禁锢) 1
+#ACT
+take 伏魔令 1
+take 雷霆护腕(禁锢) 1
+give 雷霆护腕 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解雷霆项链]
+#IF
+checkitem 伏魔令 1
+checkitem 雷霆项链(禁锢) 1
+#ACT
+take 伏魔令 1
+take 雷霆项链(禁锢) 1
+give 雷霆项链 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解雷霆腰带]
+#IF
+checkitem 伏魔令 1
+checkitem 雷霆腰带(禁锢) 1
+#ACT
+take 伏魔令 1
+take 雷霆腰带(禁锢) 1
+give 雷霆腰带 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解雷霆战靴]
+#IF
+checkitem 伏魔令 1
+checkitem 雷霆战靴(禁锢) 1
+#ACT
+take 伏魔令 1
+take 雷霆战靴(禁锢) 1
+give 雷霆战靴 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解烈焰魔戒]
+#IF
+checkitem 伏魔令 1
+checkitem 烈焰魔戒(禁锢) 1
+#ACT
+take 伏魔令 1
+take 烈焰魔戒(禁锢) 1
+give 烈焰魔戒 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解烈焰护腕]
+#IF
+checkitem 伏魔令 1
+checkitem 烈焰护腕(禁锢) 1
+#ACT
+take 伏魔令 1
+take 烈焰护腕(禁锢) 1
+give 烈焰护腕 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解烈焰项链]
+#IF
+checkitem 伏魔令 1
+checkitem 烈焰项链(禁锢) 1
+#ACT
+take 伏魔令 1
+take 烈焰项链(禁锢) 1
+give 烈焰项链 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解烈焰腰带]
+#IF
+checkitem 伏魔令 1
+checkitem 烈焰腰带(禁锢) 1
+#ACT
+take 伏魔令 1
+take 烈焰腰带(禁锢) 1
+give 烈焰腰带 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解烈焰魔靴]
+#IF
+checkitem 伏魔令 1
+checkitem 烈焰魔靴(禁锢) 1
+#ACT
+take 伏魔令 1
+take 烈焰魔靴(禁锢) 1
+give 烈焰魔靴 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解光芒道戒]
+#IF
+checkitem 伏魔令 1
+checkitem 光芒道戒(禁锢) 1
+#ACT
+take 伏魔令 1
+take 光芒道戒(禁锢) 1
+give 光芒道戒 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解光芒护腕]
+#IF
+checkitem 伏魔令 1
+checkitem 光芒护腕(禁锢) 1
+#ACT
+take 伏魔令 1
+take 光芒护腕(禁锢) 1
+give 光芒护腕 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解光芒项链]
+#IF
+checkitem 伏魔令 1
+checkitem 光芒项链(禁锢) 1
+#ACT
+take 伏魔令 1
+take 光芒项链(禁锢) 1
+give 光芒项链 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解光芒腰带]
+#IF
+checkitem 伏魔令 1
+checkitem 光芒腰带(禁锢) 1
+#ACT
+take 伏魔令 1
+take 光芒腰带(禁锢) 1
+give 光芒腰带 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解光芒道靴]
+#IF
+checkitem 伏魔令 1
+checkitem 光芒道靴(禁锢) 1
+#ACT
+take 伏魔令 1
+take 光芒道靴(禁锢) 1
+give 光芒道靴 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解狂战戒指]
+#IF
+checkitem 伏魔令 1
+checkitem 狂战戒指(禁锢) 1
+#ACT
+take 伏魔令 1
+take 狂战戒指(禁锢) 1
+give 狂战戒指 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解狂战手镯]
+#IF
+checkitem 伏魔令 1
+checkitem 狂战手镯(禁锢) 1
+#ACT
+take 伏魔令 1
+take 狂战手镯(禁锢) 1
+give 狂战手镯 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解混世戒指]
+#IF
+checkitem 伏魔令 1
+checkitem 混世戒指(禁锢) 1
+#ACT
+take 伏魔令 1
+take 混世戒指(禁锢) 1
+give 混世戒指 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解混世手镯]
+#IF
+checkitem 伏魔令 1
+checkitem 混世手镯(禁锢) 1
+#ACT
+take 伏魔令 1
+take 混世手镯(禁锢) 1
+give 混世手镯 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解太极戒指]
+#IF
+checkitem 伏魔令 1
+checkitem 太极戒指(禁锢) 1
+#ACT
+take 伏魔令 1
+take 太极戒指(禁锢) 1
+give 太极戒指 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解太极手镯]
+#IF
+checkitem 伏魔令 1
+checkitem 太极手镯(禁锢) 1
+#ACT
+take 伏魔令 1
+take 太极手镯(禁锢) 1
+give 太极手镯 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解战神戒指]
+#IF
+checkitem 伏魔令 1
+checkitem 战神戒指(禁锢) 1
+#ACT
+take 伏魔令 1
+take 战神戒指(禁锢) 1
+give 战神戒指 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解战神手镯]
+#IF
+checkitem 伏魔令 1
+checkitem 战神手镯(禁锢) 1
+#ACT
+take 伏魔令 1
+take 战神手镯(禁锢) 1
+give 战神手镯 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解战神项链]
+#IF
+checkitem 伏魔令 1
+checkitem 战神项链(禁锢) 1
+#ACT
+take 伏魔令 1
+take 战神项链(禁锢) 1
+give 战神项链 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解圣魔戒指]
+#IF
+checkitem 伏魔令 1
+checkitem 圣魔戒指(禁锢) 1
+#ACT
+take 伏魔令 1
+take 圣魔戒指(禁锢) 1
+give 圣魔戒指 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解圣魔手镯]
+#IF
+checkitem 伏魔令 1
+checkitem 圣魔手镯(禁锢) 1
+#ACT
+take 伏魔令 1
+take 圣魔手镯(禁锢) 1
+give 圣魔手镯 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解圣魔项链]
+#IF
+checkitem 伏魔令 1
+checkitem 圣魔项链(禁锢) 1
+#ACT
+take 伏魔令 1
+take 圣魔项链(禁锢) 1
+give 圣魔项链 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解真魂戒指]
+#IF
+checkitem 伏魔令 1
+checkitem 真魂戒指(禁锢) 1
+#ACT
+take 伏魔令 1
+take 真魂戒指(禁锢) 1
+give 真魂戒指 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解真魂手镯]
+#IF
+checkitem 伏魔令 1
+checkitem 真魂手镯(禁锢) 1
+#ACT
+take 伏魔令 1
+take 真魂手镯(禁锢) 1
+give 真魂手镯 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解真魂项链]
+#IF
+checkitem 伏魔令 1
+checkitem 真魂项链(禁锢) 1
+#ACT
+take 伏魔令 1
+take 真魂项链(禁锢) 1
+give 真魂项链 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解银星勋章]
+#IF
+checkitem 伏魔令 1
+checkitem 银星勋章(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 银星勋章(禁锢) 1
+give 银星勋章(战) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 银星勋章(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 银星勋章(禁锢) 1
+give 银星勋章(法) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 银星勋章(禁锢) 1
+#ACT
+take 伏魔令 1
+take 银星勋章(禁锢) 1
+give 银星勋章(道) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解寂静之手]
+#IF
+checkitem 伏魔令 1
+checkitem 寂静之手(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 寂静之手(禁锢) 1
+give 寂静之手(战) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 寂静之手(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 寂静之手(禁锢) 1
+give 寂静之手(法) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 寂静之手(禁锢) 1
+#ACT
+take 伏魔令 1
+take 寂静之手(禁锢) 1
+give 寂静之手(道) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解星王腰带]
+#IF
+checkitem 伏魔令 1
+checkitem 星王腰带(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 星王腰带(禁锢) 1
+give 星王腰带(战) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王腰带(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 星王腰带(禁锢) 1
+give 星王腰带(法) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王腰带(禁锢) 1
+#ACT
+take 伏魔令 1
+take 星王腰带(禁锢) 1
+give 星王腰带(道) 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解星王靴]
+#IF
+checkitem 伏魔令 1
+checkitem 星王靴(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 星王靴(禁锢) 1
+give 星王战靴 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王靴(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 星王靴(禁锢) 1
+give 星王法靴 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王靴(禁锢) 1
+#ACT
+take 伏魔令 1
+take 星王靴(禁锢) 1
+give 星王道靴 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@解星王冠]
+#IF
+checkitem 伏魔令 1
+checkitem 星王冠(禁锢) 1
+random 3
+#ACT
+take 伏魔令 1
+take 星王冠(禁锢) 1
+give 星王战盔 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王冠(禁锢) 1
+random 2
+#ACT
+take 伏魔令 1
+take 星王冠(禁锢) 1
+give 星王法冠 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#IF
+checkitem 伏魔令 1
+checkitem 星王冠(禁锢) 1
+#ACT
+take 伏魔令 1
+take 星王冠(禁锢) 1
+give 星王道盔 1
+break
+#SAY
+通过伏魔令的特殊能力，物品的禁锢已经解除。
+#ELSESAY
+您好象没有足够的物品啊，还是先找到了再来找我吧！
+[@喜福领奖]
+如果您在商铺中购买“喜福红包”就能获得一个千里传音（大），\
+和一个“参与活动”凭证，有了这个凭证您就可以换取一个焰火包，\
+您可以从下面五个焰火礼包中任意挑选一个，\
+同时还可以从玄紫、玄褐、玄绿中任意挑选一个，\
+它是免费赠送给你的礼物。\
+首先，您想要选择哪种焰火礼包？\
+<一心一意包/@一心一意包>       <心心相印包/@心心相印包>       <飞火流星包/@飞火流星包>\
+<浪漫星雨包/@浪漫星雨包>       <绮梦幻想包/@绮梦幻想包>\
+<返回/@main>
+[@一心一意包]
+您已经选择了一心一意包，\
+您还想从下面三个礼物中挑选哪个给自己？\
+<玄紫/@喜福领败>              <玄褐/@喜福领败>              <玄绿/@喜福领败>\
+\ \
+<返回上一页/@喜福领奖>                          <返回/@main>
+[@心心相印包]
+您已经选择了心心相印包，\
+您还想从下面三个礼物中挑选哪个给自己？\
+<玄紫/@喜福领败>              <玄褐/@喜福领败>              <玄绿/@喜福领败>\
+\ \
+<返回上一页/@喜福领奖>                          <返回/@main>
+[@飞火流星包]
+您已经选择了飞火流星包，\
+您还想从下面三个礼物中挑选哪个给自己？\
+<玄紫/@喜福领败>              <玄褐/@喜福领败>              <玄绿/@喜福领败>\
+\ \
+<返回上一页/@喜福领奖>                          <返回/@main>
+[@浪漫星雨包]
+您已经选择了浪漫星雨包，\
+您还想从下面三个礼物中挑选哪个给自己？\
+<玄紫/@喜福领败>              <玄褐/@喜福领败>              <玄绿/@喜福领败>\
+\ \
+<返回上一页/@喜福领奖>                          <返回/@main>
+[@绮梦幻想包]
+您已经选择了绮梦幻想包，\
+您还想从下面三个礼物中挑选哪个给自己？\
+<玄紫/@喜福领败>              <玄褐/@喜福领败>              <玄绿/@喜福领败>\
+\ \
+<返回上一页/@喜福领奖>                          <返回/@main>
+[@使祝福糕]
+听说过祝福糕吗？据说它除了美味之外，还带有不可思议的力量，\
+我很想尝试一下它的美味，您能帮我找到它吗？\
+只要您能把它交给我，我可以帮您完成一件让您意想不到的事情，\
+如您对解开禁锢后的物品不满意，\
+我可以将该物品转变为任意职业的相同物品。\
+只要您把祝福糕和想要转变的物品交给我就可以了，\
+剩下的事情您就交给我吧，包您称心如意！\
+<使用祝福糕换物品/@使祝福糕1>
+[@使祝福糕1]
+您想要使用祝福糕换成哪个物品？\
+<誓言腰带(战)/@誓言腰带(战)>   <誓言腰带(法)/@誓言腰带(法)>   <誓言腰带(道)/@誓言腰带(道)>\
+<预言头盔(战)/@预言头盔(战)>   <预言头盔(法)/@预言头盔(法)>   <预言头盔(道)/@预言头盔(道)>\
+<传说魔靴(战)/@传说魔靴(战)>   <传说魔靴(法)/@传说魔靴(法)>   <传说魔靴(道)/@传说魔靴(道)>\
+<狂战手镯/@狂战手镯>       <混世手镯/@混世手镯>       <太极手镯/@太极手镯>\
+<狂战戒指/@狂战戒指>       <混世戒指/@混世戒指>       <太极戒指/@太极戒指>\
+<银星勋章(战)/@银星勋章(战)>   <银星勋章(法)/@银星勋章(法)>   <银星勋章(道)/@银星勋章(道)>\
+<寂静之手(战)/@寂静之手(战)>   <寂静之手(法)/@寂静之手(法)>   <寂静之手(道)/@寂静之手(道)>\
+<下一页/@使祝福糕2>                     <返回/@main>
+[@使祝福糕2]
+您想要使用祝福糕换成哪个物品？\
+<星王战靴/@星王战靴>       <星王法靴/@星王法靴>       <星王道靴/@星王道靴>\
+<星王腰带(战)/@星王腰带(战)>   <星王腰带(法)/@星王腰带(法)>   <星王腰带(道)/@星王腰带(道)>\
+<星王战盔/@星王战盔>       <星王法冠/@星王法冠>       <星王道盔/@星王道盔> \
+<星王战戒/@星王战戒>       <星王魔戒/@星王法戒>       <星王道戒/@星王道戒> \
+<星王护腕(战)/@星王护腕(战)>       <星王护腕(法)/@星王护腕(法)>       <星王护腕(道)/@星王护腕(道)> \
+<星王项链(战)/@星王项链(战)>       <星王项链(法)/@星王项链(法)>       <星王项链(道)/@星王项链(道)> \ \
+<上一页/@使祝福糕1>                     <返回/@main>
+
+
+[@星王项链(道)]
+你想使用哪个星王项链来交换星王项链(道)呢？\
+\ \
+<星王项链(战)/@星王项链(战)换道>            <星王项链(法)/@星王项链(法)换道>\
+\ \
+<返回/@使祝福糕1>
+
+[@星王项链(战)换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王项链(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王项链(战) 1
+give 星王项链(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星王项链(法)换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王项链(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王项链(法) 1
+give 星王项链(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星王项链(法)]
+你想使用哪个星王项链来交换星王项链(法)呢？\
+\ \
+<星王项链(战)/@星王项链(战)换法>            <星王项链(道)/@星王项链(道)换法>\
+\ \
+<返回/@使祝福糕1>
+
+[@星王项链(战)换法]
+#IF
+checkitem 祝福糕 1
+checkitem 星王项链(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王项链(战) 1
+give 星王项链(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星王项链(道)换法]
+#IF
+checkitem 祝福糕 1
+checkitem 星王项链(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王项链(道) 1
+give 星王项链(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+
+[@星王项链(战)]
+你想使用哪个星王项链来交换星王项链(战)呢？\
+\ \
+<星王项链(法)/@星王项链(法)换战>            <星王项链(道)/@星王项链(道)换战>\
+\ \
+<返回/@使祝福糕1>
+
+[@星王项链(法)换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王项链(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王项链(法) 1
+give 星王项链(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星王项链(道)换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王项链(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王项链(道) 1
+give 星王项链(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+
+
+
+
+[@星王护腕(道)]
+你想使用哪个星王护腕来交换星王护腕(道)呢？\
+\ \
+<星王护腕(战)/@星王护腕(战)换道>            <星王护腕(法)/@星王护腕(法)换道>\
+\ \
+<返回/@使祝福糕1>
+
+[@星王护腕(战)换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王护腕(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王护腕(战) 1
+give 星王护腕(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星王护腕(法)换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王护腕(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王护腕(法) 1
+give 星王护腕(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星王护腕(法)]
+你想使用哪个星王护腕来交换星王护腕(法)呢？\
+\ \
+<星王护腕(战)/@星王护腕(战)换法>            <星王护腕(道)/@星王护腕(道)换法>\
+\ \
+<返回/@使祝福糕1>
+
+[@星王护腕(战)换法]
+#IF
+checkitem 祝福糕 1
+checkitem 星王护腕(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王护腕(战) 1
+give 星王护腕(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星王护腕(道)换法]
+#IF
+checkitem 祝福糕 1
+checkitem 星王护腕(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王护腕(道) 1
+give 星王护腕(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+
+[@星王护腕(战)]
+你想使用哪个星王护腕来交换星王护腕(战)呢？\
+\ \
+<星王护腕(法)/@星王护腕(法)换战>            <星王护腕(道)/@星王护腕(道)换战>\
+\ \
+<返回/@使祝福糕1>
+
+[@星王护腕(法)换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王护腕(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王护腕(法) 1
+give 星王护腕(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星王护腕(道)换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王护腕(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王护腕(道) 1
+give 星王护腕(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+
+
+[@星王道戒]
+你想使用哪个星王戒指来交换星王道戒呢？\
+\ \
+<星王战戒/@星战戒换道>            <星王魔戒/@星魔戒换道>\
+\ \
+<返回/@使祝福糕1>
+
+[@星战戒换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王战戒 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王战戒 1
+give 星王道戒 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星魔戒换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王魔戒 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王魔戒 1
+give 星王道戒 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+
+[@星王魔戒]
+你想使用哪个星王戒指来交换星王魔戒呢？\
+\ \
+<星王战戒/@星战戒换魔>            <星王道戒/@星道戒换魔>\
+\ \
+<返回/@使祝福糕1>
+
+[@星战戒换魔]
+#IF
+checkitem 祝福糕 1
+checkitem 星王战戒 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王战戒 1
+give 星王魔戒 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星道戒换魔]
+#IF
+checkitem 祝福糕 1
+checkitem 星王道戒 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王道戒 1
+give 星王魔戒 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+
+[@星王战戒]
+你想使用哪个星王戒指来交换星王战戒呢？\
+\ \
+<星王魔戒/@星魔戒换战>            <星王道戒/@星道戒换战>\
+\ \
+<返回/@使祝福糕1>
+
+[@星道戒换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王道戒 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王道戒 1
+give 星王战戒 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+[@星魔戒换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王魔戒 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王魔戒 1
+give 星王战戒 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+
+
+
+[@誓言腰带(战)]
+你想使用哪个誓言腰带来交换誓言腰带(战)呢？\
+\ \
+<誓言腰带(法)/@誓言法换战>            <誓言腰带(道)/@誓言道换战>\
+\ \
+<返回/@使祝福糕1>
+[@誓言腰带(法)]
+你想使用哪个誓言腰带来交换誓言腰带(法)呢？\
+\ \
+<誓言腰带(战)/@誓言战换法>            <誓言腰带(道)/@誓言道换法>\
+\ \
+<返回/@使祝福糕1>
+[@誓言腰带(道)]
+你想使用哪个誓言腰带来交换誓言腰带(道)呢？\
+\ \
+<誓言腰带(战)/@誓言战换道>            <誓言腰带(法)/@誓言法换道>\
+\ \
+<返回/@使祝福糕1>
+[@誓言战换法]
+#IF
+checkitem 祝福糕 1
+checkitem 誓言腰带(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 誓言腰带(战) 1
+give 誓言腰带(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@誓言战换道]
+#IF
+checkitem 祝福糕 1
+checkitem 誓言腰带(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 誓言腰带(战) 1
+give 誓言腰带(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@誓言法换战]
+#IF
+checkitem 祝福糕 1
+checkitem 誓言腰带(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 誓言腰带(法) 1
+give 誓言腰带(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@誓言法换道]
+#IF
+checkitem 祝福糕 1
+checkitem 誓言腰带(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 誓言腰带(法) 1
+give 誓言腰带(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@誓言道换法]
+#IF
+checkitem 祝福糕 1
+checkitem 誓言腰带(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 誓言腰带(道) 1
+give 誓言腰带(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@誓言道换战]
+#IF
+checkitem 祝福糕 1
+checkitem 誓言腰带(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 誓言腰带(道) 1
+give 誓言腰带(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@预言头盔(战)]
+你想使用哪个预言头盔来交换预言头盔(战)呢？\
+\ \
+<预言头盔(法)/@预言法换战>            <预言头盔(道)/@预言道换战>\
+\ \
+<返回/@使祝福糕1>
+[@预言头盔(法)]
+你想使用哪个预言头盔来交换预言头盔(法)呢？\
+\ \
+<预言头盔(战)/@预言战换法>            <预言头盔(道)/@预言道换法>\
+\ \
+<返回/@使祝福糕1>
+[@预言头盔(道)]
+你想使用哪个预言头盔来交换预言头盔(道)呢？\
+\ \
+<预言头盔(战)/@预言战换道>            <预言头盔(法)/@预言法换道>\
+\ \
+<返回/@使祝福糕1>
+[@预言战换法]
+#IF
+checkitem 祝福糕 1
+checkitem 预言头盔(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 预言头盔(战) 1
+give 预言头盔(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@预言战换道]
+#IF
+checkitem 祝福糕 1
+checkitem 预言头盔(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 预言头盔(战) 1
+give 预言头盔(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@预言法换战]
+#IF
+checkitem 祝福糕 1
+checkitem 预言头盔(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 预言头盔(法) 1
+give 预言头盔(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@预言法换道]
+#IF
+checkitem 祝福糕 1
+checkitem 预言头盔(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 预言头盔(法) 1
+give 预言头盔(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@预言道换法]
+#IF
+checkitem 祝福糕 1
+checkitem 预言头盔(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 预言头盔(道) 1
+give 预言头盔(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@预言道换战]
+#IF
+checkitem 祝福糕 1
+checkitem 预言头盔(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 预言头盔(道) 1
+give 预言头盔(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@狂战手镯]
+你想使用哪个手镯来交换狂战手镯呢？\
+\ \
+<混世手镯/@混世镯换战>            <太极手镯/@太极镯换战>\
+\ \
+<返回/@使祝福糕1>
+[@混世手镯]
+你想使用哪个手镯来交换混世手镯呢？\
+\ \
+<狂战手镯/@狂战镯换法>            <太极手镯/@太极镯换法>\
+\ \
+<返回/@使祝福糕1>
+[@太极手镯]
+你想使用哪个手镯来交换太极手镯呢？\
+\ \
+<狂战手镯/@狂战镯换道>            <混世手镯/@混世镯换道>\
+\ \
+<返回/@使祝福糕1>
+[@狂战镯换法]
+#IF
+checkitem 祝福糕 1
+checkitem 狂战手镯 1
+#ACT
+TAKE 祝福糕 1
+TAKE 狂战手镯 1
+give 混世手镯 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@狂战镯换道]
+#IF
+checkitem 祝福糕 1
+checkitem 狂战手镯 1
+#ACT
+TAKE 祝福糕 1
+TAKE 狂战手镯 1
+give 太极手镯 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@混世镯换战]
+#IF
+checkitem 祝福糕 1
+checkitem 混世手镯 1
+#ACT
+TAKE 祝福糕 1
+TAKE 混世手镯 1
+give 狂战手镯 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@混世镯换道]
+#IF
+checkitem 祝福糕 1
+checkitem 混世手镯 1
+#ACT
+TAKE 祝福糕 1
+TAKE 混世手镯 1
+give 太极手镯 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@太极镯换法]
+#IF
+checkitem 祝福糕 1
+checkitem 太极手镯 1
+#ACT
+TAKE 祝福糕 1
+TAKE 太极手镯 1
+give 混世手镯 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@太极镯换战]
+#IF
+checkitem 祝福糕 1
+checkitem 太极手镯 1
+#ACT
+TAKE 祝福糕 1
+TAKE 太极手镯 1
+give 狂战手镯 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@狂战戒指]
+你想使用哪个戒指来交换狂战戒指呢？\
+\ \
+<混世戒指/@混世戒换战>            <太极戒指/@太极戒换战>\
+\ \
+<返回/@使祝福糕1>
+[@混世戒指]
+你想使用哪个戒指来交换混世戒指呢？\
+\ \
+<狂战戒指/@狂战戒换法>            <太极戒指/@太极戒换法>\
+\ \
+<返回/@使祝福糕1>
+[@太极戒指]
+你想使用哪个戒指来交换太极戒指呢？\
+\ \
+<狂战戒指/@狂战戒换道>            <混世戒指/@混世戒换道>\
+\ \
+<返回/@使祝福糕1>
+[@狂战戒换法]
+#IF
+checkitem 祝福糕 1
+checkitem 狂战戒指 1
+#ACT
+TAKE 祝福糕 1
+TAKE 狂战戒指 1
+give 混世戒指 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@狂战戒换道]
+#IF
+checkitem 祝福糕 1
+checkitem 狂战戒指 1
+#ACT
+TAKE 祝福糕 1
+TAKE 狂战戒指 1
+give 太极戒指 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@混世戒换战]
+#IF
+checkitem 祝福糕 1
+checkitem 混世戒指 1
+#ACT
+TAKE 祝福糕 1
+TAKE 混世戒指 1
+give 狂战戒指 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@混世戒换道]
+#IF
+checkitem 祝福糕 1
+checkitem 混世戒指 1
+#ACT
+TAKE 祝福糕 1
+TAKE 混世戒指 1
+give 太极戒指 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@太极戒换法]
+#IF
+checkitem 祝福糕 1
+checkitem 太极戒指 1
+#ACT
+TAKE 祝福糕 1
+TAKE 太极戒指 1
+give 混世戒指 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@太极戒换战]
+#IF
+checkitem 祝福糕 1
+checkitem 太极戒指 1
+#ACT
+TAKE 祝福糕 1
+TAKE 太极戒指 1
+give 狂战戒指 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@传说魔靴(战)]
+你想使用哪个传说魔靴来交换传说魔靴(战)呢？\
+\ \
+<传说魔靴(法)/@传说法换战>            <传说魔靴(道)/@传说道换战>\
+\ \
+<返回/@使祝福糕1>
+[@传说魔靴(法)]
+你想使用哪个传说魔靴来交换传说魔靴(法)呢？\
+\ \
+<传说魔靴(战)/@传说战换法>            <传说魔靴(道)/@传说道换法>\
+\ \
+<返回/@使祝福糕1>
+[@传说魔靴(道)]
+你想使用哪个传说魔靴来交换传说魔靴(道)呢？\
+\ \
+<传说魔靴(战)/@传说战换道>            <传说魔靴(法)/@传说法换道>\
+\ \
+<返回/@使祝福糕1>
+[@传说战换法]
+#IF
+checkitem 祝福糕 1
+checkitem 传说魔靴(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 传说魔靴(战) 1
+give 传说魔靴(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@传说战换道]
+#IF
+checkitem 祝福糕 1
+checkitem 传说魔靴(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 传说魔靴(战) 1
+give 传说魔靴(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@传说法换战]
+#IF
+checkitem 祝福糕 1
+checkitem 传说魔靴(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 传说魔靴(法) 1
+give 传说魔靴(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@传说法换道]
+#IF
+checkitem 祝福糕 1
+checkitem 传说魔靴(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 传说魔靴(法) 1
+give 传说魔靴(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@传说道换法]
+#IF
+checkitem 祝福糕 1
+checkitem 传说魔靴(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 传说魔靴(道) 1
+give 传说魔靴(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@传说道换战]
+#IF
+checkitem 祝福糕 1
+checkitem 传说魔靴(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 传说魔靴(道) 1
+give 传说魔靴(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@银星勋章(战)]
+你想使用哪个银星勋章来交换银星勋章(战)呢？\
+\ \
+<银星勋章(法)/@银星法换战>            <银星勋章(道)/@银星道换战>\
+\ \
+<返回/@使祝福糕1>
+[@银星勋章(法)]
+你想使用哪个银星勋章来交换银星勋章(法)呢？\
+\ \
+<银星勋章(战)/@银星战换法>            <银星勋章(道)/@银星道换法>\
+\ \
+<返回/@使祝福糕1>
+[@银星勋章(道)]
+你想使用哪个银星勋章来交换银星勋章(道)呢？\
+\ \
+<银星勋章(战)/@银星战换道>            <银星勋章(法)/@银星法换道>\
+\ \
+<返回/@使祝福糕1>
+[@银星战换法]
+#IF
+checkitem 祝福糕 1
+checkitem 银星勋章(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 银星勋章(战) 1
+give 银星勋章(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@银星战换道]
+#IF
+checkitem 祝福糕 1
+checkitem 银星勋章(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 银星勋章(战) 1
+give 银星勋章(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@银星法换战]
+#IF
+checkitem 祝福糕 1
+checkitem 银星勋章(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 银星勋章(法) 1
+give 银星勋章(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@银星法换道]
+#IF
+checkitem 祝福糕 1
+checkitem 银星勋章(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 银星勋章(法) 1
+give 银星勋章(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@银星道换法]
+#IF
+checkitem 祝福糕 1
+checkitem 银星勋章(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 银星勋章(道) 1
+give 银星勋章(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@银星道换战]
+#IF
+checkitem 祝福糕 1
+checkitem 银星勋章(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 银星勋章(道) 1
+give 银星勋章(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@寂静之手(战)]
+你想使用哪个寂静之手来交换寂静之手(战)呢？\
+\ \
+<寂静之手(法)/@寂静法换战>            <寂静之手(道)/@寂静道换战>\
+\ \
+<返回/@使祝福糕1>
+[@寂静之手(法)]
+你想使用哪个寂静之手来交换寂静之手(法)呢？\
+\ \
+<寂静之手(战)/@寂静战换法>            <寂静之手(道)/@寂静道换法>\
+\ \
+<返回/@使祝福糕1>
+[@寂静之手(道)]
+你想使用哪个寂静之手来交换寂静之手(道)呢？\
+\ \
+<寂静之手(战)/@寂静战换道>            <寂静之手(法)/@寂静法换道>\
+\ \
+<返回/@使祝福糕1>
+[@寂静战换法]
+#IF
+checkitem 祝福糕 1
+checkitem 寂静之手(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 寂静之手(战) 1
+give 寂静之手(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@寂静战换道]
+#IF
+checkitem 祝福糕 1
+checkitem 寂静之手(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 寂静之手(战) 1
+give 寂静之手(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@寂静法换战]
+#IF
+checkitem 祝福糕 1
+checkitem 寂静之手(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 寂静之手(法) 1
+give 寂静之手(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@寂静法换道]
+#IF
+checkitem 祝福糕 1
+checkitem 寂静之手(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 寂静之手(法) 1
+give 寂静之手(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@寂静道换法]
+#IF
+checkitem 祝福糕 1
+checkitem 寂静之手(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 寂静之手(道) 1
+give 寂静之手(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@寂静道换战]
+#IF
+checkitem 祝福糕 1
+checkitem 寂静之手(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 寂静之手(道) 1
+give 寂静之手(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星王战靴]
+你想使用哪个星王靴来交换星王战靴呢？\
+\ \
+<星王法靴/@星靴法换战>            <星王道靴/@星靴道换战>\
+\ \
+<返回/@使祝福糕1>
+[@星王法靴]
+你想使用哪个星王靴来交换星王法靴呢？\
+\ \
+<星王战靴/@星靴战换法>            <星王道靴/@星靴道换法>\
+\ \
+<返回/@使祝福糕1>
+[@星王道靴]
+你想使用哪个星王靴来交换星王道靴呢？\
+\ \
+<星王战靴/@星靴战换道>            <星王法靴/@星靴法换道>\
+\ \
+<返回/@使祝福糕1>
+[@星靴战换法]
+#IF
+checkitem 祝福糕 1
+checkitem 星王战靴 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王战靴 1
+give 星王法靴 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星靴战换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王战靴 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王战靴 1
+give 星王道靴 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星靴法换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王法靴 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王法靴 1
+give 星王战靴 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星靴法换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王法靴 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王法靴 1
+give 星王道靴 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星靴道换法]
+#IF
+checkitem 祝福糕 1
+checkitem 星王道靴 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王道靴 1
+give 星王法靴 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星靴道换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王道靴 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王道靴 1
+give 星王战靴 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星王腰带(战)]
+你想使用哪个星王腰带来交换星王腰带(战)呢？\
+\ \
+<星王腰带(法)/@星腰法换战>            <星王腰带(道)/@星腰道换战>\
+\ \
+<返回/@使祝福糕1>
+[@星王腰带(法)]
+你想使用哪个星王腰带来交换星王腰带(法)呢？\
+\ \
+<星王腰带(战)/@星腰战换法>            <星王腰带(道)/@星腰道换法>\
+\ \
+<返回/@使祝福糕1>
+[@星王腰带(道)]
+你想使用哪个星王腰带来交换星王腰带(道)呢？\
+\ \
+<星王腰带(战)/@星腰战换道>            <星王腰带(法)/@星腰法换道>\
+\ \
+<返回/@使祝福糕1>
+[@星腰战换法]
+#IF
+checkitem 祝福糕 1
+checkitem 星王腰带(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王腰带(战) 1
+give 星王腰带(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星腰战换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王腰带(战) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王腰带(战) 1
+give 星王腰带(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星腰法换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王腰带(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王腰带(法) 1
+give 星王腰带(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星腰法换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王腰带(法) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王腰带(法) 1
+give 星王腰带(道) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星腰道换法]
+#IF
+checkitem 祝福糕 1
+checkitem 星王腰带(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王腰带(道) 1
+give 星王腰带(法) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星腰道换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王腰带(道) 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王腰带(道) 1
+give 星王腰带(战) 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星王战盔]
+你想使用哪个星王盔来交换星王战盔呢？\
+\ \
+<星王法冠/@星盔法换战>            <星王道盔/@星盔道换战>\
+\ \
+<返回/@使祝福糕1>
+[@星王法冠]
+你想使用哪个星王盔来交换星王法冠呢？\
+\ \
+<星王战盔/@星盔战换法>            <星王道盔/@星盔道换法>\
+\ \
+<返回/@使祝福糕1>
+[@星王道盔]
+你想使用哪个星王盔来交换星王道盔呢？\
+\ \
+<星王战盔/@星盔战换道>            <星王法冠/@星盔法换道>\
+\ \
+<返回/@使祝福糕1>
+[@星盔战换法]
+#IF
+checkitem 祝福糕 1
+checkitem 星王战盔 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王战盔 1
+give 星王法冠 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星盔战换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王战盔 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王战盔 1
+give 星王道盔 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星盔法换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王法冠 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王法冠 1
+give 星王战盔 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星盔法换道]
+#IF
+checkitem 祝福糕 1
+checkitem 星王法冠 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王法冠 1
+give 星王道盔 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星盔道换法]
+#IF
+checkitem 祝福糕 1
+checkitem 星王道盔 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王道盔 1
+give 星王法冠 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@星盔道换战]
+#IF
+checkitem 祝福糕 1
+checkitem 星王道盔 1
+#ACT
+TAKE 祝福糕 1
+TAKE 星王道盔 1
+give 星王战盔 1
+#SAY
+恭喜你，交换成功！
+#ELSESAY
+您好象还缺少必要的物品啊！
+[@使乾坤袋]
+乾坤袋的神奇您知道吗？或许您还没有发现，\
+没关系，凭着我的本事，肯定能帮您打开其中的奥秘。\
+传说乾坤袋曾是天尊的物品，他将收集的奇珍都放在里面，\
+后来被奸细盗走，从此不知去向了。\
+据说里面有紫水晶矿、绿宝石矿等物品，\
+先把包裹整理一下，留有足够的包裹空间，\
+否则不能获得物品，您自己要注意哦！\
+\ \
+<我确认有4格以上的包裹空间，我要打开乾坤袋/@开乾坤袋>
+[@开乾坤袋]
+#IF
+checkitem 乾坤袋 1
+#ACT
+take 乾坤袋 1
+goto @第一块
+goto @第二块
+goto @第三块
+goto @第四块
+#SAY
+经过我的妙手，已经从神奇的乾坤袋中取出物品了！
+#ELSESAY
+您没有乾坤袋啊，我怎么帮您打开它呢！
+[@第一块]
+#IF
+random 2
+#ACT
+give 绿宝石矿 1
+#ELSEACT
+give 紫水晶矿 1
+[@第二块]
+#IF
+random 2
+#ACT
+give 绿宝石矿 1
+#ELSEACT
+give 紫水晶矿 1
+[@第三块]
+#IF
+random 2
+#ACT
+give 绿宝石矿 1
+#ELSEACT
+give 紫水晶矿 1
+[@第四块]
+#IF
+random 2
+#ACT
+give 绿宝石矿 1
+#ELSEACT
+give 紫水晶矿 1

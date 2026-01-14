@@ -1,0 +1,4223 @@
+[@YXXL]
+{
+#IF
+CHECKHEROJOB WARRIOR
+#ACT
+DELAYGOTO 1 @战士英雄
+break
+
+#IF
+CHECKHEROJOB WIZARD
+#ACT
+DELAYGOTO 1 @法师英雄
+break
+
+#IF
+CHECKHEROJOB TAOIST
+#ACT
+DELAYGOTO 1 @道士英雄
+break
+
+[@战士英雄]
+#IF
+CheckHerolevel = 1
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 42
+break
+
+#IF
+CheckHerolevel = 2
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 48
+break
+
+#IF
+CheckHerolevel = 3
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 55
+break
+
+#IF
+CheckHerolevel = 4
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 62
+break
+
+#IF
+CheckHerolevel = 5
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 70
+break
+
+#IF
+CheckHerolevel = 6
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 78
+break
+
+#IF
+CheckHerolevel = 7
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 87
+break
+
+#IF
+CheckHerolevel = 8
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 96
+break
+
+#IF
+CheckHerolevel = 9
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 106
+break
+
+#IF
+CheckHerolevel = 10
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 116
+break
+
+#IF
+CheckHerolevel = 11
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 127
+break
+
+#IF
+CheckHerolevel = 12
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 138
+break
+
+#IF
+CheckHerolevel = 13
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 150
+break
+
+#IF
+CheckHerolevel = 14
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 162
+break
+
+#IF
+CheckHerolevel = 15
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 175
+break
+
+#IF
+CheckHerolevel = 16
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 188
+break
+
+#IF
+CheckHerolevel = 17
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 202
+break
+
+#IF
+CheckHerolevel = 18
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 216
+break
+
+#IF
+CheckHerolevel = 19
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 231
+break
+
+#IF
+CheckHerolevel = 20
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 246
+break
+
+#IF
+CheckHerolevel = 21
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 262
+break
+
+#IF
+CheckHerolevel = 22
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 278
+break
+
+#IF
+CheckHerolevel = 23
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 295
+break
+
+#IF
+CheckHerolevel = 24
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 312
+break
+
+#IF
+CheckHerolevel = 25
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 330
+break
+
+#IF
+CheckHerolevel = 26
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 348
+break
+
+#IF
+CheckHerolevel = 27
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 366
+break
+
+#IF
+CheckHerolevel = 28
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 386
+break
+
+#IF
+CheckHerolevel = 29
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 406
+break
+
+#IF
+CheckHerolevel = 30
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 430
+break
+
+#IF
+CheckHerolevel = 31
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 447
+break
+
+#IF
+CheckHerolevel = 32
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 468
+break
+
+#IF
+CheckHerolevel = 33
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 490
+break
+
+#IF
+CheckHerolevel = 34
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 512
+break
+
+#IF
+CheckHerolevel = 35
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 508
+break
+
+#IF
+CheckHerolevel = 36
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 558
+break
+
+#IF
+CheckHerolevel = 37
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 582
+break
+
+#IF
+CheckHerolevel = 38
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 606
+break
+
+#IF
+CheckHerolevel = 39
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 631
+break
+
+#IF
+CheckHerolevel = 40
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 656
+break
+
+#IF
+CheckHerolevel = 41
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 682
+break
+
+#IF
+CheckHerolevel = 42
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 708
+break
+
+#IF
+CheckHerolevel = 43
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 735
+break
+
+#IF
+CheckHerolevel = 44
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 762
+break
+
+#IF
+CheckHerolevel = 45
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 790
+break
+
+#IF
+CheckHerolevel = 46
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 818
+break
+
+#IF
+CheckHerolevel = 47
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 847
+break
+
+#IF
+CheckHerolevel = 48
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 876
+break
+
+#IF
+CheckHerolevel = 49
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 906
+break
+
+#IF
+CheckHerolevel = 50
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 936
+break
+
+#IF
+CheckHerolevel = 51
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 967
+break
+
+#IF
+CheckHerolevel = 52
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 998
+break
+
+#IF
+CheckHerolevel = 53
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1030
+break
+
+#IF
+CheckHerolevel = 54
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1062
+break
+
+#IF
+CheckHerolevel = 55
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1095
+break
+
+#IF
+CheckHerolevel = 56
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1128
+break
+
+#IF
+CheckHerolevel = 57
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1162
+break
+
+#IF
+CheckHerolevel = 58
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1196
+break
+
+#IF
+CheckHerolevel = 59
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1231
+break
+
+#IF
+CheckHerolevel = 60
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1266
+break
+
+#IF
+CheckHerolevel = 61
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1302
+break
+
+#IF
+CheckHerolevel = 62
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1338
+break
+
+#IF
+CheckHerolevel = 63
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1375
+break
+
+#IF
+CheckHerolevel = 64
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1412
+break
+
+#IF
+CheckHerolevel = 65
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1450
+break
+
+#IF
+CheckHerolevel = 66
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1488
+break
+
+#IF
+CheckHerolevel = 67
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1527
+break
+
+#IF
+CheckHerolevel = 68
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1566
+break
+
+#IF
+CheckHerolevel = 69
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1606
+break
+
+#IF
+CheckHerolevel = 70
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1646
+break
+
+#IF
+CheckHerolevel = 71
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1687
+break
+
+#IF
+CheckHerolevel = 72
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1728
+break
+
+#IF
+CheckHerolevel = 73
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1770
+break
+
+#IF
+CheckHerolevel = 74
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1812
+break
+
+#IF
+CheckHerolevel = 75
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1855
+break
+
+#IF
+CheckHerolevel = 76
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1898
+break
+
+#IF
+CheckHerolevel = 77
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1942
+break
+
+#IF
+CheckHerolevel = 78
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1986
+break
+
+#IF
+CheckHerolevel = 79
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2031
+break
+
+#IF
+CheckHerolevel = 80
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2076
+break
+
+#IF
+CheckHerolevel = 81
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2122
+break
+
+#IF
+CheckHerolevel = 82
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2168
+break
+
+#IF
+CheckHerolevel = 83
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2215
+break
+
+#IF
+CheckHerolevel = 84 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2262
+break
+
+#IF
+CheckHerolevel = 85 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2310
+break
+
+#IF
+CheckHerolevel = 86 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2358
+break
+
+#IF
+CheckHerolevel = 87 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2407
+break
+
+#IF
+CheckHerolevel = 88 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2456
+break
+
+#IF
+CheckHerolevel = 89 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2506
+break
+
+#IF
+CheckHerolevel = 90 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2556
+break
+
+#IF
+CheckHerolevel = 91 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2607
+break
+
+#IF
+CheckHerolevel = 92 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2658
+break
+
+#IF
+CheckHerolevel = 93 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2710
+break
+
+#IF
+CheckHerolevel = 94 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2762
+break
+
+#IF
+CheckHerolevel = 95 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2815
+break
+
+#IF
+CheckHerolevel = 96 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2868
+break
+
+#IF
+CheckHerolevel = 97 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2922
+break
+
+#IF
+CheckHerolevel = 98 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2976
+break
+
+#IF
+CheckHerolevel = 99 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3031
+break
+
+#IF
+CheckHerolevel = 100 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3086
+break
+
+#IF
+CheckHerolevel = 101 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3019
+break
+
+#IF
+CheckHerolevel = 102 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3072
+break
+
+#IF
+CheckHerolevel = 103 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3126
+break
+
+#IF
+CheckHerolevel = 104 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3180
+break
+
+#IF
+CheckHerolevel = 105 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3235
+break
+
+#IF
+CheckHerolevel = 106 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3290
+break
+
+#IF
+CheckHerolevel = 107 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3346
+break
+
+#IF
+CheckHerolevel = 108 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3402
+break
+
+#IF
+CheckHerolevel = 109 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3459
+break
+
+#IF
+CheckHerolevel = 110 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3516
+break
+
+#IF
+CheckHerolevel = 111 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3574
+break
+
+#IF
+CheckHerolevel = 112 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3632
+break
+
+#IF
+CheckHerolevel = 113 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3691
+break
+
+#IF
+CheckHerolevel = 114 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3750
+break
+
+#IF
+CheckHerolevel = 115 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3810
+break
+
+#IF
+CheckHerolevel = 116 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3870
+break
+
+#IF
+CheckHerolevel = 117 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3931
+break
+
+#IF
+CheckHerolevel = 118 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3992
+break
+
+#IF
+CheckHerolevel = 119 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4054
+break
+
+#IF
+CheckHerolevel = 120 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4116
+break
+
+#IF
+CheckHerolevel = 121 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4179
+break
+
+#IF
+CheckHerolevel = 122 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4242
+break
+
+#IF
+CheckHerolevel = 123 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4306
+break
+
+#IF
+CheckHerolevel = 124 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4370
+break
+
+#IF
+CheckHerolevel = 125 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4435
+break
+
+#IF
+CheckHerolevel = 126 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4500
+break
+
+#IF
+CheckHerolevel = 127 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4566
+break
+
+#IF
+CheckHerolevel = 128 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4632
+break
+
+#IF
+CheckHerolevel = 129 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4699
+break
+
+#IF
+CheckHerolevel = 130 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4766
+break
+
+#IF
+CheckHerolevel = 131 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4834
+break
+
+#IF
+CheckHerolevel = 132 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4902
+break
+
+#IF
+CheckHerolevel = 133 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4971
+break
+
+#IF
+CheckHerolevel = 134 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5040
+break
+
+#IF
+CheckHerolevel = 135 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5110
+break
+
+#IF
+CheckHerolevel = 136 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5180
+break
+
+#IF
+CheckHerolevel = 137 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5251
+break
+
+#IF
+CheckHerolevel = 138 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5322
+break
+
+#IF
+CheckHerolevel = 139 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5394
+break
+
+#IF
+CheckHerolevel = 140 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5466
+break
+
+#IF
+CheckHerolevel = 141 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5539
+break
+
+#IF
+CheckHerolevel = 142 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5612
+break
+
+#IF
+CheckHerolevel = 143 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5686
+break
+
+#IF
+CheckHerolevel = 144 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5760
+break
+
+#IF
+CheckHerolevel = 145 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5835
+break
+
+#IF
+CheckHerolevel = 146 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5910
+break
+
+#IF
+CheckHerolevel = 147 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5986
+break
+
+#IF
+CheckHerolevel = 148 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6062
+break
+
+#IF
+CheckHerolevel = 149 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6139
+break
+
+#IF
+CheckHerolevel = 150 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6216
+break
+
+#IF
+CheckHerolevel = 151 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6294
+break
+
+#IF
+CheckHerolevel = 152 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6372
+break
+
+#IF
+CheckHerolevel = 153 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6451
+break
+
+#IF
+CheckHerolevel = 154 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6530
+break
+
+#IF
+CheckHerolevel = 155 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6610
+break
+
+#IF
+CheckHerolevel = 156 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6690
+break
+
+#IF
+CheckHerolevel = 157 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6771
+break
+
+#IF
+CheckHerolevel = 158 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6852
+break
+
+#IF
+CheckHerolevel = 159 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6934
+break
+
+#IF
+CheckHerolevel = 160 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7016
+break
+
+#IF
+CheckHerolevel = 161 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7099
+break
+
+#IF
+CheckHerolevel = 162 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7182
+break
+
+#IF
+CheckHerolevel = 163 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7266
+break
+
+#IF
+CheckHerolevel = 164 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7350
+break
+
+#IF
+CheckHerolevel = 165 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7435
+break
+
+#IF
+CheckHerolevel = 166 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7520
+break
+
+#IF
+CheckHerolevel = 167 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7606
+break
+
+#IF
+CheckHerolevel = 168 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7692
+break
+
+#IF
+CheckHerolevel = 169 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7779
+break
+
+#IF
+CheckHerolevel = 170 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7866
+break
+
+#IF
+CheckHerolevel = 171 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 7954
+break
+
+#IF
+CheckHerolevel = 172 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8042
+break
+
+#IF
+CheckHerolevel = 173 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8131
+break
+
+#IF
+CheckHerolevel = 174 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8220
+break
+
+#IF
+CheckHerolevel = 175 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8310
+break
+
+#IF
+CheckHerolevel = 176 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8400
+break
+
+#IF
+CheckHerolevel = 177 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8491
+break
+
+#IF
+CheckHerolevel = 178 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8582
+break
+
+#IF
+CheckHerolevel = 179 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8674
+break
+
+#IF
+CheckHerolevel = 180 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8766
+break
+
+#IF
+CheckHerolevel = 181 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8859
+break
+
+#IF
+CheckHerolevel = 182 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 8952
+break
+
+#IF
+CheckHerolevel = 183 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 9046
+break
+
+#IF
+CheckHerolevel = 184 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 9140
+break
+
+#IF
+CheckHerolevel = 185 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 9235
+break
+
+#IF
+CheckHerolevel = 186 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 9330
+break
+
+#IF
+CheckHerolevel = 187 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 9426
+break
+
+#IF
+CheckHerolevel = 188 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 9522
+break
+
+#IF
+CheckHerolevel = 189 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 9619
+break
+
+#IF
+CheckHerolevel = 190 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 9716
+break
+
+#IF
+CheckHerolevel = 191 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 9814
+break
+
+#IF
+CheckHerolevel = 192 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 9912
+break
+
+#IF
+CheckHerolevel = 193 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 10011
+break
+
+#IF
+CheckHerolevel = 194 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 10110
+break
+
+#IF
+CheckHerolevel = 195 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 10210
+break
+
+#IF
+CheckHerolevel = 196 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 10310
+break
+
+#IF
+CheckHerolevel = 197 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 10411
+break
+
+#IF
+CheckHerolevel = 198 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 10512
+break
+
+#IF
+CheckHerolevel = 199 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 10614
+break
+
+#IF
+CheckHerolevel = 200 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 10716
+break
+
+[@法师英雄]
+#IF
+CheckHerolevel = 1
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 39
+break
+
+#IF
+CheckHerolevel = 2
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 42
+break
+
+#IF
+CheckHerolevel = 3
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 46
+break
+
+#IF
+CheckHerolevel = 4
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 49
+break
+
+#IF
+CheckHerolevel = 5
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 52
+break
+
+#IF
+CheckHerolevel = 6
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 55
+break
+
+#IF
+CheckHerolevel = 7
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 58
+break
+
+#IF
+CheckHerolevel = 8
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 61
+break
+
+#IF
+CheckHerolevel = 9
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 64
+break
+
+#IF
+CheckHerolevel = 10
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 68
+break
+
+#IF
+CheckHerolevel = 11
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 71
+break
+
+#IF
+CheckHerolevel = 12
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 75
+break
+
+#IF
+CheckHerolevel = 13
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 77
+break
+
+#IF
+CheckHerolevel = 14
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 81
+break
+
+#IF
+CheckHerolevel = 15
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 84
+break
+
+#IF
+CheckHerolevel = 16
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 87
+break
+
+#IF
+CheckHerolevel = 17
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 90
+break
+
+#IF
+CheckHerolevel = 18
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 94
+break
+
+#IF
+CheckHerolevel = 19
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 97
+break
+
+#IF
+CheckHerolevel = 20
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 100
+break
+
+#IF
+CheckHerolevel = 21
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 103
+break
+
+#IF
+CheckHerolevel = 22
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 106
+break
+
+#IF
+CheckHerolevel = 23
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 109
+break
+
+#IF
+CheckHerolevel = 24
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 112
+break
+
+#IF
+CheckHerolevel = 25
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 116
+break
+
+#IF
+CheckHerolevel = 26
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 119
+break
+
+#IF
+CheckHerolevel = 27
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 123
+break
+
+#IF
+CheckHerolevel = 28
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 125
+break
+
+#IF
+CheckHerolevel = 29
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 129
+break
+
+#IF
+CheckHerolevel = 30
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 132
+break
+
+#IF
+CheckHerolevel = 31
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 135
+break
+
+#IF
+CheckHerolevel = 32
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 138
+break
+
+#IF
+CheckHerolevel = 33
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 142
+break
+
+#IF
+CheckHerolevel = 34
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 145
+break
+
+#IF
+CheckHerolevel = 35
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 148
+break
+
+#IF
+CheckHerolevel = 36
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 151
+break
+
+#IF
+CheckHerolevel = 37
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 154
+break
+
+#IF
+CheckHerolevel = 38
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 157
+break
+
+#IF
+CheckHerolevel = 39
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 160
+break
+
+#IF
+CheckHerolevel = 40
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 164
+break
+
+#IF
+CheckHerolevel = 41
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 167
+break
+
+#IF
+CheckHerolevel = 42
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 171
+break
+
+#IF
+CheckHerolevel = 43
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 173
+break
+
+#IF
+CheckHerolevel = 44
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 177
+break
+
+#IF
+CheckHerolevel = 45
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 180
+break
+
+#IF
+CheckHerolevel = 46
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 183
+break
+
+#IF
+CheckHerolevel = 47
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 186
+break
+
+#IF
+CheckHerolevel = 48
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 190
+break
+
+#IF
+CheckHerolevel = 49
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 193
+break
+
+#IF
+CheckHerolevel = 50
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 196
+break
+
+#IF
+CheckHerolevel = 51
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 199
+break
+
+#IF
+CheckHerolevel = 52
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 202
+break
+
+#IF
+CheckHerolevel = 53
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 205
+break
+
+#IF
+CheckHerolevel = 54
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 208
+break
+
+#IF
+CheckHerolevel = 55
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 212
+break
+
+#IF
+CheckHerolevel = 56
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 215
+break
+
+#IF
+CheckHerolevel = 57
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 219
+break
+
+#IF
+CheckHerolevel = 58
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 221
+break
+
+#IF
+CheckHerolevel = 59
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 225
+break
+
+#IF
+CheckHerolevel = 60
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 228
+break
+
+#IF
+CheckHerolevel = 61
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 261
+break
+
+#IF
+CheckHerolevel = 62
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 294
+break
+
+#IF
+CheckHerolevel = 63
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 328
+break
+
+#IF
+CheckHerolevel = 64
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 361
+break
+
+#IF
+CheckHerolevel = 65
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 394
+break
+
+#IF
+CheckHerolevel = 66
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 427
+break
+
+#IF
+CheckHerolevel = 67
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 460
+break
+
+#IF
+CheckHerolevel = 68
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 493
+break
+
+#IF
+CheckHerolevel = 69
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 526
+break
+
+#IF
+CheckHerolevel = 70
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 560
+break
+
+#IF
+CheckHerolevel = 71
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 593
+break
+
+#IF
+CheckHerolevel = 72
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 627
+break
+
+#IF
+CheckHerolevel = 73
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 659
+break
+
+#IF
+CheckHerolevel = 74
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 693
+break
+
+#IF
+CheckHerolevel = 75
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 726
+break
+
+#IF
+CheckHerolevel = 76
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 759
+break
+
+#IF
+CheckHerolevel = 77
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 792
+break
+
+#IF
+CheckHerolevel = 78
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 826
+break
+
+#IF
+CheckHerolevel = 79
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 859
+break
+
+#IF
+CheckHerolevel = 80
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 892
+break
+
+#IF
+CheckHerolevel = 81
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 925
+break
+
+#IF
+CheckHerolevel = 82
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 958
+break
+
+#IF
+CheckHerolevel = 83
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 991
+break
+
+#IF
+CheckHerolevel = 84 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1024
+break
+
+#IF
+CheckHerolevel = 85 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1058
+break
+
+#IF
+CheckHerolevel = 86 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1091
+break
+
+#IF
+CheckHerolevel = 87 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1125
+break
+
+#IF
+CheckHerolevel = 88 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1157
+break
+
+#IF
+CheckHerolevel = 89 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1191
+break
+
+#IF
+CheckHerolevel = 90 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1224
+break
+
+#IF
+CheckHerolevel = 91 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1257
+break
+
+#IF
+CheckHerolevel = 92 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1290
+break
+
+#IF
+CheckHerolevel = 93 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1324
+break
+
+#IF
+CheckHerolevel = 94 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1357
+break
+
+#IF
+CheckHerolevel = 95 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1390
+break
+
+#IF
+CheckHerolevel = 96 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1423
+break
+
+#IF
+CheckHerolevel = 97 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1456
+break
+
+#IF
+CheckHerolevel = 98 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1489
+break
+
+#IF
+CheckHerolevel = 99 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1522
+break
+
+#IF
+CheckHerolevel = 100 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1556
+break
+
+#IF
+CheckHerolevel = 101 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1589
+break
+
+#IF
+CheckHerolevel = 102 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1623
+break
+
+#IF
+CheckHerolevel = 103 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1655
+break
+
+#IF
+CheckHerolevel = 104 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1689
+break
+
+#IF
+CheckHerolevel = 105 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1722
+break
+
+#IF
+CheckHerolevel = 106 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1755
+break
+
+#IF
+CheckHerolevel = 107 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1788
+break
+
+#IF
+CheckHerolevel = 108 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1822
+break
+
+#IF
+CheckHerolevel = 109 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1855
+break
+
+#IF
+CheckHerolevel = 110 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1888
+break
+
+#IF
+CheckHerolevel = 111 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1921
+break
+
+#IF
+CheckHerolevel = 112 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1954
+break
+
+#IF
+CheckHerolevel = 113 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 1987
+break
+
+#IF
+CheckHerolevel = 114 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2020
+break
+
+#IF
+CheckHerolevel = 115 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2054
+break
+
+#IF
+CheckHerolevel = 116 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2087
+break
+
+#IF
+CheckHerolevel = 117 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2121
+break
+
+#IF
+CheckHerolevel = 118 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2153
+break
+
+#IF
+CheckHerolevel = 119 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2187
+break
+
+#IF
+CheckHerolevel = 120 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2220
+break
+
+#IF
+CheckHerolevel = 121 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2253
+break
+
+#IF
+CheckHerolevel = 122 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2286
+break
+
+#IF
+CheckHerolevel = 123 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2320
+break
+
+#IF
+CheckHerolevel = 124 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2353
+break
+
+#IF
+CheckHerolevel = 125 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2386
+break
+
+#IF
+CheckHerolevel = 126 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2419
+break
+
+#IF
+CheckHerolevel = 127 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2452
+break
+
+#IF
+CheckHerolevel = 128 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2485
+break
+
+#IF
+CheckHerolevel = 129 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2518
+break
+
+#IF
+CheckHerolevel = 130 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2552
+break
+
+#IF
+CheckHerolevel = 131 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2585
+break
+
+#IF
+CheckHerolevel = 132 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2619
+break
+
+#IF
+CheckHerolevel = 133 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2651
+break
+
+#IF
+CheckHerolevel = 134 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2685
+break
+
+#IF
+CheckHerolevel = 135 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2718
+break
+
+#IF
+CheckHerolevel = 136 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2751
+break
+
+#IF
+CheckHerolevel = 137 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2784
+break
+
+#IF
+CheckHerolevel = 138 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2818
+break
+
+#IF
+CheckHerolevel = 139 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2851
+break
+
+#IF
+CheckHerolevel = 140 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2884
+break
+
+#IF
+CheckHerolevel = 141 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2917
+break
+
+#IF
+CheckHerolevel = 142 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2950
+break
+
+#IF
+CheckHerolevel = 143 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2983
+break
+
+#IF
+CheckHerolevel = 144 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3016
+break
+
+#IF
+CheckHerolevel = 145 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3050
+break
+
+#IF
+CheckHerolevel = 146 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3083
+break
+
+#IF
+CheckHerolevel = 147 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3117
+break
+
+#IF
+CheckHerolevel = 148 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3149
+break
+
+#IF
+CheckHerolevel = 149 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3183
+break
+
+#IF
+CheckHerolevel = 150 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3216
+break
+
+#IF
+CheckHerolevel = 151 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3249
+break
+
+#IF
+CheckHerolevel = 152 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3282
+break
+
+#IF
+CheckHerolevel = 153 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3316
+break
+
+#IF
+CheckHerolevel = 154 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3349
+break
+
+#IF
+CheckHerolevel = 155 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3382
+break
+
+#IF
+CheckHerolevel = 156 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3415
+break
+
+#IF
+CheckHerolevel = 157 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3448
+break
+
+#IF
+CheckHerolevel = 158 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3481
+break
+
+#IF
+CheckHerolevel = 159 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3514
+break
+
+#IF
+CheckHerolevel = 160 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3548
+break
+
+#IF
+CheckHerolevel = 161 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3581
+break
+
+#IF
+CheckHerolevel = 162 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3615
+break
+
+#IF
+CheckHerolevel = 163 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3647
+break
+
+#IF
+CheckHerolevel = 164 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3681
+break
+
+#IF
+CheckHerolevel = 165 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3714
+break
+
+#IF
+CheckHerolevel = 166 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3747
+break
+
+#IF
+CheckHerolevel = 167 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3780
+break
+
+#IF
+CheckHerolevel = 168 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3814
+break
+
+#IF
+CheckHerolevel = 169 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3847
+break
+
+#IF
+CheckHerolevel = 170 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3880
+break
+
+#IF
+CheckHerolevel = 171 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3913
+break
+
+#IF
+CheckHerolevel = 172 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3946
+break
+
+#IF
+CheckHerolevel = 173 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3979
+break
+
+#IF
+CheckHerolevel = 174 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4012
+break
+
+#IF
+CheckHerolevel = 175 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4046
+break
+
+#IF
+CheckHerolevel = 176 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4079
+break
+
+#IF
+CheckHerolevel = 177 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4113
+break
+
+#IF
+CheckHerolevel = 178 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4145
+break
+
+#IF
+CheckHerolevel = 179 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4179
+break
+
+#IF
+CheckHerolevel = 180 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4212
+break
+
+#IF
+CheckHerolevel = 181 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4245
+break
+
+#IF
+CheckHerolevel = 182 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4278
+break
+
+#IF
+CheckHerolevel = 183 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4312
+break
+
+#IF
+CheckHerolevel = 184 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4345
+break
+
+#IF
+CheckHerolevel = 185 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4378
+break
+
+#IF
+CheckHerolevel = 186 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4411
+break
+
+#IF
+CheckHerolevel = 187 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4444
+break
+
+#IF
+CheckHerolevel = 188 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4477
+break
+
+#IF
+CheckHerolevel = 189 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4510
+break
+
+#IF
+CheckHerolevel = 190 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4544
+break
+
+#IF
+CheckHerolevel = 191 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4577
+break
+
+#IF
+CheckHerolevel = 192 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4611
+break
+
+#IF
+CheckHerolevel = 193 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4643
+break
+
+#IF
+CheckHerolevel = 194 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4677
+break
+
+#IF
+CheckHerolevel = 195 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4710
+break
+
+#IF
+CheckHerolevel = 196 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4743
+break
+
+#IF
+CheckHerolevel = 197 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4776
+break
+
+#IF
+CheckHerolevel = 198 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4810
+break
+
+#IF
+CheckHerolevel = 199 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4843
+break
+
+#IF
+CheckHerolevel = 200 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4876
+break
+
+[@道士英雄]
+#IF
+CheckHerolevel = 1
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 43
+break
+
+#IF
+CheckHerolevel = 2
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 51
+break
+
+#IF
+CheckHerolevel = 3
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 59
+break
+
+#IF
+CheckHerolevel = 4
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 66
+break
+
+#IF
+CheckHerolevel = 5
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 73
+break
+
+#IF
+CheckHerolevel = 6
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 81
+break
+
+#IF
+CheckHerolevel = 7
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 88
+break
+
+#IF
+CheckHerolevel = 8
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 96
+break
+
+#IF
+CheckHerolevel = 9
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 104
+break
+
+#IF
+CheckHerolevel = 10
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 111
+break
+
+#IF
+CheckHerolevel = 11
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 118
+break
+
+#IF
+CheckHerolevel = 12
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 126
+break
+
+#IF
+CheckHerolevel = 13
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 133
+break
+
+#IF
+CheckHerolevel = 14
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 141
+break
+
+#IF
+CheckHerolevel = 15
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 149
+break
+
+#IF
+CheckHerolevel = 16
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 156
+break
+
+#IF
+CheckHerolevel = 17
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 163
+break
+
+#IF
+CheckHerolevel = 18
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 171
+break
+
+#IF
+CheckHerolevel = 19
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 178
+break
+
+#IF
+CheckHerolevel = 20
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 186
+break
+
+#IF
+CheckHerolevel = 21
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 194
+break
+
+#IF
+CheckHerolevel = 22
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 201
+break
+
+#IF
+CheckHerolevel = 23
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 208
+break
+
+#IF
+CheckHerolevel = 24
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 216
+break
+
+#IF
+CheckHerolevel = 25
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 223
+break
+
+#IF
+CheckHerolevel = 26
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 231
+break
+
+#IF
+CheckHerolevel = 27
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 239
+break
+
+#IF
+CheckHerolevel = 28
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 246
+break
+
+#IF
+CheckHerolevel = 29
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 253
+break
+
+#IF
+CheckHerolevel = 30
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 261
+break
+
+#IF
+CheckHerolevel = 31
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 268
+break
+
+#IF
+CheckHerolevel = 32
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 276
+break
+
+#IF
+CheckHerolevel = 33
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 284
+break
+
+#IF
+CheckHerolevel = 34
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 291
+break
+
+#IF
+CheckHerolevel = 35
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 298
+break
+
+#IF
+CheckHerolevel = 36
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 306
+break
+
+#IF
+CheckHerolevel = 37
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 313
+break
+
+#IF
+CheckHerolevel = 38
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 321
+break
+
+#IF
+CheckHerolevel = 39
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 329
+break
+
+#IF
+CheckHerolevel = 40
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 336
+break
+
+#IF
+CheckHerolevel = 41
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 343
+break
+
+#IF
+CheckHerolevel = 42
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 351
+break
+
+#IF
+CheckHerolevel = 43
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 358
+break
+
+#IF
+CheckHerolevel = 44
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 366
+break
+
+#IF
+CheckHerolevel = 45
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 374
+break
+
+#IF
+CheckHerolevel = 46
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 381
+break
+
+#IF
+CheckHerolevel = 47
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 388
+break
+
+#IF
+CheckHerolevel = 48
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 396
+break
+
+#IF
+CheckHerolevel = 49
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 403
+break
+
+#IF
+CheckHerolevel = 50
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 411
+break
+
+#IF
+CheckHerolevel = 51
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 419
+break
+
+#IF
+CheckHerolevel = 52
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 426
+break
+
+#IF
+CheckHerolevel = 53
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 433
+break
+
+#IF
+CheckHerolevel = 54
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 441
+break
+
+#IF
+CheckHerolevel = 55
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 448
+break
+
+#IF
+CheckHerolevel = 56
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 456
+break
+
+#IF
+CheckHerolevel = 57
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 464
+break
+
+#IF
+CheckHerolevel = 58
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 471
+break
+
+#IF
+CheckHerolevel = 59
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 478
+break
+
+#IF
+CheckHerolevel = 60
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 486
+break
+
+#IF
+CheckHerolevel = 61
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 493
+break
+
+#IF
+CheckHerolevel = 62
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 501
+break
+
+#IF
+CheckHerolevel = 63
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 509
+break
+
+#IF
+CheckHerolevel = 64
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 516
+break
+
+#IF
+CheckHerolevel = 65
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 523
+break
+
+#IF
+CheckHerolevel = 66
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 531
+break
+
+#IF
+CheckHerolevel = 67
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 538
+break
+
+#IF
+CheckHerolevel = 68
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 546
+break
+
+#IF
+CheckHerolevel = 69
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 554
+break
+
+#IF
+CheckHerolevel = 70
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 561
+break
+
+#IF
+CheckHerolevel = 71
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 568
+break
+
+#IF
+CheckHerolevel = 72
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 576
+break
+
+#IF
+CheckHerolevel = 73
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 583
+break
+
+#IF
+CheckHerolevel = 74
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 591
+break
+
+#IF
+CheckHerolevel = 75
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 599
+break
+
+#IF
+CheckHerolevel = 76
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 606
+break
+
+#IF
+CheckHerolevel = 77
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 613
+break
+
+#IF
+CheckHerolevel = 78
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 621
+break
+
+#IF
+CheckHerolevel = 79
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 628
+break
+
+#IF
+CheckHerolevel = 80
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 636
+break
+
+#IF
+CheckHerolevel = 81
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 644
+break
+
+#IF
+CheckHerolevel = 82
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 651
+break
+
+#IF
+CheckHerolevel = 83
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 658
+break
+
+#IF
+CheckHerolevel = 84 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 666
+break
+
+#IF
+CheckHerolevel = 85 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 673
+break
+
+#IF
+CheckHerolevel = 86 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 681
+break
+
+#IF
+CheckHerolevel = 87 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 689
+break
+
+#IF
+CheckHerolevel = 88 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 696
+break
+
+#IF
+CheckHerolevel = 89 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 703
+break
+
+#IF
+CheckHerolevel = 90 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 711
+break
+
+#IF
+CheckHerolevel = 91 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 718
+break
+
+#IF
+CheckHerolevel = 92 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 726
+break
+
+#IF
+CheckHerolevel = 93 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 734
+break
+
+#IF
+CheckHerolevel = 94 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 741
+break
+
+#IF
+CheckHerolevel = 95 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 748
+break
+
+#IF
+CheckHerolevel = 96 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 756
+break
+
+#IF
+CheckHerolevel = 97 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 763
+break
+
+#IF
+CheckHerolevel = 98 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 771
+break
+
+#IF
+CheckHerolevel = 99 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 779
+break
+
+#IF
+CheckHerolevel = 100 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 786
+break
+
+#IF
+CheckHerolevel = 101 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2146
+break
+
+#IF
+CheckHerolevel = 102 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2187
+break
+
+#IF
+CheckHerolevel = 103 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2227
+break
+
+#IF
+CheckHerolevel = 104 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2268
+break
+
+#IF
+CheckHerolevel = 105 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2309
+break
+
+#IF
+CheckHerolevel = 106 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2349
+break
+
+#IF
+CheckHerolevel = 107 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2389
+break
+
+#IF
+CheckHerolevel = 108 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2430
+break
+
+#IF
+CheckHerolevel = 109 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2470
+break
+
+#IF
+CheckHerolevel = 110 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2511
+break
+
+#IF
+CheckHerolevel = 111 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2552
+break
+
+#IF
+CheckHerolevel = 112 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2592
+break
+
+#IF
+CheckHerolevel = 113 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2632
+break
+
+#IF
+CheckHerolevel = 114 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2673
+break
+
+#IF
+CheckHerolevel = 115 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2713
+break
+
+#IF
+CheckHerolevel = 116 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2754
+break
+
+#IF
+CheckHerolevel = 117 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2795
+break
+
+#IF
+CheckHerolevel = 118 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2835
+break
+
+#IF
+CheckHerolevel = 119 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2875
+break
+
+#IF
+CheckHerolevel = 120 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2916
+break
+
+#IF
+CheckHerolevel = 121 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2956
+break
+
+#IF
+CheckHerolevel = 122 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 2997
+break
+
+#IF
+CheckHerolevel = 123 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3038
+break
+
+#IF
+CheckHerolevel = 124 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3078
+break
+
+#IF
+CheckHerolevel = 125 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3118
+break
+
+#IF
+CheckHerolevel = 126 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3159
+break
+
+#IF
+CheckHerolevel = 127 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3199
+break
+
+#IF
+CheckHerolevel = 128 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3240
+break
+
+#IF
+CheckHerolevel = 129 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3281
+break
+
+#IF
+CheckHerolevel = 130 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3321
+break
+
+#IF
+CheckHerolevel = 131 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3361
+break
+
+#IF
+CheckHerolevel = 132 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3402
+break
+
+#IF
+CheckHerolevel = 133 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3442
+break
+
+#IF
+CheckHerolevel = 134 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3483
+break
+
+#IF
+CheckHerolevel = 135 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3524
+break
+
+#IF
+CheckHerolevel = 136 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3564
+break
+
+#IF
+CheckHerolevel = 137 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3604
+break
+
+#IF
+CheckHerolevel = 138 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3645
+break
+
+#IF
+CheckHerolevel = 139 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3685
+break
+
+#IF
+CheckHerolevel = 140 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3726
+break
+
+#IF
+CheckHerolevel = 141 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3767
+break
+
+#IF
+CheckHerolevel = 142 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3807
+break
+
+#IF
+CheckHerolevel = 143 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3847
+break
+
+#IF
+CheckHerolevel = 144 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3888
+break
+
+#IF
+CheckHerolevel = 145 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3928
+break
+
+#IF
+CheckHerolevel = 146 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 3969
+break
+
+#IF
+CheckHerolevel = 147 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4010
+break
+
+#IF
+CheckHerolevel = 148 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4050
+break
+
+#IF
+CheckHerolevel = 149 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4090
+break
+
+#IF
+CheckHerolevel = 150 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4131
+break
+
+#IF
+CheckHerolevel = 151 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4171
+break
+
+#IF
+CheckHerolevel = 152 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4212
+break
+
+#IF
+CheckHerolevel = 153 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4253
+break
+
+#IF
+CheckHerolevel = 154 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4293
+break
+
+#IF
+CheckHerolevel = 155 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4333
+break
+
+#IF
+CheckHerolevel = 156 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4374
+break
+
+#IF
+CheckHerolevel = 157 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4414
+break
+
+#IF
+CheckHerolevel = 158 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4455
+break
+
+#IF
+CheckHerolevel = 159 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4496
+break
+
+#IF
+CheckHerolevel = 160 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4536
+break
+
+#IF
+CheckHerolevel = 161 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4576
+break
+
+#IF
+CheckHerolevel = 162 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4617
+break
+
+#IF
+CheckHerolevel = 163 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4657
+break
+
+#IF
+CheckHerolevel = 164 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4698
+break
+
+#IF
+CheckHerolevel = 165 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4739
+break
+
+#IF
+CheckHerolevel = 166 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4779
+break
+
+#IF
+CheckHerolevel = 167 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4819
+break
+
+#IF
+CheckHerolevel = 168 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4860
+break
+
+#IF
+CheckHerolevel = 169 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4900
+break
+
+#IF
+CheckHerolevel = 170 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4941
+break
+
+#IF
+CheckHerolevel = 171 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 4982
+break
+
+#IF
+CheckHerolevel = 172 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5022
+break
+
+#IF
+CheckHerolevel = 173 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5062
+break
+
+#IF
+CheckHerolevel = 174 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5103
+break
+
+#IF
+CheckHerolevel = 175 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5143
+break
+
+#IF
+CheckHerolevel = 176 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5184
+break
+
+#IF
+CheckHerolevel = 177 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5225
+break
+
+#IF
+CheckHerolevel = 178 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5265
+break
+
+#IF
+CheckHerolevel = 179 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5305
+break
+
+#IF
+CheckHerolevel = 180 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5346
+break
+
+#IF
+CheckHerolevel = 181 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5386
+break
+
+#IF
+CheckHerolevel = 182 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5427
+break
+
+#IF
+CheckHerolevel = 183 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5468
+break
+
+#IF
+CheckHerolevel = 184 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5508
+break
+
+#IF
+CheckHerolevel = 185 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5548
+break
+
+#IF
+CheckHerolevel = 186 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5589
+break
+
+#IF
+CheckHerolevel = 187 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5629
+break
+
+#IF
+CheckHerolevel = 188 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5670
+break
+
+#IF
+CheckHerolevel = 189 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5711
+break
+
+#IF
+CheckHerolevel = 190 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5751
+break
+
+#IF
+CheckHerolevel = 191 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5791
+break
+
+#IF
+CheckHerolevel = 192 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5832
+break
+
+#IF
+CheckHerolevel = 193 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5872
+break
+
+#IF
+CheckHerolevel = 194 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5913
+break
+
+#IF
+CheckHerolevel = 195 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5954
+break
+
+#IF
+CheckHerolevel = 196 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 5994
+break
+
+#IF
+CheckHerolevel = 197 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6034
+break
+
+#IF
+CheckHerolevel = 198 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6075
+break
+
+#IF
+CheckHerolevel = 199 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6115
+break
+
+#IF
+CheckHerolevel = 200 
+#ACT
+H.ChangeHumAbility 11 = 0
+H.ChangeHumAbility 11 + 6156
+break
+}
