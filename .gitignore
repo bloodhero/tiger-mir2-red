@@ -1,0 +1,11 @@
+/DBServer
+/LogDataServer
+/LoginGate
+/LoginServer
+/RunGate
+/SelGate
+**.exe
+**.dll
+**.DAT
+*log/
+/LoginSer*
