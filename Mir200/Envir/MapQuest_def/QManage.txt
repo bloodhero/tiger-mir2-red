@@ -49,7 +49,7 @@ SetIcon 0 65535
 RANDOM 10
 ISNEWHUMAN
 #ACT
-give 蜡烛 1
+give 金条 1
 give 金牌凭证 1
 SENDMSG 5 新手提示：请按F12呼出游戏内挂，请于4级前到助手小姐处接任务！
 SENDMSG 5 系统：你获得了金牌帐号的资格，不是每一位新人都能获得的哦！！
@@ -58,7 +58,7 @@ Break
 #IF
 ISNEWHUMAN
 #ACT
-give 蜡烛 1
+give 金条 1
 SENDMSG 5 新手提示：请按F12呼出游戏内挂，请于4级前到助手小姐处接任务！
 SENDMSG 5 系统：新人有几率获得金牌帐号的资格，很遗憾此角色没有获得！！
 Break
