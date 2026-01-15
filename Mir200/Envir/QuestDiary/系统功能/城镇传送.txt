@@ -156,68 +156,38 @@ break
 
 [@苍月]
 #IF
-checkgold 1000
 #ACT
-take 金币 1000
 mapmove 5 140 335
-break
-#ELSESAY
-你没有1000金币用来支付我们的服务费用!\
-请努力赚钱哦:)\ \
+
 
 [@白日]
 #IF
-checkgold 1000
 #ACT
-take 金币 1000
 mapmove 11 177 324
-break
-#ELSESAY
-你没有1000金币用来支付我们的服务费用!\
-请努力赚钱哦:)\ \
+
 
 [@封魔]
 #IF
-checkgold 1000
 #ACT
-take 金币 1000
 mapmove 4 242 202
-break
-#ELSESAY
-你没有1000金币用来支付我们的服务费用!\
-请努力赚钱哦:)\ \
+
 
 [@毒蛇]
 #IF
-checkgold 1000
 #ACT
-take 金币 1000
 mapmove 2 500 480
-break
-#ELSESAY
-你没有1000金币用来支付我们的服务费用!\
-请努力赚钱哦:)\ \
+
 
 [@土城]
 #IF
-checkgold 1000
 #ACT
-take 金币 1000
 mapmove 3 332 332
-break
-#ELSESAY
-你没有1000金币用来支付我们的服务费用!\
-请努力赚钱哦:)\ \
+
 
 [@比奇]
 #IF
-checkgold 1000
 #ACT
-take 金币 1000
 mapmove 0 330 270
-break
-#ELSESAY
-你没有1000金币用来支付我们的服务费用!\
-请努力赚钱哦:)\ \
+
 
 }
