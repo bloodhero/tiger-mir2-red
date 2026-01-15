@@ -60,10 +60,10 @@ CastleFile=C:\Users\juhailu\Documents\Tiger-Mir2-Red\Mir200\Castle\List.txt
 PlugDir=.\
 [Exp]
 KillMonExpMultiple=1
-HighLevelKillMonFixExp=0
-HighLevelGroupFixExp=0
-HighLevelLimitExp=0
-LimitLevel=88
+HighLevelKillMonFixExp=1
+HighLevelGroupFixExp=1
+HighLevelLimitExp=1
+LimitLevel=120
 KillMonExpDiv=600
 # level -> experience values
 # Generated: 2025-10-20
@@ -570,9 +570,9 @@ Level498=4000000000
 Level499=4000000000
 Level500=4000000000
 dwLoopLevelUP=1
-GroupScreen=0
-GroupMap=0
-HeroMap=0
+GroupScreen=1
+GroupMap=1
+HeroMap=1
 [ClientConfig]
 Button_Keshihua=1
 Button_DetectBox=1
@@ -720,8 +720,8 @@ SEditAIRangCreat_=20
 HintColor=clAqua
 MemoLogFontColor=clLime
 MemoLogColor=clWindowText 
-ItemNumber=673288
-ItemNumberEx=1073741834
+ItemNumber=748276
+ItemNumberEx=1073741835
 ClientFile1=mir.1
 ClientFile2=mir.2
 ClientFile3=mir.3
