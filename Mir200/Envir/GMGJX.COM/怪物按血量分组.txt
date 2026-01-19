@@ -1,0 +1,14 @@
+select name from Monster where hp > 0 and hp <= 100;
+select name from Monster where hp > 100 and hp <= 500;
+select name from Monster where hp > 500 and hp <= 1000;
+select name from Monster where hp > 1000 and hp <= 2000;
+select name from Monster where hp > 2000 and hp <= 3000;
+select name from Monster where hp > 3000 and hp <= 5000;
+select name from Monster where hp > 5000 and hp <= 8000;
+select name from Monster where hp > 8000 and hp <= 15000;
+select name from Monster where hp > 15000 and hp <= 24000;
+select name from Monster where hp > 24000 and hp <= 32000;
+
+
+
+
