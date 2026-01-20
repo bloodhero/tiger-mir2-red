@@ -96,6 +96,7 @@ for file in *; do
 
         # 如果为boss
         if [[ "${bosstable[@]}" =~ " ${monName}" ]]; then
+            echo "\n">> $file
             echo "1/5      金条">> $file
             echo "1/5      银元宝">> $file
             echo "1/15     金元宝">> $file
