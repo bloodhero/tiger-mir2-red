@@ -4,7 +4,7 @@ checklevelex > 39
 CHECKCREDITPOINT > 9
 #act
 CREDITPOINT - 10
-OPENBOOK 0
+MAPMOVE HERO1 215 206
 #elseSAY
 传送失败：\
 1.等级未满40级\
