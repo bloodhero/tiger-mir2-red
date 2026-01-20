@@ -82,7 +82,7 @@ for file in *; do
         echo "aaaa # $aaaa"
         echo "bbbb # $bbbb"
         # 如果为特殊怪
-        result=$(echo $monName | grep -E '0|8')
+        result=$(echo $monName | grep -E '0|8|3')
         if [[ $result != "" ]]; then
         upPercent=0.15
         aaaa=`echo "$aaaa * ( 1 - $upPercent)" | bc -l`
