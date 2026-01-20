@@ -1,12 +1,7 @@
 #!/bin/bash
 
-target_dir="./MonItems"  # 目标文件夹路径
-target_db="../../../../Mud2/DB/REDM2.DB"
-
-# 进入目标文件夹
-cd "$target_dir" || { echo "目标文件夹不存在"; exit 1; }
     # 整合全部装备
-    cd ../Group/Items
+    cd Group/Items
     baotable=()
     for item in *; do 
 
@@ -15,6 +10,21 @@ cd "$target_dir" || { echo "目标文件夹不存在"; exit 1; }
         done < $item
     done
     cd -
+
+    #整合所有boss
+    bosstable=()
+    while read -r line; do
+        bosstable+=("$line")
+    done < Group/Mons/boss.txt
+
+
+target_dir="./MonItems"  # 目标文件夹路径
+target_db="../../../../Mud2/DB/REDM2.DB"
+
+# 进入目标文件夹
+cd "$target_dir" || { echo "目标文件夹不存在"; exit 1; }
+
+
 # 遍历目标文件夹下的所有文件
 for file in *; do
     # 去掉后缀
@@ -26,6 +36,7 @@ for file in *; do
     echo "hp # $hp"
     if  [[ $hp == "" ]]; then
         rm $file
+        echo $file>> delete.txt
         continue
     fi
 
@@ -83,6 +94,13 @@ for file in *; do
         echo "bbbb # $bbbb"
         fi
 
+        # 如果为boss
+        if [[ "${bosstable[@]}" =~ " ${monName}" ]]; then
+            echo "1/5      金条">> $file
+            echo "1/5      银元宝">> $file
+            echo "1/15     金元宝">> $file
+
+        fi
         # 写入爆率
         sed -i "s/aaaa/$aaaa/g" $file
         sed -i "s/bbbb/$bbbb/g" $file
@@ -102,6 +120,17 @@ for file in *; do
     if [ "$hp" -gt 2000 ] && [ "$hp" -le 3000 ]; then
     ## 两个条件都为真时要执行的语句
     echo "2000...3000"
+
+        # 如果为boss
+
+           # 清空爆率
+
+
+           # 载入boss爆率模板
+
+
+
+
     fi
 
     if [ "$hp" -gt 3000 ] && [ "$hp" -le 5000 ]; then
