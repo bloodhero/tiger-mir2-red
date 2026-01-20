@@ -5,7 +5,16 @@ target_db="../../../../Mud2/DB/REDM2.DB"
 
 # 进入目标文件夹
 cd "$target_dir" || { echo "目标文件夹不存在"; exit 1; }
+    # 整合全部装备
+    cd ../Group/Items
+    baotable=()
+    for item in *; do 
 
+        while read -r line; do
+            baotable+=("$line")
+        done < $item
+    done
+    cd -
 # 遍历目标文件夹下的所有文件
 for file in *; do
     # 去掉后缀
@@ -13,19 +22,13 @@ for file in *; do
     echo $monName
 
     # 查询血量
-    hp=`cat ../血量.csv | grep ",${monName}$" |cut -d ',' -f 1`
-    echo $hp
+    hp=`cat ../血量.csv | grep -E ",${monName}$" |cut -d ',' -f 1`
+    echo "hp # $hp"
+    if  [[ $hp == "" ]]; then
+        rm $file
+        continue
+    fi
 
-    # 整合全部装备
-    cd ../Group/Items
-    baotable=()
-    for item in *; do 
-        while read -r line; do
-            baotable+=("$line")
-        done < $item
-    done
-
-    cd ../../MonItems
     
 
     if [ "$hp" -gt 0 ] && [ "$hp" -le 100 ]; then
@@ -36,11 +39,11 @@ for file in *; do
     if [ "$hp" -gt 100 ] && [ "$hp" -le 500 ]; then
     ## 两个条件都为真时要执行的语句
         echo "100...500"
-         pwd
+
         # 去掉爆率表中已有装备
         
         for i in `cat $file |awk '{print $2}'`; do
-            if [[ " ${baotable[@]} " =~ " ${i}" ]]; then
+            if [[ "${baotable[@]}" =~ " ${i}" ]]; then
             # 如果装备在列表中，删除该装备爆率
              sed -i "/$i/d" $file
           
@@ -53,9 +56,37 @@ for file in *; do
         cat ../默认分组/15级基础怪/Values.txt >> $file
 
         # 按血量微调爆率
+        xueDiff=$((500 - 100))
+        realDiff=$((500 - $hp))
+        chaPercent=`echo "$realDiff / $xueDiff" | bc -l`
+        echo "chapercent  = $chaPercent"
+
+        step=20
+        aaaa=20
+        bbbb=40
+        aaaa=`echo "$aaaa + $step * $chaPercent" | bc -l`
+        bbbb=`echo "$bbbb + $step * $chaPercent" | bc -l`
+        aaaa=`printf "%.0f" "$aaaa"`
+        bbbb=`printf "%.0f" "$bbbb"`
+        echo "aaaa # $aaaa"
+        echo "bbbb # $bbbb"
         # 如果为特殊怪
-        # 如果为boss
-        # 
+        result=$(echo $monName | grep -E '0|8')
+        if [[ $result != "" ]]; then
+        upPercent=0.15
+        aaaa=`echo "$aaaa * ( 1 - $upPercent)" | bc -l`
+        bbbb=`echo "$bbbb * ( 1 - $upPercent)" | bc -l`
+        aaaa=`printf "%.0f" "$aaaa"`
+        bbbb=`printf "%.0f" "$bbbb"`
+        echo "为特殊怪"
+        echo "aaaa # $aaaa"
+        echo "bbbb # $bbbb"
+        fi
+
+        # 写入爆率
+        sed -i "s/aaaa/$aaaa/g" $file
+        sed -i "s/bbbb/$bbbb/g" $file
+        sed -i '/^[[:space:]]*$/d' $file
     fi
 
     if [ "$hp" -gt 500 ] && [ "$hp" -le 1000 ]; then
@@ -76,13 +107,18 @@ for file in *; do
     if [ "$hp" -gt 3000 ] && [ "$hp" -le 5000 ]; then
     ## 两个条件都为真时要执行的语句
     echo "3000...5000"
+
+        # 如果为boss
+        # 清空爆率
+        # 载入boss爆率模板
+
     fi
 
     if [ "$hp" -gt 5000 ] && [ "$hp" -le 8000 ]; then
     ## 两个条件都为真时要执行的语句
     echo "5000...8000"
     fi
-    break
+
 
     if [ "$hp" -gt 8000 ] && [ "$hp" -le 15000 ]; then
     ## 两个条件都为真时要执行的语句
@@ -98,4 +134,5 @@ for file in *; do
     ## 两个条件都为真时要执行的语句
     echo "24000...32000"
     fi
+    #break
 done
