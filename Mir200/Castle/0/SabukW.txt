@@ -2,7 +2,7 @@
 CastleName=É³°Í¿Ë
 ChangeDate=1998/1/1
 WarDate=1998/1/1
-IncomeToday=2026/1/19 0:00:04
+IncomeToday=2026/1/21
 TotalGold=604000
 TodayIncome=210000
 OwnGuild=
@@ -95,7 +95,7 @@ Guard_4_X=676
 Guard_4_Y=329
 Guard_4_HP=0
 MainDoorOpen=0
-MainDoorHP=10000
+MainDoorHP=0
 LeftWallHP=5000
 CenterWallHP=5000
 RightWallHP=5000
